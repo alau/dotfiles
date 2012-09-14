@@ -8,3 +8,6 @@ set shiftwidth=2
 set softtabstop=2
 set expandtab
 set autoindent
+
+" Ignore for ctrlp
+set wildignore=.git,vendor
