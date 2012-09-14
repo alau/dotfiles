@@ -1,0 +1,3 @@
+" Use Vim settings, rather then Vi settings
+set nocompatible
+
