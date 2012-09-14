@@ -16,3 +16,6 @@ map <C-l> <C-w>l
 " Tab navigation
 nmap <Tab> gt
 nmap <S-Tab> gT
+
+" Saving file
+nmap <C-s> :w<CR>
