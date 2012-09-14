@@ -1,3 +1,5 @@
 " Use Vim settings, rather then Vi settings
 set nocompatible
 
+source ~/.vim/vundle.vim
+
