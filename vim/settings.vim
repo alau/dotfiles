@@ -13,5 +13,8 @@ set autoindent
 let mapleader=","
 let maplocalleader=","
 
+" Colorscheme
+colorscheme vividchalk
+
 " Ignore for ctrlp
 set wildignore=.git,vendor
