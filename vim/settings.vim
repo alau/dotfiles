@@ -12,6 +12,9 @@ set autoindent
 " Ignore case when searching
 set ignorecase
 
+" Automatically load changed files
+set autoread
+
 " Use , as <Leader> and <LocalLeader>
 let mapleader=","
 let maplocalleader=","
