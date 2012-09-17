@@ -7,5 +7,6 @@ Bundle 'gmarik/vundle'
 Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-vividchalk'
 Bundle 'kien/ctrlp.vim'
+Bundle 'puppetlabs/puppet-syntax-vim'
 
 filetype plugin indent on
