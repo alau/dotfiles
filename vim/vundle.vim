@@ -9,5 +9,6 @@ Bundle 'tpope/vim-vividchalk'
 Bundle 'kien/ctrlp.vim'
 Bundle 'puppetlabs/puppet-syntax-vim'
 Bundle 'scrooloose/nerdtree'
+Bundle 'scrooloose/nerdcommenter'
 
 filetype plugin indent on
