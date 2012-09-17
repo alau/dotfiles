@@ -19,3 +19,6 @@ nmap <S-Tab> gT
 
 " Saving file
 nmap <C-s> :w<CR>
+
+" Shortcut for NERDTree
+nmap <silent> <F11> :NERDTreeToggle<CR>

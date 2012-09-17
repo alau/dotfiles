@@ -18,3 +18,6 @@ colorscheme vividchalk
 
 " Ignore for ctrlp
 set wildignore=.git,vendor
+
+" Change the position of NERDTree
+let NERDTreeWinPos = 'right'
