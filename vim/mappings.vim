@@ -1,8 +1,9 @@
 " Fugitive
 nmap <C-g> :Gstatus<CR>
 
-" New tab
-nmap <C-t> :tabnew<CR>
+" Create and close tabs
+nnoremap <C-t> :tabnew<CR>
+nnoremap Q :tabclose<CR>
 
 " ctrlp
 let g:ctrlp_map = '<leader>t'
