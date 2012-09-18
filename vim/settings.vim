@@ -9,6 +9,9 @@ set softtabstop=2
 set expandtab
 set autoindent
 
+" Line numbers
+set number
+
 " Highlight trailing whitespaces
 match ErrorMsg /\s\+$/
 autocmd BufWinEnter * match ErrorMsg /\s\+$/
