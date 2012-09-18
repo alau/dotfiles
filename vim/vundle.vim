@@ -10,6 +10,7 @@ Bundle 'tpope/vim-fugitive'
 Bundle 'kien/ctrlp.vim'
 Bundle 'scrooloose/nerdtree'
 Bundle 'scrooloose/nerdcommenter'
+Bundle 'tpope/vim-endwise'
 
 " Color scheme
 Bundle 'tpope/vim-vividchalk'
