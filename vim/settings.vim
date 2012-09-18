@@ -27,3 +27,7 @@ set wildignore=.git,vendor
 
 " Change the position of NERDTree
 let NERDTreeWinPos = 'right'
+
+" Syntastic
+let g:syntastic_check_on_open=1
+let g:syntastic_quiet_warnings=1

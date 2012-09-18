@@ -11,6 +11,7 @@ Bundle 'kien/ctrlp.vim'
 Bundle 'scrooloose/nerdtree'
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'tpope/vim-endwise'
+Bundle 'scrooloose/syntastic'
 
 " Color scheme
 Bundle 'tpope/vim-vividchalk'
