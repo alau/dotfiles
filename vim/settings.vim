@@ -38,6 +38,7 @@ colorscheme vividchalk
 " ctrlp
 set wildignore=.git,vendor
 let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files']
+let g:ctrlp_match_window_bottom = 0
 
 " Change the position of NERDTree
 let NERDTreeWinPos = 'right'
