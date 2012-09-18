@@ -9,6 +9,13 @@ set softtabstop=2
 set expandtab
 set autoindent
 
+" Highlight trailing whitespaces
+match ErrorMsg /\s\+$/
+autocmd BufWinEnter * match ErrorMsg /\s\+$/
+autocmd InsertEnter * match ErrorMsg /\s\+\%#\@<!$/
+autocmd InsertLeave * match ErrorMsg /\s\+$/
+autocmd BufWinLeave * call clearmatches()
+
 " Ignore case when searching
 set ignorecase
 
