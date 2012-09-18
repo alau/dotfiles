@@ -46,3 +46,6 @@ let NERDTreeWinPos = 'right'
 " Syntastic
 let g:syntastic_check_on_open=1
 let g:syntastic_quiet_warnings=1
+
+" Ack
+let g:ackprg="ack -H -i --nocolor --nogroup --column --nojs --noxml --nocss"
