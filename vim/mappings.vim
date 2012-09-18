@@ -26,3 +26,6 @@ nmap <silent> <F11> :NERDTreeToggle<CR>
 
 " NERDCommentator
 map <Leader>x <plug>NERDCommenterToggle
+
+" ctags
+map <Leader>rt :!ctags --extra=+f --exclude=.git --exclude=log -R *<CR><CR>
