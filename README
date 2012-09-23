@@ -1,4 +1,10 @@
 My dotfiles
 
-Dependencies: 
+Install them by running /install.sh .
+
+== Vim
+
+Enter vim and run :BundleInstall to install the bundles.
+
+The following packages are required for ctags:
   exuberant-ctags ncurses-term
