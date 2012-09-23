@@ -1,0 +1,4 @@
+[submodule "vim/vim.dotfile/bundle/vundle"]
+  path = vim/vim.dotfile/bundle/vundle
+  url = git://github.com/gmarik/vundle.git
+  ignore = untracked
