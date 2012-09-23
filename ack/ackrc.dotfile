@@ -1,6 +1,4 @@
 --type-set=sass=.sass,.scss
---type-set=haml=.haml
---type-set=builder=.builder
 --type-set=cucumber=.feature
 --type-set=js=.js,.coffee
 --type-set=view=.haml,.jbuilder,.builder
