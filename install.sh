@@ -7,5 +7,5 @@ for SOURCE in `ls -d1 $PWD/**/*.dotfile`
 do
   BASE=$(basename "$SOURCE")
   DOTFILE="$HOME/.${BASE%.*}"
-  ln -s -v $SOURCE $DOTFILE
+  ln -s -v -n $SOURCE $DOTFILE
 done
