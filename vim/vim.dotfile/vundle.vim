@@ -14,8 +14,9 @@ Bundle 'tpope/vim-endwise'
 Bundle 'scrooloose/syntastic'
 Bundle 'mileszs/ack.vim'
 
-" Color scheme
+" Look and feel
 Bundle 'tpope/vim-vividchalk'
+Bundle 'Lokaltog/vim-powerline'
 
 " Language support
 Bundle 'itspriddle/vim-jquery'
