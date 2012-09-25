@@ -13,6 +13,7 @@ Bundle 'scrooloose/nerdcommenter'
 Bundle 'tpope/vim-endwise'
 Bundle 'scrooloose/syntastic'
 Bundle 'mileszs/ack.vim'
+Bundle 'akitaonrails/snipmate.vim'
 
 " Look and feel
 Bundle 'tpope/vim-vividchalk'
