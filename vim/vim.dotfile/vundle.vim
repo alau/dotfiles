@@ -14,6 +14,7 @@ Bundle 'tpope/vim-endwise'
 Bundle 'scrooloose/syntastic'
 Bundle 'mileszs/ack.vim'
 Bundle 'akitaonrails/snipmate.vim'
+Bundle 'tpope/vim-rails'
 
 " Look and feel
 Bundle 'tpope/vim-vividchalk'
