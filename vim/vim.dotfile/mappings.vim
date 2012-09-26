@@ -1,6 +1,6 @@
 " Create and close tabs
 nnoremap <C-t> :tabnew<CR>
-nnoremap Q :tabclose<CR>
+nnoremap Q :close<CR>
 
 " Window navigation
 map <C-h> <C-w>h
