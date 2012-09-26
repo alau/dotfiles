@@ -12,6 +12,10 @@ set autoindent
 " Line numbers
 set number
 
+" Incremental searches + highlighting
+set incsearch
+set hlsearch
+
 " Highlight trailing whitespaces
 match ErrorMsg /\s\+$/
 autocmd BufWinEnter * match ErrorMsg /\s\+$/
