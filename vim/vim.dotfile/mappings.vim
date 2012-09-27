@@ -18,6 +18,7 @@ nmap <S-Tab> gT
 
 " Saving file
 nmap <C-s> :write<CR>
+imap <C-s> <Esc>:write<CR>i<Right>
 cabbrev w echoerr "Nope"
 
 " Fugitive
