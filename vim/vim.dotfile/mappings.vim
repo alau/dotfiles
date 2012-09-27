@@ -1,6 +1,7 @@
 " Create and close tabs
 nnoremap <C-t> :tabnew<CR>
 nnoremap Q :close<CR>
+cabbrev q echoerr "Nope"
 
 " Window navigation
 map <C-h> <C-w>h
@@ -16,7 +17,8 @@ nmap <Tab> gt
 nmap <S-Tab> gT
 
 " Saving file
-nmap <C-s> :w<CR>
+nmap <C-s> :write<CR>
+cabbrev w echoerr "Nope"
 
 " Fugitive
 nmap <C-g> :Gstatus<CR>
