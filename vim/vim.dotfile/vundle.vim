@@ -15,6 +15,7 @@ Bundle 'scrooloose/syntastic'
 Bundle 'mileszs/ack.vim'
 Bundle 'akitaonrails/snipmate.vim'
 Bundle 'tpope/vim-rails'
+Bundle 'bkad/CamelCaseMotion'
 
 " Look and feel
 Bundle 'tpope/vim-vividchalk'
