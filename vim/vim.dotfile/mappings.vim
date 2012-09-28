@@ -23,6 +23,9 @@ nmap <C-s> :write<CR>
 imap <C-s> <Esc>:write<CR>i<Right>
 cabbrev w echoerr "Nope"
 
+" Reloading vimrc
+map <Leader>so :so ~/.vimrc<CR>
+
 " Fugitive
 nmap <C-g> :Gstatus<CR>
 
