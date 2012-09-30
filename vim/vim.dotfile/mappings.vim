@@ -41,10 +41,6 @@ map <Leader>x <plug>NERDCommenterToggle
 " ctags
 map <Leader>rt :!ctags --extra=+f --exclude=.git --exclude=log -R *<CR><CR>
 
-" snipmate
-ino <silent> ö <c-r>=TriggerSnippet()<cr>
-snor <silent> ö <esc>i<right><c-r>=TriggerSnippet()<cr>
-
 " CamelCaseMotion
 map <silent> w <Plug>CamelCaseMotion_w
 map <silent> b <Plug>CamelCaseMotion_b
