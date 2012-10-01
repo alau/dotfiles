@@ -56,3 +56,7 @@ let g:ackprg="ack -H -i --nocolor --nogroup --column --nojs --noxml --nocss"
 
 " delimitMate
 let delimitMate_expand_space = 1
+
+" Powerline
+set laststatus=2
+set encoding=utf-8
