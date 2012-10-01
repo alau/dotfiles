@@ -1,0 +1,6 @@
+[user]
+  name = Andreas Launila
+[color]
+  ui = true
+[core]
+  editor = vim
