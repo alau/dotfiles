@@ -6,3 +6,5 @@
   default = tracking
 [core]
   editor = vim
+[merge]
+  conflictstyle = diff3
