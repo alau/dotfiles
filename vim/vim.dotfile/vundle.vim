@@ -17,6 +17,7 @@ Bundle 'akitaonrails/snipmate.vim'
 Bundle 'tpope/vim-rails'
 Bundle 'bkad/CamelCaseMotion'
 Bundle 'Raimondi/delimitMate'
+Bundle 'Lokaltog/vim-easymotion'
 
 " Look and feel
 Bundle 'tpope/vim-vividchalk'

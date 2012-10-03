@@ -60,3 +60,7 @@ let delimitMate_expand_space = 1
 " Powerline
 set laststatus=2
 set encoding=utf-8
+
+" easymotion
+let g:EasyMotion_leader_key = '<Leader>'
+let g:EasyMotion_mapping_t = '<Leader><Leader>t'
