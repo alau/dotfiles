@@ -9,3 +9,9 @@ do
   DOTFILE="$HOME/.${BASE%.*}"
   ln -s -v -n $SOURCE $DOTFILE
 done
+
+if [ "$(pidof gnome-session)" ]; then
+  # Running gnome
+  echo "[Gnome] Configuring keyboard"
+  ./keyboard/configure-gnome.sh
+fi
