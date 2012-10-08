@@ -2,6 +2,6 @@
 set nocompatible
 
 source ~/.vim/vundle.vim
-source ~/.vim/functions.vim
+source ~/.vim/definitions.vim
 source ~/.vim/settings.vim
 source ~/.vim/mappings.vim
