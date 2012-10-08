@@ -1,1 +1,4 @@
 set hlfind
+
+nmap <Tab> gt
+nmap <S-Tab> gT
