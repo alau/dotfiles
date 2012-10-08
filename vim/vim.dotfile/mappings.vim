@@ -27,7 +27,7 @@ cabbrev w echoerr "Nope"
 map <Leader>so :so ~/.vimrc<CR>
 
 " Fugitive
-nmap <C-g> :Gstatus<CR>
+nmap <C-g> :Gstatus<CR><C-W>_
 
 " ctrlp
 let g:ctrlp_map = '<leader>t'
