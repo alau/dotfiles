@@ -1,1 +1,0 @@
-filetype-with-snippets.vim
