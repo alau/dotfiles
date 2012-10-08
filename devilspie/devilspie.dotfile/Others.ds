@@ -1,0 +1,10 @@
+; generated_rule Others
+( if 
+( begin 
+( not ( matches ( application_name ) "(Chromium|Firefox|Terminal|Vim|Thunderbird)" ) )
+) 
+( begin 
+( set_workspace 6 )
+( println "match" )
+)
+)
