@@ -48,3 +48,6 @@ map <silent> e <Plug>CamelCaseMotion_e
 sunmap w
 sunmap b
 sunmap e
+
+" delimitMate
+imap <Tab> <C-g>g
