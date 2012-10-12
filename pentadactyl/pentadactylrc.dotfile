@@ -1,4 +1,10 @@
+" Searching
 set hlfind
 
+" Tab navigation
 nmap <Tab> gt
 nmap <S-Tab> gT
+
+" Faster scrolling
+map j 10<C-e>
+map k 10<C-y>
