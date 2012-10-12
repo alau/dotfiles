@@ -64,3 +64,5 @@ set encoding=utf-8
 " easymotion
 let g:EasyMotion_leader_key = '<Leader>'
 let g:EasyMotion_mapping_t = '<Leader><Leader>t'
+let g:EasyMotion_mapping_f = 'f'
+let g:EasyMotion_mapping_F = 'F'
