@@ -48,6 +48,8 @@ map <silent> e <Plug>CamelCaseMotion_e
 sunmap w
 sunmap b
 sunmap e
+" Fix cw, which otherwise eats linebreaks
+nmap cw ce
 
 " delimitMate
 imap <Tab> <C-g>g
