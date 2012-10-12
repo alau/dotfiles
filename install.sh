@@ -7,7 +7,9 @@ for SOURCE in `ls -d1 $PWD/**/*.dotfile`
 do
   BASE=$(basename "$SOURCE")
   DOTFILE="$HOME/.${BASE%.*}"
-  ln -s -v -n $SOURCE $DOTFILE
+  if ! [[ -L $DOTFILE && `readlink -f $DOTFILE` == $SOURCE ]]; then
+    ln -s -v -n $SOURCE $DOTFILE
+  fi
 done
 
 if [ "$(pidof gnome-session)" ]; then
