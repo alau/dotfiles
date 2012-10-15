@@ -52,4 +52,4 @@ sunmap e
 nmap cw ce
 
 " delimitMate
-imap <Tab> <C-g>g
+imap <S-Tab> <C-g>g
