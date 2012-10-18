@@ -8,3 +8,9 @@ nmap <S-Tab> gT
 " Faster scrolling
 map j 10<C-e>
 map k 10<C-y>
+
+" Back/forward navigation
+map h H
+map l L
+map <A-Left> <nop>
+map <A-Right> <nop>
