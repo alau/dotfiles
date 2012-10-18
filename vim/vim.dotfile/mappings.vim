@@ -3,6 +3,16 @@ nnoremap <C-t> :tabnew<CR>
 nnoremap Q :close<CR>
 cabbrev q echoerr "Nope"
 
+" Disable arrow keys
+map <Up> <nop>
+map <Down> <nop>
+map <Left> <nop>
+map <Right> <nop>
+imap <Up> <nop>
+imap <Down> <nop>
+imap <Left> <nop>
+imap <Right> <nop>
+
 " Window navigation
 map <C-h> <C-w>h
 map <C-j> <C-w>j
