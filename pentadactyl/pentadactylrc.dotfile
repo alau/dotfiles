@@ -14,3 +14,8 @@ map h H
 map l L
 map <A-Left> <nop>
 map <A-Right> <nop>
+
+" Hinting
+set hintkeys='AOEUIDHTNSPYFGCRLQJKXBMWVZ'
+set hintmatching='firstletters'
+highlight -a Hint font-size: 23pt !important;
