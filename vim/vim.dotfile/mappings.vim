@@ -25,8 +25,8 @@ nnoremap <silent> <F5> :call StripTrailingWhitespaces()<CR>
 " Tab navigation
 nmap <Tab> gt
 nmap <S-Tab> gT
-map <C-PageUp> :echoerr "Nope"<CR>
-map <C-PageDown> :echoerr "Nope"<CR>
+map <C-PageUp> <nop>
+map <C-PageDown> <nop>
 
 " Saving file
 nmap <C-s> :write<CR>
