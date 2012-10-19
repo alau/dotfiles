@@ -24,3 +24,5 @@ highlight -a Hint font-size: 23pt !important;
 
 " Search engines
 set defsearch='ddg'
+command -nargs=* g open google <args>
+command -nargs=* wp wikipedia <args>
