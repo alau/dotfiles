@@ -19,5 +19,5 @@ map <A-Right> <nop>
 
 " Hinting
 set hintkeys='AOEUIDHTNSPYFGCRLQJKXBMWVZ'
-set hintmatching='firstletters'
+set hintmatching='wordstartswith'
 highlight -a Hint font-size: 23pt !important;
