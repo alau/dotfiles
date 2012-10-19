@@ -1,3 +1,5 @@
+set newtab=help
+
 " Searching
 set hlfind
 
