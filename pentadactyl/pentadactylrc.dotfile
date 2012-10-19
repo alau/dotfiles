@@ -21,3 +21,6 @@ map <A-Right> <nop>
 set hintkeys='AOEUIDHTNSPYFGCRLQJKXBMWVZ'
 set hintmatching='wordstartswith'
 highlight -a Hint font-size: 23pt !important;
+
+" Search engines
+set defsearch='ddg'
