@@ -28,3 +28,7 @@ to have git ignore the changes.
 ## Pentadactyl
 
 Add Duck Duck Go to the search engines.
+
+# Other utilities
+
+* autojump
