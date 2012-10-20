@@ -19,6 +19,7 @@ Bundle 'bkad/CamelCaseMotion'
 Bundle 'Raimondi/delimitMate'
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'godlygeek/tabular'
+Bundle 'vim-scripts/ZoomWin'
 
 " Look and feel
 Bundle 'tpope/vim-vividchalk'
