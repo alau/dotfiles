@@ -17,6 +17,8 @@ The following packages are required for ctags:
 Change default shell
     chsh -s `chsh -l | grep zsh`
 
+Change the font to Inconsolata-dz 14
+
 ## Git
 
 Add the email-address to `gitconfig.dotfile` and then use
