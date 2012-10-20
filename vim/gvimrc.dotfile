@@ -1,4 +1,4 @@
-set guifont=Inconsolata\ 14
+set guifont=Inconsolata-dz\ 14
 
 " Remove menu bar, toolbar and right-hand scroll bar
 set guioptions-=m
