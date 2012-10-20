@@ -9,6 +9,9 @@ set softtabstop=2
 set expandtab
 set autoindent
 
+" Use visual bell
+set visualbell
+
 " Line numbers
 set number
 
