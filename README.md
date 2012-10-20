@@ -30,7 +30,9 @@ to have git ignore the changes.
 
 ## Pentadactyl
 
-Add Duck Duck Go to the search engines.
+* Add Duck Duck Go to the search engines
+* Set ddg as the keyword for Duck Duck Go
+* Set wikipedia as the keyword for Wikipedia
 
 # Other utilities
 
