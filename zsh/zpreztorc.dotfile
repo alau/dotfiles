@@ -1,2 +1,4 @@
 zstyle ':prezto:load' pmodule \
   'git'
+
+# vim:filetype=zsh

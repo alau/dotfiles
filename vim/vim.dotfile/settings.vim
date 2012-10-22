@@ -16,6 +16,9 @@ set number
 set incsearch
 set hlsearch
 
+" Allow modelines
+set modeline
+
 " Highlight trailing whitespaces
 match ErrorMsg /\s\+$/
 autocmd BufWinEnter * match ErrorMsg /\s\+$/
