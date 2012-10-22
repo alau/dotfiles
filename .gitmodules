@@ -2,9 +2,6 @@
   path = vim/vim.dotfile/bundle/vundle
   url = git://github.com/gmarik/vundle.git
   ignore = untracked
-[submodule "zsh/zsh.dotfile/bundle/antigen"]
-	path = zsh/zsh.dotfile/bundle/antigen
-	url = git://github.com/zsh-users/antigen.git
 [submodule "zsh/zsh.dotfile/colors/dircolors-solarized"]
-	path = zsh/zsh.dotfile/colors/dircolors-solarized
-	url = git://github.com/seebi/dircolors-solarized.git
+  path = zsh/zsh.dotfile/colors/dircolors-solarized
+  url = git://github.com/seebi/dircolors-solarized.git
