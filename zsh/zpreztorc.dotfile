@@ -9,6 +9,8 @@ zstyle ':prezto:load' zfunction 'zcalc'
 
 # Modules
 zstyle ':prezto:load' pmodule \
+  'environment' \
+  'terminal' \
   'utility' \
   'completion' \
   'git' \
