@@ -1,2 +1,3 @@
 source ~/.zsh/colors.zsh
 source ~/.zprezto/init.zsh
+source ~/.zsh/aliases.zsh
