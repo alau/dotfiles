@@ -1,8 +1,9 @@
 # Modules
 zstyle ':prezto:load' pmodule \
-  'git' \
   'utility' \
   'completion' \
+  'git' \
+  'ruby' \
   'prompt'
 
 # Theme
