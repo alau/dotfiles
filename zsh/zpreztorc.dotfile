@@ -14,14 +14,19 @@ zstyle ':prezto:load' pmodule \
   'history' \
   'utility' \
   'completion' \
+  'ssh-agent' \
   'git' \
   'ruby' \
   'prompt'
 
-# Theme
+# Options for prompt
 zstyle ':prezto:module:prompt' theme 'steeef'
 
-# Auto set the tab and window titles
+# Options for terminal
 zstyle ':prezto:module:terminal' auto-title 'yes'
+
+# Options for ssh-agent
+zstyle ':prezto:module:ssh-agent' forwarding 'yes'
+zstyle ':prezto:module:ssh-agent' identities `cat ~/.ssh/autoloaded-identities`
 
 # vim:filetype=zsh

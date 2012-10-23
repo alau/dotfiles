@@ -20,6 +20,8 @@ Change default shell
 
 Change the font to Inconsolata-dz 14
 
+Add ssh identities to be autoloaded to ~/.ssh/autoloaded-identities
+
 ## Git
 
 Add the email-address to `gitconfig.dotfile` and then use
