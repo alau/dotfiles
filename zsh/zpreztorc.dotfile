@@ -11,6 +11,7 @@ zstyle ':prezto:load' zfunction 'zcalc'
 zstyle ':prezto:load' pmodule \
   'environment' \
   'terminal' \
+  'history' \
   'utility' \
   'completion' \
   'git' \
