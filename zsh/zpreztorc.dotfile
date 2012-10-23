@@ -4,6 +4,9 @@ zstyle ':prezto:*:*' case-sensitive 'yes'
 # Color output
 zstyle ':prezto:*:*' color 'yes'
 
+# Add zcalc
+zstyle ':prezto:load' zfunction 'zcalc'
+
 # Modules
 zstyle ':prezto:load' pmodule \
   'utility' \
