@@ -1,6 +1,11 @@
+# Modules
 zstyle ':prezto:load' pmodule \
   'git' \
   'utility' \
-  'completion'
+  'completion' \
+  'prompt'
+
+# Theme
+zstyle ':prezto:module:prompt' theme 'steeef'
 
 # vim:filetype=zsh
