@@ -1,4 +1,4 @@
-# Git
+# git
 alias g='git status --short'
 alias gd='git diff --no-ext-diff'
 alias gb='git checkout --track origin -b'
@@ -17,6 +17,9 @@ alias uuu='cd ../../..'
 
 # bundle
 alias be='bundle exec'
+
+# rails
+alias rt='RAILS_ENV=test rake'
 
 # zsh
 alias so='source ~/.zshrc'
