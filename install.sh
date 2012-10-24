@@ -12,6 +12,8 @@ do
   fi
 done
 
+touch ~/.ssh/autoloaded-identities
+
 if [ "$(pidof gnome-session)" ]; then
   # Running gnome
   echo "[Gnome] Configuring keyboard"
