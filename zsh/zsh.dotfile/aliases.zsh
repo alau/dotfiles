@@ -14,3 +14,6 @@ unalias gs
 alias u='cd ..'
 alias uu='cd ../..'
 alias uuu='cd ../../..'
+
+# bundle
+alias be='bundle exec'
