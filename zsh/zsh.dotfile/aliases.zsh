@@ -17,3 +17,6 @@ alias uuu='cd ../../..'
 
 # bundle
 alias be='bundle exec'
+
+# zsh
+alias so='source ~/.zshrc'
