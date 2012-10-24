@@ -6,6 +6,7 @@ alias gaa='git add . && g'
 alias gc='git commit --verbose'
 alias gf='git commit --all --amend'
 alias gff='git pull --ff-only'
+alias grm='git rebase origin/master'
 alias gm='git merge --no-ff'
 alias gl="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 alias git-prune="git branch --merged | grep -v 'master$' | grep -v 'production$' | xargs git branch -d"
