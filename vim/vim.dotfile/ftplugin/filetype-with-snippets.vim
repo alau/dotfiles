@@ -1,3 +1,3 @@
 " snipmate
-ino <buffer> <silent> ö <c-r>=TriggerSnippet()<cr>
-snor <buffer> <silent> ö <esc>i<right><c-r>=TriggerSnippet()<cr>
+ino <buffer> <silent> å <c-r>=TriggerSnippet()<cr>
+snor <buffer> <silent> å <esc>i<right><c-r>=TriggerSnippet()<cr>
