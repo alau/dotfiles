@@ -1,5 +1,7 @@
 # git
 alias g='git status --short'
+git-add-with-status() { git add $* && g }
+alias ga='git-add-with-status'
 alias gd='git diff --no-ext-diff'
 alias gb='git checkout -b'
 alias gaa='git add . && g'
