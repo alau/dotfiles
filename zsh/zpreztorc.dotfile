@@ -12,6 +12,7 @@ zstyle ':prezto:load' pmodule \
   'environment' \
   'terminal' \
   'history' \
+  'directory' \
   'utility' \
   'completion' \
   'ssh-agent' \
