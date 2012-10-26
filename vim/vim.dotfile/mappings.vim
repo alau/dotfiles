@@ -1,7 +1,6 @@
 " Create and close tabs
 nnoremap <C-t> :tabnew<CR>
 nnoremap Q :close<CR>
-cabbrev q echoerr "Nope"
 
 " Disable arrow keys
 map <Up> <nop>
@@ -31,7 +30,6 @@ map <C-PageDown> <nop>
 " Saving file
 nmap <C-s> :write<CR>
 imap <C-s> <Esc>:write<CR>i<Right>
-cabbrev w echoerr "Nope"
 
 " Reloading vimrc
 map <Leader>so :so ~/.vimrc<CR>
