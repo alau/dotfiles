@@ -3,14 +3,21 @@ cd "$(dirname "$0")"
 
 git pull && git submodule init && git submodule update
 
+function _symlink_dotfile() {
+  local dotfile=$1
+  local target=$2
+  if ! [[ -L $dotfile && `readlink -f $dotfile` == $target ]]; then
+    mkdir -p ${dotfile%/*}
+    ln -s -v -n $target $dotfile
+  fi
+}
+
 # Symlink files ending in .dotfile
 for SOURCE in `ls -d1 $PWD/**/*.dotfile`
 do
   BASE=$(basename "$SOURCE")
   DOTFILE="$HOME/.${BASE%.*}"
-  if ! [[ -L $DOTFILE && `readlink -f $DOTFILE` == $SOURCE ]]; then
-    ln -s -v -n $SOURCE $DOTFILE
-  fi
+  _symlink_dotfile $DOTFILE $SOURCE
 done
 
 # Symlink ordinary files in directories ending in .partial-dotfile
@@ -20,10 +27,7 @@ do
   for SOURCE in `find $DIR -type f`
   do
     DOTFILE="$HOME/.${BASE%.*}/${SOURCE##$DIR/}"
-    if ! [[ -L $DOTFILE && `readlink -f $DOTFILE` == $SOURCE ]]; then
-      mkdir -p ${DOTFILE%/*}
-      ln -s -v -n $SOURCE $DOTFILE
-    fi
+    _symlink_dotfile $DOTFILE $SOURCE
   done
 done
 
