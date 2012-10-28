@@ -33,9 +33,12 @@ done
 
 # Create an empty file for zsh ssh-agent
 touch ~/.ssh/autoloaded-identities
-  # Gnome-spcific configuration
+
+# Desktop-specific configuration
 if [ "$(pidof gnome-session)" ]; then
-  # Gnome-specific configuration
   echo "[Gnome] Configuring keyboard"
   ./keyboard/configure-gnome.sh
+elif [ "$(pidof xfce4-session)" ]; then
+  echo "[XFCE] Setting xfconf values"
+  ./xfce/set-xfconf.sh
 fi
