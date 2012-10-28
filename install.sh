@@ -41,4 +41,8 @@ if [ "$(pidof gnome-session)" ]; then
 elif [ "$(pidof xfce4-session)" ]; then
   echo "[XFCE] Setting xfconf values"
   ./xfce/set-xfconf.sh
+
+  echo "[XFCE] Ensuring that default directories exist"
+  mkdir -p ~/downloads
+  mkdir -p ~/public
 fi
