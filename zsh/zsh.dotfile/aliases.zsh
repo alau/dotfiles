@@ -18,10 +18,11 @@ alias master="gco master"
 alias git-prune="git branch --merged | grep -v 'master$' | grep -v 'production$' | xargs git branch -d"
 alias git-prune-remote="git remote prune origin"
 
-# cd
+# Navigation
 alias u='cd ..'
 alias uu='cd ../..'
 alias uuu='cd ../../..'
+alias z='tree'
 
 # bundle
 alias be='bundle exec'
