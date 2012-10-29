@@ -5,4 +5,14 @@ xkb_symbols "switch_case" {
   };
 };
 
+partial alphanumeric_keys
+xkb_symbols "swedish_characters" {
+  key <AC02> {
+    symbols = [ o, O, adiaeresis, Adiaeresis ]
+  };
+  key <AC03> {
+    symbols = [ e, E, odiaeresis, Odiaeresis ]
+  };
+};
+
 # vim:ft=xkb
