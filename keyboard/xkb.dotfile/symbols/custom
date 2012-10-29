@@ -1,0 +1,8 @@
+partial alphanumeric_keys
+xkb_symbols "switch_case" {
+  replace key <AD01> {
+    [ colon, semicolon ]
+  };
+};
+
+# vim:ft=xkb
