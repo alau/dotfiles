@@ -35,6 +35,10 @@ map <A-)> 8gt
 map <A-+> 9gt
 map <A-]> 0gt
 
+" Quickfix navigation
+nmap <C-@> :cprev<CR>
+nmap <C-\> :cnext<CR>
+
 " Saving file
 nmap <C-s> :write<CR>
 imap <C-s> <Esc>:write<CR>i<Right>
