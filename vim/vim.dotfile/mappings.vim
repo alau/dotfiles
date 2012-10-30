@@ -41,7 +41,7 @@ nmap <C-\> :cnext<CR>
 
 " Saving file
 nmap <C-s> :write<CR>
-imap <C-s> <Esc>:write<CR>i<Right>
+imap <C-s> <Esc>:write<CR>a
 
 " Reloading vimrc
 map <Leader>so :so ~/.vimrc<CR>
