@@ -35,10 +35,7 @@ done
 touch ~/.ssh/autoloaded-identities
 
 # Desktop-specific configuration
-if [ "$(pidof gnome-session)" ]; then
-  echo "[Gnome] Configuring keyboard"
-  ./keyboard/configure-gnome.sh
-elif [ "$(pidof xfce4-session)" ]; then
+if [ "$(pidof xfce4-session)" ]; then
   echo "[XFCE] Setting xfconf values"
   ./xfce/set-xfconf.sh
 
