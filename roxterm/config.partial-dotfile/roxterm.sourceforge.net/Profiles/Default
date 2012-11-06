@@ -11,3 +11,5 @@ filer_spawn_type=2
 scrollback_lines=10000
 disable_menu_shortcuts=1
 disable_menu_access=1
+tab_close_btn=0
+always_show_tabs=0
