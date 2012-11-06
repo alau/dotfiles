@@ -23,6 +23,7 @@ alias u='cd ..'
 alias uu='cd ../..'
 alias uuu='cd ../../..'
 alias z='tree'
+alias l='ls'
 
 # bundle
 alias be='bundle exec'
