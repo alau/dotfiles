@@ -20,7 +20,7 @@ Change default shell
 
 Change the font to Inconsolata-dz 14
 
-Add ssh identities to be autoloaded to ~/.ssh/autoloaded-identities
+Add ssh identities to be autoloaded to `~/.ssh/autoloaded-identities`
 
 ## Git
 
