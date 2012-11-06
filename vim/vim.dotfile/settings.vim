@@ -40,6 +40,7 @@ let mapleader=","
 let maplocalleader=","
 
 " Colorscheme
+set t_Co=256
 colorscheme vividchalk
 
 " ctrlp
