@@ -16,7 +16,7 @@ The following packages are required for ctags:
 
 Change default shell
 
-    chsh -s `chsh -l | grep zsh`
+    chsh -s /bin/zsh
 
 Change the font to Inconsolata-dz 14
 
