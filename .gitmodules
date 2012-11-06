@@ -1,10 +1,10 @@
 [submodule "vim/vim.dotfile/bundle/vundle"]
   path = vim/vim.dotfile/bundle/vundle
-  url = git://github.com/gmarik/vundle.git
+  url = https://github.com/gmarik/vundle.git
   ignore = untracked
 [submodule "zsh/zsh.dotfile/colors/dircolors-solarized"]
   path = zsh/zsh.dotfile/colors/dircolors-solarized
-  url = git://github.com/seebi/dircolors-solarized.git
+  url = https://github.com/seebi/dircolors-solarized.git
 [submodule "zsh/zprezto.dotfile"]
   path = zsh/zprezto.dotfile
-  url = git://github.com/sorin-ionescu/prezto.git
+  url = https://github.com/sorin-ionescu/prezto.git
