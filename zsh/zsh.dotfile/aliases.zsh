@@ -35,4 +35,4 @@ alias cuc='CUCUMBER_FORMAT=pretty be cucumber --drb'
 alias so='source ~/.zshrc'
 
 # misc
-alias updot='~/dotfiles/install.sh'
+alias dotup='~/dotfiles/install.sh'
