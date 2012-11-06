@@ -20,15 +20,12 @@ do
   _symlink_dotfile $DOTFILE $SOURCE
 done
 
-# Symlink ordinary files in directories ending in .partial-dotfile
-for DIR in `ls -d1 $PWD/**/*.partial-dotfile`
+# Symlink files ending in .config-dotfile in the .config directory
+for SOURCE in `ls -d1 $PWD/**/*.config-dotfile`
 do
-  BASE=$(basename "$DIR")
-  for SOURCE in `find $DIR -type f`
-  do
-    DOTFILE="$HOME/.${BASE%.*}/${SOURCE##$DIR/}"
-    _symlink_dotfile $DOTFILE $SOURCE
-  done
+  BASE=$(basename "$SOURCE")
+  DOTFILE="$HOME/.config/${BASE%.*}"
+  _symlink_dotfile $DOTFILE $SOURCE
 done
 
 # Create an empty file for zsh ssh-agent
