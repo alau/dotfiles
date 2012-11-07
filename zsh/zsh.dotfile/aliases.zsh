@@ -37,3 +37,4 @@ alias so='source ~/.zshrc'
 
 # misc
 alias dotup='~/dotfiles/install.sh'
+alias follow='less +F'
