@@ -26,6 +26,16 @@ nmap <Tab> gt
 nmap <S-Tab> gT
 map <C-PageUp> <nop>
 map <C-PageDown> <nop>
+map <A-&> 1gt
+map <A-[> 2gt
+map <A-{> 3gt
+map <A-}> 4gt
+map <A-(> 5gt
+map <A-=> 6gt
+map <A-*> 7gt
+map <A-)> 8gt
+map <A-+> 9gt
+map <A-]> 0gt
 
 " Saving file
 nmap <C-s> :write<CR>
