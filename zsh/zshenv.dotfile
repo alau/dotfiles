@@ -1,2 +1,7 @@
+# Editors
+export EDITOR='vim'
+export VISUAL='vim'
+export PAGER='less'
+
 # grep
 export GREP_OPTIONS='--color=auto --line-number --with-filename'
