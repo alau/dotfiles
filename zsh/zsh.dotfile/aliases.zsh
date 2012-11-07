@@ -35,6 +35,9 @@ alias cuc='CUCUMBER_FORMAT=pretty be cucumber --drb'
 # zsh
 alias so='source ~/.zshrc'
 
+# keyboard
+alias qwerty='setxkbmap se'
+
 # misc
 alias dotup='~/dotfiles/install.sh'
 alias follow='less +F'
