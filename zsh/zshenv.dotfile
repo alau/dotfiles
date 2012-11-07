@@ -5,3 +5,20 @@ export PAGER='less'
 
 # grep
 export GREP_OPTIONS='--color=auto --line-number --with-filename'
+
+# Set path and manpath
+typeset -gU path manpath
+
+path=(
+  /usr/local/{bin,sbin}
+  /usr/{bin,sbin}
+  /{bin,sbin}
+  $path
+)
+
+unset path_file
+manpath=(
+  /usr/local/share/man
+  /usr/share/man
+  $manpath
+)
