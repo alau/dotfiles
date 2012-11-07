@@ -1,6 +1,6 @@
 function prompt_custom_setup {
   PROMPT="
-%m
+%{%K{235}%}%m%E%{$reset_color%}
 $ "
   RPROMPT="[%*]"
 }
