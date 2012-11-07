@@ -1,6 +1,6 @@
 function prompt_custom_setup {
   PROMPT="
-%{%K{235}%}%m%E%{$reset_color%}
+%{%K{235}%F{135}%}%n%{%f%} at %{%F{166}%}%m%{%f%} in %{%F{118}%}%~%E%{$reset_color%}
 $ "
   RPROMPT="[%*]"
 }
