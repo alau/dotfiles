@@ -1,2 +1,2 @@
 # grep
-export GREP_OPTIONS='--color=auto'
+export GREP_OPTIONS='--color=auto --line-number --with-filename'
