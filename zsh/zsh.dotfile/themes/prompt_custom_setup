@@ -1,0 +1,8 @@
+function prompt_custom_setup {
+  PROMPT='%m%# '
+  RPROMPT=''
+}
+
+prompt_custom_setup "$@"
+
+# vim:filetype=zsh

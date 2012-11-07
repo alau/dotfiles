@@ -21,8 +21,9 @@ zstyle ':prezto:load' pmodule \
   'ruby' \
   'prompt'
 
-# Options for prompt
-zstyle ':prezto:module:prompt' theme 'steeef'
+# Set prompt theme
+fpath=(~/.zsh/themes/ $fpath)
+zstyle ':prezto:module:prompt' theme 'custom'
 
 # Options for terminal
 zstyle ':prezto:module:terminal' auto-title 'yes'
