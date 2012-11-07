@@ -3,6 +3,7 @@ zstyle ':prezto:*:*' case-sensitive 'yes'
 
 # Color output
 zstyle ':prezto:*:*' color 'yes'
+zstyle ':prezto:environment:grep' color 'no' # We set it in env
 
 # Add zcalc
 zstyle ':prezto:load' zfunction 'zcalc'
