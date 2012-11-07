@@ -6,6 +6,9 @@ export PAGER='less'
 # grep
 export GREP_OPTIONS='--color=auto --line-number --with-filename'
 
+# less
+export LESS='--hilite-search --hilite-unread --ignore-case --no-init --LONG-PROMPT --RAW-CONTROL-CHARS'
+
 # Set path and manpath
 typeset -gU path manpath
 
@@ -16,7 +19,6 @@ path=(
   $path
 )
 
-unset path_file
 manpath=(
   /usr/local/share/man
   /usr/share/man
