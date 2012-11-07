@@ -1,6 +1,6 @@
 function prompt_custom_setup {
   PROMPT='%m%# '
-  RPROMPT=''
+  RPROMPT='[%*]'
 }
 
 prompt_custom_setup "$@"
