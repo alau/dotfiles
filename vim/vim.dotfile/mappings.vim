@@ -35,6 +35,9 @@ map <A-)> 8gt
 map <A-+> 9gt
 map <A-]> 0gt
 
+" Tags
+nmap - <C-]>
+
 " Quickfix navigation
 nmap <C-@> :cprev<CR>
 nmap <C-\> :cnext<CR>
