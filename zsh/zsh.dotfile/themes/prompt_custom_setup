@@ -15,8 +15,8 @@ function prompt_custom_setup {
 
   PROMPT='
 ${editor_info[keymap]}${_prompt_custom_user}in %{%F{118}%}%~%E%{%f%k%}
-$ '
-  RPROMPT='[%*]'
+%{%F{81}%}$%{%f%} '
+  RPROMPT='%{%F{81}%}[%*]%{%f%}'
 }
 
 prompt_custom_setup "$@"
