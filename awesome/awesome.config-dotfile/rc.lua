@@ -360,3 +360,16 @@ end)
 client.add_signal("focus", function(c) c.border_color = beautiful.border_focus end)
 client.add_signal("unfocus", function(c) c.border_color = beautiful.border_normal end)
 -- }}}
+
+-- {{{ Autostarted applications
+-- Applications to autostart
+function run_once(command)
+  firstspace = command:find(" ")
+  if firstspace then
+    application = command:sub(0, firstspace-1)
+  end
+  awful.util.spawn_with_shell("pgrep -u $USER -x " .. application .. " > /dev/null || (" .. command .. ")")
+end
+
+run_once("xscreensaver -no-splash")
+-- }}}
