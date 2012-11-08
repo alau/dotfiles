@@ -1,6 +1,3 @@
-# Load color helpers
-autoload -U colors && colors
-
 # Better ls-colors
 eval `dircolors ~/.zsh/colors/dircolors-solarized/dircolors.ansi-dark`
 
