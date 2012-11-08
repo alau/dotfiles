@@ -15,7 +15,7 @@ function prompt_custom_setup {
 
   PROMPT='
 ${editor_info[keymap]}${_prompt_custom_user}in %{%F{118}%}%~%E%{%f%k%}
-%{%F{81}%}$%{%f%} '
+%(?.%{%F{81}%}.%{%F{red}%})$%{%f%} '
   RPROMPT='%{%F{81}%}[%*]%{%f%}'
   SPROMPT='zsh: correct %{%F{red}%}%R%{%f%} to %{%F{green}%}%r%{%f%} [nyae]? '
 }
