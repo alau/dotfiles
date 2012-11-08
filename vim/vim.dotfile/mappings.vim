@@ -22,8 +22,6 @@ map <C-l> <C-w>l
 nnoremap <silent> <F5> :call StripTrailingWhitespaces()<CR>
 
 " Tab navigation
-nmap <Tab> gt
-nmap <S-Tab> gT
 map <C-PageUp> <nop>
 map <C-PageDown> <nop>
 map <A-&> 1gt
