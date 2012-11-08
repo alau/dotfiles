@@ -15,4 +15,14 @@ xkb_symbols "swedish_characters" {
   };
 };
 
+partial alphanumeric_keys
+xkb_symbols "relocate_equals" {
+  key <AE04> {
+    symbols = [ equal, 3 ]
+  };
+  key <AE06> {
+    symbols = [ braceright, 9 ]
+  };
+};
+
 # vim:ft=xkb

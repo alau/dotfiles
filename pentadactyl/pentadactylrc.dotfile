@@ -9,9 +9,9 @@ nmap <S-Tab> gT
 map <A-&> 1gt
 map <A-[> 2gt
 map <A-{> 3gt
-map <A-}> 4gt
+map <A-=> 4gt
 map <A-(> 5gt
-map <A-=> 6gt
+map <A-}> 6gt
 map <A-*> 7gt
 map <A-)> 8gt
 map <A-+> 9gt
