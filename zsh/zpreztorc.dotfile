@@ -20,6 +20,7 @@ zstyle ':prezto:load' pmodule \
   'ssh-agent' \
   'git' \
   'ruby' \
+  'node' \
   'prompt'
 
 # Set prompt theme
