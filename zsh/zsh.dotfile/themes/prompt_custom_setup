@@ -1,8 +1,13 @@
 function prompt_custom_setup {
-  PROMPT="
-%{%K{235}%F{135}%}%n%{%f%} at %{%F{166}%}%m%{%f%} in %{%F{118}%}%~%E%{%f%k%}
-$ "
-  RPROMPT="[%*]"
+  prompt_opts=(percent subst)
+
+  zstyle ':prezto:module:editor:info:keymap:primary' format '%{%K{235}%}'
+  zstyle ':prezto:module:editor:info:keymap:alternate' format '%{%K{237}%}'
+
+  PROMPT='
+${editor_info[keymap]}%{%F{135}%}%n%{%f%} at %{%F{166}%}%m%{%f%} in %{%F{118}%}%~%E%{%f%k%}
+$ '
+  RPROMPT='[%*]'
 }
 
 prompt_custom_setup "$@"
