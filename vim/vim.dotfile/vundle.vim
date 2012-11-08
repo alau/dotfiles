@@ -31,5 +31,6 @@ Bundle 'kchmck/vim-coffee-script'
 Bundle 'vim-ruby/vim-ruby'
 Bundle 'puppetlabs/puppet-syntax-vim'
 Bundle 'statianzo/vim-jade'
+Bundle 'qmx/vim-json'
 
 filetype plugin indent on
