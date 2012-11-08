@@ -38,3 +38,5 @@ command -nargs=* g open google <args>
 command -nargs=* wp open wikipedia <args>
 command -nargs=* gh open github <args>
 set complete='l'
+
+" vim:filetype=vim
