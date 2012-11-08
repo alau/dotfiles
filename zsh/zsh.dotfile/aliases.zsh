@@ -45,3 +45,4 @@ alias rm='rm'
 # misc
 alias dotup='~/dotfiles/install.sh'
 alias follow='less +F'
+alias p='ps aux'
