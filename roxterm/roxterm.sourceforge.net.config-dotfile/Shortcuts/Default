@@ -1,7 +1,7 @@
 
 [roxterm shortcuts scheme]
 File/New Window=<Shift><Control>n
-File/New Tab=<Shift><Control>t
+File/New Tab=<Primary>t
 File/Close Window=<Shift><Control>q
 File/Close Tab=<Shift><Control>w
 Tabs/Previous Tab=<Control>Page_Up
