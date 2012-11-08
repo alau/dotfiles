@@ -1,11 +1,20 @@
+function prompt_custom_precmd {
+  local user=`whoami`
+  if [[ $user != "andreas" || -n $SSH_CLIENT ]]; then
+    _prompt_custom_user="%{%F{135}%}%n%{%f%} at %{%F{166}%}%m%{%f%} "
+  fi
+}
+
 function prompt_custom_setup {
   prompt_opts=(percent subst)
+
+  add-zsh-hook precmd prompt_custom_precmd
 
   zstyle ':prezto:module:editor:info:keymap:primary' format '%{%K{235}%}'
   zstyle ':prezto:module:editor:info:keymap:alternate' format '%{%K{237}%}'
 
   PROMPT='
-${editor_info[keymap]}%{%F{135}%}%n%{%f%} at %{%F{166}%}%m%{%f%} in %{%F{118}%}%~%E%{%f%k%}
+${editor_info[keymap]}${_prompt_custom_user}in %{%F{118}%}%~%E%{%f%k%}
 $ '
   RPROMPT='[%*]'
 }
