@@ -14,3 +14,4 @@ disable_menu_access=1
 tab_close_btn=0
 always_show_tabs=0
 sel_by_word=-A-Za-z0-9,./?%&#_~
+scroll_on_output=1
