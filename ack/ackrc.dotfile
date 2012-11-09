@@ -3,5 +3,6 @@
 --type-set=js=.js,.coffee
 --type-set=view=.haml,.jbuilder,.builder
 --ignore-dir=tmp
+--ignore-dir=node_modules
 --with-filename
 --pager=$PAGER
