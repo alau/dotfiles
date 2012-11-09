@@ -35,7 +35,3 @@ to have git ignore the changes.
 * Add Duck Duck Go and GitHub to the search engines
 * Set ddg as the keyword for Duck Duck Go
 * Set wikipedia as the keyword for Wikipedia
-
-# Other utilities
-
-* autojump
