@@ -18,9 +18,11 @@ Change default shell
 
     chsh -s /bin/zsh
 
-Change the font to Inconsolata-dz 14
+Add ssh identities to be autoloaded to `~/.ssh/autoloaded-identities`.
 
-Add ssh identities to be autoloaded to `~/.ssh/autoloaded-identities`
+## Awesome
+
+Install `xscreensaver`.
 
 ## Git
 
