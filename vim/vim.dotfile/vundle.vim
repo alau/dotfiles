@@ -27,7 +27,7 @@ Bundle 'Lokaltog/vim-powerline'
 
 " Language support
 Bundle 'itspriddle/vim-jquery'
-Bundle 'kchmck/vim-coffee-script'
+Bundle 'AndrewRadev/vim-coffee-script'
 Bundle 'vim-ruby/vim-ruby'
 Bundle 'puppetlabs/puppet-syntax-vim'
 Bundle 'statianzo/vim-jade'
