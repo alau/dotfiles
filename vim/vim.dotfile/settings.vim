@@ -44,7 +44,7 @@ set t_Co=256
 colorscheme vividchalk
 
 " ctrlp
-set wildignore=.git,vendor
+set wildignore=.git,vendor,node_modules
 let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files']
 let g:ctrlp_match_window_bottom = 0
 
