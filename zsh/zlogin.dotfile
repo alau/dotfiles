@@ -11,3 +11,6 @@
 if type "xkbcomp" > /dev/null; then
   xkbcomp -I$HOME/.xkb $HOME/.xkb/keymap/custom "${DISPLAY%%.*}"
 fi
+if type "numlockx" > /dev/null; then
+  numlockx on
+fi

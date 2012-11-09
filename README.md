@@ -14,11 +14,9 @@ The following packages are required for ctags:
 
 ## Zsh
 
-Change default shell
-
-    chsh -s /bin/zsh
-
-Add ssh identities to be autoloaded to `~/.ssh/autoloaded-identities`.
+* Change default shell `chsh -s /bin/zsh`
+* Add ssh identities to be autoloaded to `~/.ssh/autoloaded-identities`
+* Install `numlockx`
 
 ## Awesome
 
