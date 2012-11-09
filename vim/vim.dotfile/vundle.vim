@@ -20,6 +20,7 @@ Bundle 'Raimondi/delimitMate'
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'godlygeek/tabular'
 Bundle 'vim-scripts/ZoomWin'
+Bundle 'DataWraith/auto_mkdir'
 
 " Look and feel
 Bundle 'tpope/vim-vividchalk'
