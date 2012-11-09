@@ -56,7 +56,7 @@ let g:syntastic_check_on_open=1
 let g:syntastic_quiet_warnings=1
 
 " Ack
-let g:ackprg="ack -H -i --nocolor --nogroup --column --nojs --noxml --nocss"
+let g:ackprg="ack -H -i --nocolor --nogroup --column --noxml --nocss"
 
 " delimitMate
 let delimitMate_expand_space = 1
