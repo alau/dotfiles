@@ -23,7 +23,7 @@ alias git-prune-remote="git remote prune origin"
 alias u='cd ..'
 alias uu='cd ../..'
 alias uuu='cd ../../..'
-alias z='tree'
+alias t='tree'
 alias l='ls'
 
 # bundle
