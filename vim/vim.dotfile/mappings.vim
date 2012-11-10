@@ -46,6 +46,9 @@ nmap <C-\> :cnext<CR>
 nmap <C-s> :write<CR>
 imap <C-s> <Esc>:write<CR>a
 
+" Editing
+imap <C-l> <Esc>o
+
 " Reloading vimrc
 map <Leader>so :so ~/.vimrc<CR>
 
