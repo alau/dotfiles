@@ -25,11 +25,13 @@ The following packages are required for ctags:
 
 ## Git
 
-Add the email-address to `gitconfig.dotfile` and then use
+Add the email info in `~/.zshrc.local`:
 
-    git update-index --assume-unchanged git/gitconfig.dotfile
-
-to have git ignore the changes.
+```zsh
+GIT_AUTHOR_EMAIL="andreas@example.com"
+GIT_COMMITTER_EMAIL="$GIT_AUTHOR_EMAIL"
+git config --global user.email "$GIT_AUTHOR_EMAIL"
+```
 
 ## Pentadactyl
 

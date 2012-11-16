@@ -2,3 +2,8 @@ source ~/.zsh/colors.zsh
 source ~/.zprezto/init.zsh
 source ~/.zsh/aliases.zsh
 . ~/.zsh/z/z.sh
+
+# local stuff
+if [ -e ~/.zshrc.local ]; then
+  source ~/.zshrc.local
+fi
