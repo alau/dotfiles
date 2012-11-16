@@ -315,6 +315,7 @@ awful.rules.rules = {
                      keys = clientkeys,
                      maximized_vertical = false,
                      maximized_horizontal = false,
+                     size_hints_honor = false,
                      buttons = clientbuttons } },
     { rule = { class = "MPlayer" },
       properties = { floating = true } },
