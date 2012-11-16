@@ -52,7 +52,7 @@ modkey = "Mod4"
 layouts =
 {
     awful.layout.suit.tile.right,
-    awful.layout.suit.fair.horizontal,
+    awful.layout.suit.tile.bottom,
     awful.layout.suit.max,
 }
 -- }}}
