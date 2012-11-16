@@ -20,7 +20,8 @@ The following packages are required for ctags:
 
 ## Awesome
 
-Install `xscreensaver`.
+* Install `xscreensaver`
+* Use `lxappearance` to change gtk theme
 
 ## Git
 
