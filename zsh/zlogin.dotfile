@@ -8,7 +8,7 @@
 } &!
 
 # Keyboard
-if (( $+commands[xkbcomp] )); then
+if (( $+DISPLAY && $+commands[xkbcomp] )); then
   xkbcomp -I$HOME/.xkb $HOME/.xkb/keymap/custom "${DISPLAY%%.*}" -w 0
 fi
 if (( $+commands[numlockx] )); then
