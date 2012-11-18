@@ -9,7 +9,7 @@
 
 # Keyboard
 if type "xkbcomp" > /dev/null; then
-  xkbcomp -I$HOME/.xkb $HOME/.xkb/keymap/custom "${DISPLAY%%.*}"
+  xkbcomp -I$HOME/.xkb $HOME/.xkb/keymap/custom "${DISPLAY%%.*}" -w 0
 fi
 if type "numlockx" > /dev/null; then
   numlockx on
