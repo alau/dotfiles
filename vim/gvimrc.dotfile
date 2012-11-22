@@ -5,3 +5,5 @@ set guioptions-=m
 set guioptions-=T
 set guioptions-=r
 
+" Don't use graphical tabs
+set guioptions-=e
