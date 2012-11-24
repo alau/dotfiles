@@ -8,7 +8,23 @@ require("beautiful")
 require("naughty")
 
 function load_part(name)
-  dofile(awful.util.getdir("config") .. "/" .. name .. ".lua")
+  local success
+  local result
+
+  success, result = pcall(
+    function(path) return dofile(path) end,
+    awful.util.getdir("config") .. "/" .. name .. ".lua"
+  )
+  if not success then
+    naughty.notify({
+      title = "Error while loading an configuration file",
+      text = "When loading `" .. name ..  "`, got the following error:\n" .. result,
+      preset = naughty.config.presets.critical
+    })
+    return print("Error loading configuration file '" .. name .. "': " .. result)
+  end
+
+  return result
 end
 
 load_part("errors")
