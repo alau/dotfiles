@@ -12,10 +12,7 @@ function load_part(name)
 end
 
 load_part("errors")
-
--- {{{ Variable definitions
--- Themes define colours, icons, and wallpapers
-beautiful.init("/usr/share/awesome/themes/zenburn/theme.lua")
+load_part("appearance")
 
 -- This is used later as the default terminal and editor to run.
 terminal = "roxterm"
