@@ -39,7 +39,7 @@ local globalkeys = awful.util.table.join(
   -- Standard program
   awful.key({ modkey,           }, "Return",
     function()
-      awful.util.spawn(terminal)
+      awful.util.spawn(config.terminal)
     end
   ),
   awful.key({ modkey, "Shift"   }, "r", awesome.restart),

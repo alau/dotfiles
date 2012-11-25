@@ -35,9 +35,9 @@ widgets = {}
 load_part("appearance")
 
 -- This is used later as the default terminal and editor to run.
-terminal = "roxterm"
+config.terminal = "roxterm"
 editor = os.getenv("EDITOR") or "vim"
-editor_cmd = terminal .. " -e " .. editor
+editor_cmd = config.terminal .. " -e " .. editor
 
 -- Default modkey.
 -- Usually, Mod4 is the key with a logo between Control and Alt.
