@@ -1,9 +1,4 @@
 set guifont=Inconsolata-dz\ for\ Powerline\ 14
 
-" Remove menu bar, toolbar and right-hand scroll bar
-set guioptions-=m
-set guioptions-=T
-set guioptions-=r
-
-" Don't use graphical tabs
-set guioptions-=e
+" Remove menu bar, toolbar, scrollbars, graphical tabs etc
+set guioptions=ai
