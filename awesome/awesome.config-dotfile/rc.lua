@@ -8,13 +8,19 @@ require("beautiful")
 require("naughty")
 
 function load_part(name)
+  local_override = "/home/andreas/.awesome-" .. name .. ".local.lua"
+  if awful.util.file_readable(local_override) then
+    load_file(local_override)
+  else
+    load_file(awful.util.getdir("config") .. "/" .. name .. ".lua")
+  end
+end
+
+function load_file(path)
   local success
   local result
 
-  success, result = pcall(
-    function(path) return dofile(path) end,
-    awful.util.getdir("config") .. "/" .. name .. ".lua"
-  )
+  success, result = pcall(function() return dofile(path) end)
   if not success then
     naughty.notify({
       title = "Error while loading an configuration file",
