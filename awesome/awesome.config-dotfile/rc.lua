@@ -28,6 +28,9 @@ function load_part(name)
 end
 
 load_part("errors")
+
+config = {}
+
 load_part("appearance")
 
 -- This is used later as the default terminal and editor to run.

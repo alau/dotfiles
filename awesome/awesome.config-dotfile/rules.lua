@@ -6,11 +6,11 @@ awful.rules.rules = {
       border_width = beautiful.border_width,
       border_color = beautiful.border_normal,
       focus = true,
-      keys = clientkeys,
+      keys = config.clientkeys,
       maximized_vertical = false,
       maximized_horizontal = false,
       size_hints_honor = false,
-      buttons = clientbuttons
+      buttons = config.clientbuttons
     }
   },
   {
