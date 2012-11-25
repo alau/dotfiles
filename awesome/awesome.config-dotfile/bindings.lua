@@ -56,12 +56,12 @@ local globalkeys = awful.util.table.join(
   ),
   awful.key({ modkey,           }, "space",
     function()
-      awful.layout.inc(layouts, 1)
+      awful.layout.inc(config.layouts, 1)
     end
   ),
   awful.key({ modkey, "Shift"   }, "space",
     function()
-      awful.layout.inc(layouts, -1)
+      awful.layout.inc(config.layouts, -1)
     end
   ),
   awful.key({ modkey, "Control" }, "n", awful.client.restore),
@@ -91,7 +91,7 @@ local globalkeys = awful.util.table.join(
 -- Compute the maximum number of digit we need, limited to 9
 local keynumber = 0
 for s = 1, screen.count() do
-  keynumber = math.min(9, math.max(#tags[s], keynumber));
+  keynumber = math.min(9, math.max(#config.tags[s], keynumber));
 end
 
 -- Bind all key numbers to tags.
@@ -102,30 +102,30 @@ for i = 1, keynumber do
     awful.key({ modkey }, "#" .. i + 9,
       function ()
         local screen = mouse.screen
-        if tags[screen][i] then
-          awful.tag.viewonly(tags[screen][i])
+        if config.tags[screen][i] then
+          awful.tag.viewonly(config.tags[screen][i])
         end
       end
     ),
     awful.key({ modkey, "Control" }, "#" .. i + 9,
       function ()
         local screen = mouse.screen
-        if tags[screen][i] then
-          awful.tag.viewtoggle(tags[screen][i])
+        if config.tags[screen][i] then
+          awful.tag.viewtoggle(config.tags[screen][i])
         end
       end
     ),
     awful.key({ modkey, "Shift" }, "#" .. i + 9,
       function ()
-        if client.focus and tags[client.focus.screen][i] then
-          awful.client.movetotag(tags[client.focus.screen][i])
+        if client.focus and config.tags[client.focus.screen][i] then
+          awful.client.movetotag(config.tags[client.focus.screen][i])
         end
       end
     ),
     awful.key({ modkey, "Control", "Shift" }, "#" .. i + 9,
       function ()
-        if client.focus and tags[client.focus.screen][i] then
-          awful.client.toggletag(tags[client.focus.screen][i])
+        if client.focus and config.tags[client.focus.screen][i] then
+          awful.client.toggletag(config.tags[client.focus.screen][i])
         end
       end
     )

@@ -36,23 +36,21 @@ load_part("appearance")
 config.terminal = "roxterm"
 modkey = "Mod4"
 
--- Table of layouts to cover with awful.layout.inc, order matters.
-layouts =
-{
-    awful.layout.suit.tile.right,
-    awful.layout.suit.tile.bottom,
-    awful.layout.suit.max,
+config.layouts = {
+  awful.layout.suit.tile.right,
+  awful.layout.suit.tile.bottom,
+  awful.layout.suit.max,
 }
--- }}}
 
--- {{{ Tags
--- Define a tag table which hold all screen tags.
-tags = {}
-for s = 1, screen.count() do
-    -- Each screen has its own tag table.
-    tags[s] = awful.tag({ 1, 2, 3, 4, 5, 6, 7, 8, 9 }, s, layouts[1])
+-- Define a tag table which holds screen tags for each screen.
+config.tags = {}
+for screen = 1, screen.count() do
+  config.tags[screen] = awful.tag(
+    { 1, 2, 3, 4, 5, 6, 7, 8, 9 },
+    screen,
+    config.layouts[1]
+  )
 end
--- }}}
 
 load_part("widgets")
 load_part("bindings")
