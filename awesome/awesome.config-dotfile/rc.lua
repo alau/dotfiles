@@ -29,19 +29,19 @@ end
 
 load_part("errors")
 
+-- Configuration globals
 config = {}
 widgets = {}
-
-load_part("appearance")
-config.terminal = "roxterm"
 modkey = "Mod4"
-
+config.terminal = "roxterm"
 config.layouts = {
   awful.layout.suit.tile.right,
   awful.layout.suit.tile.bottom,
   awful.layout.suit.max,
 }
 
+-- Load the parts
+load_part("appearance")
 load_part("tags")
 load_part("widgets")
 load_part("bindings")
