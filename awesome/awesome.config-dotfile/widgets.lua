@@ -1,14 +1,14 @@
 -- Create a textclock widget
-mytextclock = awful.widget.textclock({ align = "right" })
+local mytextclock = awful.widget.textclock({ align = "right" })
 
 -- Create a systray
-mysystray = widget({ type = "systray" })
+local mysystray = widget({ type = "systray" })
 
 -- Create a wibox for each screen and add it
-mywibox = {}
-mypromptbox = {}
-mylayoutbox = {}
-mytaglist = {}
+local mywibox = {}
+local mypromptbox = {}
+local mylayoutbox = {}
+local mytaglist = {}
 mytaglist.buttons = awful.util.table.join(
   awful.button({ }, 1, awful.tag.viewonly),
   awful.button({ modkey }, 1, awful.client.movetotag),
@@ -17,7 +17,7 @@ mytaglist.buttons = awful.util.table.join(
   awful.button({ }, 4, awful.tag.viewnext),
   awful.button({ }, 5, awful.tag.viewprev)
 )
-mytasklist = {}
+local mytasklist = {}
 mytasklist.buttons = awful.util.table.join(
   awful.button({ }, 1,
     function (c)
@@ -94,3 +94,5 @@ for s = 1, screen.count() do
     layout = awful.widget.layout.horizontal.rightleft
   }
 end
+
+widgets.mypromptbox = mypromptbox

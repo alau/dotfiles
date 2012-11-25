@@ -30,6 +30,7 @@ end
 load_part("errors")
 
 config = {}
+widgets = {}
 
 load_part("appearance")
 
