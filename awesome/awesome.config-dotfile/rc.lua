@@ -42,16 +42,7 @@ config.layouts = {
   awful.layout.suit.max,
 }
 
--- Define a tag table which holds screen tags for each screen.
-config.tags = {}
-for screen = 1, screen.count() do
-  config.tags[screen] = awful.tag(
-    { 1, 2, 3, 4, 5, 6, 7, 8, 9 },
-    screen,
-    config.layouts[1]
-  )
-end
-
+load_part("tags")
 load_part("widgets")
 load_part("bindings")
 load_part("rules")
