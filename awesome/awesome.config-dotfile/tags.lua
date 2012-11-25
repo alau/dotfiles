@@ -2,7 +2,7 @@
 local tags = {}
 for screen = 1, screen.count() do
   tags[screen] = awful.tag(
-    { 1, 2, 3, 4, 5, 6, 7, 8, 9 },
+    { 1, 2, 3, 4, 5, 6 },
     screen,
     config.layouts[1]
   )
