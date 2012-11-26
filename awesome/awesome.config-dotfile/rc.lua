@@ -6,6 +6,8 @@ require("awful.rules")
 require("beautiful")
 -- Notification library
 require("naughty")
+-- Custom layout
+require("rows_layout")
 
 function load_part(name)
   local_override = "/home/andreas/.awesome-" .. name .. ".local.lua"
