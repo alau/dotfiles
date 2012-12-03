@@ -1,6 +1,6 @@
 function prompt_custom_precmd {
   local user=`whoami`
-  if [[ $user != "andreas" || -n $SSH_CLIENT ]]; then
+  if [[ ($user != "andreas" && $user != "alau") || -n $SSH_CLIENT ]]; then
     _prompt_custom_user="%{%F{135}%}%n%{%f%} at %{%F{166}%}%m%{%f%} "
   fi
 }
