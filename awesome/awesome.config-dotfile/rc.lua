@@ -10,7 +10,7 @@ require("naughty")
 require("rows_layout")
 
 function load_part(name)
-  local_override = "/home/andreas/.awesome-" .. name .. ".local.lua"
+  local_override = os.getenv("HOME") .. "/.awesome-" .. name .. ".local.lua"
   if awful.util.file_readable(local_override) then
     load_file(local_override)
   else
