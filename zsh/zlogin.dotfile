@@ -14,3 +14,8 @@ fi
 if (( $+commands[numlockx] )); then
   numlockx on
 fi
+
+# local stuff
+if [ -e ~/.zlogin.local ]; then
+  source ~/.zlogin.local
+fi
