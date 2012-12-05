@@ -18,3 +18,8 @@ awful.rules.rules = {
     properties = { floating = true }
   },
 }
+
+local local_additions = os.getenv("HOME") .. "/.awesome-additional-rules.local.lua"
+if awful.util.file_readable(local_additions) then
+  dofile(local_additions)
+end
