@@ -1,7 +1,7 @@
 #!/bin/bash
 cd "$(dirname "$0")"
 
-git pull && git submodule init && git submodule update
+git pull && git submodule update --init --recursive
 
 function _symlink_dotfile() {
   local dotfile=$1
