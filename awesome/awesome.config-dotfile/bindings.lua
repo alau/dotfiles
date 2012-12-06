@@ -70,6 +70,11 @@ local globalkeys = awful.util.table.join(
       awful.util.spawn("xscreensaver-command -lock")
     end
   ),
+  awful.key({ modkey, "Shift"   }, "h",
+    function()
+      awful.util.spawn("beesu pm-hibernate")
+    end
+  ),
 
   -- Prompt
   awful.key({ modkey            }, "r",
