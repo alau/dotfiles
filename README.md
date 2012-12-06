@@ -34,6 +34,10 @@ GIT_COMMITTER_EMAIL="$GIT_AUTHOR_EMAIL"
 git config --global user.email "$GIT_AUTHOR_EMAIL"
 ```
 
+Run the following to have git ignore the config changes:
+
+    git update-index --assume-unchanged git/gitconfig.dotfile
+
 ## Pentadactyl
 
 * Add Duck Duck Go and GitHub to the search engines
