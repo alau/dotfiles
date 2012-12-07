@@ -44,6 +44,9 @@ alias qwerty='setxkbmap se'
 # Override prezto, don't ask when removing files
 alias rm='rm'
 
+# npm
+alias node-dev='node_modules/node-dev/node-dev'
+
 # misc
 alias dotup='~/dotfiles/install.sh'
 alias follow='less +F'
