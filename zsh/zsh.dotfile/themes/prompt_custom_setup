@@ -1,7 +1,10 @@
 function prompt_custom_precmd {
   local user=`whoami`
+  local location="in %{%F{118}%}%~%E%{%f%}"
   if [[ ($user != "andreas" && $user != "alau") || -n $SSH_CLIENT ]]; then
-    _prompt_custom_user="%{%F{135}%}%n%{%f%} at %{%F{166}%}%m%{%f%} "
+    _prompt_header="%{%F{135}%}%n%{%f%} $location at %{%F{166}%}%m%{%f%} "
+  else
+    _prompt_header=$location
   fi
 }
 
@@ -14,7 +17,7 @@ function prompt_custom_setup {
   zstyle ':prezto:module:editor:info:keymap:alternate' format '%{%K{237}%}'
 
   PROMPT='
-${editor_info[keymap]}${_prompt_custom_user}in %{%F{118}%}%~%E%{%f%k%}
+${editor_info[keymap]}${_prompt_header}%{%k%}
 %(?.%{%F{81}%}.%{%F{red}%})$%{%f%} '
   RPROMPT='%{%F{81}%}[%*]%{%f%}'
   SPROMPT='zsh: correct %{%F{red}%}%R%{%f%} to %{%F{green}%}%r%{%f%} [nyae]? '
