@@ -1,4 +1,6 @@
 function prompt_custom_precmd {
+  vcs_info
+
   local user=`whoami`
   local location="in %{%F{118}%}%~%E%{%f%}"
   if [[ ($user != "andreas" && $user != "alau") || -n $SSH_CLIENT ]]; then
@@ -11,13 +13,20 @@ function prompt_custom_precmd {
 function prompt_custom_setup {
   prompt_opts=(percent subst)
 
+  autoload -Uz vcs_info
+  zstyle ':vcs_info:*' enable git
+  zstyle ':vcs_info:*' check-for-changes true
+  zstyle ':vcs_info:*' unstagedstr "%{%F{red}%}✗%{%f%}"
+  zstyle ':vcs_info:*' formats "(%{%F{81}%}%b%{%f%}%u)"
+  zstyle ':vcs_info:*' actionformats "(%{%F{81}%}%b%{%f%}%u: %a)"
+
   add-zsh-hook precmd prompt_custom_precmd
 
   zstyle ':prezto:module:editor:info:keymap:primary' format '%{%K{235}%}'
   zstyle ':prezto:module:editor:info:keymap:alternate' format '%{%K{237}%}'
 
   PROMPT='
-${editor_info[keymap]}${_prompt_header}%{%k%}
+${editor_info[keymap]}${_prompt_header} ${vcs_info_msg_0_}%{%k%}
 %(?.%{%F{81}%}.%{%F{red}%})$%{%f%} '
   RPROMPT='%{%F{81}%}[%*]%{%f%}'
   SPROMPT='zsh: correct %{%F{red}%}%R%{%f%} to %{%F{green}%}%r%{%f%} [nyae]? '
