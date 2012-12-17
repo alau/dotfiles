@@ -33,5 +33,6 @@ Bundle 'vim-ruby/vim-ruby'
 Bundle 'puppetlabs/puppet-syntax-vim'
 Bundle 'statianzo/vim-jade'
 Bundle 'qmx/vim-json'
+Bundle 'derekwyatt/vim-scala'
 
 filetype plugin indent on
