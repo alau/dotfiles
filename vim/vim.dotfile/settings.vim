@@ -19,16 +19,6 @@ set hlsearch
 " Allow modelines
 set modeline
 
-" Highlight trailing whitespaces
-match ErrorMsg /\s\+$/
-autocmd BufWinEnter * match ErrorMsg /\s\+$/
-autocmd InsertEnter * match ErrorMsg /\s\+\%#\@<!$/
-autocmd InsertLeave * match ErrorMsg /\s\+$/
-autocmd BufWinLeave * call clearmatches()
-
-" Remove trailing whitespaces upon write
-autocmd BufWritePre * :call StripTrailingWhitespaces()
-
 " Ignore case when searching
 set ignorecase
 

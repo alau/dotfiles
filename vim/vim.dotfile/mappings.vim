@@ -19,7 +19,7 @@ map <C-k> <C-w>k
 map <C-l> <C-w>l
 
 " Remove trailing spaces
-nnoremap <silent> <F5> :call StripTrailingWhitespaces()<CR>
+nnoremap <silent> <F5> :EraseBadWhitespace<CR>
 
 " Tab navigation
 map <C-PageUp> <nop>
