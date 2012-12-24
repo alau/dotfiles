@@ -33,6 +33,9 @@ let maplocalleader=","
 set t_Co=256
 colorscheme vividchalk
 
+" Remove trailing whitespaces upon write
+autocmd BufWritePre * EraseBadWhitespace
+
 " ctrlp
 set wildignore=.git,vendor,node_modules
 let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files']
