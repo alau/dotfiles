@@ -28,9 +28,6 @@ do
   _symlink_dotfile $DOTFILE $SOURCE
 done
 
-# Create an empty file for zsh ssh-agent
-touch ~/.ssh/autoloaded-identities
-
 # Desktop-specific configuration
 if [ "$(pidof xfce4-session)" ]; then
   echo "[XFCE] Setting xfconf values"

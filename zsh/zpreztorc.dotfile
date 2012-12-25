@@ -17,7 +17,6 @@ zstyle ':prezto:load' pmodule \
   'directory' \
   'utility' \
   'completion' \
-  'ssh-agent' \
   'git' \
   'ruby' \
   'node' \
@@ -32,9 +31,5 @@ zstyle ':prezto:module:terminal' auto-title 'yes'
 
 # Options for editor
 zstyle ':prezto:module:editor' keymap 'vi'
-
-# Options for ssh-agent
-zstyle ':prezto:module:ssh-agent' forwarding 'yes'
-zstyle ':prezto:module:ssh-agent' identities `cat ~/.ssh/autoloaded-identities`
 
 # vim:filetype=zsh

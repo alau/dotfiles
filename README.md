@@ -23,6 +23,7 @@ The following packages are required for ctags:
 * Install `xscreensaver`
 * Install `beesu` for hibernation
 * Use `lxappearance` to change gtk theme
+* Add ssh-keys to seahorse
 
 ## Git
 
