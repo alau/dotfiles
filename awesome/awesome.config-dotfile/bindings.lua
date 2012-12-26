@@ -150,7 +150,7 @@ local clientkeys = awful.util.table.join(
       c:swap(awful.client.getmaster())
     end
   ),
-  awful.key({ modkey,           }, "o", awful.client.movetoscreen)
+  awful.key({ modkey,           }, "s", awful.client.movetoscreen)
 )
 
 local clientbuttons = awful.util.table.join(
