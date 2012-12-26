@@ -120,7 +120,7 @@ for i = 1, keynumber do
   )
 end
 
-local toprow = {":", ",", ".", "p", "y", "f"}
+local toprow = {":", ",", ".", "p", "y", "/"}
 for i = 1, keynumber do
   globalkeys = awful.util.table.join(globalkeys,
     awful.key({ modkey }, toprow[i],
