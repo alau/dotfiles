@@ -26,14 +26,24 @@ local globalkeys = awful.util.table.join(
   ),
 
   -- Layout manipulation
-  awful.key({ modkey,           }, "p",
+  awful.key({ modkey,           }, "h",
     function()
       awful.client.swap.byidx(1)
     end
   ),
-  awful.key({ modkey,           }, ".",
+  awful.key({ modkey,           }, "t",
     function()
       awful.client.swap.byidx(-1)
+    end
+  ),
+  awful.key({ modkey,           }, "space",
+    function()
+      awful.layout.inc(config.layouts, 1)
+    end
+  ),
+  awful.key({ modkey, "Shift"   }, "space",
+    function()
+      awful.layout.inc(config.layouts, -1)
     end
   ),
 
@@ -45,16 +55,6 @@ local globalkeys = awful.util.table.join(
   ),
   awful.key({ modkey, "Shift"   }, "r", awesome.restart),
   awful.key({ modkey, "Shift"   }, ":", awesome.quit),
-  awful.key({ modkey,           }, "space",
-    function()
-      awful.layout.inc(config.layouts, 1)
-    end
-  ),
-  awful.key({ modkey, "Shift"   }, "space",
-    function()
-      awful.layout.inc(config.layouts, -1)
-    end
-  ),
   awful.key({ modkey, "Control" }, "n", awful.client.restore),
   awful.key({ modkey, "Shift"   }, "l",
     function()
