@@ -103,14 +103,6 @@ for i = 1, keynumber do
         end
       end
     ),
-    awful.key({ modkey, "Control" }, "#" .. i + 9,
-      function ()
-        local screen = mouse.screen
-        if config.tags[screen][i] then
-          awful.tag.viewtoggle(config.tags[screen][i])
-        end
-      end
-    ),
     awful.key({ modkey, "Shift" }, "#" .. i + 9,
       function ()
         if client.focus and config.tags[client.focus.screen][i] then
@@ -122,6 +114,20 @@ for i = 1, keynumber do
       function ()
         if client.focus and config.tags[client.focus.screen][i] then
           awful.client.toggletag(config.tags[client.focus.screen][i])
+        end
+      end
+    )
+  )
+end
+
+local toprow = {":", ",", ".", "p", "y", "f", "g", "c", "r"}
+for i = 1, keynumber do
+  globalkeys = awful.util.table.join(globalkeys,
+    awful.key({ modkey }, toprow[i],
+      function ()
+        local screen = mouse.screen
+        if config.tags[screen][i] then
+          awful.tag.viewtoggle(config.tags[screen][i])
         end
       end
     )
