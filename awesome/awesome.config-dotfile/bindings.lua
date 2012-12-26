@@ -3,6 +3,7 @@ local globalkeys = awful.util.table.join(
   awful.key({ modkey,           }, "Right",  awful.tag.viewnext       ),
   awful.key({ modkey,           }, "Escape", awful.tag.history.restore),
 
+  -- Focus manipulation
   awful.key({ modkey,           }, "e",
     function()
       awful.client.focus.byidx( 1)
@@ -15,6 +16,14 @@ local globalkeys = awful.util.table.join(
       if client.focus then client.focus:raise() end
     end
   ),
+  awful.key({ modkey,           }, "Tab",
+    function()
+      awful.client.focus.history.previous()
+      if client.focus then
+        client.focus:raise()
+      end
+    end
+  ),
 
   -- Layout manipulation
   awful.key({ modkey,           }, "p",
@@ -25,14 +34,6 @@ local globalkeys = awful.util.table.join(
   awful.key({ modkey,           }, ".",
     function()
       awful.client.swap.byidx(-1)
-    end
-  ),
-  awful.key({ modkey,           }, "Tab",
-    function()
-      awful.client.focus.history.previous()
-      if client.focus then
-        client.focus:raise()
-      end
     end
   ),
 
