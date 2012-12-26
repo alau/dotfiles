@@ -84,15 +84,15 @@ local globalkeys = awful.util.table.join(
   )
 )
 
--- Compute the maximum number of digit we need, limited to 9
+-- Compute the maximum number of digit we need, limited to 6
 local keynumber = 0
 for s = 1, screen.count() do
-  keynumber = math.min(9, math.max(#config.tags[s], keynumber));
+  keynumber = math.min(6, math.max(#config.tags[s], keynumber));
 end
 
 -- Bind all key numbers to tags.
 -- Be careful: we use keycodes to make it works on any keyboard layout.
--- This should map on the top row of your keyboard, usually 1 to 9.
+-- This should map on the top row of your keyboard, usually 1 to 6.
 for i = 1, keynumber do
   globalkeys = awful.util.table.join(globalkeys,
     awful.key({ modkey }, "#" .. i + 9,
@@ -120,7 +120,7 @@ for i = 1, keynumber do
   )
 end
 
-local toprow = {":", ",", ".", "p", "y", "f", "g", "c", "r"}
+local toprow = {":", ",", ".", "p", "y", "f"}
 for i = 1, keynumber do
   globalkeys = awful.util.table.join(globalkeys,
     awful.key({ modkey }, toprow[i],
