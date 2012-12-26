@@ -45,16 +45,6 @@ local globalkeys = awful.util.table.join(
   ),
   awful.key({ modkey, "Shift"   }, "r", awesome.restart),
   awful.key({ modkey, "Shift"   }, ":", awesome.quit),
-  awful.key({ modkey,           }, "l",
-    function()
-      awful.tag.incmwfact(0.05)
-    end
-  ),
-  awful.key({ modkey,           }, "h",
-    function()
-      awful.tag.incmwfact(-0.05)
-    end
-  ),
   awful.key({ modkey,           }, "space",
     function()
       awful.layout.inc(config.layouts, 1)
