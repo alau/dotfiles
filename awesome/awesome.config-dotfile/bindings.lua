@@ -145,7 +145,7 @@ local clientkeys = awful.util.table.join(
       c:kill()
     end
   ),
-  awful.key({ modkey, "Control" }, "Return",
+  awful.key({ modkey,           }, "m",
     function(c)
       c:swap(awful.client.getmaster())
     end
