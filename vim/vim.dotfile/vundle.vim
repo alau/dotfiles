@@ -13,7 +13,6 @@ Bundle 'scrooloose/nerdtree'
 Bundle 'alau/snipmate.vim'
 Bundle 'scrooloose/syntastic'
 Bundle 'godlygeek/tabular'
-Bundle 'vim-scripts/ZoomWin'
 
 " Utility
 Bundle 'scrooloose/nerdcommenter'
