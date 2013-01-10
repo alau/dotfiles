@@ -25,6 +25,9 @@ set ignorecase
 " Automatically load changed files
 set autoread
 
+" Avoid redraw-flashing while doing stuff
+set lazyredraw
+
 " Use , as <Leader> and <LocalLeader>
 let mapleader=","
 let maplocalleader=","
