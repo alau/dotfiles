@@ -55,6 +55,10 @@ map <Leader>so :so ~/.vimrc<CR>
 " Fugitive
 nmap <C-g> :Gstatus<CR><C-W>_<C-n>
 
+" Gitv
+map <Leader>v :Gitv<CR>
+map <Leader>c :Gitv!<CR>
+
 " ctrlp
 let g:ctrlp_map = '<leader>t'
 

@@ -21,6 +21,7 @@ Bundle 'Lokaltog/vim-easymotion'
 Bundle 'bkad/CamelCaseMotion'
 Bundle 'Raimondi/delimitMate'
 Bundle 'DataWraith/auto_mkdir'
+Bundle 'gregsexton/gitv'
 
 " Look and feel
 Bundle 'tpope/vim-vividchalk'
