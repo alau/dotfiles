@@ -4,13 +4,13 @@ local globalkeys = awful.util.table.join(
   awful.key({ modkey,           }, "Escape", awful.tag.history.restore),
 
   -- Focus manipulation
-  awful.key({ modkey,           }, "e",
+  awful.key({ modkey,           }, "u",
     function()
       awful.client.focus.byidx( 1)
       if client.focus then client.focus:raise() end
     end
   ),
-  awful.key({ modkey,           }, "u",
+  awful.key({ modkey,           }, "e",
     function()
       awful.client.focus.byidx(-1)
       if client.focus then client.focus:raise() end
