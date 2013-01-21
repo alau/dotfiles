@@ -4,5 +4,6 @@
 --type-set=view=.haml,.jbuilder,.builder
 --ignore-dir=tmp
 --ignore-dir=node_modules
+--ignore-dir=venv
 --with-filename
 --pager=$PAGER
