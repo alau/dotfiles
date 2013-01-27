@@ -8,9 +8,7 @@
 } &!
 
 # Keyboard
-if (( $+DISPLAY && $+commands[xkbcomp] )); then
-  custom
-fi
+$HOME/.xkb/custom.zsh
 if (( $+commands[numlockx] )); then
   numlockx on
 fi

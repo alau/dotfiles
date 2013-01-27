@@ -40,7 +40,7 @@ alias so='source ~/.zshrc'
 
 # keyboard
 alias qwerty='setxkbmap se'
-alias custom='xkbcomp -I$HOME/.xkb $HOME/.xkb/keymap/custom "${DISPLAY%%.*}" -w 0'
+alias custom='~/.xkb/custom.zsh'
 
 # Override prezto, don't ask when removing files
 alias rm='rm'
