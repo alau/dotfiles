@@ -49,7 +49,7 @@ alias rm='rm'
 alias node-dev='node_modules/node-dev/node-dev'
 
 # misc
-alias dotup='cd ~/dotfiles/ && git pull && ./install.sh'
+alias dotup='cd ~/dotfiles/ && gff && ./install.sh'
 alias follow='less +F'
 alias p='ps aux'
 alias top='htop'
