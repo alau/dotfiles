@@ -3,6 +3,8 @@ cd "$(dirname "$0")"
 
 git submodule update --init --recursive
 
+INSTALL_DIR=${1-$HOME}
+
 function _symlink_dotfile() {
   local dotfile=$1
   local target=$2
@@ -16,7 +18,7 @@ function _symlink_dotfile() {
 for SOURCE in `ls -d1 $PWD/**/*.dotfile`
 do
   BASE=$(basename "$SOURCE")
-  DOTFILE="$HOME/.${BASE%.*}"
+  DOTFILE="$INSTALL_DIR/.${BASE%.*}"
   _symlink_dotfile $DOTFILE $SOURCE
 done
 
@@ -24,6 +26,6 @@ done
 for SOURCE in `ls -d1 $PWD/**/*.config-dotfile`
 do
   BASE=$(basename "$SOURCE")
-  DOTFILE="$HOME/.config/${BASE%.*}"
+  DOTFILE="$INSTALL_DIR/.config/${BASE%.*}"
   _symlink_dotfile $DOTFILE $SOURCE
 done
