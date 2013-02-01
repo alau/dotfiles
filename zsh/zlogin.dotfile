@@ -7,16 +7,19 @@
   fi
 } &!
 
-# Keyboard
-$HOME/.xkb/custom.zsh
-if (( $+commands[numlockx] )); then
-  numlockx on
+if [ ! $SSH_CLIENT ]; then
+  # Keyboard
+  $HOME/.xkb/custom.zsh
+  if (( $+commands[numlockx] )); then
+
+    numlockx on
+  fi
+
+  # Keyring
+  export $(gnome-keyring-daemon --daemonize --start)
 fi
 
-# Keyring
-export $(gnome-keyring-daemon --daemonize --start)
-
-# local stuff
+# Local stuff
 if [ -e ~/.zlogin.local ]; then
   source ~/.zlogin.local
 fi
