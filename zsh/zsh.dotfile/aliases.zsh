@@ -1,6 +1,6 @@
 # git
 alias g='git status --short'
-git-add-with-status() { git add $* && g }
+git-add-with-status() { git add "$@" && g }
 alias ga='git-add-with-status'
 alias gd='git diff --no-ext-diff'
 alias gdc='gd --cached'
@@ -19,7 +19,7 @@ alias gs="git show"
 alias master="gco master"
 alias git-prune="git branch --merged | grep -v 'master$' | grep -v 'production$' | xargs git branch -d"
 alias git-prune-remote="git remote prune origin"
-git-delete() { git push origin :$* }
+git-delete() { git push origin :"$@" }
 
 # Navigation
 alias u='cd ..'
