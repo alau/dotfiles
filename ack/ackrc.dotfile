@@ -6,5 +6,6 @@
 --ignore-dir=tmp
 --ignore-dir=node_modules
 --ignore-dir=venv
+--ignore-dir=target
 --with-filename
 --pager=$PAGER
