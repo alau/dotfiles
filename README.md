@@ -24,6 +24,13 @@ The following packages are required for ctags:
 * Use `lxappearance` to change gtk theme
 * Add ssh keys to seahorse
 
+### Working with java programs
+
+If you get a grey window when running a java program:
+
+* Install wmname
+* Run `wmname LG3D`
+
 ## Git
 
 Add the email info in `~/.zshrc.local`:
