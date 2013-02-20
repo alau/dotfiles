@@ -12,6 +12,10 @@ imap <Down> <nop>
 imap <Left> <nop>
 imap <Right> <nop>
 
+" Up/down movement for long lines
+nmap j gj
+nmap k gk
+
 " Window navigation
 map <C-h> <C-w>h
 map <C-j> <C-w>j
