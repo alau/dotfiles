@@ -11,12 +11,14 @@ if [ ! $SSH_CLIENT ]; then
   # Keyboard
   $HOME/.xkb/custom.zsh
   if (( $+commands[numlockx] )); then
-
     numlockx on
   fi
 
   # Keyring
   export $(gnome-keyring-daemon --daemonize --start)
+
+  # Java-related fix
+  wmname LG3D
 fi
 
 # Local stuff
