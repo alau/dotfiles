@@ -48,6 +48,10 @@ alias rm='rm'
 # npm
 alias node-dev='node_modules/node-dev/node-dev'
 
+# amazon
+function s3cat { s3cmd get $1 - }
+function s3json { s3cat $1 | $HOME/Dropbox/utils/jq . }
+
 # misc
 alias dotup='cd ~/dotfiles/ && gff && ./install.sh'
 alias follow='less +F'
