@@ -54,3 +54,4 @@ alias follow='less +F'
 alias p='ps aux'
 alias top='htop'
 alias avro="java -jar $HOME/Dropbox/utils/avro-tools-1.7.3.jar "$@""
+alias jq="$HOME/Dropbox/utils/jq "$@""
