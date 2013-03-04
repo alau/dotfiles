@@ -44,5 +44,5 @@ terminal_title_opt=-T
 title=CSSH
 unmap_on_redraw=no
 use_hotkeys=yes
-window_tiling=yes
+window_tiling=no
 window_tiling_direction=right
