@@ -11,7 +11,7 @@ alias gca='gc --all'
 alias gf='gc --all --amend'
 alias gff='git pull --ff-only'
 alias grm='git rebase origin/master'
-alias gm='git merge --no-ff'
+alias gm='git merge --strategy-option=patience --no-ff'
 alias gl="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 alias gla="gl --all"
 alias gs="git show"
