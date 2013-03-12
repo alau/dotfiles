@@ -29,3 +29,6 @@ do
   DOTFILE="$INSTALL_DIR/.config/${BASE%.*}"
   _symlink_dotfile $DOTFILE ../$(basename $PWD)/$SOURCE
 done
+
+# Symlink sbt plugins
+_symlink_dotfile $HOME/.sbt/plugins $HOME/.sbt-plugins
