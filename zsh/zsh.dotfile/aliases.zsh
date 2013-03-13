@@ -38,7 +38,7 @@ alias cuc='CUCUMBER_FORMAT=pretty be cucumber --drb'
 # zsh
 alias so='source ~/.zshrc'
 
-# keyboard
+# Keyboard
 alias qwerty='setxkbmap se'
 alias custom='~/.xkb/custom.zsh'
 
@@ -48,14 +48,18 @@ alias rm='rm'
 # npm
 alias node-dev='node_modules/node-dev/node-dev'
 
-# amazon
+# Amazon
 function s3cat { s3cmd get $1 - }
 function s3json { s3cat $1 | $HOME/Dropbox/utils/jq . }
 
-# misc
+# Inspection
+alias p='ps aux'
+alias pt='pstree -a'
+alias top='htop'
+alias netstatc='netstat -ntulp'
+
+# Misc
 alias dotup='cd ~/dotfiles/ && gff && ./install.sh'
 alias follow='less +F'
-alias p='ps aux'
-alias top='htop'
 alias avro="java -jar $HOME/Dropbox/utils/avro-tools-1.7.3.jar "$@""
 alias jq="$HOME/Dropbox/utils/jq "$@""
