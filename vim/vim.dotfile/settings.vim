@@ -67,3 +67,7 @@ let g:EasyMotion_leader_key = '<Leader>'
 let g:EasyMotion_mapping_t = '<Leader><Leader>t'
 let g:EasyMotion_mapping_f = 'f'
 let g:EasyMotion_mapping_F = 'F'
+
+" gitv
+let g:Gitv_DoNotMapCtrlKey = 1
+let g:Gitv_WipeAllOnClose = 1
