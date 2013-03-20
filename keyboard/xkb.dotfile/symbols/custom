@@ -35,4 +35,11 @@ xkb_symbols "compose" {
   };
 };
 
+partial alphanumeric_keys
+xkb_symbols "menu_as_super" {
+  key <MENU> {
+    symbols = [ Super_R ]
+  };
+};
+
 # vim:ft=xkb
