@@ -41,6 +41,7 @@ alias so='source ~/.zshrc'
 # Keyboard
 alias qwerty='setxkbmap se'
 alias custom='~/.xkb/custom.zsh'
+alias keycodes='xkbprint -label name $DISPLAY - | gv -orientation=seascape -'
 
 # Override prezto, don't ask when removing files
 alias rm='rm'
