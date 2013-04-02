@@ -1,4 +1,5 @@
 # git
+alias git="$HOME/Dropbox/utils/hub"
 alias g='git status --short'
 git-add-with-status() { git add "$@" && g }
 alias ga='git-add-with-status'
