@@ -21,7 +21,7 @@ The following packages are required for ctags:
 
 * Install `xscreensaver`
 * Install `beesu` for hibernation
-* Use `lxappearance` to change gtk theme
+* Use `lxappearance` to change gtk theme, see http://rubenerd.com/qt-gnome-3/ for Qt
 * Add ssh keys to seahorse
 
 ### Working with java programs
