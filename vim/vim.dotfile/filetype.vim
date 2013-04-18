@@ -6,4 +6,5 @@ endif
 augroup filetypedetect
   au! BufRead,BufNewFile *.zsh-theme setfiletype zsh
   au! BufRead,BufNewFile *.avpr setfiletype json
+  au! BufRead,BufNewFile *.template setfiletype json
 augroup END
