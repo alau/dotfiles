@@ -56,6 +56,10 @@ let g:ackprg="ack -H -i --nocolor --nogroup --column --noxml --nocss"
 
 " delimitMate
 let delimitMate_expand_space = 1
+let delimitMate_expand_cr = 1
+
+" endwise
+let g:endwise_no_mappings = 0
 
 " Powerline
 set laststatus=2
