@@ -42,4 +42,7 @@ command -nargs=* wp open wikipedia <args>
 command -nargs=* gh open github <args>
 set complete='l'
 
+" Insert mode for google docs
+au LocationChange docs\.google\.com :normal gi
+
 " vim:filetype=vim
