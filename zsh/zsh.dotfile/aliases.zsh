@@ -40,7 +40,7 @@ alias cuc='CUCUMBER_FORMAT=pretty be cucumber --drb'
 alias so='source ~/.zshrc'
 
 # Keyboard
-alias qwerty='setxkbmap se'
+alias qwerty='setxkbmap se -option caps:swapescape'
 alias custom='~/.xkb/custom.zsh'
 alias keycodes='xkbprint -label name $DISPLAY - | gv -orientation=seascape -'
 
