@@ -1,0 +1,3 @@
+# Vim bindings
+edit mode async
+edit editor "<terminal> -e 'vim %s'"
