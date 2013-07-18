@@ -16,6 +16,7 @@ The following packages are required for ctags:
 
 * Change default shell `chsh -s /bin/zsh`
 * Install `numlockx`
+* Install `git_remote_branch` gem
 
 ## Awesome
 
