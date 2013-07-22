@@ -17,6 +17,8 @@ alias gm='git merge --strategy-option=patience --no-ff'
 alias gl="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 alias gla="gl --all"
 alias gs="git show"
+alias gfix='gc --fixup'
+alias gsquash='git rebase -i --autosquash'
 
 alias master="gco master"
 alias git-prune="git branch --merged | grep -v 'master$' | grep -v 'production$' | xargs git branch -d"
