@@ -4,6 +4,7 @@
 --type-set=view=.haml,.jbuilder,.builder
 --type-set=salt=.sls,.jinja
 --type-set=jade=.jade
+--type-set=styl=.styl
 --ignore-dir=tmp
 --ignore-dir=node_modules
 --ignore-dir=venv
