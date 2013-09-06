@@ -68,3 +68,4 @@ alias dotup='cd ~/dotfiles/ && gff && ./install.sh'
 alias follow='less +F'
 alias avro="java -jar $HOME/Dropbox/utils/avro-tools-1.7.3.jar "$@""
 alias jq="$HOME/Dropbox/utils/jq "$@""
+alias http="$HOME/Dropbox/utils/python/bin/http "$@""
