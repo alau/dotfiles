@@ -76,6 +76,8 @@ map <Leader>x <plug>NERDCommenterToggle
 
 " ctags
 map <Leader>rt :!ctags --extra=+f --exclude=.git --exclude=tmp --exclude=log --exclude=target -R *<CR><CR>
+map ! <C-]>
+map ] :pop<CR>
 
 " CamelCaseMotion
 map <silent> w <Plug>CamelCaseMotion_w
