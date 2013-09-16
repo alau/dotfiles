@@ -5,6 +5,7 @@
 --type-set=salt=.sls,.jinja
 --type-set=jade=.jade
 --type-set=styl=.styl
+--type-set=config=.conf
 --ignore-dir=tmp
 --ignore-dir=node_modules
 --ignore-dir=venv
