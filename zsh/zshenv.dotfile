@@ -10,6 +10,9 @@ export GREP_OPTIONS='--color=auto --line-number --with-filename'
 # less
 export LESS='--hilite-search --hilite-unread --ignore-case --LONG-PROMPT --RAW-CONTROL-CHARS'
 
+# idea
+export IDEA_VM_OPTIONS=$HOME/.idea/idea.vmoptions
+
 # Set path and manpath
 typeset -gU path manpath
 
