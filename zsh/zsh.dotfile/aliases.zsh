@@ -59,6 +59,7 @@ function s3json { s3cat $1 | $HOME/Dropbox/utils/jq . }
 
 # Inspection
 alias p='ps aux'
+function pg { p | grep "$@" }
 alias pt='pstree -a'
 alias top='htop'
 alias netstatc='netstat -ntulp'
