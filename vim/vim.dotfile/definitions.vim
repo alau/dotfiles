@@ -3,3 +3,6 @@ command! FixRockets exec "%s/:\\([a-z_]\\+\\) => /\\1: /g"
 
 " Convenience for Tabular
 command! -nargs=1 -range Align exec "<line1>,<line2>Tabularize /<args>"
+
+" Save files that require sudo
+command W w !sudo tee % > /dev/null
