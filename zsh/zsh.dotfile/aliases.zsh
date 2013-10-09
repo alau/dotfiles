@@ -64,6 +64,10 @@ alias pt='pstree -a'
 alias top='htop'
 alias netstatc='netstat -ntulp'
 
+# Salt
+alias sync='sudo salt-call deploy.sync'
+function activate { sudo salt-call deploy.activate "$@" }
+
 # Misc
 alias dotup='cd ~/dotfiles/ && gff && ./install.sh'
 alias follow='less +F'
