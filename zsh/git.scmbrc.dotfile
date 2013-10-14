@@ -12,7 +12,7 @@ export ga_auto_remove="yes"
 # - Set the following option to 'no' if you want to use your existing git aliases
 #   instead of overwriting them.
 #   Note: Bash tab completion will not be automatically set up for your aliases if you disable this option.
-export git_setup_aliases="yes"
+export git_setup_aliases="no"
 
 
 # Git Index Config
@@ -29,10 +29,10 @@ git_index_alias="c"    # Switch to a repo in the (c)ode directory
 
 # Git Aliases
 # ----------------------------------------------
-git_alias="g"
+git_alias="gi"
 
 # 1. 'SCM Breeze' functions
-git_status_shortcuts_alias="gs"
+git_status_shortcuts_alias="gst"
 git_add_shortcuts_alias="ga"
 git_add_patch_alias="gap"
 git_add_updated_alias="gau"
@@ -97,7 +97,7 @@ git_tag_alias="gt"
 # Git Keyboard Shortcuts
 # ----------------------------------------------
 # Keyboard shortcuts are on by default. Set this to 'false' to disable them.
-git_keyboard_shortcuts_enabled="true"
+git_keyboard_shortcuts_enabled="false"
 git_commit_all_keys="\C-x "        		  # CTRL+x, SPACE
 git_add_and_commit_keys="\C-xc"    		  # CTRL+x, c
 git_commit_all_with_ci_skip_keys="\C-xv"  # CTRL+x, v    (Appends [ci skip] to commit message)
