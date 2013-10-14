@@ -8,3 +8,6 @@ source ~/.zsh/editor.zsh
 if [ -e ~/.zshrc.local ]; then
   source ~/.zshrc.local
 fi
+
+# scm_breeze
+[ -s "$HOME/.scm_breeze/scm_breeze.sh" ] && source "$HOME/.scm_breeze/scm_breeze.sh"
