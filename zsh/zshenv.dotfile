@@ -5,7 +5,7 @@ export PAGER='less'
 export TERM="xterm-256color"
 
 # grep
-export GREP_OPTIONS='--color=auto --line-number --with-filename'
+export GREP_OPTIONS='--color=auto --line-number'
 
 # less
 export LESS='--hilite-search --hilite-unread --ignore-case --LONG-PROMPT --RAW-CONTROL-CHARS'
