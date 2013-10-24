@@ -10,6 +10,9 @@ export GREP_OPTIONS='--color=auto --line-number'
 # less
 export LESS='--hilite-search --hilite-unread --ignore-case --LONG-PROMPT --RAW-CONTROL-CHARS'
 
+# sbt
+export SBT_OPTS="-Xmx2G -XX:+UseConcMarkSweepGC -XX:+CMSClassUnloadingEnabled -XX:MaxPermSize=2G -Xss2M"
+
 # idea
 export IDEA_VM_OPTIONS=$HOME/.idea/idea.vmoptions
 
