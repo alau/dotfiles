@@ -1,5 +1,5 @@
 # git
-alias git="$HOME/Dropbox/utils/hub"
+alias git="hub"
 alias g='git status --short'
 git-add-with-status() { git add "$@" && g }
 alias ga='git-add-with-status'
@@ -72,6 +72,5 @@ function activate { sudo salt-call deploy.activate "$@" }
 alias dotup='cd ~/dotfiles/ && gff && ./install.sh'
 alias follow='less +F'
 alias avro="java -jar $HOME/Dropbox/utils/avro-tools-1.7.3.jar "$@""
-alias jq="$HOME/Dropbox/utils/jq "$@""
 alias http="$HOME/Dropbox/utils/python/bin/http "$@""
 alias staging="MAGINE_ENV=staging sbt"

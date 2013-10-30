@@ -23,6 +23,7 @@ path=(
   /usr/local/{bin,sbin}
   /usr/{bin,sbin}
   /{bin,sbin}
+  $HOME/Dropbox/bin
   $path
 )
 
