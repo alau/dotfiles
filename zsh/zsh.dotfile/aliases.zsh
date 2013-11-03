@@ -74,3 +74,4 @@ alias follow='less +F'
 alias avro="java -jar $HOME/Dropbox/utils/avro-tools-1.7.3.jar "$@""
 alias http="$HOME/Dropbox/utils/python/bin/http "$@""
 alias staging="MAGINE_ENV=staging sbt"
+function csv { column -s, -t < "$@" | less -N -S }
