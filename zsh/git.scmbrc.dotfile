@@ -34,6 +34,8 @@ git_alias="gi"
 # 1. 'SCM Breeze' functions
 git_status_shortcuts_alias="gst"
 git_add_patch_alias="gap"
+git_add_shortcuts_alias="gaa"
+git_commit_all_alias="gcaa"
 git_add_updated_alias="gau"
 git_show_files_alias="gsf"
 exec_scmb_expand_args_alias="ge"
