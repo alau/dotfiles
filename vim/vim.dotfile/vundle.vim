@@ -23,6 +23,7 @@ Bundle 'Raimondi/delimitMate'
 Bundle 'DataWraith/auto_mkdir'
 Bundle 'gregsexton/gitv'
 Bundle 'jeffkreeftmeijer/vim-numbertoggle'
+Bundle 'akiomik/git-gutter-vim'
 
 " Look and feel
 Bundle 'tpope/vim-vividchalk'
