@@ -1,1 +1,2 @@
 export rvm_path="$HOME/.rvm"
+rvm_verify_downloads_flag=0
