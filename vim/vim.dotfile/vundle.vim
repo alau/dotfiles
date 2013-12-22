@@ -39,5 +39,6 @@ Bundle 'qmx/vim-json'
 Bundle 'derekwyatt/vim-scala'
 Bundle 'saltstack/salt-vim'
 Bundle 'uggedal/jinja-vim'
+Bundle 'slim-template/vim-slim'
 
 filetype plugin indent on
