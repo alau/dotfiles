@@ -53,6 +53,9 @@ imap <C-s> <Esc>:write<CR>a
 " Editing
 imap <C-l> <Esc>o
 
+" Pasting from system clipboard
+imap <C-v> <ESC>"+pa
+
 " Reloading vimrc
 map <Leader>so :so ~/.vimrc<CR>
 
