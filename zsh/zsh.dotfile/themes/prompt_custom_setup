@@ -20,10 +20,11 @@ function prompt_custom_setup {
   zstyle ':vcs_info:*' formats "(%{%F{81}%}%b%{%f%}%u)"
   zstyle ':vcs_info:*' actionformats "(%{%F{81}%}%b%{%f%}%u: %a)"
   zstyle ':vcs_info:git*+set-message:*' hooks git-untracked
+  zstyle ':vcs_info:git:*:-all-' command '/usr/bin/git'
 
   +vi-git-untracked() {
-    if [[ $(git rev-parse --is-inside-work-tree 2> /dev/null) == 'true' ]] && \
-        git status --porcelain | grep '??' &> /dev/null ; then
+    if [[ $(command git rev-parse --is-inside-work-tree 2> /dev/null) == 'true' ]] && \
+        command git status --porcelain | grep '??' &> /dev/null ; then
       hook_com[unstaged]+="%{%F{161}%}✗%{%f%}"
     fi
   }
