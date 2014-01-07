@@ -1,7 +1,7 @@
 --type-set=sass=.sass,.scss
 --type-set=cucumber=.feature
 --type-set=js=.js,.coffee
---type-set=view=.haml,.jbuilder,.builder
+--type-set=view=.haml,.jbuilder,.builder,.slim
 --type-set=salt=.sls,.jinja
 --type-set=jade=.jade
 --type-set=styl=.styl
