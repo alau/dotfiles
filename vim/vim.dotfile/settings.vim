@@ -49,7 +49,7 @@ let NERDTreeWinPos = 'right'
 
 " Syntastic
 let g:syntastic_check_on_open=1
-let g:syntastic_quiet_warnings=1
+let g:syntastic_quiet_messages = {'level': 'warnings'}
 
 " Ack
 let g:ackprg="ack -H -i --nocolor --nogroup --column --noxml --nocss"
