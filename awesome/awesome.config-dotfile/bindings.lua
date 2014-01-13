@@ -79,6 +79,7 @@ local globalkeys = awful.util.table.join(
   awful.key({ modkey, "Shift"   }, "h",
     function()
       awful.util.spawn("beesu pm-hibernate")
+      awful.util.spawn("gksu pm-hibernate")
     end
   ),
 
