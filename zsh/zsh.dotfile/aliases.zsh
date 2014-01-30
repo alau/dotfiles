@@ -55,7 +55,7 @@ alias node-dev='node_modules/node-dev/node-dev'
 
 # Amazon
 function s3cat { s3cmd get $1 - }
-function s3json { s3cat $1 | $HOME/Dropbox/utils/jq . }
+function s3json { s3cat $1 | $HOME/Dropbox/bin/jq . }
 
 # Inspection
 alias p='ps aux'
