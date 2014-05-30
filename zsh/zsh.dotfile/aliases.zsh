@@ -1,5 +1,7 @@
 # git
-alias git="hub"
+if (( $+commands[hub] )); then
+  alias git="hub"
+fi
 alias g='git status --short'
 git-add-with-status() { git add "$@" && g }
 alias ga='git-add-with-status'
@@ -61,7 +63,9 @@ function s3json { s3cat $1 | $HOME/Dropbox/bin/jq . }
 alias p='ps aux'
 function pg { p | grep "$@" }
 alias pt='pstree -a'
-alias top='htop'
+if (( $+commands[htop] )); then
+  alias top='htop'
+fi
 alias netstatc='netstat -ntulp'
 
 # Salt

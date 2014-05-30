@@ -9,5 +9,7 @@ if [ -e ~/.zshrc.local ]; then
   source ~/.zshrc.local
 fi
 
+export $(gnome-keyring-daemon --daemonize --start)
+
 # scm_breeze
 [ -s "$HOME/.scm_breeze/scm_breeze.sh" ] && source "$HOME/.scm_breeze/scm_breeze.sh"
