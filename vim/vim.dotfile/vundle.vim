@@ -23,6 +23,7 @@ Bundle 'DataWraith/auto_mkdir'
 Bundle 'gregsexton/gitv'
 Bundle 'jeffkreeftmeijer/vim-numbertoggle'
 Bundle 'tpope/vim-rails'
+Bundle 'terryma/vim-multiple-cursors'
 
 " Look and feel
 Bundle 'tpope/vim-vividchalk'
