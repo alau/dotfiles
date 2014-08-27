@@ -71,6 +71,7 @@ let g:EasyMotion_leader_key = '<Leader>'
 let g:EasyMotion_mapping_t = '<Leader><Leader>t'
 let g:EasyMotion_mapping_f = 'f'
 let g:EasyMotion_mapping_F = 'F'
+let g:EasyMotion_keys='hutenosadimkwjvqzbxgpcrlf'
 
 " gitv
 let g:Gitv_DoNotMapCtrlKey = 1
