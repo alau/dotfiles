@@ -1,2 +1,2 @@
-bind -v
-bind "^R" em-inc-search-prev
+bindkey -v
+bindkey "^R" em-inc-search-prev
