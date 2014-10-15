@@ -9,11 +9,11 @@ EXPORTED="zsh ack git htop"
 git archive master install.sh $EXPORTED | tar -x -C export/dotfiles
 
 cd zsh/zprezto.dotfile
-git archive master | tar -x -C ../../export/dotfiles/zsh/zprezto.dotfile/
+git archive HEAD | tar -x -C ../../export/dotfiles/zsh/zprezto.dotfile/
 cd ../..
 
 cd zsh/zsh.dotfile/z
-git archive master | tar -x -C ../../../export/dotfiles/zsh/zsh.dotfile/z/
+git archive HEAD | tar -x -C ../../../export/dotfiles/zsh/zsh.dotfile/z/
 cd ../../..
 
 cd export/dotfiles
