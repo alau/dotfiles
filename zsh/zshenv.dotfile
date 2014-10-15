@@ -16,6 +16,9 @@ export SBT_OPTS="-Xmx2G -XX:+UseConcMarkSweepGC -XX:+CMSClassUnloadingEnabled -X
 # idea
 export IDEA_VM_OPTIONS=$HOME/.idea/idea.vmoptions
 
+# zsh theme
+export KEYTIMEOUT=1
+
 # Set path and manpath
 typeset -gU path manpath
 
