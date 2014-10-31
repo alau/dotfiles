@@ -19,7 +19,6 @@ zstyle ':prezto:load' pmodule \
   'completion' \
   'git' \
   'ruby' \
-  'node' \
   'prompt'
 
 # Set prompt theme
