@@ -29,6 +29,6 @@ zstyle ':prezto:module:prompt' theme 'custom'
 zstyle ':prezto:module:terminal' auto-title 'yes'
 
 # Options for editor
-zstyle ':prezto:module:editor' keymap 'vi'
+zstyle ':prezto:module:editor' key-bindings 'vi'
 
 # vim:filetype=zsh
