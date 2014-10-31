@@ -19,6 +19,7 @@ zstyle ':prezto:load' pmodule \
   'completion' \
   'git' \
   'ruby' \
+  'syntax-highlighting' \
   'prompt'
 
 # Set prompt theme
@@ -30,5 +31,11 @@ zstyle ':prezto:module:terminal' auto-title 'yes'
 
 # Options for editor
 zstyle ':prezto:module:editor' key-bindings 'vi'
+
+# Options for syntax highlighting
+zstyle ':prezto:module:syntax-highlighting' color 'yes'
+zstyle ':prezto:module:syntax-highlighting' highlighters \
+  'main' \
+  'brackets'
 
 # vim:filetype=zsh
