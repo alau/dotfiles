@@ -10,5 +10,6 @@
 --ignore-dir=node_modules
 --ignore-dir=venv
 --ignore-dir=target
+--ignore-dir=dist
 --with-filename
 --pager=$PAGER
