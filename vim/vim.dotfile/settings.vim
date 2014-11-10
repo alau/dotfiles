@@ -20,7 +20,7 @@ set hlsearch
 set modeline
 
 " Ignore case when searching
-set ignorecase
+set smartcase
 
 " Automatically load changed files
 set autoread
