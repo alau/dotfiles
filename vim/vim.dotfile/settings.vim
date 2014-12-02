@@ -83,3 +83,6 @@ let g:multi_cursor_exit_from_visual_mode = 0
 let g:multi_cursor_exit_from_insert_mode = 0
 highlight multiple_cursors_cursor term=reverse cterm=reverse gui=reverse
 highlight link multiple_cursors_visual Visual
+
+" YouCompleteMe
+let g:ycm_filetype_whitelist = { 'scala': 1, 'vim': 1 }
