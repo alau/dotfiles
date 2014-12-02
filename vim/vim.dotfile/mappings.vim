@@ -55,6 +55,8 @@ imap <C-l> <Esc>o
 
 " Pasting from system clipboard
 imap <C-v> <ESC>"+pa
+" Copy to system clipboard
+vmap <C-c> "+y
 
 " Reloading vimrc
 map <Leader>so :so ~/.vimrc<CR>
