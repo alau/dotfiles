@@ -24,6 +24,7 @@ Bundle 'gregsexton/gitv'
 Bundle 'jeffkreeftmeijer/vim-numbertoggle'
 Bundle 'tpope/vim-rails'
 Bundle 'terryma/vim-multiple-cursors'
+Bundle 'Valloric/YouCompleteMe'
 
 " Look and feel
 Bundle 'tpope/vim-vividchalk'
