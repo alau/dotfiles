@@ -85,7 +85,7 @@ highlight multiple_cursors_cursor term=reverse cterm=reverse gui=reverse
 highlight link multiple_cursors_visual Visual
 
 " YouCompleteMe
-let g:ycm_filetype_whitelist = { 'scala': 1, 'vim': 1 }
+let g:ycm_filetype_whitelist = { 'scala': 1, 'vim': 1, 'sls': 1 }
 let g:ycm_complete_in_strings = 0
 let g:ycm_collect_identifiers_from_tags_files = 1
 let g:ycm_seed_identifiers_with_syntax = 1
