@@ -10,7 +10,7 @@ Bundle 'mileszs/ack.vim'
 Bundle 'tpope/vim-fugitive'
 Bundle 'kien/ctrlp.vim'
 Bundle 'scrooloose/nerdtree'
-Bundle 'alau/snipmate.vim'
+Bundle 'SirVer/ultisnips'
 Bundle 'scrooloose/syntastic'
 Bundle 'godlygeek/tabular'
 
