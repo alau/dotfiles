@@ -48,6 +48,11 @@ Run the following to have git ignore the config changes:
 
     git update-index --assume-unchanged git/gitconfig.dotfile
 
+## rbenv install
+
+In order to install the `rbenv install` command, run the following:
+* `mkdir ~/.rbenv/plugins && cd ~/.rbenv/plugins && git clone git@github.com:sstephenson/ruby-build.git`
+
 ## Pentadactyl
 
 * Add Duck Duck Go and GitHub to the search engines
