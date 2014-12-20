@@ -1,6 +1,6 @@
 # git
-if (( $+commands[hub] )); then
-  alias git="hub"
+if (( $+commands[gh] )); then
+  alias git="gh"
 fi
 alias g='git status --short'
 git-add-with-status() { git add "$@" && g }
