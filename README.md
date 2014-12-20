@@ -12,6 +12,9 @@ The following packages are required for ctags:
 * exuberant-ctags
 * ncurses-term
 
+An additional installation step is needed for YouCompleteMe:
+* cd ~/.vim/bundle/YouCompleteMe && ./install.sh
+
 ## Zsh
 
 * Change default shell `chsh -s /bin/zsh`
