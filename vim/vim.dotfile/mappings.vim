@@ -96,3 +96,7 @@ nmap cw ce
 
 " Json formatting
 noremap <Leader>J :% !python -m json.tool<CR>:set ft=json<CR>
+
+" easymotion
+nmap L <Plug>(easymotion-j)
+nmap H <Plug>(easymotion-k)
