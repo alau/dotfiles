@@ -96,6 +96,3 @@ nmap cw ce
 
 " Json formatting
 noremap <Leader>J :% !python -m json.tool<CR>:set ft=json<CR>
-
-" delimitMate
-imap <S-Tab> <C-g>g
