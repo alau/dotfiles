@@ -30,6 +30,7 @@ Bundle 'jeffkreeftmeijer/vim-numbertoggle'
 Bundle 'tpope/vim-vividchalk'
 Bundle 'Lokaltog/vim-powerline'
 Bundle 'bitc/vim-bad-whitespace'
+Bundle 'airblade/vim-gitgutter'
 
 " Language support
 Bundle 'itspriddle/vim-jquery'

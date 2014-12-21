@@ -85,3 +85,9 @@ let g:ycm_seed_identifiers_with_syntax = 1
 " UltiSnips
 let g:UltiSnipsExpandTrigger = 'ý'
 let g:UltiSnipsJumpForwardTrigger = 'ý'
+
+" gitgutter
+highlight SignColumn guibg=Black
+highlight link GitGutterAdd DiffAdded
+highlight link GitGutterDelete DiffRemoved
+highlight link GitGutterChange DiffChanged
