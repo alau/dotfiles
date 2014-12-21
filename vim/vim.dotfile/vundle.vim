@@ -15,6 +15,7 @@ Bundle 'scrooloose/syntastic'
 Bundle 'godlygeek/tabular'
 
 " Utility
+Bundle 'tpope/vim-sensible'
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'tpope/vim-endwise'
 Bundle 'Lokaltog/vim-easymotion'

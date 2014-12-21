@@ -7,14 +7,9 @@ set noswapfile
 set shiftwidth=2
 set softtabstop=2
 set expandtab
-set autoindent
 
 " Line numbers
 set number
-
-" Incremental searches + highlighting
-set incsearch
-set hlsearch
 
 " Allow modelines
 set modeline
@@ -22,9 +17,6 @@ set modeline
 " Ignore case when searching
 set ignorecase
 set smartcase
-
-" Automatically load changed files
-set autoread
 
 " Avoid redraw-flashing while doing stuff
 set lazyredraw
