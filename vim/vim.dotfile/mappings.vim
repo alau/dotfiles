@@ -104,3 +104,4 @@ nmap H <Plug>(easymotion-k)
 " eclim
 nmap <Leader>ei :ScalaImport<CR>
 nmap <Leader>ev :Validate<CR>
+nmap <Leader>es :ScalaSearch<CR>
