@@ -1,0 +1,4 @@
+sbt.dotfile/boot
+sbt.dotfile/0.13/plugins/project
+sbt.dotfile/0.13/plugins/target
+sbt.dotfile/0.13/target
