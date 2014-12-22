@@ -18,6 +18,7 @@ Bundle 'terryma/vim-multiple-cursors'
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'Valloric/YouCompleteMe'
+Bundle 'dansomething/vim-eclim'
 
 " Utility
 Bundle 'tpope/vim-sensible'

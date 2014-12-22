@@ -91,3 +91,7 @@ highlight SignColumn guibg=Black
 highlight link GitGutterAdd DiffAdded
 highlight link GitGutterDelete DiffRemoved
 highlight link GitGutterChange DiffChanged
+
+" eclim
+let g:EclimScalaValidate = 0
+let g:EclimFileTypeValidate = 0

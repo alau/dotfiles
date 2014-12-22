@@ -15,6 +15,19 @@ The following packages are required for ctags:
 An additional installation step is needed for YouCompleteMe:
 * cd ~/.vim/bundle/YouCompleteMe && ./install.sh
 
+### Scala auto-imports etc
+
+Auto-imports are handled by [eclim](http://eclim.org/), which has to be
+installed as follows:
+* Install Eclipse 4.4
+* Install the Scala plugins from [Scala IDE](http://scala-ide.org/download/current.html)
+* Clone eclim `git clone git://github.com/ervandew/eclim.git`
+* Build and install `ant deploy.eclipse -Declipse.home=<eclipse>`
+
+In order for auto-imports to work, eclimd has to be running and the project has
+to be added to eclipse (use the
+[sbteclipse](https://github.com/typesafehub/sbteclipse) plugin).
+
 ## Zsh
 
 * Change default shell `chsh -s /bin/zsh`
