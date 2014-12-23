@@ -27,6 +27,7 @@ path=(
   /usr/{bin,sbin}
   /{bin,sbin}
   $HOME/Dropbox/bin
+  $HOME/.rbenv/bin
   $path
 )
 
