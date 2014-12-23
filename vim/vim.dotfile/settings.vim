@@ -98,3 +98,4 @@ highlight link GitGutterChange DiffChanged
 let g:EclimScalaValidate = 0
 let g:EclimFileTypeValidate = 0
 let g:EclimScalaSearchSingleResult = 'split'
+let g:EclimScalaValidate = 0
