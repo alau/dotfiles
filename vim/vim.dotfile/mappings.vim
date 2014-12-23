@@ -98,8 +98,8 @@ nmap cw ce
 noremap <Leader>J :% !python -m json.tool<CR>:set ft=json<CR>
 
 " easymotion
-nmap L <Plug>(easymotion-j)
-nmap H <Plug>(easymotion-k)
+nmap H <Plug>(easymotion-j)
+nmap L <Plug>(easymotion-k)
 
 " eclim
 nmap <Leader>ei :ScalaImport<CR>
