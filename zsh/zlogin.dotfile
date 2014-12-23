@@ -19,6 +19,9 @@ if [ ! $SSH_CLIENT ]; then
 
   # Java-related fix
   wmname LG3D
+
+  # Screen color adaptation
+  xflux -l 59.33 -g 18.07 -k 3800
 fi
 
 # Local stuff

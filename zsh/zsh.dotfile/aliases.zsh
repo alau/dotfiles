@@ -78,6 +78,7 @@ alias follow='less +F'
 alias avro="java -jar $HOME/Dropbox/utils/avro-tools-1.7.7.jar "$@""
 alias http="$HOME/Dropbox/utils/python/bin/http "$@""
 alias aws="$HOME/Dropbox/bin/aws "$@""
+alias xflux="$HOME/Dropbox/bin/xflux "$@""
 alias staging="MAGINE_ENV=staging sbt"
 alias sum="awk '{ sum += \$1 } END { print sum }' "$@""
 function zebra { awk 'NR%2 == 1 { printf("\033[48;5;237m%s\033[0m\n", $0); next}; 1'; }
