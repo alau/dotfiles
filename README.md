@@ -13,7 +13,7 @@ The following packages are required for ctags:
 * ncurses-term
 
 An additional installation step is needed for YouCompleteMe:
-* cd ~/.vim/bundle/YouCompleteMe && ./install.sh
+* `cd ~/.vim/bundle/YouCompleteMe && ./install.sh`
 
 ### Scala auto-imports etc
 
@@ -64,7 +64,8 @@ Run the following to have git ignore the config changes:
 ## rbenv install
 
 In order to install the `rbenv install` command, run the following:
-* `mkdir ~/.rbenv/plugins && cd ~/.rbenv/plugins && git clone git@github.com:sstephenson/ruby-build.git`
+
+    mkdir ~/.rbenv/plugins && cd ~/.rbenv/plugins && git clone git@github.com:sstephenson/ruby-build.git
 
 ## Pentadactyl
 
