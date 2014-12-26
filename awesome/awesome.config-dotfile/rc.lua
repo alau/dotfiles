@@ -26,10 +26,10 @@ function load_file(path)
   if not success then
     naughty.notify({
       title = "Error while loading an configuration file",
-      text = "When loading `" .. name ..  "`, got the following error:\n" .. result,
+      text = "When loading `" .. path ..  "`, got the following error:\n" .. result,
       preset = naughty.config.presets.critical
     })
-    return print("Error loading configuration file '" .. name .. "': " .. result)
+    return print("Error loading configuration file '" .. path .. "': " .. result)
   end
 
   return result
