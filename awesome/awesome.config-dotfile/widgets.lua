@@ -31,13 +31,11 @@ for s = 1, screen.count() do
     awful.button({ }, 5, function () awful.layout.inc(config.layouts, -1) end)
   ))
   -- Create a taglist widget
-  mytaglist[s] = awful.widget.taglist(s, awful.widget.taglist.label.all, mytaglist.buttons)
+  mytaglist[s] = awful.widget.taglist(s, awful.widget.taglist.filter.all, mytaglist.buttons)
 
   -- Create a tasklist widget
   local mytasklist = {}
-  mytasklist[s] = awful.widget.tasklist(function(c)
-    return awful.widget.tasklist.label.currenttags(c, s)
-  end)
+  mytasklist[s] = awful.widget.tasklist(s, awful.widget.tasklist.filter.currenttags)
 
   -- Create the wibox
   mywibox[s] = awful.wibox({ position = "top", screen = s })
