@@ -1,8 +1,8 @@
 -- Signal function to execute when a new client appears.
-client.add_signal("manage",
+client.connect_signal("manage",
   function (c, startup)
     -- Enable sloppy focus
-    c:add_signal("mouse::enter",
+    c:connect_signal("mouse::enter",
       function(c)
         if awful.layout.get(c.screen) ~= awful.layout.suit.magnifier
           and awful.client.focus.filter(c) and not (c.icon_name and c.icon_name:find("HipChat")) then
@@ -21,12 +21,12 @@ client.add_signal("manage",
   end
 )
 
-client.add_signal("focus",
+client.connect_signal("focus",
   function(client)
     client.border_color = beautiful.border_focus
   end
 )
-client.add_signal("unfocus",
+client.connect_signal("unfocus",
   function(client)
     client.border_color = beautiful.border_normal
   end
