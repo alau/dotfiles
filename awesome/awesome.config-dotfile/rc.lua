@@ -1,11 +1,11 @@
 -- Standard awesome library
-require("awful")
+awful = require("awful")
 require("awful.autofocus")
-require("awful.rules")
+rules = require("awful.rules")
 -- Theme handling library
-require("beautiful")
+beautiful = require("beautiful")
 -- Notification library
-require("naughty")
+naughty = require("naughty")
 -- Custom layout
 require("rows_layout")
 
