@@ -1,4 +1,4 @@
-awful.rules.rules = {
+rules.rules = {
   {
     -- All clients will match this rule.
     rule = { },
