@@ -29,3 +29,9 @@ do
   DOTFILE="$INSTALL_DIR/.config/${BASE%.*}"
   _symlink_dotfile $DOTFILE ../$(basename $PWD)/$SOURCE
 done
+
+if [[ ! -d ~/.rbenv/plugins/ruby-build ]]; then
+  mkdir ~/.rbenv/plugins && \
+    cd ~/.rbenv/plugins && \
+    git clone git@github.com:sstephenson/ruby-build.git
+fi
