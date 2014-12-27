@@ -1,5 +1,5 @@
 -- Create a textclock widget
-local mytextclock = awful.widget.textclock({ align = "right" })
+local mytextclock = awful.widget.textclock()
 
 -- Create a systray
 local mysystray = widget({ type = "systray" })
