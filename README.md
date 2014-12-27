@@ -63,6 +63,5 @@ Run the following to have git ignore the config changes:
 
 ## Pentadactyl
 
-* Add Duck Duck Go and GitHub to the search engines
-* Set ddg as the keyword for Duck Duck Go
+* Add GitHub to the search engines
 * Set wikipedia as the keyword for Wikipedia
