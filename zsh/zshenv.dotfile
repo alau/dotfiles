@@ -4,9 +4,6 @@ export VISUAL='vim'
 export PAGER='less'
 export TERM="xterm-256color"
 
-# grep
-export GREP_OPTIONS='--color=auto'
-
 # less
 export LESS='--hilite-search --hilite-unread --ignore-case --LONG-PROMPT --RAW-CONTROL-CHARS'
 
