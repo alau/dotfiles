@@ -22,6 +22,11 @@ if [ ! $SSH_CLIENT ]; then
 
   # Screen color adaptation
   xflux -l 59.33 -g 18.07 -k 3800
+
+  # Dropbox
+  if (( $+commands[dropbox] )); then
+    dropbox start
+  fi
 fi
 
 # Local stuff
