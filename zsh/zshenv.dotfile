@@ -13,6 +13,9 @@ export SBT_OPTS="-Xmx2G -XX:+UseConcMarkSweepGC -XX:+CMSClassUnloadingEnabled -X
 # zsh theme
 export KEYTIMEOUT=1
 
+# rbenv
+export RBENV_VERSION="2.1.5"
+
 # Set path and manpath
 typeset -gU path manpath
 
