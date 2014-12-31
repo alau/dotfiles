@@ -8,9 +8,6 @@
 [submodule "zsh/zsh.dotfile/z"]
   path = zsh/zsh.dotfile/z
   url = https://github.com/rupa/z.git
-[submodule "zsh/scm_breeze.dotfile"]
-	path = zsh/scm_breeze.dotfile
-	url = git://github.com/ndbroadbent/scm_breeze.git
 [submodule "rbenv/rbenv.dotfile"]
 	path = rbenv/rbenv.dotfile
 	url = git@github.com:sstephenson/rbenv.git
