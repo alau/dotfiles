@@ -1,7 +1,12 @@
+# Utils from Dropbox
+alias avro="java -jar $HOME/Dropbox/utils/avro-tools-1.7.7.jar "$@""
+alias http="$HOME/Dropbox/utils/python/bin/http "$@""
+for bin in 'aws' 'csv2sc' 'gh' 'git-wtf' 'heroku' 'jq' 'sbt' 'xflux'; do
+  alias $bin="$HOME/Dropbox/bin/$bin "$@""
+done
+
 # git
-if (( $+commands[gh] )); then
-  alias git="gh"
-fi
+alias git="gh"
 alias g='git status --short'
 git-add-with-status() { git add "$@" && g }
 alias ga='git-add-with-status'
@@ -57,7 +62,7 @@ alias node-dev='node_modules/node-dev/node-dev'
 
 # Amazon
 function s3cat { s3cmd get $1 - }
-function s3json { s3cat $1 | $HOME/Dropbox/bin/jq . }
+function s3json { s3cat $1 | jq . }
 
 # Inspection
 alias p='ps aux'
@@ -75,10 +80,6 @@ function activate { sudo salt-call deploy.activate "$@" }
 # Misc
 alias dotup='cd ~/dotfiles/ && gff && ./install.sh'
 alias follow='less +F'
-alias avro="java -jar $HOME/Dropbox/utils/avro-tools-1.7.7.jar "$@""
-alias http="$HOME/Dropbox/utils/python/bin/http "$@""
-alias aws="$HOME/Dropbox/bin/aws "$@""
-alias xflux="$HOME/Dropbox/bin/xflux "$@""
 alias sum="awk '{ sum += \$1 } END { print sum }' "$@""
 function zebra { awk 'NR%2 == 1 { printf("\033[48;5;237m%s\033[0m\n", $0); next}; 1'; }
 function csv { sed 's/,/, /g' "$@" | column -s, -t | zebra | less -S }
