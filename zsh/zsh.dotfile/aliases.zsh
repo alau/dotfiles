@@ -57,9 +57,6 @@ alias keycodes='xkbprint -label name $DISPLAY - | gv -orientation=seascape -'
 # Override prezto, don't ask when removing files
 alias rm='rm'
 
-# npm
-alias node-dev='node_modules/node-dev/node-dev'
-
 # Amazon
 function s3cat { s3cmd get $1 - }
 function s3json { s3cat $1 | jq . }
@@ -72,10 +69,6 @@ if (( $+commands[htop] )); then
   alias top='htop'
 fi
 alias netstatc='netstat -ntulp'
-
-# Salt
-alias sync='sudo salt-call deploy.sync'
-function activate { sudo salt-call deploy.activate "$@" }
 
 # Misc
 alias dotup='cd ~/dotfiles/ && gff && ./install.sh'
