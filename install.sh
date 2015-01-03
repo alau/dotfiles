@@ -31,7 +31,13 @@ do
 done
 
 if [[ ! -d ~/.rbenv/plugins/ruby-build ]]; then
-  mkdir ~/.rbenv/plugins && \
+  mkdir -p ~/.rbenv/plugins && \
     cd ~/.rbenv/plugins && \
     git clone git@github.com:sstephenson/ruby-build.git
+fi
+
+if [[ ! -d ~/.rbenv/plugins/bundler ]]; then
+  mkdir -p ~/.rbenv/plugins && \
+    cd ~/.rbenv/plugins && \
+    git clone git@github.com:carsomyr/rbenv-bundler.git bundler
 fi
