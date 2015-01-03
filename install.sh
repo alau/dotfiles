@@ -30,6 +30,9 @@ do
   _symlink_dotfile $DOTFILE ../$(basename $PWD)/$SOURCE
 done
 
+# rbenv
+echo "2.1.5" > ~/.rbenv/version
+
 if [[ ! -d ~/.rbenv/plugins/ruby-build ]]; then
   mkdir -p ~/.rbenv/plugins && \
     cd ~/.rbenv/plugins && \
