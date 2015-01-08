@@ -14,5 +14,6 @@
 --ignore-dir=dist
 --ignore-dir=bower_components
 --ignore-dir=.tmp
+--ignore-dir=doc/output
 --with-filename
 --pager=$PAGER
