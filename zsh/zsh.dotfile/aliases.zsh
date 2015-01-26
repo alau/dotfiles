@@ -1,7 +1,7 @@
 # Utils from Dropbox
 alias avro="java -jar $HOME/Dropbox/utils/avro-tools-1.7.7.jar "$@""
 alias http="$HOME/Dropbox/utils/python/bin/http "$@""
-for bin in 'aws' 'csv2sc' 'gh' 'git-wtf' 'heroku' 'jq' 'sbt' 'xflux' 'zeal'; do
+for bin in 'csv2sc' 'gh' 'git-wtf' 'heroku' 'jq' 'sbt' 'xflux' 'zeal'; do
   alias $bin="$HOME/Dropbox/bin/$bin "$@""
 done
 
