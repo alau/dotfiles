@@ -29,7 +29,7 @@ Bundle 'jeffkreeftmeijer/vim-numbertoggle'
 
 " Look and feel
 Bundle 'tpope/vim-vividchalk'
-Bundle 'Lokaltog/vim-powerline'
+Bundle 'bling/vim-airline'
 Bundle 'bitc/vim-bad-whitespace'
 Bundle 'airblade/vim-gitgutter'
 

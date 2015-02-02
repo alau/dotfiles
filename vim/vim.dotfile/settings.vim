@@ -56,10 +56,17 @@ let delimitMate_expand_cr = 1
 " endwise
 let g:endwise_no_mappings = 0
 
-" Powerline
-set laststatus=2
-set encoding=utf-8
-let g:Powerline_symbols = 'fancy'
+" airline
+if !exists('g:airline_symbols')
+  let g:airline_symbols = {}
+endif
+let g:airline_left_sep = '⮀'
+let g:airline_left_alt_sep = '⮁'
+let g:airline_right_sep = '⮂'
+let g:airline_right_alt_sep = '⮃'
+let g:airline_symbols.branch = '⭠'
+let g:airline_symbols.readonly = '⭤'
+let g:airline_symbols.linenr = '⭡'
 
 " easymotion
 let g:EasyMotion_leader_key = '<Leader>'
