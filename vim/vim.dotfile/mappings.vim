@@ -105,3 +105,8 @@ nmap L <Plug>(easymotion-k)
 nmap <Leader>ei :ScalaImport<CR>
 nmap <Leader>ev :Validate<CR>
 nmap <Leader>es :ScalaSearch<CR>
+
+" incsearch
+map /  <Plug>(incsearch-forward)
+map ?  <Plug>(incsearch-backward)
+map g/ <Plug>(incsearch-stay)

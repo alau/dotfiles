@@ -26,6 +26,7 @@ Bundle 'tpope/vim-endwise'
 Bundle 'bkad/CamelCaseMotion'
 Bundle 'DataWraith/auto_mkdir'
 Bundle 'jeffkreeftmeijer/vim-numbertoggle'
+Bundle 'haya14busa/incsearch.vim'
 
 " Look and feel
 Bundle 'tpope/vim-vividchalk'
