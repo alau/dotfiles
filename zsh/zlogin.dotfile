@@ -18,10 +18,14 @@ if [ ! $SSH_CLIENT ]; then
   export $(gnome-keyring-daemon --daemonize --start)
 
   # Java-related fix
-  wmname LG3D
+  if (( $+commands[wmname] )); then
+    wmname LG3D
+  fi
 
   # Screen color adaptation
-  xflux -l 59.33 -g 18.07 -k 3800
+  if (( $+commands[xflux] )); then
+    xflux -l 59.33 -g 18.07 -k 3800
+  fi
 
   # Dropbox
   if (( $+commands[dropbox] )); then
