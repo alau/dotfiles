@@ -4,7 +4,7 @@
 --regex-Scala=/^[ \t]*(((implicit|private|protected|sealed)?[ \t]*)*(\[[a-zA-Z0-9_]*\])?[ \t]*)*trait[ \t]*([a-zA-Z0-9_]+)/\5/t,traits/
 --regex-Scala=/^[ \t]*(((implicit|private|protected|sealed)?[ \t]*)*(\[[a-zA-Z0-9_]*\])?[ \t]*)*(case[ \t]*)?class[ \t]*([a-zA-Z0-9_]+)/\6/c,classes/
 --regex-Scala=/^[ \t]*abstract[ \t]*class[ \t]*([a-zA-Z0-9_]+)/\1/a,aclasses/
---regex-Scala=/^[ \t]*((implicit|override|lazy|private|protected)?[ \t]*)*def[ \t]*([a-zA-Z0-9_=]+)[ \t]*/\3/m,methods/
+--regex-Scala=/^[ \t]*((implicit|override|lazy|private|protected|private\[[a-zA-Z]+\])[ \t]*)*def[ \t]*([a-zA-Z0-9_=]+)[ \t]*/\3/m,methods/
 --regex-Scala=/^[ \t]*(((override|lazy|private|protected)?[ \t]*)*(\[[a-zA-Z0-9_]*\])?[ \t]*)*val[ \t]*([a-zA-Z0-9_]+)[ \t]*[:=]/\5/V,values/
 --regex-Scala=/^[ \t]*(((override|lazy|private|protected)?[ \t]*)*(\[[a-zA-Z0-9_]*\])?[ \t]*)*var[ \t]*([a-zA-Z0-9_]+)[ \t]*[:=]/\5/v,variables/
 --regex-Scala=/^[ \t]*type[ \t]*([a-zA-Z0-9_]+)[ \t]*[\[<>=]/\1/T,types/
