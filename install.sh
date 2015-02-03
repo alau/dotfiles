@@ -30,6 +30,12 @@ do
   _symlink_dotfile $DOTFILE ../$(basename $PWD)/$SOURCE
 done
 
+# Symlink various utilities from Dropbox
+mkdir -p $HOME/bin
+for util in 'avro' 'csv2sc' 'gh' 'git-wtf' 'heroku' 'http' 'jq' 'sbt' 'xflux' 'zeal'; do
+  ln -s $HOME/Dropbox/bin/$util $HOME/bin/$util
+done
+
 # rbenv
 echo "2.1.5" > ~/.rbenv/version
 
