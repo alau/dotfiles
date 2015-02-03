@@ -68,9 +68,6 @@ function s3json { s3cat $1 | jq . }
 alias p='ps aux'
 function pg { p | grep "$@" }
 alias pt='pstree -a'
-if (( $+commands[htop] )); then
-  alias top='htop'
-fi
 alias netstatc='netstat -ntulp'
 
 # Misc
