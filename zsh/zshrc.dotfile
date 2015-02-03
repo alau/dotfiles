@@ -1,5 +1,5 @@
-source ~/.zsh/colors.zsh
 source ~/.zprezto/init.zsh
+source ~/.zsh/colors.zsh
 source ~/.zsh/aliases.zsh
 source ~/.zsh/editor.zsh
 . ~/.zsh/z/z.sh
