@@ -23,8 +23,8 @@ if [ ! $SSH_CLIENT ]; then
   fi
 
   # Screen color adaptation
-  if (( $+commands[xflux] )); then
-    xflux -l 59.33 -g 18.07 -k 3800
+  if (( $+commands[redshift] )); then
+    redshift -l 59.33:18.07 -t 5500K:3800K &
   fi
 
   # Dropbox
