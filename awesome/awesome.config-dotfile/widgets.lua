@@ -42,6 +42,10 @@ cpuwidget:set_color({
 })
 vicious.register(cpuwidget, vicious.widgets.cpu, "$1")
 
+-- Wifi link
+wifiwidget = wibox.widget.textbox()
+vicious.register(wifiwidget, vicious.widgets.wifi, "⌭${link}", 2, "wlp17s0")
+
 -- Systray
 local mysystray = wibox.widget.systray()
 
@@ -87,6 +91,7 @@ for s = 1, screen.count() do
 
   local right_layout = wibox.layout.fixed.horizontal()
   right_layout:add(netwidget)
+  right_layout:add(wifiwidget)
   right_layout:add(cpuwidget)
   right_layout:add(mytextclock)
   right_layout:add(mylayoutbox[s])
