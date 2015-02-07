@@ -24,8 +24,8 @@ vicious.register(
         end
       end
     end
-    return '<span color="#CC9393">' .. (down * 8) .. '</span> ' ..
-      '<span color="#7F9F7F">' .. (up * 8) .. '</span>'
+    return '<span color="#CC9393">' .. (down * 8) .. '↓</span> ' ..
+      '<span color="#7F9F7F">' .. (up * 8) .. '↑</span>'
   end,
   3
 )
