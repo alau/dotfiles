@@ -1,7 +1,7 @@
 -- Standard awesome library
 awful = require("awful")
-require("awful.autofocus")
 rules = require("awful.rules")
+require("awful.autofocus")
 -- Theme handling library
 beautiful = require("beautiful")
 -- Notification library
