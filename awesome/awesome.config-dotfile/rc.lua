@@ -38,11 +38,11 @@ end
 load_part("errors")
 
 -- Configuration globals
-config = {}
+settings = {}
 widgets = {}
 modkey = "Mod4"
-config.terminal = "roxterm"
-config.layouts = {
+settings.terminal = "roxterm"
+settings.layouts = {
   awful.layout.suit.tile.right,
   awful.layout.suit.tile.bottom,
   awful.layout.suit.max,

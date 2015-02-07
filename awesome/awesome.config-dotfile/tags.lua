@@ -4,8 +4,8 @@ for screen = 1, screen.count() do
   tags[screen] = awful.tag(
     { 1, 2, 3, 4, 5, 6 },
     screen,
-    config.layouts[1]
+    settings.layouts[1]
   )
 end
 
-config.tags = tags
+settings.tags = tags
