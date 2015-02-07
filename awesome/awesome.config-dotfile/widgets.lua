@@ -20,6 +20,7 @@ mytaglist.buttons = awful.util.table.join(
   awful.button({ }, 5, awful.tag.viewprev)
 )
 
+local mytasklist = {}
 for s = 1, screen.count() do
   -- Create a promptbox for each screen
   mypromptbox[s] = awful.widget.prompt({ layout = wibox.layout.align.horizontal })
@@ -36,8 +37,7 @@ for s = 1, screen.count() do
   mytaglist[s] = awful.widget.taglist(s, awful.widget.taglist.filter.all, mytaglist.buttons)
 
   -- Create a tasklist widget
-  local mytasklist = {}
-  mytasklist[s] = awful.widget.tasklist(s, awful.widget.tasklist.filter.currenttags)
+  mytasklist[s] = awful.widget.tasklist(s, awful.widget.tasklist.filter.currenttags, mytasklist.buttons)
 
   -- Create the wibox
   mywibox[s] = awful.wibox({ position = "top", screen = s })
