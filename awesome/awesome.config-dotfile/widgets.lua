@@ -1,9 +1,36 @@
 wibox = require("wibox")
+vicious = require("vicious")
 
--- Create a textclock widget
+-- Clock
 local mytextclock = awful.widget.textclock()
 
--- Create a systray
+-- Network usage
+local netwidget = wibox.widget.textbox()
+vicious.register(
+  netwidget,
+  vicious.widgets.net,
+  function (widget, args)
+    -- Sum kbit/s across all non-lo interfaces
+    local up = 0
+    local down = 0
+    local iface
+    for name, value in pairs(args) do
+      iface, direction = name:match("^{(%S+) ([^_]+)_kb}$")
+      if iface and direction and iface ~= "lo" then
+        if direction == "up" then
+          up = up + value
+        elseif direction == "down" then
+          down = down + value
+        end
+      end
+    end
+    return '<span color="#CC9393">' .. (down * 8) .. '</span> ' ..
+      '<span color="#7F9F7F">' .. (up * 8) .. '</span>'
+  end,
+  3
+)
+
+-- Systray
 local mysystray = wibox.widget.systray()
 
 -- Create a wibox for each screen and add it
@@ -47,8 +74,9 @@ for s = 1, screen.count() do
   left_layout:add(mypromptbox[s])
 
   local right_layout = wibox.layout.fixed.horizontal()
-  right_layout:add(mylayoutbox[s])
+  right_layout:add(netwidget)
   right_layout:add(mytextclock)
+  right_layout:add(mylayoutbox[s])
   if s == 1 then right_layout:add(mysystray) end
 
   local layout = wibox.layout.align.horizontal()
