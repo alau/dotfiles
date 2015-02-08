@@ -3,6 +3,7 @@ set-option -g default-command $SHELL
 # Plugins
 set -g @tpm_plugins '              \
   tmux-plugins/tpm                 \
+  tmux-plugins/tmux-sensible       \
 '
 run-shell '~/.tmux/plugins/tpm/tpm'
 
