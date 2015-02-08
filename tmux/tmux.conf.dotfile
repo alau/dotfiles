@@ -1,1 +1,9 @@
 set-option -g default-command $SHELL
+
+# Plugins
+set -g @tpm_plugins '              \
+  tmux-plugins/tpm                 \
+'
+run-shell '~/.tmux/plugins/tpm/tpm'
+
+# vim:ft=tmux.conf
