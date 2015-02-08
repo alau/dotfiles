@@ -46,5 +46,6 @@ Bundle 'derekwyatt/vim-scala'
 Bundle 'saltstack/salt-vim'
 Bundle 'lepture/vim-jinja'
 Bundle 'slim-template/vim-slim'
+Bundle 'Keithbsmiley/tmux.vim'
 
 filetype plugin indent on
