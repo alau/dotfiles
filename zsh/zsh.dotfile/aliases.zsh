@@ -1,7 +1,9 @@
 # git
-alias git="gh"
-if type compdef > /dev/null; then
-  compdef gh=git
+if (( $+commands[gh] )); then
+  alias git="gh"
+  if type compdef > /dev/null; then
+    compdef gh=git
+  fi
 fi
 alias g='git status --short'
 git-add-with-status() { git add "$@" && g }
