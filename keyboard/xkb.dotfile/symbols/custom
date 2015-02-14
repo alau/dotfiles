@@ -31,7 +31,7 @@ xkb_symbols "relocate_equals" {
 partial alphanumeric_keys
 xkb_symbols "compose" {
   key <LSGT> {
-    symbols = [ yacute,  Multi_key ]
+    symbols = [ F9,  Multi_key ]
   };
 };
 

@@ -6,6 +6,10 @@ set -g @tpm_plugins '              \
   tmux-plugins/tmux-sensible       \
 '
 
+unbind C-b
+set -g prefix F9
+bind F9 send-prefix
+
 run-shell '~/.tmux/plugins/tpm/tpm'
 
 # vim:ft=tmux.conf
