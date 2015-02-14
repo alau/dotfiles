@@ -5,6 +5,7 @@ set -g @tpm_plugins '              \
   tmux-plugins/tpm                 \
   tmux-plugins/tmux-sensible       \
 '
+
 run-shell '~/.tmux/plugins/tpm/tpm'
 
 # vim:ft=tmux.conf
