@@ -6,10 +6,30 @@ set -g @tpm_plugins '              \
   tmux-plugins/tmux-sensible       \
 '
 
+run-shell '~/.tmux/plugins/tpm/tpm'
+
+# Set prefix
 unbind C-b
 set -g prefix F9
 bind F9 send-prefix
 
-run-shell '~/.tmux/plugins/tpm/tpm'
+# Window handling
+bind -n C-t new-window
+bind -n C-PageUp previous-window
+bind -n C-PageDown next-window
+
+# Jump to window
+set -g base-index 1
+set -g pane-base-index 1
+bind -n M-& select-window -t 1
+bind -n M-[ select-window -t 2
+bind -n M-{ select-window -t 3
+bind -n M-= select-window -t 4
+bind -n M-( select-window -t 5
+bind -n M-} select-window -t 6
+bind -n M-* select-window -t 7
+bind -n M-) select-window -t 8
+bind -n M-+ select-window -t 9
+bind -n M-] select-window -t 10
 
 # vim:ft=tmux.conf
