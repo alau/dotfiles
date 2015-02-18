@@ -4,6 +4,10 @@ source ~/.zsh/aliases.zsh
 source ~/.zsh/editor.zsh
 . ~/.zsh/z/z.sh
 
+# Disable ^S/^Q flow control
+stty stop undef
+stty start undef
+
 # local stuff
 if [ -e ~/.zshrc.local ]; then
   source ~/.zshrc.local
