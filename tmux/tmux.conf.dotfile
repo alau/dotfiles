@@ -32,4 +32,10 @@ bind -n M-) select-window -t 8
 bind -n M-+ select-window -t 9
 bind -n M-] select-window -t 10
 
+# Split panes
+unbind '"'
+unbind %
+bind | split-window -h
+bind - split-window -v
+
 # vim:ft=tmux.conf
