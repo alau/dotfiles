@@ -27,6 +27,7 @@ Bundle 'bkad/CamelCaseMotion'
 Bundle 'DataWraith/auto_mkdir'
 Bundle 'jeffkreeftmeijer/vim-numbertoggle'
 Bundle 'haya14busa/incsearch.vim'
+Bundle 'christoomey/vim-tmux-navigator'
 
 " Look and feel
 Bundle 'tpope/vim-vividchalk'
