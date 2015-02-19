@@ -72,3 +72,4 @@ alias sum="awk '{ sum += \$1 } END { print sum }' "$@""
 function zebra { awk 'NR%2 == 1 { printf("\033[48;5;237m%s\033[0m\n", $0); next}; 1'; }
 function csv { sed 's/,/, /g' "$@" | column -s, -t | zebra | less -S }
 function csv2 { csv2sc "$@" | sc }
+alias avro-tools=avro
