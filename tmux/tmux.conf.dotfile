@@ -14,7 +14,7 @@ set -g prefix F9
 bind F9 send-prefix
 
 # Window handling
-bind -n C-t new-window
+bind -n C-t new-window -c '#{pane_current_path}'
 bind -n C-PageUp previous-window
 bind -n C-PageDown next-window
 
@@ -35,8 +35,8 @@ bind -n M-] select-window -t 10
 # Split panes
 unbind '"'
 unbind %
-bind | split-window -h
-bind - split-window -v
+bind | split-window -h -c '#{pane_current_path}'
+bind - split-window -v -c '#{pane_current_path}'
 bind -n C-h run "(tmux display-message -p '#{pane_current_command}' | grep -iq vim && tmux send-keys C-h) || tmux select-pane -L"
 bind -n C-j run "(tmux display-message -p '#{pane_current_command}' | grep -iq vim && tmux send-keys C-j) || tmux select-pane -D"
 bind -n C-k run "(tmux display-message -p '#{pane_current_command}' | grep -iq vim && tmux send-keys C-k) || tmux select-pane -U"
