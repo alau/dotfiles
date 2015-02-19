@@ -25,7 +25,7 @@ function load_file(path)
   success, result = pcall(function() return dofile(path) end)
   if not success then
     naughty.notify({
-      title = "Error while loading an configuration file",
+      title = "Error while loading a configuration file",
       text = "When loading `" .. path ..  "`, got the following error:\n" .. result,
       preset = naughty.config.presets.critical
     })
