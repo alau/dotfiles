@@ -50,9 +50,6 @@ nmap <C-\> :cnext<CR>
 nmap <C-s> :write<CR>
 imap <C-s> <Esc>:write<CR>a
 
-" Editing
-imap <C-l> <Esc>o
-
 " Pasting from system clipboard
 imap <C-v> <ESC>"+pa
 " Copy to system clipboard
