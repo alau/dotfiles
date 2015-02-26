@@ -65,6 +65,11 @@ function pg { p | grep "$@" }
 alias pt='pstree -a'
 alias netstatc='netstat -ntulp'
 
+# Vim
+if (( $+commands[gvim] )); then
+  alias vim="gvim -v"
+fi
+
 # Misc
 alias dotup='cd ~/dotfiles/ && gff && ./install.sh'
 alias follow='less +F'
