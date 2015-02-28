@@ -52,6 +52,7 @@ imap <C-s> <Esc>:write<CR>a
 
 " Pasting from system clipboard
 imap <C-p> <ESC>"+pa
+nmap <C-p> "+p
 " Copy to system clipboard
 vmap <C-y> "+y
 
