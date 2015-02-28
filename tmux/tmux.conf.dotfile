@@ -45,7 +45,9 @@ bind -n C-l run "(tmux display-message -p '#{pane_current_command}' | grep -iq v
 bind -n C-\ run "(tmux display-message -p '#{pane_current_command}' | grep -iq vim && tmux send-keys 'C-\\') || tmux select-pane -l"
 
 # Copy/Pasting
-bind -n C-p run "tmux set-buffer \"$(xclip -o -sel clipboard)\"; tmux paste-buffer"
+unbind p
+unbind n
+bind p run "tmux set-buffer \"$(xclip -o -sel clipboard)\"; tmux paste-buffer"
 bind v copy-mode
 
 # vim:ft=tmux.conf
