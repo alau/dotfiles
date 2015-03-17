@@ -72,7 +72,7 @@ map <Leader>D :call Gitv_OpenGitCommand("diff --no-color", 'new')<CR><C-W>_
 let g:ctrlp_map = '<leader>t'
 
 " NERDTree
-nmap <silent> <F11> :NERDTreeToggle<CR>
+nmap <silent> <F10> :NERDTreeToggle<CR>
 
 " NERDCommentator
 map <Leader>x <plug>NERDCommenterToggle
