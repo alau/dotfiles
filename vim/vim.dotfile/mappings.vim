@@ -1,7 +1,3 @@
-" Create and close tabs
-nnoremap <C-t> :tabnew<CR>
-nnoremap Q :close<CR>
-
 " Disable arrow keys
 map <Up> <nop>
 map <Down> <nop>
