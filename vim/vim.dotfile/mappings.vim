@@ -8,6 +8,9 @@ imap <Down> <nop>
 imap <Left> <nop>
 imap <Right> <nop>
 
+" Pane handling
+nnoremap Q :close<CR>
+
 " Up/down movement for long lines
 nmap j gj
 nmap k gk
