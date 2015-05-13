@@ -34,6 +34,7 @@ Bundle 'tpope/vim-vividchalk'
 Bundle 'bling/vim-airline'
 Bundle 'bitc/vim-bad-whitespace'
 Bundle 'airblade/vim-gitgutter'
+Bundle 'oblitum/rainbow'
 
 " Language support
 Bundle 'itspriddle/vim-jquery'
@@ -48,5 +49,6 @@ Bundle 'saltstack/salt-vim'
 Bundle 'lepture/vim-jinja'
 Bundle 'slim-template/vim-slim'
 Bundle 'Keithbsmiley/tmux.vim'
+Bundle 'guns/vim-clojure-static'
 
 filetype plugin indent on
