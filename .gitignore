@@ -5,3 +5,4 @@ TODO
 dotfiles-export.tgz
 sbt/sbt-plugins.dotfile/project
 sbt/sbt-plugins.dotfile/target
+sbt/sbt.dotfile/launchers
