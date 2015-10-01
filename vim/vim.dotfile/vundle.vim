@@ -28,6 +28,7 @@ Bundle 'DataWraith/auto_mkdir'
 Bundle 'jeffkreeftmeijer/vim-numbertoggle'
 Bundle 'haya14busa/incsearch.vim'
 Bundle 'christoomey/vim-tmux-navigator'
+Bundle 'tpope/vim-fireplace'
 
 " Look and feel
 Bundle 'tpope/vim-vividchalk'
