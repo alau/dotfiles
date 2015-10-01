@@ -11,6 +11,7 @@
 --ignore-dir=tmp
 --ignore-dir=node_modules
 --ignore-dir=venv
+--ignore-file=is:.cache
 --ignore-dir=target
 --ignore-dir=dist
 --ignore-dir=bower_components
