@@ -32,6 +32,10 @@ colorscheme vividchalk
 " Remove trailing whitespaces upon write
 autocmd BufWritePre * EraseBadWhitespace
 
+" Use system clipboard by default
+set clipboard=unnamed
+set clipboard=unnamedplus
+
 " ctrlp
 set wildignore=.git,vendor,node_modules
 let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files']

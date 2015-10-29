@@ -49,12 +49,6 @@ nmap <C-\> :cnext<CR>
 nmap <C-s> :write<CR>
 imap <C-s> <Esc>:write<CR>a
 
-" Pasting from system clipboard
-imap <C-p> <ESC>"+pa
-nmap <C-p> "+p
-" Copy to system clipboard
-vmap <C-y> "+y
-
 " Reloading vimrc
 map <Leader>so :so ~/.vimrc<CR>
 
