@@ -3,3 +3,5 @@
 
 -- Display null as NULL
 \pset null 'NULL'
+
+-- vim:ft=sql
