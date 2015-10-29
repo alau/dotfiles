@@ -1,1 +1,5 @@
+-- Output formatting
 \x auto
+
+-- Display null as NULL
+\pset null 'NULL'
