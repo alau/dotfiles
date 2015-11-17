@@ -58,7 +58,7 @@ alias keycodes='xkbprint -label name $DISPLAY - | gv -orientation=seascape -'
 alias rm='rm'
 
 # Amazon
-function s3cat { s3cmd get $1 - }
+function s3cat { s3cmd get $1 - --no-progress }
 function s3json { s3cat $1 | jq . }
 
 # Inspection
