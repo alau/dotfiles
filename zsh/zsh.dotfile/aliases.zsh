@@ -69,7 +69,7 @@ alias netstatc='netstat -ntulp'
 
 # Vim
 if [ -f "$HOME/bin/nvim" ]; then
-  alias vim="nvim"
+  alias vim="VIM=$HOME/workspace/neovim/runtime/ nvim"
 elif (( $+commands[gvim] )); then
   alias vim="gvim -v"
 fi
