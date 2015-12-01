@@ -6,6 +6,11 @@ Run `/install.sh`
 
 ## Vim
 
+[Install neovim](https://github.com/neovim/neovim/wiki/Installing-Neovim) 0.1.0
+. Enable python support by installing the python client from neovim
+[python-client](https://github.com/neovim/python-client) commit 6c0ec0. To
+check that the python integration is working, run `:python3 import neovim`.
+
 Enter vim and run `:BundleInstall` to install the bundles.
 
 The following packages are required for ctags:
