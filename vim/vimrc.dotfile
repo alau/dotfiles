@@ -1,7 +1,7 @@
 " Use Vim settings, rather then Vi settings
 set nocompatible
 
-source ~/.vim/vundle.vim
+source ~/.vim/plugins.vim
 source ~/.vim/definitions.vim
 source ~/.vim/settings.vim
 source ~/.vim/mappings.vim
