@@ -14,3 +14,6 @@
 [submodule "tmux/tmux.dotfile/plugins/tpm"]
 	path = tmux/tmux.dotfile/plugins/tpm
 	url = https://github.com/tmux-plugins/tpm.git
+[submodule "vim/vim.dotfile/vim-plug"]
+	path = vim/vim.dotfile/vim-plug
+	url = git@github.com:junegunn/vim-plug.git
