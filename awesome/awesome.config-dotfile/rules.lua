@@ -17,6 +17,10 @@ rules.rules = {
     rule = { class = "MPlayer" },
     properties = { floating = true }
   },
+  {
+    rule = { instance = "plugin-container" },
+    properties = { floating = true, focus = yes }
+  },
 }
 
 local local_additions = os.getenv("HOME") .. "/.awesome-additional-rules.local.lua"
