@@ -11,14 +11,11 @@ Run `/install.sh`
 [python-client](https://github.com/neovim/python-client) commit 6c0ec0. To
 check that the python integration is working, run `:python3 import neovim`.
 
-Enter vim and run `:BundleInstall` to install the bundles.
+Enter vim and run `:PlugInstall` to install the bundles.
 
 The following packages are required for ctags:
 * exuberant-ctags
 * ncurses-term
-
-An additional installation step is needed for YouCompleteMe:
-* `cd ~/.vim/bundle/YouCompleteMe && ./install.sh`
 
 ### Scala auto-imports etc
 

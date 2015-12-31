@@ -12,7 +12,6 @@ Plug 'godlygeek/tabular'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'Lokaltog/vim-easymotion'
 Plug 'scrooloose/nerdcommenter'
-Plug 'Valloric/YouCompleteMe'
 Plug 'dansomething/vim-eclim'
 
 " Utility
@@ -24,6 +23,7 @@ Plug 'jeffkreeftmeijer/vim-numbertoggle'
 Plug 'haya14busa/incsearch.vim'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'tpope/vim-fireplace'
+Plug 'ervandew/supertab'
 
 " Look and feel
 Plug 'tpope/vim-vividchalk'
