@@ -46,5 +46,6 @@ Plug 'lepture/vim-jinja'
 Plug 'slim-template/vim-slim'
 Plug 'Keithbsmiley/tmux.vim'
 Plug 'guns/vim-clojure-static'
+Plug 'davidhalter/jedi-vim' " Python auto-completion
 
 call plug#end()
