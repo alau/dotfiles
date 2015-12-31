@@ -47,5 +47,6 @@ Plug 'slim-template/vim-slim'
 Plug 'Keithbsmiley/tmux.vim'
 Plug 'guns/vim-clojure-static'
 Plug 'davidhalter/jedi-vim' " Python auto-completion
+Plug 'vim-scripts/indentpython'
 
 call plug#end()
