@@ -33,8 +33,7 @@ colorscheme vividchalk
 autocmd BufWritePre * EraseBadWhitespace
 
 " Use system clipboard by default
-set clipboard=unnamed
-set clipboard=unnamedplus
+set clipboard=unnamedplus,unnamed
 
 " ctrlp
 set wildignore=.git,vendor,node_modules

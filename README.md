@@ -17,6 +17,9 @@ The following packages are required for ctags:
 * exuberant-ctags
 * ncurses-term
 
+The following package is required for clipboard integration:
+* xsel
+
 ### Scala auto-imports etc
 
 Auto-imports are handled by [eclim](http://eclim.org/), which has to be
