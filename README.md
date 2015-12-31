@@ -6,7 +6,7 @@ Run `/install.sh`
 
 ## Vim
 
-[Install neovim](https://github.com/neovim/neovim/wiki/Installing-Neovim) 0.1.0
+[Install neovim](https://github.com/neovim/neovim/wiki/Installing-Neovim) 0.1.1
 . Enable python support by installing the python client from neovim
 [python-client](https://github.com/neovim/python-client) commit 6c0ec0. To
 check that the python integration is working, run `:python3 import neovim`.
