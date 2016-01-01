@@ -52,3 +52,6 @@ if [[ ! -d ~/.rbenv/plugins/bundler ]]; then
     cd ~/.rbenv/plugins && \
     git clone git@github.com:carsomyr/rbenv-bundler.git bundler
 fi
+
+# tmux
+touch ~/.tmux.conf.local
