@@ -101,3 +101,7 @@ nmap <Leader>es :ScalaSearch<CR>
 map /  <Plug>(incsearch-forward)
 map ?  <Plug>(incsearch-backward)
 map g/ <Plug>(incsearch-stay)
+
+" Number toggle
+let g:NumberToggleTrigger="<F6>"
+
