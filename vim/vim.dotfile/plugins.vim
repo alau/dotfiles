@@ -48,5 +48,6 @@ Plug 'Keithbsmiley/tmux.vim'
 Plug 'guns/vim-clojure-static'
 Plug 'davidhalter/jedi-vim' " Python auto-completion
 Plug 'vim-scripts/indentpython'
+Plug 'Rykka/riv.vim'
 
 call plug#end()
