@@ -8,6 +8,9 @@ source ~/.zsh/editor.zsh
 stty stop undef
 stty start undef
 
+# Fix copy-paste
+unset zle_bracketed_paste
+
 # local stuff
 if [ -e ~/.zshrc.local ]; then
   source ~/.zshrc.local
