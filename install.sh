@@ -39,7 +39,7 @@ for util in 'avro-tools' 'csv2sc' 'gh' 'git-wtf' 'heroku' 'http' 'jq' 'sbt' 'zea
 done
 
 # rbenv
-echo "2.1.5" > ~/.rbenv/version
+echo "2.1.8" > ~/.rbenv/version
 
 if [[ ! -d ~/.rbenv/plugins/ruby-build ]]; then
   mkdir -p ~/.rbenv/plugins && \
