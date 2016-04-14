@@ -72,6 +72,10 @@ elif (( $+commands[gvim] )); then
   alias vim="gvim -v"
 fi
 
+# Anaconda
+function anaconda-deactivate { path=("${(@)path:#$HOME/anaconda*/bin}") }
+function anaconda-activate { path=("/home/alau/anaconda2/bin" "/home/alau/anaconda3/bin" $path) }
+
 # Misc
 alias dotup='cd ~/dotfiles/ && gff && ./install.sh'
 alias follow='less +F'
