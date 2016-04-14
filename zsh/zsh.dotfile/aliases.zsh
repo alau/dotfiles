@@ -39,10 +39,8 @@ alias uuu='cd ../../..'
 alias t='tree'
 alias l='ls'
 
-# bundle
+# ruby-related
 alias be='bundle exec'
-
-# rails
 alias rt='RAILS_ENV=test rake'
 alias cuc='CUCUMBER_FORMAT=pretty be cucumber --drb'
 
