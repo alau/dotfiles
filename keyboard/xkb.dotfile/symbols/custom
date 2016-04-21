@@ -42,4 +42,11 @@ xkb_symbols "menu_as_super" {
   };
 };
 
+partial alphanumeric_keys
+xkb_symbols "rctrl_as_level_3" {
+  key <RCTL> {
+    symbols = [ ISO_Level3_Shift ]
+  };
+};
+
 # vim:ft=xkb
