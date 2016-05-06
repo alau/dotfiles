@@ -19,12 +19,39 @@ xkb_symbols "swedish_characters" {
 };
 
 partial alphanumeric_keys
-xkb_symbols "relocate_equals" {
-  key <AE04> {
+xkb_symbols "relocate_number_row" {
+  key <AE01> {
+    symbols = [ asterisk, 7 ]
+  };
+  key <AE02> {
+    symbols = [ bracketleft, 5 ]
+  };
+  key <AE03> {
     symbols = [ equal, 3 ]
   };
+  key <AE04> {
+    symbols = [ parenleft, 1 ]
+  };
+  key <AE05> {
+    symbols = [ braceleft, 9 ]
+  };
   key <AE06> {
-    symbols = [ braceright, 9 ]
+    symbols = [ braceright, 0 ]
+  };
+  key <AE07> {
+    symbols = [ parenright, 2 ]
+  };
+  key <AE08> {
+    symbols = [ plus, 4 ]
+  };
+  key <AE09> {
+    symbols = [ bracketright, 6 ]
+  };
+  key <AE10> {
+    symbols = [ exclam, 8 ]
+  };
+  key <AE11> {
+    symbols = [ ampersand, percent ]
   };
 };
 
