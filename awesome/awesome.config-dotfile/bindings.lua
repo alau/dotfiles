@@ -63,7 +63,7 @@ local globalkeys = awful.util.table.join(
   ),
 
   -- Standard program
-  awful.key({ modkey,           }, "Return",
+  awful.key({ modkey,           }, "a",
     function()
       awful.util.spawn(settings.terminal)
     end
