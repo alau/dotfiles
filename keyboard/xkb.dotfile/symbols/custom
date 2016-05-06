@@ -70,9 +70,18 @@ xkb_symbols "menu_as_super" {
 };
 
 partial alphanumeric_keys
-xkb_symbols "rctrl_as_level_3" {
-  key <RCTL> {
+xkb_symbols "rearrange_kinesis_thumb_keys" {
+  key <HOME> {
+    symbols = [ Page_Up ]
+  };
+  key <END> {
+    symbols = [ Page_Down ]
+  };
+  key <PGUP> {
     symbols = [ ISO_Level3_Shift ]
+  };
+  key <PGDN> {
+    symbols = [ Super_R ]
   };
 };
 

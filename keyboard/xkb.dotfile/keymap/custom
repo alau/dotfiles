@@ -2,7 +2,7 @@ xkb_keymap {
   xkb_keycodes  { include "evdev+aliases(qwerty)"	};
   xkb_types     { include "complete+caps(shift)+numpad(shift3)"	};
   xkb_compat    { include "complete"	};
-  xkb_symbols   { include "pc+us(dvp)+inet(evdev)+level3(ralt_switch)+capslock(swapescape)+kpdl(semi)+terminate(ctrl_alt_bksp)+custom(swedish_characters)+custom(switch_case)+custom(relocate_number_row)+custom(compose)+custom(menu_as_super)+custom(rctrl_as_level_3)"	};
+  xkb_symbols   { include "pc+us(dvp)+inet(evdev)+level3(ralt_switch)+capslock(swapescape)+kpdl(semi)+terminate(ctrl_alt_bksp)+custom(swedish_characters)+custom(switch_case)+custom(relocate_number_row)+custom(compose)+custom(menu_as_super)+custom(rearrange_kinesis_thumb_keys)"	};
   xkb_geometry  { include "pc(pc105)"	};
 };
 
