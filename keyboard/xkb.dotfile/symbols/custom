@@ -83,6 +83,9 @@ xkb_symbols "rearrange_kinesis_thumb_keys" {
   key <PGDN> {
     symbols = [ Super_R ]
   };
+  key <RALT> {
+    symbols = [ Alt_R ]
+  };
 };
 
 # vim:ft=xkb
