@@ -10,8 +10,12 @@ rules.rules = {
       maximized_vertical = false,
       maximized_horizontal = false,
       size_hints_honor = false,
-      buttons = settings.clientbuttons
-    }
+      buttons = settings.clientbuttons,
+    },
+    callback = function(c)
+      c.screen = mouse.screen,
+      c:tags({settings.tags[c.screen][awful.tag.getidx()]})
+    end
   },
   {
     rule = { class = "MPlayer" },
