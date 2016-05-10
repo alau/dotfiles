@@ -6,7 +6,7 @@ Run `/install.sh`
 
 List of packages (Fedora 23):
 ```zsh
-dnf install vim dropbox pygpgme htop keepassx-0.4.3-13.fc23 zsh numlockx roxterm awesome tmux vicious ctags ncurses-term xsel xscreensaver beesu lxappearance wmname
+dnf install vim dropbox pygpgme htop keepassx zsh numlockx roxterm awesome tmux vicious ctags ncurses-term xsel xscreensaver beesu lxappearance wmname
 ```
 
 ## Vim
