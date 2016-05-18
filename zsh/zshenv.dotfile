@@ -21,6 +21,7 @@ export KEYTIMEOUT=1
 typeset -gU path manpath
 
 path=(
+  ./node_modules/.bin
   $HOME/anaconda2/bin
   $HOME/anaconda3/bin
   /usr/local/{bin,sbin}
