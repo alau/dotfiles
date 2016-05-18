@@ -20,6 +20,7 @@ zstyle ':prezto:load' pmodule \
   'completion' \
   'git' \
   'ruby' \
+  'node' \
   'syntax-highlighting' \
   'prompt'
 
