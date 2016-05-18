@@ -19,3 +19,8 @@ fi
 if (( $+commands[gnome-keyring-daemon] )); then
   export $(gnome-keyring-daemon --daemonize --start)
 fi
+
+export NVM_DIR="$HOME/.nvm"
+if [ -e $NVM_DIR/nvm.sh ]; then
+  . "$NVM_DIR/nvm.sh"
+fi
