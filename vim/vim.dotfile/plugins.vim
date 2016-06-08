@@ -17,6 +17,7 @@ Plug 'dansomething/vim-eclim'
 " Utility
 Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-endwise'
+Plug 'tpope/vim-surround'
 Plug 'bkad/CamelCaseMotion'
 Plug 'DataWraith/auto_mkdir'
 Plug 'jeffkreeftmeijer/vim-numbertoggle'
