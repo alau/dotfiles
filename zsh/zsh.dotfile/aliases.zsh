@@ -76,6 +76,9 @@ fi
 function anaconda-deactivate { path=("${(@)path:#$HOME/anaconda*/bin}") }
 function anaconda-activate { path=("/home/alau/anaconda2/bin" "/home/alau/anaconda3/bin" $path) }
 
+# mocha
+alias mwa='mocha --watch'
+
 # Misc
 alias dotup='cd ~/dotfiles/ && gff && ./install.sh'
 alias follow='less +F'
