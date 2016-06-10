@@ -110,6 +110,10 @@ let g:EclimFileTypeValidate = 0
 let g:EclimScalaSearchSingleResult = 'split'
 let g:EclimScalaValidate = 0
 
+" vim-mustache-handlebars
+let g:mustache_abbreviations = 1
+let g:mustache_operators = 0
+
 " tmux-navigator
 let g:tmux_navigator_no_mappings = 1
 

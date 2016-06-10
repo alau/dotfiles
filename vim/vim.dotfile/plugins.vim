@@ -50,5 +50,6 @@ Plug 'guns/vim-clojure-static'
 Plug 'davidhalter/jedi-vim' " Python auto-completion
 Plug 'hynek/vim-python-pep8-indent'
 Plug 'Rykka/riv.vim'
+Plug 'mustache/vim-mustache-handlebars'
 
 call plug#end()
