@@ -1,5 +1,11 @@
+--exclude=.git
+--exclude=log
+--exclude=tmp
+--extra=+f
+
 --langdef=Scala
 --langmap=Scala:.scala
+--exclude=target
 --regex-Scala=/^[ \t]*(((implicit|private|protected)?[ \t]*)*(\[[a-zA-Z0-9_]*\])?[ \t]*)*object[ \t]*([a-zA-Z0-9_]+)/\5/o,objects/
 --regex-Scala=/^[ \t]*(((implicit|private|protected|sealed)?[ \t]*)*(\[[a-zA-Z0-9_]*\])?[ \t]*)*trait[ \t]*([a-zA-Z0-9_]+)/\5/t,traits/
 --regex-Scala=/^[ \t]*(((implicit|private|protected|sealed)?[ \t]*)*(\[[a-zA-Z0-9_]*\])?[ \t]*)*(case[ \t]*)?class[ \t]*([a-zA-Z0-9_]+)/\6/c,classes/

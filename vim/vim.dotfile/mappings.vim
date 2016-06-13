@@ -71,7 +71,7 @@ nmap <silent> <F10> :NERDTreeToggle<CR>
 map <Leader>x <plug>NERDCommenterToggle
 
 " ctags
-map <Leader>rt :!ctags --extra=+f --exclude=.git --exclude=tmp --exclude=log --exclude=target -R *<CR><CR>
+map <Leader>rt :!ctags -R *<CR><CR>
 map ! <C-]>
 map ] :pop<CR>
 
