@@ -47,9 +47,10 @@ Plug 'lepture/vim-jinja'
 Plug 'slim-template/vim-slim'
 Plug 'Keithbsmiley/tmux.vim'
 Plug 'guns/vim-clojure-static'
-Plug 'davidhalter/jedi-vim' " Python auto-completion
 Plug 'hynek/vim-python-pep8-indent'
 Plug 'Rykka/riv.vim'
 Plug 'mustache/vim-mustache-handlebars'
+Plug 'isRuslan/vim-es6'
+Plug 'ternjs/tern_for_vim'
 
 call plug#end()
