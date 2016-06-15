@@ -73,7 +73,7 @@ map <Leader>x <plug>NERDCommenterToggle
 " ctags
 map <Leader>rt :!ctags -R *<CR><CR>
 map ! <C-]>
-map ] :pop<CR>
+map & :pop<CR>
 
 " CamelCaseMotion
 map <silent> w <Plug>CamelCaseMotion_w
