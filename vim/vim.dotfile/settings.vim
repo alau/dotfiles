@@ -98,12 +98,6 @@ highlight link GitGutterAdd DiffAdded
 highlight link GitGutterDelete DiffRemoved
 highlight link GitGutterChange DiffChanged
 
-" eclim
-let g:EclimScalaValidate = 0
-let g:EclimFileTypeValidate = 0
-let g:EclimScalaSearchSingleResult = 'split'
-let g:EclimScalaValidate = 0
-
 " vim-mustache-handlebars
 let g:mustache_abbreviations = 1
 let g:mustache_operators = 0

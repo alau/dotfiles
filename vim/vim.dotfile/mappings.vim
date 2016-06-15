@@ -92,11 +92,6 @@ noremap <Leader>J :% !python -m json.tool<CR>:set ft=json<CR>
 nmap H <Plug>(easymotion-j)
 nmap L <Plug>(easymotion-k)
 
-" eclim
-nmap <Leader>ei :ScalaImport<CR>
-nmap <Leader>ev :Validate<CR>
-nmap <Leader>es :ScalaSearch<CR>
-
 " incsearch
 map /  <Plug>(incsearch-forward)
 map ?  <Plug>(incsearch-backward)
