@@ -42,8 +42,8 @@ map <A-]> 0gt
 nmap - <C-]>
 
 " Quickfix navigation
-nmap <C-\> :cprev<CR>
-nmap <C-l> :cnext<CR>
+"nmap <C-\> :cprev<CR>
+nmap <C-\> :cnext<CR>
 
 " Saving file
 nmap <C-s> :write<CR>
