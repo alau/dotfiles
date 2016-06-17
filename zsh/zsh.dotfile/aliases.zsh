@@ -79,6 +79,10 @@ function anaconda-activate { path=("/home/alau/anaconda2/bin" "/home/alau/anacon
 # mocha
 alias mwa='mocha --watch'
 
+# Disabled corrections
+alias gulp='nocorrect gulp'
+alias eslint='nocorrect eslint'
+
 # Misc
 alias dotup='cd ~/dotfiles/ && gff && ./install.sh'
 alias follow='less +F'
