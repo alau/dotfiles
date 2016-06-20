@@ -35,6 +35,13 @@ autocmd BufWritePre * EraseBadWhitespace
 " Use system clipboard by default
 set clipboard=unnamedplus,unnamed
 
+" autocompletion
+set completeopt+=longest
+let g:SuperTabDefaultCompletionType = "<c-x><c-o>"
+let g:SuperTabContextDefaultCompletionType = "<c-x><c-o>"
+let g:SuperTabLongestEnhanced = 1
+let g:SuperTabLongestHighlight = 1
+
 " ctrlp
 set wildignore=.git,vendor,node_modules
 let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files']
