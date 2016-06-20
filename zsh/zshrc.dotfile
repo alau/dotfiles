@@ -11,6 +11,14 @@ stty start undef
 # Fix copy-paste
 unset zle_bracketed_paste
 
+# Auto-run "nvm use" if .nvmrc exists
+load-nvmrc() {
+  if [[ -f .nvmrc && -r .nvmrc ]]; then
+    nvm use
+  fi
+}
+add-zsh-hook chpwd load-nvmrc
+
 if (( $+commands[gnome-keyring-daemon] )); then
   export $(gnome-keyring-daemon --daemonize --start)
 fi
