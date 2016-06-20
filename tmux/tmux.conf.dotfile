@@ -52,6 +52,9 @@ bind p run "tmux set-buffer \"$(xclip -o -sel clipboard)\"; tmux paste-buffer"
 bind v copy-mode
 bind -t vi-copy 'v' begin-selection
 
+# Various utility
+set -s escape-time 0
+
 # Local stuff
 source-file ~/.tmux.conf.local
 
