@@ -22,6 +22,7 @@ Plug 'jeffkreeftmeijer/vim-numbertoggle'
 Plug 'haya14busa/incsearch.vim'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'ervandew/supertab'
+Plug 'Raimondi/delimitMate'
 
 " Look and feel
 Plug 'tpope/vim-vividchalk'

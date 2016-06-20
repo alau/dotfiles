@@ -125,3 +125,6 @@ let g:tmux_navigator_no_mappings = 1
 
 " rainbow brackets
 au FileType clojure call rainbow#load()
+
+" delimitMate
+let delimitMate_excluded_ft = "txt"
