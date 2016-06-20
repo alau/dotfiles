@@ -11,11 +11,11 @@ stty start undef
 # Fix copy-paste
 unset zle_bracketed_paste
 
+if (( $+commands[gnome-keyring-daemon] )); then
+  export $(gnome-keyring-daemon --daemonize --start)
+fi
+
 # local stuff
 if [ -e ~/.zshrc.local ]; then
   source ~/.zshrc.local
-fi
-
-if (( $+commands[gnome-keyring-daemon] )); then
-  export $(gnome-keyring-daemon --daemonize --start)
 fi
