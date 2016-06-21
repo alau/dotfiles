@@ -21,8 +21,8 @@ Plug 'DataWraith/auto_mkdir'
 Plug 'jeffkreeftmeijer/vim-numbertoggle'
 Plug 'haya14busa/incsearch.vim'
 Plug 'christoomey/vim-tmux-navigator'
-Plug 'ervandew/supertab'
 Plug 'Raimondi/delimitMate'
+Plug 'Valloric/YouCompleteMe'
 
 " Look and feel
 Plug 'tpope/vim-vividchalk'
