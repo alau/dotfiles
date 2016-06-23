@@ -100,3 +100,5 @@ map g/ <Plug>(incsearch-stay)
 " Number toggle
 let g:NumberToggleTrigger="<F6>"
 
+" Ultisnips
+let g:UltiSnipsExpandTrigger="#"
