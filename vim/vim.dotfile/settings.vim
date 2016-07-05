@@ -69,6 +69,7 @@ let g:ackprg="ack -H -i --nocolor --nogroup --column --noxml --nocss"
 " delimitMate
 let delimitMate_expand_space = 1
 let delimitMate_expand_cr = 1
+let delimitMate_excluded_ft = "txt"
 
 " endwise
 let g:endwise_no_mappings = 0
@@ -122,5 +123,5 @@ let g:tmux_navigator_no_mappings = 1
 " rainbow brackets
 au FileType clojure call rainbow#load()
 
-" delimitMate
-let delimitMate_excluded_ft = "txt"
+" YCM
+let g:ycm_filetype_whitelist = { "javascript": 1 }
