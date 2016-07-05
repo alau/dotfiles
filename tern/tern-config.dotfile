@@ -1,6 +1,16 @@
 {
+  "ecmaVersion": 6,
+  "libs": [
+    "browser"
+  ],
   "plugins": {
+    "complete_strings": {
+    },
     "node": {
+    },
+    "modules": {
+    },
+    "es_modules": {
     }
   }
 }
