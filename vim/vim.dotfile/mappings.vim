@@ -24,20 +24,6 @@ nnoremap <silent> <C-l> :TmuxNavigateRight<cr>
 " Remove trailing spaces
 nnoremap <silent> <F5> :EraseBadWhitespace<CR>
 
-" Tab navigation
-map <C-PageUp> <nop>
-map <C-PageDown> <nop>
-map <A-&> 1gt
-map <A-[> 2gt
-map <A-{> 3gt
-map <A-=> 4gt
-map <A-(> 5gt
-map <A-}> 6gt
-map <A-*> 7gt
-map <A-)> 8gt
-map <A-+> 9gt
-map <A-]> 0gt
-
 " Tags
 nmap - <C-]>
 
