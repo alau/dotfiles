@@ -88,3 +88,9 @@ let g:NumberToggleTrigger="<F6>"
 
 " Ultisnips
 let g:UltiSnipsExpandTrigger="#"
+
+" vim move
+nmap <Esc>K <Plug>MoveLineUp
+nmap <Esc>J <Plug>MoveLineDown
+vmap <Esc>K <Plug>MoveBlockUp
+vmap <Esc>J <Plug>MoveBlockDown

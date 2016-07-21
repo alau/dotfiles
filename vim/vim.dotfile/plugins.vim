@@ -23,6 +23,7 @@ Plug 'haya14busa/incsearch.vim'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'Raimondi/delimitMate'
 Plug 'Valloric/YouCompleteMe'
+Plug 'matze/vim-move'
 
 " Look and feel
 Plug 'tpope/vim-vividchalk'
