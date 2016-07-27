@@ -5,7 +5,7 @@ client.connect_signal("manage",
     c:connect_signal("mouse::enter",
       function(c)
         if awful.layout.get(c.screen) ~= awful.layout.suit.magnifier
-          and awful.client.focus.filter(c) and not (c.icon_name and c.icon_name:find("HipChat")) then
+          and awful.client.focus.filter(c) and not (c.class and c.class:find("Slack")) then
           client.focus = c
         end
       end
