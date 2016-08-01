@@ -66,8 +66,8 @@ alias pt='pstree -a'
 alias netstatc='netstat -ntulp'
 
 # Vim
-if [ -f "$HOME/bin/nvim" ]; then
-  alias vim="VIM=$HOME/workspace/neovim/runtime/ nvim"
+if (( $+commands[nvim] )); then
+  alias vim="nvim"
 elif (( $+commands[gvim] )); then
   alias vim="gvim -v"
 fi
