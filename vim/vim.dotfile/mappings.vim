@@ -94,3 +94,6 @@ nmap <Esc>K <Plug>MoveLineUp
 nmap <Esc>J <Plug>MoveLineDown
 vmap <Esc>K <Plug>MoveBlockUp
 vmap <Esc>J <Plug>MoveBlockDown
+
+" depolete
+inoremap <expr><tab> pumvisible() ? "\<c-n>" : "\<tab>""

@@ -1,5 +1,9 @@
 call plug#begin('~/.vim/bundle')
 
+function! DoRemote(arg)
+  UpdateRemotePlugins
+endfunction
+
 " Tools
 Plug 'mileszs/ack.vim'
 Plug 'tpope/vim-fugitive'
@@ -22,7 +26,7 @@ Plug 'jeffkreeftmeijer/vim-numbertoggle'
 Plug 'haya14busa/incsearch.vim'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'Raimondi/delimitMate'
-Plug 'Valloric/YouCompleteMe'
+Plug 'Shougo/deoplete.nvim', { 'do': function('DoRemote') }
 Plug 'matze/vim-move'
 
 " Look and feel
@@ -41,7 +45,7 @@ Plug 'Keithbsmiley/tmux.vim'
 Plug 'hynek/vim-python-pep8-indent'
 Plug 'mustache/vim-mustache-handlebars'
 Plug 'isRuslan/vim-es6'
-Plug 'ternjs/tern_for_vim'
+Plug 'ternjs/tern_for_vim', { 'do': 'npm install' }
 Plug 'mtscout6/syntastic-local-eslint.vim'
 Plug 'wavded/vim-stylus'
 

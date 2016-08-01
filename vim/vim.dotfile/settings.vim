@@ -35,9 +35,6 @@ autocmd BufWritePre * EraseBadWhitespace
 " Use system clipboard by default
 set clipboard=unnamedplus,unnamed
 
-" autocompletion
-set completeopt+=longest
-
 " ctrlp
 set wildignore=.git,vendor,node_modules
 let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files']
@@ -123,5 +120,8 @@ let g:tmux_navigator_no_mappings = 1
 " rainbow brackets
 au FileType clojure call rainbow#load()
 
-" YCM
-let g:ycm_filetype_whitelist = { "javascript": 1 }
+" deoplete
+let g:deoplete#enable_at_startup = 1
+
+" tern
+let g:tern_show_signature_in_pum = 1
