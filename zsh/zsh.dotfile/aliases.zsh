@@ -78,6 +78,7 @@ function anaconda-activate { path=("/home/alau/anaconda2/bin" "/home/alau/anacon
 
 # node
 alias nr='npm run'
+alias nu='nvm use'
 alias mwa='mocha --watch'
 
 # Disabled corrections
