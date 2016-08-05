@@ -20,6 +20,13 @@ snippet "\=(\w+)" "fat arrow" ir
 }
 endsnippet
 
+snippet .t "then" i
+
+	.then((${VISUAL}${1}) => {
+		${2}
+	})
+endsnippet
+
 snippet use "new file" b
 "use strict";
 
