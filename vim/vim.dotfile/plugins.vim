@@ -45,6 +45,7 @@ Plug 'Keithbsmiley/tmux.vim'
 Plug 'hynek/vim-python-pep8-indent'
 Plug 'mustache/vim-mustache-handlebars'
 Plug 'isRuslan/vim-es6'
+Plug 'mxw/vim-jsx'
 Plug 'ternjs/tern_for_vim', { 'do': 'npm install' }
 Plug 'mtscout6/syntastic-local-eslint.vim'
 Plug 'wavded/vim-stylus'
