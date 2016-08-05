@@ -103,6 +103,8 @@ highlight link multiple_cursors_visual Visual
 " UltiSnips
 let g:UltiSnipsExpandTrigger = '<F9>'
 let g:UltiSnipsJumpForwardTrigger = '<F9>'
+let g:UltiSnipsEditSplit = 'horizontal'
+let g:UltiSnipsSnippetsDir = '~/.vim/UltiSnips'
 
 " gitgutter
 highlight SignColumn guibg=Black
