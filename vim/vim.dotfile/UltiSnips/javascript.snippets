@@ -1,10 +1,10 @@
-snippet c
-console.log(${1});
+snippet c "console.log"
+console.log(${VISUAL}${1});
 endsnippet
 
-snippet f
-function ${1}(${2}) {
-	${3}
+snippet f "function fun(args)"
+function ${1:name}(${2:args}) {
+	${VISUAL}${3}
 }
 endsnippet
 
