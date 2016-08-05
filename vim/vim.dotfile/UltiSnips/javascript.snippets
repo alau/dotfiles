@@ -1,10 +1,22 @@
-snippet c "console.log"
+snippet c "console.log" b
 console.log(${VISUAL}${1});
 endsnippet
 
 snippet f "function fun(args)"
 function ${1:name}(${2:args}) {
 	${VISUAL}${3}
+}
+endsnippet
+
+snippet = "fat arrow" i
+() => {
+	${VISUAL}${1}
+}
+endsnippet
+
+snippet "\=(\w+)" "fat arrow" ir
+(`!p snip.rv = match.group(1)`) => {
+	${VISUAL}${1}
 }
 endsnippet
 
