@@ -28,6 +28,7 @@ Plug 'christoomey/vim-tmux-navigator'
 Plug 'Raimondi/delimitMate'
 Plug 'Shougo/deoplete.nvim', { 'do': function('DoRemote') }
 Plug 'matze/vim-move'
+Plug 'maxbrunsfeld/vim-yankstack'
 
 " Look and feel
 Plug 'tpope/vim-vividchalk'
