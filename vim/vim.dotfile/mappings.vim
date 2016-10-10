@@ -49,6 +49,7 @@ map <Leader>D :call Gitv_OpenGitCommand("diff --no-color", 'new')<CR><C-W>_
 
 " ctrlp
 let g:ctrlp_map = '<leader>t'
+map <Leader>b :CtrlPBuffer<CR>
 
 " NERDTree
 nmap <silent> <F10> :NERDTreeToggle<CR>

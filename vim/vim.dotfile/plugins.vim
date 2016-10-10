@@ -8,7 +8,7 @@ endfunction
 Plug 'mileszs/ack.vim'
 Plug 'tpope/vim-fugitive'
 Plug 'gregsexton/gitv'
-Plug 'kien/ctrlp.vim'
+Plug 'ctrlpvim/ctrlp.vim'
 Plug 'scrooloose/nerdtree'
 Plug 'SirVer/ultisnips'
 Plug 'scrooloose/syntastic'
