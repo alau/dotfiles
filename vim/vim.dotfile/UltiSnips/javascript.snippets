@@ -69,6 +69,18 @@ endsnippet
 
 # mocha
 
+snippet bef "before" b
+before(() => {
+	${VISUAL}${1}
+});
+endsnippet
+
+snippet aft "after" b
+after(() => {
+	${VISUAL}${1}
+});
+endsnippet
+
 snippet it "it" b
 it("${1}", (${2}) => {
 	${VISUAL}${3}
