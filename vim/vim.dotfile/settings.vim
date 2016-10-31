@@ -130,3 +130,7 @@ let g:tern_show_signature_in_pum = 1
 
 " yankstack
 let g:yankstack_map_keys = 0
+
+" fixmyjs
+let g:fixmyjs_engine = 'eslint'
+let g:fixmyjs_use_local = 1

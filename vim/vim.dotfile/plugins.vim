@@ -29,6 +29,7 @@ Plug 'Raimondi/delimitMate'
 Plug 'Shougo/deoplete.nvim', { 'do': function('DoRemote') }
 Plug 'matze/vim-move'
 Plug 'maxbrunsfeld/vim-yankstack'
+Plug 'ruanyl/vim-fixmyjs'
 
 " Look and feel
 Plug 'tpope/vim-vividchalk'
