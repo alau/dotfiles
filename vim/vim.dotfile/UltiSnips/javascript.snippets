@@ -1,9 +1,13 @@
 snippet c "console.log" b
+console.log(${VISUAL}${1});
+endsnippet
+
+snippet cl "console.log with label" b
 console.log('$1', $1);
 endsnippet
 
-snippet co "console.log with object" b
-console.log({ ${VISUAL}${1} });
+snippet clj "console.log with json stringify" b
+console.log(JSON.stringify(${VISUAL}${1}, null, 2));
 endsnippet
 
 snippet f "function fun(args)"
