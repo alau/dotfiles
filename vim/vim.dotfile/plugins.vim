@@ -39,6 +39,7 @@ Plug 'oblitum/rainbow'
 
 " Language support
 Plug 'statianzo/vim-jade'
+Plug 'digitaltoad/vim-pug'
 Plug 'qmx/vim-json'
 Plug 'saltstack/salt-vim'
 Plug 'lepture/vim-jinja'
