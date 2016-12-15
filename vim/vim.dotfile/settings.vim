@@ -78,6 +78,7 @@ let g:airline_right_alt_sep = '⮃'
 let g:airline_symbols.branch = '⭠'
 let g:airline_symbols.readonly = '⭤'
 let g:airline_symbols.linenr = '⭡'
+let g:airline#extensions#branch#format = 2
 
 " easymotion
 let g:EasyMotion_leader_key = '<Leader>'
