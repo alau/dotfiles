@@ -17,6 +17,9 @@ export SBT_OPTS="-Xmx2G -XX:+UseConcMarkSweepGC -XX:+CMSClassUnloadingEnabled -X
 # zsh theme
 export KEYTIMEOUT=1
 
+# zsh-nvm plugin
+export NVM_NO_USE=true
+
 # Set path and manpath
 typeset -gU path manpath
 

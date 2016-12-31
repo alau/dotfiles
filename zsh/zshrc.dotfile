@@ -3,6 +3,7 @@ source ~/.zsh/colors.zsh
 source ~/.zsh/aliases.zsh
 source ~/.zsh/editor.zsh
 . ~/.zsh/z/z.sh
+source ~/.zsh/zsh-nvm/zsh-nvm.plugin.zsh
 
 # Disable ^S/^Q flow control
 stty stop undef
