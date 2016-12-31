@@ -4,9 +4,10 @@ My dotfiles
 
 Run `/install.sh`
 
-List of packages (Fedora 23):
+List of packages (Fedora 25):
 ```zsh
-dnf install vim dropbox pygpgme htop keepassx zsh numlockx roxterm awesome tmux vicious ctags ncurses-term xsel xscreensaver beesu lxappearance wmname
+dnf install vim dropbox pygpgme htop keepassx zsh numlockx roxterm awesome tmux vicious ctags ncurses-term xsel xscreensaver beesu lxappearance wmname util-linux-user
+
 ```
 
 ## Vim
