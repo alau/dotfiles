@@ -1,8 +1,8 @@
 # git
-if (( $+commands[gh] )); then
-  alias git="gh"
+if (( $+commands[hub] )); then
+  alias git="hub"
   if type compdef > /dev/null; then
-    compdef gh=git
+    compdef hub=git
   fi
 fi
 alias g='git status --short'
