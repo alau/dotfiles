@@ -6,18 +6,13 @@ Run `/install.sh`
 
 List of packages (Fedora 25):
 ```zsh
-dnf install vim dropbox pygpgme htop keepassx zsh numlockx roxterm awesome tmux vicious ctags ncurses-term xsel xscreensaver beesu lxappearance wmname util-linux-user hub
+dnf install vim dropbox pygpgme htop keepassx zsh numlockx roxterm awesome tmux vicious ctags ncurses-term xsel xscreensaver beesu lxappearance wmname util-linux-user hub neovim
 
 ```
 
 ## Vim
 
-[Install neovim](https://github.com/neovim/neovim/wiki/Installing-Neovim) 0.1.1
-. Enable python support by installing the python client from neovim
-[python-client](https://github.com/neovim/python-client) commit 6c0ec0. To
-check that the python integration is working, run `:python3 import neovim`.
-
-Enter vim and run `:PlugInstall` to install the bundles.
+Install neovim. Enter vim and run `:PlugInstall` to install the bundles.
 
 The following packages are required for ctags:
 * ctags (exuberant-ctags in debian)
