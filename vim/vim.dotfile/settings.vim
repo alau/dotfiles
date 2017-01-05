@@ -38,7 +38,13 @@ set clipboard=unnamedplus,unnamed
 " ctrlp
 set wildignore=.git,vendor,node_modules
 let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files']
-let g:ctrlp_match_window_bottom = 0
+let g:ctrlp_match_window = 'top,order:btt,results:10'
+highlight CtrlPBufferNr guibg=Black guifg=White
+highlight CtrlPBufferInd guibg=Black guifg=White
+highlight CtrlPBufferPath guibg=Black guifg=White
+highlight CtrlPBufferVis guibg=Black guifg=White
+highlight CtrlPBufferHid guibg=Black guifg=White
+highlight CtrlPBufferCur guibg=Black guifg=White
 
 " Change the position of NERDTree
 let NERDTreeWinPos = 'right'
