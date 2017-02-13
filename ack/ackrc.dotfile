@@ -18,6 +18,7 @@
 --ignore-dir=bower_components
 --ignore-dir=.tmp
 --ignore-dir=log
+--ignore-dir=logs
 --ignore-dir=public
 --ignore-dir=doc/output
 --with-filename
