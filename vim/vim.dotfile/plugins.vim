@@ -16,6 +16,7 @@ Plug 'godlygeek/tabular'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'Lokaltog/vim-easymotion'
 Plug 'scrooloose/nerdcommenter'
+Plug 'mhinz/vim-startify'
 
 " Utility
 Plug 'tpope/vim-sensible'
