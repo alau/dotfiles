@@ -16,6 +16,7 @@ run-shell '~/.tmux/plugins/tpm/tpm'
 unbind C-b
 set -g prefix F9
 bind F9 send-prefix
+bind -n C-g send-prefix \; send-prefix
 
 # Window handling
 bind -n C-t new-window -c '#{pane_current_path}'
