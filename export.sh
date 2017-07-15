@@ -16,8 +16,28 @@ cd zsh/zprezto.dotfile/modules/syntax-highlighting/external
 git archive HEAD | tar -x -C ../../../../../export/dotfiles/zsh/zprezto.dotfile/modules/syntax-highlighting/external
 cd ../../../../..
 
+cd zsh/zprezto.dotfile/modules/autosuggestions/external
+git archive HEAD | tar -x -C ../../../../../export/dotfiles/zsh/zprezto.dotfile/modules/autosuggestions/external
+cd ../../../../..
+
+cd zsh/zprezto.dotfile/modules/prompt/external/agnoster
+git archive HEAD | tar -x -C ../../../../../../export/dotfiles/zsh/zprezto.dotfile/modules/prompt/external/agnoster
+cd ../../../../../..
+
+cd zsh/zprezto.dotfile/modules/prompt/external/pure
+git archive HEAD | tar -x -C ../../../../../../export/dotfiles/zsh/zprezto.dotfile/modules/prompt/external/pure
+cd ../../../../../..
+
+cd zsh/zprezto.dotfile/modules/prompt/external/powerline
+git archive HEAD | tar -x -C ../../../../../../export/dotfiles/zsh/zprezto.dotfile/modules/prompt/external/powerline
+cd ../../../../../..
+
 cd zsh/zsh.dotfile/z
 git archive HEAD | tar -x -C ../../../export/dotfiles/zsh/zsh.dotfile/z/
+cd ../../..
+
+cd zsh/zsh.dotfile/zsh-nvm
+git archive HEAD | tar -x -C ../../../export/dotfiles/zsh/zsh.dotfile/zsh-nvm/
 cd ../../..
 
 cd export/dotfiles
