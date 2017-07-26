@@ -34,7 +34,7 @@ zstyle ':prezto:module:terminal' auto-title 'yes'
 
 # Options for tmux
 zstyle ':prezto:module:tmux:auto-start' local 'yes'
-zstyle ':prezto:module:tmux:auto-start' remote 'yes'
+zstyle ':prezto:module:tmux:auto-start' remote 'no'
 
 # Options for editor
 zstyle ':prezto:module:editor' key-bindings 'vi'
