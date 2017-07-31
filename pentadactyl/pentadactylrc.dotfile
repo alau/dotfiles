@@ -38,7 +38,7 @@ highlight -a Hint font-size: 23pt !important;
 " Search engines
 command -nargs=* g open google <args>
 command -nargs=* wp open wikipedia <args>
-command -nargs=* gh open github <args>
+command -nargs=* gh open https://github.com/ExpressenAB/<args>
 set complete='l'
 
 " Insert mode for google docs
