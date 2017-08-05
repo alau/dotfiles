@@ -85,7 +85,7 @@ local globalkeys = awful.util.table.join(
   -- Prompt
   awful.key({ modkey            }, "r",
     function()
-      widgets.mypromptbox[mouse.screen]:run()
+      widgets.mypromptbox[mouse.screen.index]:run()
     end
   ),
 
@@ -94,7 +94,7 @@ local globalkeys = awful.util.table.join(
     function()
       awful.prompt.run(
         { prompt = "Zeal: " },
-        widgets.mypromptbox[mouse.screen].widget,
+        widgets.mypromptbox[mouse.screen.index].widget,
         function(query)
           awful.util.spawn("/home/alau/Dropbox/bin/zeal --query " .. query)
         end
@@ -106,7 +106,7 @@ local globalkeys = awful.util.table.join(
     function ()
       awful.prompt.run(
         { prompt = "Run Lua code: " },
-        widgets.mypromptbox[mouse.screen].widget,
+        widgets.mypromptbox[mouse.screen.index].widget,
         awful.util.eval,
         nil,
         awful.util.getdir("cache") .. "/history_eval"
@@ -128,7 +128,7 @@ for i = 1, keynumber do
   globalkeys = awful.util.table.join(globalkeys,
     awful.key({ modkey }, "#" .. i + 9,
       function ()
-        local screen = mouse.screen
+        local screen = mouse.screen.index
         if settings.tags[screen][i] then
           awful.tag.viewonly(settings.tags[screen][i])
         end
@@ -136,15 +136,15 @@ for i = 1, keynumber do
     ),
     awful.key({ modkey, "Shift" }, "#" .. i + 9,
       function ()
-        if client.focus and settings.tags[client.focus.screen][i] then
-          awful.client.movetotag(settings.tags[client.focus.screen][i])
+        if client.focus and settings.tags[client.focus.screen.index][i] then
+          awful.client.movetotag(settings.tags[client.focus.screen.index][i])
         end
       end
     ),
     awful.key({ modkey, "Control", "Shift" }, "#" .. i + 9,
       function ()
-        if client.focus and settings.tags[client.focus.screen][i] then
-          awful.client.toggletag(settings.tags[client.focus.screen][i])
+        if client.focus and settings.tags[client.focus.screen.index][i] then
+          awful.client.toggletag(settings.tags[client.focus.screen.index][i])
         end
       end
     )
@@ -156,7 +156,7 @@ for i = 1, keynumber do
   globalkeys = awful.util.table.join(globalkeys,
     awful.key({ modkey }, toprow[i],
       function ()
-        local screen = mouse.screen
+        local screen = mouse.screen.index
         if settings.tags[screen][i] then
           awful.tag.viewtoggle(settings.tags[screen][i])
         end
