@@ -50,7 +50,7 @@ unbind p
 unbind n
 bind p run "tmux set-buffer \"$(xclip -o -sel clipboard)\"; tmux paste-buffer"
 bind v copy-mode
-bind -t vi-copy 'v' begin-selection
+bind-key -T copy-mode-vi 'v' send -X begin-selection
 
 # Various utility
 set -s escape-time 0
