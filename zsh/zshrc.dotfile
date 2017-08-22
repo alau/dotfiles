@@ -11,6 +11,7 @@ stty start undef
 
 # Fix copy-paste
 unset zle_bracketed_paste
+zle -N bracketed-paste bracketed-paste-magic
 
 # Auto-run "nvm use" if .nvmrc exists
 load-nvmrc() {

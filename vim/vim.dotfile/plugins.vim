@@ -30,6 +30,7 @@ Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'matze/vim-move'
 Plug 'maxbrunsfeld/vim-yankstack'
 Plug 'ruanyl/vim-fixmyjs'
+Plug 'ConradIrwin/vim-bracketed-paste'
 
 " Look and feel
 Plug 'tpope/vim-vividchalk'
