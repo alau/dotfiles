@@ -5,6 +5,6 @@
 [push]
   default = tracking
 [core]
-  editor = vim
+  editor = nvim
 [merge]
   conflictstyle = diff3

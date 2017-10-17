@@ -1,6 +1,11 @@
 # Editors
-export EDITOR='vim'
-export VISUAL='vim'
+if (( $+commands[nvim] )); then
+  export EDITOR='nvim'
+  export VISUAL='nvim'
+elif (( $+commands[vim] )); then
+  export EDITOR='vim'
+  export VISUAL='vim'
+fi
 export PAGER='less'
 
 # Ensure we set language
