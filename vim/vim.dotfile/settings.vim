@@ -56,6 +56,7 @@ let g:syntastic_enable_balloons = 0
 let g:syntastic_check_on_wq = 0
 let g:syntastic_enable_signs = 1
 let g:syntastic_javascript_checkers = ['eslint']
+let g:syntastic_javascript_eslint_exec = 'eslint_d'
 
 highlight link SyntasticErrorSign SignColumn
 highlight link SyntasticWarningSign SignColumn
