@@ -19,6 +19,9 @@ export LESS='--hilite-search --hilite-unread --ignore-case --LONG-PROMPT --RAW-C
 # sbt
 export SBT_OPTS="-Xmx2G -XX:+UseConcMarkSweepGC -XX:+CMSClassUnloadingEnabled -XX:MaxPermSize=2G -Xss2M"
 
+# go
+export GOPATH="/home/alau/workspace"
+
 # zsh theme
 export KEYTIMEOUT=1
 
@@ -35,6 +38,7 @@ path=(
   /usr/local/{bin,sbin}
   /usr/{bin,sbin}
   /{bin,sbin}
+  /usr/local/go/bin
   $HOME/.rbenv/bin
   $path
 )
