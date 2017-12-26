@@ -13,8 +13,7 @@ rules.rules = {
       buttons = settings.clientbuttons,
     },
     callback = function(c)
-      c.screen = mouse.screen,
-      c:tags({settings.tags[c.screen][awful.tag.getidx()]})
+      c.screen = mouse.screen
     end
   },
   {

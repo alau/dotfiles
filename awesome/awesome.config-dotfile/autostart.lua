@@ -3,7 +3,7 @@ function run_once(command)
   if firstspace then
     application = command:sub(0, firstspace-1)
   end
-  awful.util.spawn_with_shell("pgrep -u $USER -x " .. application .. " > /dev/null || (" .. command .. ")")
+  awful.spawn.with_shell("pgrep -u $USER -x " .. application .. " > /dev/null || (" .. command .. ")")
 end
 
 run_once("xscreensaver -no-splash")

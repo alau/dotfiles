@@ -2,7 +2,7 @@ wibox = require("wibox")
 vicious = require("vicious")
 
 -- Clock
-local mytextclock = awful.widget.textclock()
+local mytextclock = wibox.widget.textclock()
 
 -- Network usage
 local netwidget = wibox.widget.textbox()
@@ -31,7 +31,7 @@ vicious.register(
 )
 
 -- CPU usage
-cpuwidget = awful.widget.graph()
+cpuwidget = wibox.widget.graph()
 cpuwidget:set_width(50)
 cpuwidget:set_background_color("#494B4F")
 cpuwidget:set_color({
@@ -43,7 +43,7 @@ cpuwidget:set_color({
 vicious.register(cpuwidget, vicious.widgets.cpu, "$1")
 
 -- Memory usage
-memwidget = awful.widget.graph()
+memwidget = wibox.widget.graph()
 memwidget:set_width(50)
 memwidget:set_background_color("#494B4F")
 memwidget:set_color({
@@ -91,7 +91,7 @@ for s = 1, screen.count() do
   mytasklist[s] = awful.widget.tasklist(s, awful.widget.tasklist.filter.currenttags, mytasklist.buttons)
 
   -- Create the wibox
-  mywibox[s] = awful.wibox({ position = "top", screen = s })
+  mywibox[s] = awful.wibar({ position = "top", screen = s })
 
   local left_layout = wibox.layout.fixed.horizontal()
   left_layout:add(mytaglist[s])

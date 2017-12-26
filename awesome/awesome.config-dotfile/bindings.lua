@@ -65,7 +65,7 @@ local globalkeys = awful.util.table.join(
   -- Standard program
   awful.key({ modkey,           }, "a",
     function()
-      awful.util.spawn(settings.terminal)
+      awful.spawn(settings.terminal)
     end
   ),
   awful.key({ modkey, "Shift"   }, "r", awesome.restart),
@@ -130,7 +130,7 @@ for i = 1, keynumber do
       function ()
         local screen = mouse.screen.index
         if settings.tags[screen][i] then
-          awful.tag.viewonly(settings.tags[screen][i])
+          settings.tags[screen][i]:view_only()
         end
       end
     ),
