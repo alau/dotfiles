@@ -4,15 +4,18 @@ My dotfiles
 
 Run `/install.sh`
 
-List of packages (Fedora 26):
+List of packages (Fedora 27):
 ```zsh
-dnf install vim dropbox pygpgme htop keepassx zsh numlockx roxterm awesome tmux vicious ctags ncurses-term xclip xscreensaver beesu lxappearance wmname util-linux-user hub neovim aws-shell
+dnf install vim dropbox pygpgme htop keepassx zsh numlockx roxterm awesome tmux vicious ctags ncurses-term xclip xscreensaver beesu lxappearance wmname util-linux-user hub neovim aws-shell ack
 
 ```
 
 ## Vim
 
-Install neovim. Enter vim and run `:PlugInstall` to install the bundles.
+* Install neovim
+* Install python3 client for neovim: `pip install neovim`
+* Enter vim and run `:PlugInstall` to install the bundles
+* Verify installation using `:CheckHealth`
 
 The following packages are required for ctags:
 * ctags (exuberant-ctags in debian)
