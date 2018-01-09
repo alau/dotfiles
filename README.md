@@ -6,7 +6,7 @@ Run `/install.sh`
 
 List of packages (Fedora 27):
 ```zsh
-dnf install vim dropbox pygpgme htop keepassx zsh numlockx roxterm awesome tmux vicious ctags ncurses-term xclip xscreensaver beesu lxappearance wmname util-linux-user hub neovim aws-shell ack redshift
+dnf install vim dropbox pygpgme htop keepassx zsh numlockx roxterm awesome tmux vicious ctags ncurses-term xclip xscreensaver beesu lxappearance wmname util-linux-user hub neovim aws-shell ack redshift httpie
 ```
 
 ## Vim
