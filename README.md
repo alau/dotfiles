@@ -69,7 +69,3 @@ Run the following to have git ignore the config changes:
 
     git update-index --assume-unchanged git/gitconfig.dotfile
 
-## Pentadactyl
-
-* Add GitHub to the search engines
-* Set wikipedia as the keyword for Wikipedia
