@@ -181,6 +181,12 @@ local clientkeys = awful.util.table.join(
       c:swap(awful.client.getmaster())
     end
   ),
+  awful.key({ modkey,           }, "n",
+    function(c)
+      c.maximized = false
+      c:raise()
+    end
+  ),
   awful.key({ modkey,           }, "s", awful.client.movetoscreen)
 )
 
