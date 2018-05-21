@@ -69,3 +69,7 @@ Run the following to have git ignore the config changes:
 
     git update-index --assume-unchanged git/gitconfig.dotfile
 
+## Tridactyl
+
+Install the userChrome for Firefox:
+https://github.com/cmcaine/tridactyl/blob/0136cda9d08149271516348f1aa928603358cdcd/src/static/css/userChrome-minimal.css
