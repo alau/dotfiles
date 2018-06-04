@@ -88,8 +88,8 @@ map g/ <Plug>(incsearch-stay)
 let g:NumberToggleTrigger="<F6>"
 
 " Ultisnips
-let g:UltiSnipsExpandTrigger="#"
-let g:UltiSnipsJumpForwardTrigger="#"
+let g:UltiSnipsExpandTrigger="<F6>"
+let g:UltiSnipsJumpForwardTrigger="<F6>"
 
 " vim move
 nmap <Esc>K <Plug>MoveLineUp
