@@ -33,7 +33,7 @@ zstyle ':prezto:module:prompt' theme 'custom'
 zstyle ':prezto:module:terminal' auto-title 'yes'
 
 # Options for tmux
-zstyle ':prezto:module:tmux:auto-start' local 'yes'
+zstyle ':prezto:module:tmux:auto-start' local 'no'
 zstyle ':prezto:module:tmux:auto-start' remote 'no'
 
 # Options for editor
