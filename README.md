@@ -71,5 +71,4 @@ Run the following to have git ignore the config changes:
 
 ## Tridactyl
 
-Install the userChrome for Firefox:
-https://github.com/cmcaine/tridactyl/blob/0136cda9d08149271516348f1aa928603358cdcd/src/static/css/userChrome-minimal.css
+Symlink `dotfiles/tridactyl/userChrome-mininmal.css` to `~/.mozilla/firefox/<profile>/chrome/userChrome.css`.
