@@ -60,9 +60,9 @@ batwidget = awful.widget.progressbar()
 batwidget:set_width(8)
 batwidget:set_height(14)
 batwidget:set_vertical(true)
-batwidget:set_background_color("#000000")
+batwidget:set_background_color("#494B4F")
 batwidget:set_border_color(nil)
-batwidget:set_color("#00bfff")
+batwidget:set_color("#AECF96")
 vicious.register(batwidget, vicious.widgets.bat, "$2", 120, "BAT0")
 
 -- Systray
@@ -112,7 +112,7 @@ for s = 1, screen.count() do
   right_layout:add(netwidget)
   right_layout:add(cpuwidget)
   right_layout:add(memwidget)
-  right_layout:add(batwidget)
+  right_layout:add(wibox.container.rotate(batwidget, "east"))
   right_layout:add(mytextclock)
   right_layout:add(mylayoutbox[s])
   if s == 1 then right_layout:add(mysystray) end
