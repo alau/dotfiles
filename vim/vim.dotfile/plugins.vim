@@ -54,5 +54,6 @@ Plug 'ternjs/tern_for_vim', { 'do': 'npm install', 'for': ['javascript', 'javasc
 Plug 'carlitux/deoplete-ternjs', { 'for': ['javascript', 'javascript.jsx'] }
 Plug 'mtscout6/syntastic-local-eslint.vim'
 Plug 'wavded/vim-stylus'
+Plug 'udalov/kotlin-vim'
 
 call plug#end()
