@@ -131,12 +131,7 @@ let g:deoplete#enable_at_startup = 1
 let g:deoplete#omni#functions = {}
 set completeopt=longest,menuone,preview
 let g:deoplete#sources = {}
-let g:deoplete#sources['javascript.jsx'] = ['file', 'ultisnips', 'ternjs']
-let g:tern#command = ['tern']
-let g:tern#arguments = ['--persistent']
-
-" tern
-let g:tern_show_signature_in_pum = 1
+let g:deoplete#sources['javascript.jsx'] = ['file', 'ultisnips']
 
 " yankstack
 let g:yankstack_map_keys = 0
