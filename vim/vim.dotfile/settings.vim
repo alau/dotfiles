@@ -139,3 +139,9 @@ let g:yankstack_map_keys = 0
 " fixmyjs
 let g:fixmyjs_engine = 'eslint'
 let g:fixmyjs_use_local = 1
+
+" folding
+set foldmethod=syntax
+let javaScript_fold=1
+set foldlevelstart=99
+
