@@ -20,3 +20,6 @@
 [submodule "zsh/zsh.dotfile/zsh-nvm"]
 	path = zsh/zsh.dotfile/zsh-nvm
 	url = git@github.com:lukechilds/zsh-nvm.git
+[submodule "zsh/zsh.dotfile/zsh-autoswitch-virtualenv"]
+	path = zsh/zsh.dotfile/zsh-autoswitch-virtualenv
+	url = git@github.com:MichaelAquilina/zsh-autoswitch-virtualenv.git

@@ -4,6 +4,7 @@ source ~/.zsh/aliases.zsh
 source ~/.zsh/editor.zsh
 . ~/.zsh/z/z.sh
 source ~/.zsh/zsh-nvm/zsh-nvm.plugin.zsh
+source ~/.zsh/zsh-autoswitch-virtualenv/autoswitch_virtualenv.plugin.zsh
 
 # Disable ^S/^Q flow control
 stty stop undef
