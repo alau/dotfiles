@@ -20,3 +20,6 @@
 [submodule "zsh/zsh.dotfile/zsh-nvm"]
 	path = zsh/zsh.dotfile/zsh-nvm
 	url = git@github.com:lukechilds/zsh-nvm.git
+[submodule "python/pyenv.dotfile"]
+	path = python/pyenv.dotfile
+	url = git@github.com:pyenv/pyenv
