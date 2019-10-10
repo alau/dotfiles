@@ -1,4 +1,0 @@
-set guifont=Inconsolata-dz\ for\ Powerline\ 12
-
-" Remove menu bar, toolbar, scrollbars, graphical tabs etc
-set guioptions=ai
