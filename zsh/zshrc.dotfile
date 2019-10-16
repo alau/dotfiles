@@ -1,6 +1,7 @@
 source ~/.zprezto/init.zsh
 source ~/.zsh/colors.zsh
 source ~/.zsh/aliases.zsh
+source ~/.zsh/prompt.zsh
 source ~/.zsh/editor.zsh
 . ~/.zsh/z/z.sh
 source ~/.zsh/zsh-nvm/zsh-nvm.plugin.zsh

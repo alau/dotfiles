@@ -28,7 +28,7 @@ zstyle ':prezto:load' pmodule \
 
 # Set prompt theme
 fpath=(~/.zsh/themes/ $fpath)
-zstyle ':prezto:module:prompt' theme 'custom'
+zstyle :prezto:module:prompt theme powerlevel10k
 
 # Options for terminal
 zstyle ':prezto:module:terminal' auto-title 'yes'
