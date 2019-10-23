@@ -42,7 +42,7 @@ path=(
   /usr/{bin,sbin}
   /{bin,sbin}
   /usr/local/go/bin
-  $HOME/.rbenv/bin
+  $HOME/.rbenv/shims
   $path
 )
 
