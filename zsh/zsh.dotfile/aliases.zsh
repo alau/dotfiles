@@ -87,6 +87,9 @@ alias nr='npm run'
 alias nu='nvm use'
 alias mwa='mocha --watch'
 
+# pipenv
+alias pr='pipenv run'
+
 # Disabled corrections
 alias gulp='nocorrect gulp'
 alias eslint='nocorrect eslint'
