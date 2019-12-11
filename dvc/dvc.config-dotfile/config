@@ -1,0 +1,5 @@
+[core]
+analytics = false
+[cache]
+type = "hardlink,symlink"
+protected = true
