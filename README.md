@@ -6,7 +6,7 @@ Run `/install.sh`
 
 List of packages (Fedora 30):
 ```zsh
-dnf install vim dropbox htop keepassx zsh numlockx roxterm awesome tmux vicious ctags ncurses-term xclip xscreensaver beesu lxappearance wmname util-linux-user hub neovim ack redshift httpie
+dnf install vim dropbox htop keepassxc zsh numlockx roxterm awesome tmux vicious ctags ncurses-term xclip xscreensaver beesu lxappearance wmname util-linux-user hub neovim ack redshift httpie
 ```
 
 ## Vim
