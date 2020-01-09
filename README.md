@@ -72,3 +72,5 @@ Run the following to have git ignore the config changes:
 ## Tridactyl
 
 Symlink `dotfiles/tridactyl/userChrome-mininmal.css` to `~/.mozilla/firefox/<profile>/chrome/userChrome.css`.
+
+Run `:installnative`.

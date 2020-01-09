@@ -1,0 +1,14 @@
+" Look and feel
+colors shydactyl
+
+" Only hint search results
+bindurl www.google.com f hint -Jc .rc > .r > a
+bindurl www.google.com F hint -Jbc .rc>.r>a
+
+" Scrolling
+bind j scrollline 20
+bind k scrollline -20
+unbind <C-f>
+unbind <C-b>
+
+" vim: set filetype=tridactyl
