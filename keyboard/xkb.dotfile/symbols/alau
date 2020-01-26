@@ -1,0 +1,35 @@
+default partial alphanumeric_keys
+xkb_symbols "custom" {
+
+    include "us(dvp)"
+    name[Group1] = "English (custom programmer Dvorak)";
+
+    replace key <AD01> { [ colon, semicolon ] };
+
+    key <AC01> { symbols = [ a, A, adiaeresis, Adiaeresis ] };
+    key <AC02> { symbols = [ o, O, odiaeresis, Odiaeresis ] };
+    key <AD01> { symbols = [ semicolon, colon, aring, Aring ] };
+
+    key <AE01> { symbols = [ asterisk, 7 ] };
+    key <AE02> { symbols = [ bracketleft, 5 ] };
+    key <AE03> { symbols = [ equal, 3 ] };
+    key <AE04> { symbols = [ parenleft, 1 ] };
+    key <AE05> { symbols = [ braceleft, 9 ] };
+    key <AE06> { symbols = [ braceright, 0 ] };
+    key <AE07> { symbols = [ parenright, 2 ] };
+    key <AE08> { symbols = [ plus, 4 ] };
+    key <AE09> { symbols = [ bracketright, 6 ] };
+    key <AE10> { symbols = [ exclam, 8 ] };
+    key <AE11> { symbols = [ ampersand, percent ] };
+
+    key <LSGT> { symbols = [ F9,  Multi_key ] };
+
+    key <MENU> { symbols = [ Super_R ] };
+
+    key <HOME> { symbols = [ Page_Up ] };
+    key <END> { symbols = [ Page_Down ] };
+    key <PGUP> { symbols = [ ISO_Level3_Shift ] };
+    key <PGDN> { symbols = [ Super_R ] };
+    key <RALT> { symbols = [ Alt_R ] };
+};
+
