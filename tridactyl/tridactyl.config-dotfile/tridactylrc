@@ -11,4 +11,7 @@ bind k scrollline -20
 unbind <C-f>
 unbind <C-b>
 
+" Look and feel
+guiset_quiet gui none
+
 " vim: set filetype=tridactyl
