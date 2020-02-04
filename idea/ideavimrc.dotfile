@@ -1,0 +1,8 @@
+source ~/.vimrc
+
+nmap f <Plug>(easymotion-f)
+nmap F <Plug>(easymotion-F)
+
+set easymotion
+set multiple-cursors
+set commentary
