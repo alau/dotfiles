@@ -34,6 +34,11 @@ export NVM_NO_USE=true
 # Set path and manpath
 typeset -gU path manpath
 
+# local stuff
+if [ -e ~/.zshenv.local ]; then
+  source ~/.zshenv.local
+fi
+
 path=(
   ./node_modules/.bin
   $HOME/anaconda2/bin
