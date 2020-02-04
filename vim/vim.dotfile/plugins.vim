@@ -21,7 +21,7 @@ Plug 'mhinz/vim-startify'
 " Utility
 Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-surround'
-Plug 'bkad/CamelCaseMotion'
+Plug 'chaoren/vim-wordmotion'
 Plug 'DataWraith/auto_mkdir'
 Plug 'haya14busa/incsearch.vim'
 Plug 'christoomey/vim-tmux-navigator'

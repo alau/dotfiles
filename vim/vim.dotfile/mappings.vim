@@ -62,16 +62,6 @@ map <Leader>rt :!ctags -R *<CR><CR>
 map ! <C-]>
 map & :pop<CR>
 
-" CamelCaseMotion
-map <silent> w <Plug>CamelCaseMotion_w
-map <silent> b <Plug>CamelCaseMotion_b
-map <silent> e <Plug>CamelCaseMotion_e
-sunmap w
-sunmap b
-sunmap e
-" Fix cw, which otherwise eats linebreaks
-nmap cw ce
-
 " Json formatting
 noremap <Leader>J :% !python -m json.tool<CR>:set ft=json<CR>
 
