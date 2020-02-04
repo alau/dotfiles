@@ -76,8 +76,8 @@ nmap cw ce
 noremap <Leader>J :% !python -m json.tool<CR>:set ft=json<CR>
 
 " easymotion
-nmap H <Plug>(easymotion-j)
-nmap L <Plug>(easymotion-k)
+nmap L <Plug>(easymotion-j)
+nmap H <Plug>(easymotion-k)
 
 " incsearch
 map /  <Plug>(incsearch-forward)
