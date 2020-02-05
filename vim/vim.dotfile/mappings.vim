@@ -69,11 +69,6 @@ noremap <Leader>J :% !python -m json.tool<CR>:set ft=json<CR>
 nmap L <Plug>(easymotion-j)
 nmap H <Plug>(easymotion-k)
 
-" incsearch
-map /  <Plug>(incsearch-forward)
-map ?  <Plug>(incsearch-backward)
-map g/ <Plug>(incsearch-stay)
-
 " Number toggle
 let g:NumberToggleTrigger="<F6>"
 
