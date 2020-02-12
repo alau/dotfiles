@@ -14,4 +14,10 @@ unbind <C-b>
 " Look and feel
 guiset_quiet gui none
 
+" Ignore some websites
+blacklistadd mail.google.com
+blacklistadd calendar.google.com
+blacklistadd localhost:8888
+blacklistadd localhost:8889
+
 " vim: set filetype=tridactyl
