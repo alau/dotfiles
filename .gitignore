@@ -8,3 +8,4 @@ sbt/sbt-plugins.dotfile/project
 sbt/sbt-plugins.dotfile/target
 sbt/sbt.dotfile/launchers
 jupyter/jupyter.dotfile/migrated
+fonts/fonts.dotfile/.uuid
