@@ -1,1 +1,1 @@
-c.NotebookApp.browser = 'google-chrome'
+c.NotebookApp.browser = 'chromium-browser'
