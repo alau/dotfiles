@@ -45,4 +45,8 @@ zstyle ':prezto:module:syntax-highlighting' highlighters \
   'main' \
   'brackets'
 
+# Activate conda
+zstyle ':prezto:module:python' skip-virtualenvwrapper-init 'on'
+zstyle ':prezto:module:python' conda-init 'on'
+
 # vim:filetype=zsh
