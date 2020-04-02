@@ -51,5 +51,6 @@ Plug 'pangloss/vim-javascript'
 Plug 'mtscout6/syntastic-local-eslint.vim'
 Plug 'wavded/vim-stylus'
 Plug 'udalov/kotlin-vim'
+Plug 'jvirtanen/vim-hcl'
 
 call plug#end()
