@@ -22,5 +22,6 @@
 --ignore-dir=logs
 --ignore-dir=public
 --ignore-dir=doc/output
+--ignore-dir=.metaflow
 --with-filename
 --pager=$PAGER
