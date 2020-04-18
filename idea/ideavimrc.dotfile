@@ -3,6 +3,11 @@ source ~/.vimrc
 nmap f <Plug>(easymotion-f)
 nmap F <Plug>(easymotion-F)
 
+nnoremap <silent> <C-h> <C-w>h<cr>
+nnoremap <silent> <C-j> <C-w>j<cr>
+nnoremap <silent> <C-k> <C-w>k<cr>
+nnoremap <silent> <C-l> <C-w>l<cr>
+
 set easymotion
 set multiple-cursors
 set commentary
