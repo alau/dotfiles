@@ -4,7 +4,7 @@ My dotfiles
 
 Run `./install.sh`
 
-List of packages (Fedora 31):
+List of packages (Fedora 32):
 ```zsh
 dnf install vim dropbox htop keepassxc zsh numlockx roxterm awesome tmux vicious ctags ncurses-term xclip xscreensaver beesu lxappearance wmname util-linux-user hub neovim ack redshift httpie
 ```
@@ -51,11 +51,11 @@ Run the following to have git ignore the config changes:
 
 ## Tridactyl
 
-Symlink `dotfiles/tridactyl/userChrome-mininmal.css` to `~/.mozilla/firefox/<profile>/chrome/userChrome.css`.
+Symlink `dotfiles/tridactyl/userChrome-minimal.css` to `~/.mozilla/firefox/<profile>/chrome/userChrome.css`.
 
 Run `:installnative`.
 
-### Scala auto-imports etc
+## Scala auto-imports etc
 
 Auto-imports are handled by [eclim](http://eclim.org/), which has to be
 installed as follows:
@@ -68,7 +68,7 @@ In order for auto-imports to work, eclimd has to be running and the project has
 to be added to eclipse (use the
 [sbteclipse](https://github.com/typesafehub/sbteclipse) plugin).
 
-### Working with java programs
+## Working with java programs
 
 If you get a grey window when running a java program:
 
