@@ -6,7 +6,7 @@ Run `./install.sh`
 
 List of packages (Fedora 32):
 ```zsh
-dnf install vim dropbox htop keepassxc zsh numlockx roxterm awesome tmux vicious ctags ncurses-term xclip xscreensaver beesu lxappearance wmname util-linux-user hub neovim ack redshift httpie
+dnf install vim dropbox htop keepassxc zsh numlockx roxterm awesome tmux vicious ctags ncurses-term xclip xscreensaver beesu lxappearance wmname util-linux-user hub neovim ack redshift httpie lm_sensors
 ```
 
 ## Zsh
@@ -74,3 +74,9 @@ If you get a grey window when running a java program:
 
 * Install wmname
 * Run `wmname LG3D`
+
+## Sensors
+
+´´´
+sensors-detect
+´´´

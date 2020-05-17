@@ -54,7 +54,6 @@ memwidget:set_color({
 })
 vicious.register(memwidget, vicious.widgets.mem, "$1")
 
-
 -- Battery usage
 batwidget = awful.widget.progressbar()
 batwidget:set_width(8)
@@ -64,6 +63,21 @@ batwidget:set_background_color("#494B4F")
 batwidget:set_border_color(nil)
 batwidget:set_color("#AECF96")
 vicious.register(batwidget, vicious.widgets.bat, "$2", 120, "BAT0")
+
+-- CPU temperature
+cputempwidget = wibox.widget.textbox()
+local cputemp = setmetatable(
+  {},
+  {
+     __call = function()
+         local f = io.popen("sensors | grep 'Tdie:' | awk '{print $2}'")
+         local output = f:read("*all"):gsub('\n', '')
+         f:close()
+         return "<span foreground='white'>" .. output .. "</span>"
+    end
+  }
+)
+vicious.register(cputempwidget, cputemp)
 
 -- Systray
 local mysystray = wibox.widget.systray()
@@ -110,6 +124,7 @@ for s = 1, screen.count() do
 
   local right_layout = wibox.layout.fixed.horizontal()
   right_layout:add(netwidget)
+  right_layout:add(cputempwidget)
   right_layout:add(cpuwidget)
   right_layout:add(memwidget)
   right_layout:add(wibox.container.rotate(batwidget, "east"))
