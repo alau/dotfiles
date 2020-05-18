@@ -73,6 +73,11 @@ local cputemp = setmetatable(
          local f = io.popen("sensors | grep 'Tdie:' | awk '{print $2}'")
          local output = f:read("*all"):gsub('\n', '')
          f:close()
+         if output == "" then
+           f = io.popen("sensors | grep 'Package id 0:' | awk '{print $4}'")
+           output = f:read("*all"):gsub('\n', '')
+           f:close()
+         end
          return "<span foreground='white'>" .. output .. "</span>"
     end
   }
