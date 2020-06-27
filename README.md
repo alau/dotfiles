@@ -75,8 +75,7 @@ If you get a grey window when running a java program:
 * Install wmname
 * Run `wmname LG3D`
 
-## Sensors
+## Sensors and fans
 
-´´´
-sensors-detect
-´´´
+* Configure sensors: `sensors-detect`
+* Install [nvfancontrol](https://github.com/foucault/nvfancontrol)

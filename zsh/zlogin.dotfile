@@ -17,6 +17,14 @@ if [ ! $SSH_CLIENT ]; then
   # Keyring
   export $(gnome-keyring-daemon --daemonize --start)
 
+  # GPU fans
+  if (( $+commands[nvfancontrol] )); then
+    ps cax | grep nvfancontrol
+    if [ $? -ne 0 ]; then
+      nvfancontrol -f &
+    fi
+  fi
+
   # Java-related fix
   if (( $+commands[wmname] )); then
     wmname LG3D
