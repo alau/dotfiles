@@ -12,11 +12,9 @@ dnf install vim dropbox htop keepassxc zsh numlockx roxterm awesome tmux vicious
 ## Zsh
 
 * Change default shell `chsh -s /bin/zsh`
-* Install `numlockx`
 
 ## Vim
 
-* Install neovim
 * Install python3 client for neovim: `pip install neovim`
 * Enter vim and run `:PlugInstall` to install the bundles
 * Verify installation using `:CheckHealth`
@@ -27,13 +25,6 @@ The following packages are required for ctags:
 
 The following package is required for clipboard integration:
 * xsel
-
-## Awesome
-
-* Install `xscreensaver`
-* Install `beesu` for hibernation
-* Use `lxappearance` to change gtk theme, see http://rubenerd.com/qt-gnome-3/ for Qt
-* Add ssh keys to seahorse
 
 ## Git
 
