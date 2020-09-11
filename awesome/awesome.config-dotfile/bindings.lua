@@ -81,6 +81,12 @@ local globalkeys = awful.util.table.join(
       awful.util.spawn("systemctl hibernate")
     end
   ),
+  awful.key({ modkey, "Shift"   }, "d",
+    function()
+      os.execute("/usr/local/bin/set-screen-layout")
+      awesome.restart()
+    end
+  ),
 
   -- Prompt
   awful.key({ modkey            }, "r",
