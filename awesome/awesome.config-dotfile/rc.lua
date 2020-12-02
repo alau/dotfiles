@@ -6,8 +6,6 @@ require("awful.autofocus")
 beautiful = require("beautiful")
 -- Notification library
 naughty = require("naughty")
--- Custom layout
-require("rows_layout")
 
 function load_part(name)
   local_override = os.getenv("HOME") .. "/.awesome-" .. name .. ".local.lua"
