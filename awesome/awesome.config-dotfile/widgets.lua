@@ -73,11 +73,9 @@ local cputemp = setmetatable(
          local f = io.popen("liquidctl status | grep temperature | awk '{print $4}'")
          local output = f:read("*all"):gsub('\n', '')
          f:close()
-         if output == "" then
-           local f = io.popen("sensors | grep 'Tdie:' | awk '{print $2}'")
-           local output = f:read("*all"):gsub('\n', '')
-           f:close()
-         end
+         local f = io.popen("sensors | grep 'Tdie:' | awk '{print $2}'")
+         output = output .. f:read("*all"):gsub('\n', '')
+         f:close()
          if output == "" then
            f = io.popen("sensors | grep 'Package id 0:' | awk '{print $4}'")
            output = f:read("*all"):gsub('\n', '')
