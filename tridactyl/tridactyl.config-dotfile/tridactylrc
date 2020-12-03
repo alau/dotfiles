@@ -12,8 +12,7 @@ unbind <C-f>
 unbind <C-b>
 
 " Look and feel
-guiset_quiet navbar always
-guiset_quiet statuspanel left
+guiset_quiet gui none
 
 " Ignore some websites
 blacklistadd mail.google.com

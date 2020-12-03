@@ -42,8 +42,6 @@ Run the following to have git ignore the config changes:
 
 ## Tridactyl
 
-Symlink `dotfiles/tridactyl/userChrome-minimal.css` to `~/.mozilla/firefox/<profile>/chrome/userChrome.css`.
-
 Run `:installnative`.
 
 ## Scala auto-imports etc
