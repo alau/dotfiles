@@ -44,19 +44,6 @@ Run the following to have git ignore the config changes:
 
 Run `:installnative`.
 
-## Scala auto-imports etc
-
-Auto-imports are handled by [eclim](http://eclim.org/), which has to be
-installed as follows:
-* Install Eclipse 4.4
-* Install the Scala plugins from [Scala IDE](http://scala-ide.org/download/current.html)
-* Clone eclim `git clone git://github.com/ervandew/eclim.git`
-* Build and install `ant deploy.eclipse -Declipse.home=<eclipse>`
-
-In order for auto-imports to work, eclimd has to be running and the project has
-to be added to eclipse (use the
-[sbteclipse](https://github.com/typesafehub/sbteclipse) plugin).
-
 ## Working with java programs
 
 If you get a grey window when running a java program:

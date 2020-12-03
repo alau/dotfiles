@@ -1,2 +1,0 @@
-# The workspace directory to use
-osgi.instance.area.default=@user.home/workspace
