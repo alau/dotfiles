@@ -26,7 +26,6 @@ Plug 'DataWraith/auto_mkdir'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'Raimondi/delimitMate'
 Plug 'matze/vim-move'
-Plug 'maxbrunsfeld/vim-yankstack'
 Plug 'ConradIrwin/vim-bracketed-paste'
 Plug 'lambdalisue/suda.vim'
 
