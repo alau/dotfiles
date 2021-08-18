@@ -23,5 +23,6 @@
 --ignore-dir=public
 --ignore-dir=doc/output
 --ignore-dir=.metaflow
+--ignore-dir=.venv
 --with-filename
 --pager=$PAGER
