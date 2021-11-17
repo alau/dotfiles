@@ -124,9 +124,6 @@ let g:mustache_operators = 0
 " tmux-navigator
 let g:tmux_navigator_no_mappings = 1
 
-" rainbow brackets
-au FileType clojure call rainbow#load()
-
 " deoplete
 let g:deoplete#enable_at_startup = 1
 let g:deoplete#omni#functions = {}

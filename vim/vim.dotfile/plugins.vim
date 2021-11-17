@@ -34,7 +34,6 @@ Plug 'tpope/vim-vividchalk'
 Plug 'bling/vim-airline'
 Plug 'bitc/vim-bad-whitespace'
 Plug 'airblade/vim-gitgutter'
-Plug 'oblitum/rainbow'
 
 " Language support
 Plug 'statianzo/vim-jade'
