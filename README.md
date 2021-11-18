@@ -54,4 +54,7 @@ If you get a grey window when running a java program:
 ## Sensors and fans
 
 * Configure sensors: `sensors-detect`
-* Install [nvfancontrol](https://github.com/foucault/nvfancontrol)
+* Enable coolbits for [nvfancontrol](https://github.com/foucault/nvfancontrol)
+```
+dnf install libXNVCtrl
+```
