@@ -1,10 +1,4 @@
 # git
-if (( $+commands[hub] )); then
-  alias git="hub"
-  if type compdef > /dev/null; then
-    compdef hub=git
-  fi
-fi
 alias g='git status --short'
 git-add-with-status() { git add "$@" && g }
 alias ga='git-add-with-status'
@@ -12,7 +6,7 @@ alias gd='git diff --no-ext-diff'
 alias gdc='gd --cached'
 alias gb='git checkout -b'
 alias gpush='git push --set-upstream origin `git rev-parse --abbrev-ref HEAD`'
-alias gpub='gpush && git pull-request --draft'
+alias gpub='gpush && gh pr create --draft'
 alias gaa='git add . && g'
 alias gc='git commit --verbose'
 alias gca='gc --all'
