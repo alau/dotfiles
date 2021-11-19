@@ -13,6 +13,7 @@ unbind <C-b>
 
 " Look and feel
 guiset_quiet gui none
+guiset_quiet tabs always
 
 " Ignore some websites
 blacklistadd mail.google.com
