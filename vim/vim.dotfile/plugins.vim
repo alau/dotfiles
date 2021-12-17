@@ -50,5 +50,6 @@ Plug 'mtscout6/syntastic-local-eslint.vim'
 Plug 'wavded/vim-stylus'
 Plug 'udalov/kotlin-vim'
 Plug 'jvirtanen/vim-hcl'
+Plug 'hashivim/vim-terraform'
 
 call plug#end()
