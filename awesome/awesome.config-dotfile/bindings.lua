@@ -118,6 +118,18 @@ local globalkeys = awful.util.table.join(
         awful.util.getdir("cache") .. "/history_eval"
       )
     end
+  ),
+
+  -- Function keys
+  awful.key({}, "#72",
+    function()
+      os.execute("xbacklight -inc 5")
+    end, {description = "+5", group = "hotkeys"}
+  ),
+  awful.key({}, "#71",
+    function()
+      os.execute("xbacklight -dec 5")
+    end, {description = "-5%", group = "hotkeys"}
   )
 )
 
