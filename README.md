@@ -4,10 +4,14 @@ My dotfiles
 
 Run `./install.sh`
 
-List of packages (Fedora 32):
+List of packages (Fedora 37):
 ```zsh
-dnf install vim dropbox htop keepassxc zsh numlockx roxterm awesome tmux vicious ctags ncurses-term xclip xscreensaver beesu lxappearance wmname util-linux-user hub neovim ack redshift httpie lm_sensors yp-tools jq gron
+dnf install vim htop keepassxc zsh numlockx roxterm awesome tmux vicious ctags ncurses-term xclip xscreensaver beesu lxappearance wmname util-linux-user hub neovim ack redshift httpie lm_sensors yp-tools jq gron
 ```
+
+## Dropbox
+
+Install from [dropbox install page](https://www.dropbox.com/install-linux).
 
 ## Zsh
 
