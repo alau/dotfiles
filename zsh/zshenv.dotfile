@@ -48,6 +48,7 @@ path=(
   /{bin,sbin}
   /usr/local/go/bin
   $HOME/.rbenv/shims
+  $HOME/bin
   $path
 )
 
