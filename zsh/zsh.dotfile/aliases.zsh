@@ -71,6 +71,9 @@ elif (( $+commands[gvim] )); then
   alias vim="gvim -v"
 fi
 
+# Docker
+alias docker=podman
+
 # Anaconda
 function anaconda-deactivate { path=("${(@)path:#$HOME/anaconda*/bin}") }
 function anaconda-activate { path=("/home/alau/anaconda2/bin" "/home/alau/anaconda3/bin" $path) }
