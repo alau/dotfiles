@@ -24,21 +24,6 @@ local globalkeys = awful.util.table.join(
       end
     end
   ),
-  awful.key({                   }, "F1",
-    function()
-      awful.screen.focus(1)
-    end
-  ),
-  awful.key({                   }, "F2",
-    function()
-      awful.screen.focus(2)
-    end
-  ),
-  awful.key({                   }, "F3",
-    function()
-      awful.screen.focus(3)
-    end
-  ),
 
   -- Layout manipulation
   awful.key({ modkey,           }, "h",
