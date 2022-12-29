@@ -39,13 +39,9 @@ imap <C-s> <Esc>:write<CR>a
 map <Leader>so :so ~/.vimrc<CR>
 
 " Fugitive
-nmap <C-g> :Gstatus<CR><C-W>_<C-n>
-
-" Gitv
-map <Leader>v :Gitv<CR>
-map <Leader>c :Gitv!<CR>
-map <Leader>d :call Gitv_OpenGitCommand("diff --no-color " . expand("%:p"), 'new')<CR>
-map <Leader>D :call Gitv_OpenGitCommand("diff --no-color", 'new')<CR><C-W>_
+nmap <C-g> :Git<CR>)
+map <Leader>d :Git diff %<CR>
+map <Leader>D :Git diff<CR>
 
 " ctrlp
 let g:ctrlp_map = '<leader>t'

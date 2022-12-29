@@ -7,7 +7,6 @@ endfunction
 " Tools
 Plug 'mileszs/ack.vim'
 Plug 'tpope/vim-fugitive'
-Plug 'gregsexton/gitv'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'scrooloose/nerdtree'
 Plug 'SirVer/ultisnips'
