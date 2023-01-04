@@ -11,10 +11,6 @@ imap <Right> <nop>
 " Pane handling
 nnoremap Q :close<CR>
 
-" Up/down movement for long lines
-nmap j gj
-nmap k gk
-
 " Window navigation
 nnoremap <silent> <C-h> :TmuxNavigateLeft<cr>
 nnoremap <silent> <C-j> :TmuxNavigateDown<cr>
