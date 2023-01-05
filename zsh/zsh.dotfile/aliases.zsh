@@ -21,9 +21,8 @@ alias gfix='gc --fixup'
 alias gsquash='git rebase -i --autosquash'
 
 alias master="gco master"
-alias git-prune="git branch --merged | grep -v 'master$' | grep -v 'production$' | xargs git branch -d"
 alias git-prune-remote="git remote prune origin"
-git-delete() { git push origin :"$@" }
+alias gbd='git branch -d'
 
 # Navigation
 alias u='cd ..'
