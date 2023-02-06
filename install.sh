@@ -55,3 +55,6 @@ fi
 
 # tmux
 touch ~/.tmux.conf.local
+
+# environment modules
+mkdir -p $HOME/modules
