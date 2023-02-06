@@ -32,3 +32,4 @@ if [ -e ~/.zshrc.local ]; then
 fi
 
 source ~/.zsh/oc.completions
+source /etc/profile.d/modules.sh
