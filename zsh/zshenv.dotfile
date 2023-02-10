@@ -25,6 +25,9 @@ export SBT_OPTS="-Xmx2G -XX:+UseConcMarkSweepGC -XX:+CMSClassUnloadingEnabled -X
 # go
 export GOPATH="/home/alau/workspace"
 
+# module
+export MODULEPATH="$HOME/modules:$MODULEPATH"
+
 # zsh theme
 export KEYTIMEOUT=1
 

@@ -6,7 +6,7 @@ Run `./install.sh`
 
 List of packages (Fedora 37):
 ```zsh
-dnf install vim htop keepassxc zsh numlockx roxterm awesome tmux vicious ctags ncurses-term xclip xscreensaver beesu lxappearance wmname util-linux-user hub neovim ack redshift httpie lm_sensors yp-tools jq gron xbacklight gh autorandr
+dnf install vim htop keepassxc zsh numlockx roxterm awesome tmux vicious ctags ncurses-term xclip xscreensaver beesu lxappearance wmname util-linux-user hub neovim ack redshift httpie lm_sensors yp-tools jq gron xbacklight gh autorandr environment-modules
 ```
 
 ## Dropbox
