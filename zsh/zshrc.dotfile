@@ -33,3 +33,5 @@ fi
 
 source ~/.zsh/oc.completions
 source /etc/profile.d/modules.sh
+
+module restore > /dev/null
