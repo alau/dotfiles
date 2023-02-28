@@ -1,0 +1,6 @@
+map j scrollPageDown
+map k scrollPageUp
+
+unmap d
+unmap u
+map d removeTab

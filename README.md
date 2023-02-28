@@ -44,9 +44,9 @@ Run the following to have git ignore the config changes:
 
     git update-index --assume-unchanged git/gitconfig.dotfile
 
-## Tridactyl
+## Vimium
 
-Run `:installnative`.
+Copy the contents of `~/.vimium-ff` to the settings page of the plugin.
 
 ## Working with java programs
 
