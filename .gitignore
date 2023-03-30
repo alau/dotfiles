@@ -9,4 +9,7 @@ sbt/sbt-plugins.dotfile/target
 sbt/sbt.dotfile/launchers
 jupyter/jupyter.dotfile/migrated
 jupyter/jupyter.dotfile/lab/workspaces/
+jupyter/jupyter.dotfile/lab/user-settings/
+jupyter/jupyter.dotfile/serverconfig/
 fonts/fonts.dotfile/.uuid
+ipython/ipython.dotfile/profile_default
