@@ -49,21 +49,6 @@ highlight CtrlPBufferCur guibg=Black guifg=White
 " Change the position of NERDTree
 let NERDTreeWinPos = 'right'
 
-" Syntastic
-let g:syntastic_check_on_open = 1
-let g:syntastic_auto_loc_list = 0
-let g:syntastic_enable_balloons = 0
-let g:syntastic_check_on_wq = 0
-let g:syntastic_enable_signs = 1
-let g:syntastic_javascript_checkers = ['eslint']
-let g:syntastic_javascript_eslint_exec = 'eslint_d'
-let g:syntastic_python_checkers = ['flake8']
-
-highlight link SyntasticErrorSign SignColumn
-highlight link SyntasticWarningSign SignColumn
-highlight link SyntasticStyleErrorSign SignColumn
-highlight link SyntasticStyleWarningSign SignColumn
-
 " Ack
 let g:ackprg="ack -H -i --nocolor --nogroup --column --noxml --nocss"
 
