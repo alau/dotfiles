@@ -2,6 +2,7 @@
 set nocompatible
 
 source ~/.vim/plugins.vim
+source ~/.vim/cmp.vim
 source ~/.vim/definitions.vim
 source ~/.vim/settings.vim
 source ~/.vim/mappings.vim
