@@ -24,5 +24,6 @@
 --ignore-dir=doc/output
 --ignore-dir=.metaflow
 --ignore-dir=.venv
+--ignore-dir=.mypy_cache
 --with-filename
 --pager=$PAGER
