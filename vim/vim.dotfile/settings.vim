@@ -28,6 +28,7 @@ let maplocalleader=","
 " Colorscheme
 set t_Co=256
 colorscheme vividchalk
+highlight Comment ctermfg=blue
 
 " Remove trailing whitespaces upon write
 autocmd BufWritePre * EraseBadWhitespace
