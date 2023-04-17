@@ -110,13 +110,6 @@ let g:mustache_operators = 0
 " tmux-navigator
 let g:tmux_navigator_no_mappings = 1
 
-" deoplete
-let g:deoplete#enable_at_startup = 1
-let g:deoplete#omni#functions = {}
-set completeopt=longest,menuone,preview
-let g:deoplete#sources = {}
-let g:deoplete#sources['javascript.jsx'] = ['file', 'ultisnips']
-
 " yankstack
 let g:yankstack_map_keys = 0
 
