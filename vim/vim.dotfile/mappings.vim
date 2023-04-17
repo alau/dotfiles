@@ -74,9 +74,6 @@ nmap <Esc>J <Plug>MoveLineDown
 vmap <Esc>K <Plug>MoveBlockUp
 vmap <Esc>J <Plug>MoveBlockDown
 
-" depolete
-inoremap <expr><tab> pumvisible() ? "\<c-n>" : "\<tab>""
-
 " yankstack
 nmap <C-p> <Plug>yankstack_substitute_older_paste
 nmap <C-P> <Plug>yankstack_substitute_newer_paste
