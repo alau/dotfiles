@@ -68,12 +68,6 @@ let g:NumberToggleTrigger="<F6>"
 let g:UltiSnipsExpandTrigger="<F6>"
 let g:UltiSnipsJumpForwardTrigger="<F6>"
 
-" vim move
-nmap <Esc>K <Plug>MoveLineUp
-nmap <Esc>J <Plug>MoveLineDown
-vmap <Esc>K <Plug>MoveBlockUp
-vmap <Esc>J <Plug>MoveBlockDown
-
 " yankstack
 nmap <C-p> <Plug>yankstack_substitute_older_paste
 nmap <C-P> <Plug>yankstack_substitute_newer_paste
