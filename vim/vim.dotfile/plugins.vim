@@ -60,5 +60,6 @@ Plug 'wavded/vim-stylus'
 Plug 'udalov/kotlin-vim'
 Plug 'jvirtanen/vim-hcl'
 Plug 'hashivim/vim-terraform'
+Plug 'NoahTheDuke/vim-just'
 
 call plug#end()
