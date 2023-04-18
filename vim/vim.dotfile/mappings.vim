@@ -24,6 +24,9 @@ nnoremap <silent> <F5> :EraseBadWhitespace<CR>
 nmap <s :cprev<CR>
 nmap >s :cnext<CR>
 
+" Find usages
+nmap - :lua vim.lsp.buf.references()<CR>
+
 " Saving file
 nmap <C-s> :write<CR>
 imap <C-s> <Esc>:write<CR>a
