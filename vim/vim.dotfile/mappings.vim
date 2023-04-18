@@ -20,12 +20,9 @@ nnoremap <silent> <C-l> :TmuxNavigateRight<cr>
 " Remove trailing spaces
 nnoremap <silent> <F5> :EraseBadWhitespace<CR>
 
-" Tags
-nmap - <C-]>
-
 " Quickfix navigation
-"nmap <C-\> :cprev<CR>
-nmap <C-\> :cnext<CR>
+nmap <s :cprev<CR>
+nmap >s :cnext<CR>
 
 " Saving file
 nmap <C-s> :write<CR>
