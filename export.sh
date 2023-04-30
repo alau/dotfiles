@@ -28,8 +28,8 @@ cd zsh/zprezto.dotfile/modules/prompt/external/pure
 git archive HEAD | tar -x -C ../../../../../../export/dotfiles/zsh/zprezto.dotfile/modules/prompt/external/pure
 cd ../../../../../..
 
-cd zsh/zprezto.dotfile/modules/prompt/external/powerline
-git archive HEAD | tar -x -C ../../../../../../export/dotfiles/zsh/zprezto.dotfile/modules/prompt/external/powerline
+cd zsh/zprezto.dotfile/modules/prompt/external/powerlevel10k
+git archive HEAD | tar -x -C ../../../../../../export/dotfiles/zsh/zprezto.dotfile/modules/prompt/external/powerlevel10k
 cd ../../../../../..
 
 cd zsh/zsh.dotfile/z
