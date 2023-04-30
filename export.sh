@@ -1,7 +1,7 @@
 #!/bin/bash
 # Packages a subset of my dotfiles into a tarball. The tarball just has to be
 # unpacked, no installation required. This is intended as a way to distribute
-# my dotfiles to machines where I can not, or do not, want to clone the repo.
+# my dotfiles to machines where I can not, or do not want, to clone the repo.
 cd "$(dirname "$0")"
 mkdir -p export/dotfiles
 
