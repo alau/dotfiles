@@ -26,12 +26,16 @@ if (( $+commands[gnome-keyring-daemon] )); then
   export $(gnome-keyring-daemon --daemonize --start 2> /dev/null)
 fi
 
+# zsh-autoswitch-virtualenv
+source $HOME/workspace/zsh-autoswitch-virtualenv/autoswitch_virtualenv.plugin.zsh
+
+source ~/.zsh/oc.completions
+
+source /etc/profile.d/modules.sh
+module restore > /dev/null
+
 # local stuff
 if [ -e ~/.zshrc.local ]; then
   source ~/.zshrc.local
 fi
 
-source ~/.zsh/oc.completions
-source /etc/profile.d/modules.sh
-
-module restore > /dev/null

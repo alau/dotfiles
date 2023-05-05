@@ -23,3 +23,6 @@
 [submodule "python/pyenv.dotfile"]
 	path = python/pyenv.dotfile
 	url = git@github.com:pyenv/pyenv
+[submodule "zsh/zsh.dotfile/zsh-autoswitch-virtualenv"]
+	path = zsh/zsh.dotfile/zsh-autoswitch-virtualenv
+	url = git@github.com:MichaelAquilina/zsh-autoswitch-virtualenv.git
