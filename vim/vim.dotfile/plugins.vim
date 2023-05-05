@@ -37,6 +37,7 @@ Plug 'Raimondi/delimitMate'
 Plug 'matze/vim-move'
 Plug 'ConradIrwin/vim-bracketed-paste'
 Plug 'lambdalisue/suda.vim'
+Plug 'simrat39/symbols-outline.nvim'
 
 " Look and feel
 Plug 'tpope/vim-vividchalk'

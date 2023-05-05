@@ -122,3 +122,5 @@ set foldmethod=syntax
 let javaScript_fold=1
 set foldlevelstart=99
 
+" symbols-outline
+lua require("symbols-outline").setup()
