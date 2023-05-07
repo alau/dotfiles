@@ -27,7 +27,7 @@ if (( $+commands[gnome-keyring-daemon] )); then
 fi
 
 # zsh-autoswitch-virtualenv
-source $HOME/workspace/zsh-autoswitch-virtualenv/autoswitch_virtualenv.plugin.zsh
+source $HOME/.zsh/zsh-autoswitch-virtualenv/autoswitch_virtualenv.plugin.zsh
 
 source ~/.zsh/oc.completions
 
