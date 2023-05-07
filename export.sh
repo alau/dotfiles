@@ -40,6 +40,10 @@ cd zsh/zsh.dotfile/zsh-nvm
 git archive HEAD | tar -x -C ../../../export/dotfiles/zsh/zsh.dotfile/zsh-nvm/
 cd ../../..
 
+cd zsh/zsh.dotfile/zsh-autoswitch-virtualenv
+git archive HEAD | tar -x -C ../../../export/dotfiles/zsh/zsh.dotfile/zsh-autoswitch-virtualenv
+cd ../../..
+
 cd export/dotfiles
 ./install.sh ..
 rm install.sh
