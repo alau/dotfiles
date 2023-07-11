@@ -1,8 +1,8 @@
 " Use Vim settings, rather then Vi settings
 set nocompatible
 
-source ~/.vim/plugins.vim
-source ~/.vim/cmp.vim
-source ~/.vim/definitions.vim
-source ~/.vim/settings.vim
-source ~/.vim/mappings.vim
+source ~/.config/nvim/plugins.vim
+source ~/.config/nvim/cmp.vim
+source ~/.config/nvim/definitions.vim
+source ~/.config/nvim/settings.vim
+source ~/.config/nvim/mappings.vim
