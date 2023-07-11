@@ -1,5 +1,5 @@
 vim.cmd('source ~/.config/nvim/plugins.vim')
 vim.cmd('source ~/.config/nvim/cmp.vim')
-vim.cmd('source ~/.config/nvim/definitions.vim')
+require('definitions')
 vim.cmd('source ~/.config/nvim/settings.vim')
 vim.cmd('source ~/.config/nvim/mappings.vim')
