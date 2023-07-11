@@ -1,4 +1,4 @@
-vim.cmd('source ~/.config/nvim/plugins.vim')
+require('plugins')
 vim.cmd('source ~/.config/nvim/cmp.vim')
 require('definitions')
 vim.cmd('source ~/.config/nvim/settings.vim')
