@@ -1,7 +1,3 @@
-[submodule "vim/vim.dotfile/bundle/vundle"]
-  path = vim/vim.dotfile/bundle/vundle
-  url = https://github.com/gmarik/vundle.git
-  ignore = untracked
 [submodule "zsh/zprezto.dotfile"]
   path = zsh/zprezto.dotfile
   url = https://github.com/sorin-ionescu/prezto.git
@@ -14,9 +10,6 @@
 [submodule "tmux/tmux.dotfile/plugins/tpm"]
 	path = tmux/tmux.dotfile/plugins/tpm
 	url = https://github.com/tmux-plugins/tpm.git
-[submodule "vim/vim.dotfile/vim-plug"]
-	path = neovim/nvim.config-dotfile/vim-plug
-	url = git@github.com:junegunn/vim-plug.git
 [submodule "zsh/zsh.dotfile/zsh-nvm"]
 	path = zsh/zsh.dotfile/zsh-nvm
 	url = git@github.com:lukechilds/zsh-nvm.git
@@ -29,3 +22,6 @@
 [submodule "awesome/awesome.config-dotfile/vicious"]
 	path = awesome/awesome.config-dotfile/vicious
 	url = https://github.com/vicious-widgets/vicious
+[submodule "neovim/nvim.config-dotfile/pack/minpac/opt/minpac"]
+	path = neovim/nvim.config-dotfile/pack/minpac/opt/minpac
+	url = https://github.com/k-takata/minpac.git

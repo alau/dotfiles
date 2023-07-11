@@ -6,3 +6,7 @@ command! -nargs=1 -range Align exec "<line1>,<line2>Tabularize /<args>"
 
 " Save files that require sudo
 command! W w suda://%:p
+
+" minpac
+command! PackUpdate call minpac#update()
+command! PackClean call minpac#clean()
