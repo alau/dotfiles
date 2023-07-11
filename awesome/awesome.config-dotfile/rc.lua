@@ -39,7 +39,7 @@ load_part("errors")
 settings = {}
 widgets = {}
 modkey = "Mod4"
-settings.terminal = 'roxterm --execute "env TERM=xterm-256color tmux"'
+settings.terminal = 'roxterm --execute "tmux"'
 settings.layouts = {
   awful.layout.suit.tile.right,
   awful.layout.suit.tile.bottom,
