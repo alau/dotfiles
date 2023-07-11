@@ -51,6 +51,7 @@ bind-key -T copy-mode-vi 'v' send -X begin-selection
 # Various utility
 set -s escape-time 0
 set-option -g history-limit 100000
+set-option -g focus-events on
 
 # Local stuff
 source-file ~/.tmux.conf.local
