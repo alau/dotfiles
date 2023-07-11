@@ -15,7 +15,7 @@
 	path = tmux/tmux.dotfile/plugins/tpm
 	url = https://github.com/tmux-plugins/tpm.git
 [submodule "vim/vim.dotfile/vim-plug"]
-	path = vim/nvim.config-dotfile/vim-plug
+	path = neovim/nvim.config-dotfile/vim-plug
 	url = git@github.com:junegunn/vim-plug.git
 [submodule "zsh/zsh.dotfile/zsh-nvm"]
 	path = zsh/zsh.dotfile/zsh-nvm
