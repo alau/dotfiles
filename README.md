@@ -17,10 +17,10 @@ Install from [dropbox install page](https://www.dropbox.com/install-linux).
 
 * Change default shell `chsh -s /bin/zsh`
 
-## Vim
+## Neovim
 
 * Install python3 client for neovim: `pip install neovim`
-* Enter vim and run `:PlugInstall` to install the bundles
+* Enter vim and run `:PackUpdate` to install the plugins
 * Verify installation using `:CheckHealth`
 
 The following packages are required for ctags:
