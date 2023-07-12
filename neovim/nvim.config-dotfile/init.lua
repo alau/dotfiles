@@ -1,5 +1,5 @@
 require('plugins')
-vim.cmd('source ~/.config/nvim/cmp.vim')
+require('completions')
 require('definitions')
 vim.cmd('source ~/.config/nvim/settings.vim')
 require('mappings')
