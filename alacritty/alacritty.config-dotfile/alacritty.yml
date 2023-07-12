@@ -1,0 +1,15 @@
+window:
+  decorations: none
+
+font:
+  size: 14
+  normal:
+    family: InconsolataGo Nerd Font
+    style: Medium
+
+import:
+   - ~/.config/alacritty/themes/themes/wombat.yaml
+
+colors:
+  primary:
+    background: '#000000'
