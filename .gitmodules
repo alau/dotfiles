@@ -22,9 +22,9 @@
 [submodule "awesome/awesome.config-dotfile/vicious"]
 	path = awesome/awesome.config-dotfile/vicious
 	url = https://github.com/vicious-widgets/vicious
-[submodule "neovim/nvim.config-dotfile/pack/minpac/opt/minpac"]
-	path = neovim/nvim.config-dotfile/pack/minpac/opt/minpac
-	url = https://github.com/k-takata/minpac.git
 [submodule "alacritty/alacritty.config-dotfile/themes"]
 	path = alacritty/alacritty.config-dotfile/themes
 	url = https://github.com/alacritty/alacritty-theme
+[submodule "neovim/nvim.config-dotfile/pack/packer/opt/packer.nvim"]
+	path = neovim/nvim.config-dotfile/pack/packer/opt/packer.nvim
+	url = https://github.com/wbthomason/packer.nvim

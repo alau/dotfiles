@@ -1,67 +1,68 @@
-vim.cmd('packadd minpac')
+vim.cmd [[packadd packer.nvim]]
 
-vim.call('minpac#init')
-local add = vim.fn['minpac#add']
+return require('packer').startup({function(use)
+  -- Tools
+  use {'wbthomason/packer.nvim', opt = true}
+  use 'mileszs/ack.vim'
+  use 'tpope/vim-fugitive'
+  use 'ctrlpvim/ctrlp.vim'
+  use 'scrooloose/nerdtree'
+  use 'SirVer/ultisnips'
+  use 'godlygeek/tabular'
+  use 'mg979/vim-visual-multi'
+  use 'Lokaltog/vim-easymotion'
+  use 'scrooloose/nerdcommenter'
+  use 'mhinz/vim-startify'
+  use 'simrat39/symbols-outline.nvim'
+  use 'akinsho/toggleterm.nvim'
 
--- Tools
-add('k-takata/minpac', {type = 'opt'})
-add('mileszs/ack.vim')
-add('tpope/vim-fugitive')
-add('ctrlpvim/ctrlp.vim')
-add('scrooloose/nerdtree')
-add('SirVer/ultisnips')
-add('godlygeek/tabular')
-add('mg979/vim-visual-multi')
-add('Lokaltog/vim-easymotion')
-add('scrooloose/nerdcommenter')
-add('mhinz/vim-startify')
-add('simrat39/symbols-outline.nvim')
-add('akinsho/toggleterm.nvim')
+  -- Utility
+  use 'tpope/vim-sensible'
+  use 'tpope/vim-surround'
+  use 'chaoren/vim-wordmotion'
+  use 'DataWraith/auto_mkdir'
+  use 'christoomey/vim-tmux-navigator'
+  use 'matze/vim-move'
+  use 'ConradIrwin/vim-bracketed-paste'
+  use 'lambdalisue/suda.vim'
 
--- Utility
-add('tpope/vim-sensible')
-add('tpope/vim-surround')
-add('chaoren/vim-wordmotion')
-add('DataWraith/auto_mkdir')
-add('christoomey/vim-tmux-navigator')
-add('matze/vim-move')
-add('ConradIrwin/vim-bracketed-paste')
-add('lambdalisue/suda.vim')
+  -- Completions
+  use {'neoclide/coc.nvim', run = 'yarn install --frozen-lockfile'}
+  use {'neoclide/coc-json', run = 'yarn install --frozen-lockfile'}
+  use {'neoclide/coc-yaml', run = 'yarn install --frozen-lockfile'}
+  use {'neoclide/coc-snippets', run = 'yarn install --frozen-lockfile'}
+  use {'fannheyward/coc-pyright', run = 'yarn install --frozen-lockfile'}
+  use {'fannheyward/coc-sql', run = 'yarn install --frozen-lockfile'}
+  use {'josa42/coc-docker', run = 'yarn install --frozen-lockfile'}
+  use {'josa42/coc-lua', run = 'yarn install --frozen-lockfile'}
 
--- Completions
-local opts = vim.empty_dict()
-opts['do'] = function()
-  vim.fn['system']('yarn install --frozen-lockfile')
-end
-add('neoclide/coc.nvim', opts)
-add('neoclide/coc-json', opts)
-add('neoclide/coc-yaml', opts)
-add('neoclide/coc-snippets', opts)
-add('fannheyward/coc-pyright', opts)
-add('fannheyward/coc-sql', opts)
-add('josa42/coc-docker', opts)
-add('josa42/coc-lua', opts)
+  -- Look and feel
+  use 'tpope/vim-vividchalk'
+  use 'bling/vim-airline'
+  use 'bitc/vim-bad-whitespace'
+  use 'airblade/vim-gitgutter'
 
--- Look and feel
-add('tpope/vim-vividchalk')
-add('bling/vim-airline')
-add('bitc/vim-bad-whitespace')
-add('airblade/vim-gitgutter')
-
--- Language support
-add('statianzo/vim-jade')
-add('digitaltoad/vim-pug')
-add('qmx/vim-json')
-add('saltstack/salt-vim')
-add('lepture/vim-jinja')
-add('Keithbsmiley/tmux.vim')
-add('hynek/vim-python-pep8-indent')
-add('mustache/vim-mustache-handlebars')
-add('mxw/vim-jsx')
-add('pangloss/vim-javascript')
-add('wavded/vim-stylus')
-add('udalov/kotlin-vim')
-add('jvirtanen/vim-hcl')
-add('hashivim/vim-terraform')
-add('NoahTheDuke/vim-just')
-add('tbastos/vim-lua')
+  -- Language support
+  use 'statianzo/vim-jade'
+  use 'digitaltoad/vim-pug'
+  use 'qmx/vim-json'
+  use 'saltstack/salt-vim'
+  use 'lepture/vim-jinja'
+  use 'Keithbsmiley/tmux.vim'
+  use 'hynek/vim-python-pep8-indent'
+  use 'mustache/vim-mustache-handlebars'
+  use 'mxw/vim-jsx'
+  use 'pangloss/vim-javascript'
+  use 'wavded/vim-stylus'
+  use 'udalov/kotlin-vim'
+  use 'jvirtanen/vim-hcl'
+  use 'hashivim/vim-terraform'
+  use 'NoahTheDuke/vim-just'
+  use 'tbastos/vim-lua'
+end,
+config = {
+  package_root = vim.fn.stdpath('config') .. '/pack',
+  display = {
+    open_fn = require('packer.util').float,
+  }
+}})
