@@ -109,7 +109,7 @@ require("toggleterm").setup{
   open_mapping = [[<C-\>]]
 }
 
--- terminal
+-- Terminal
 vim.cmd [[autocmd TermOpen * startinsert]]
 vim.cmd [[autocmd TermOpen * setlocal nonumber]]
 vim.cmd [[autocmd TermOpen * :HideBadWhitespace]]

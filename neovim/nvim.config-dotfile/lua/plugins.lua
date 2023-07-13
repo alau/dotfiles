@@ -16,15 +16,8 @@ add('mg979/vim-visual-multi')
 add('Lokaltog/vim-easymotion')
 add('scrooloose/nerdcommenter')
 add('mhinz/vim-startify')
-
--- cmp
-add('neovim/nvim-lspconfig')
-add('hrsh7th/cmp-nvim-lsp')
-add('hrsh7th/cmp-buffer')
-add('hrsh7th/cmp-path')
-add('hrsh7th/cmp-cmdline')
-add('hrsh7th/nvim-cmp')
-add('quangnguyen30192/cmp-nvim-ultisnips')
+add('simrat39/symbols-outline.nvim')
+add('akinsho/toggleterm.nvim')
 
 -- Utility
 add('tpope/vim-sensible')
@@ -35,8 +28,18 @@ add('christoomey/vim-tmux-navigator')
 add('matze/vim-move')
 add('ConradIrwin/vim-bracketed-paste')
 add('lambdalisue/suda.vim')
-add('simrat39/symbols-outline.nvim')
-add('akinsho/toggleterm.nvim')
+opts = vim.empty_dict()
+opts['do'] = function()
+  vim.fn['system']('yarn install --frozen-lockfile')
+end
+add('neoclide/coc.nvim', opts)
+add('neoclide/coc-json', opts)
+add('neoclide/coc-yaml', opts)
+add('neoclide/coc-snippets', opts)
+add('fannheyward/coc-pyright', opts)
+add('fannheyward/coc-sql', opts)
+add('josa42/coc-docker', opts)
+add('josa42/coc-lua', opts)
 
 -- Look and feel
 add('tpope/vim-vividchalk')
