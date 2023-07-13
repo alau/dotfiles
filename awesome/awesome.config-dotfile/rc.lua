@@ -39,7 +39,7 @@ load_part("errors")
 settings = {}
 widgets = {}
 modkey = "Mod4"
-settings.terminal = 'alacritty'
+settings.terminal = 'alacritty --command "tmux"'
 settings.layouts = {
   awful.layout.suit.tile.right,
   awful.layout.suit.tile.bottom,
