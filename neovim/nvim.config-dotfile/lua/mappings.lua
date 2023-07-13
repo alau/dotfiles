@@ -31,9 +31,6 @@ vim.keymap.set("n", "-", ":lua vim.lsp.buf.references()<CR>")
 vim.keymap.set("n", "<C-s>", ":write<CR>")
 vim.keymap.set("i", "<C-s>", "<Esc>:write<CR>a")
 
--- Reloading vimrc
-vim.keymap.set("", "<Leader>so", ":so ~/.config/nvim/init.lua<CR>")
-
 -- Fugitive
 vim.keymap.set("n", "<C-g>", ":Git<CR>)")
 vim.keymap.set("", "<Leader>d", ":Git diff %<CR>")
