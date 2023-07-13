@@ -6,7 +6,7 @@ return require('packer').startup({function(use)
   use 'mileszs/ack.vim'
   use 'tpope/vim-fugitive'
   use 'ctrlpvim/ctrlp.vim'
-  use 'scrooloose/nerdtree'
+  use 'nvim-tree/nvim-tree.lua'
   use 'SirVer/ultisnips'
   use 'godlygeek/tabular'
   use 'mg979/vim-visual-multi'
@@ -41,6 +41,7 @@ return require('packer').startup({function(use)
   use 'bling/vim-airline'
   use 'bitc/vim-bad-whitespace'
   use 'airblade/vim-gitgutter'
+  use 'nvim-tree/nvim-web-devicons'
 
   -- Language support
   use 'statianzo/vim-jade'

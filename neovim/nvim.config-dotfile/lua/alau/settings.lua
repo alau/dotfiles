@@ -38,3 +38,7 @@ vim.cmd [[autocmd TermOpen * startinsert]]
 vim.cmd [[autocmd TermOpen * setlocal nonumber]]
 vim.cmd [[autocmd TermOpen * :HideBadWhitespace]]
 vim.cmd [[autocmd TermEnter * setlocal signcolumn=no]]
+
+-- For nvim-tree
+vim.g.loaded_netrw = 1
+vim.g.loaded_netrwPlugin = 1

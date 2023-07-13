@@ -40,9 +40,6 @@ vim.keymap.set("", "<Leader>D", ":Git diff<CR>")
 vim.g.ctrlp_map = '<leader>t'
 vim.keymap.set("", "<Leader>b", ":CtrlPBuffer<CR>")
 
--- NERDTree
-vim.keymap.set("n", "<silent>", "<F10> :NERDTreeToggle<CR>")
-
 -- NERDCommentator
 vim.keymap.set("", "<Leader>x", "<plug>NERDCommenterToggle")
 
