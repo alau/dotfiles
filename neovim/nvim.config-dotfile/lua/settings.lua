@@ -52,14 +52,6 @@ vim.g.NERDTreeWinPos = 'right'
 -- Ack
 vim.g.ackprg = "ack -H -i --nocolor --nogroup --column --noxml --nocss"
 
--- delimitMate
-vim.g.delimitMate_expand_space = 1
-vim.g.delimitMate_expand_cr = 1
-vim.g.delimitMate_excluded_ft = "txt"
-
--- endwise
-vim.g.endwise_no_mappings = 0
-
 -- airline
 if vim.fn.exists('airline_symbols') ~= 0 then
   vim.g.airline_symbols = {}
@@ -77,10 +69,6 @@ vim.g.EasyMotion_mapping_t = '<Leader><Leader>t'
 vim.g.EasyMotion_mapping_f = 'f'
 vim.g.EasyMotion_mapping_F = 'F'
 vim.g.EasyMotion_keys = 'hutenosadimkwjvqzbxgpcrlf'
-
--- gitv
-vim.g.Gitv_DoNotMapCtrlKey = 1
-vim.g.Gitv_WipeAllOnClose = 1
 
 -- vim-multiple-cursors
 vim.g.multi_cursor_exit_from_visual_mode = 0
@@ -106,13 +94,6 @@ vim.g.mustache_operators = 0
 
 -- tmux-navigator
 vim.g.tmux_navigator_no_mappings = 1
-
--- yankstack
-vim.g.yankstack_map_keys = 0
-
--- fixmyjs
-vim.g.fixmyjs_engine = 'eslint'
-vim.g.fixmyjs_use_local = 1
 
 -- folding
 vim.opt.foldmethod = 'syntax'
