@@ -121,3 +121,9 @@ vim.opt.foldlevelstart = 99
 
 -- symbols-outline
 require("symbols-outline").setup()
+
+-- terminal
+vim.cmd [[autocmd TermOpen * startinsert]]
+vim.cmd [[autocmd TermOpen * setlocal nonumber]]
+vim.cmd [[autocmd TermOpen * :HideBadWhitespace]]
+vim.cmd [[autocmd TermEnter * setlocal signcolumn=no]]
