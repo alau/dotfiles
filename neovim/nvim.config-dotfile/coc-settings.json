@@ -1,5 +1,9 @@
 {
     "Lua.diagnostics.globals": [
         "vim"
-    ]
+    ],
+    "python.linting.flake8Enabled": true,
+    "python.linting.mypyEnabled": true,
+    "pyright.inlayHints.functionReturnTypes": false,
+    "pyright.inlayHints.variableTypes": false,
 }
