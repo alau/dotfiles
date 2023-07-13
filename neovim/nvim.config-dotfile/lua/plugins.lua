@@ -28,7 +28,7 @@ add('christoomey/vim-tmux-navigator')
 add('matze/vim-move')
 add('ConradIrwin/vim-bracketed-paste')
 add('lambdalisue/suda.vim')
-opts = vim.empty_dict()
+local opts = vim.empty_dict()
 opts['do'] = function()
   vim.fn['system']('yarn install --frozen-lockfile')
 end
