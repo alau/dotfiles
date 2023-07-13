@@ -36,6 +36,7 @@ add('matze/vim-move')
 add('ConradIrwin/vim-bracketed-paste')
 add('lambdalisue/suda.vim')
 add('simrat39/symbols-outline.nvim')
+add('akinsho/toggleterm.nvim')
 
 -- Look and feel
 add('tpope/vim-vividchalk')

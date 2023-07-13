@@ -122,6 +122,12 @@ vim.opt.foldlevelstart = 99
 -- symbols-outline
 require("symbols-outline").setup()
 
+-- toggleterm
+require("toggleterm").setup{
+  direction = "float",
+  open_mapping = [[<C-\>]]
+}
+
 -- terminal
 vim.cmd [[autocmd TermOpen * startinsert]]
 vim.cmd [[autocmd TermOpen * setlocal nonumber]]
