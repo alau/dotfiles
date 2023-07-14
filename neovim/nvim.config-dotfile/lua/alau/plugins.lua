@@ -35,14 +35,11 @@ return require('packer').startup({function(use)
   }
 
   -- Completions
-  use {'neoclide/coc.nvim', run = 'yarn install --frozen-lockfile'}
-  use {'neoclide/coc-json', run = 'yarn install --frozen-lockfile'}
-  use {'neoclide/coc-yaml', run = 'yarn install --frozen-lockfile'}
-  use {'neoclide/coc-snippets', run = 'yarn install --frozen-lockfile'}
-  use {'fannheyward/coc-pyright', run = 'yarn install --frozen-lockfile'}
-  use {'fannheyward/coc-sql', run = 'yarn install --frozen-lockfile'}
-  use {'josa42/coc-docker', run = 'yarn install --frozen-lockfile'}
-  use {'josa42/coc-lua', run = 'yarn install --frozen-lockfile'}
+  use {
+    "williamboman/mason.nvim",
+    "williamboman/mason-lspconfig.nvim",
+    "neovim/nvim-lspconfig",
+  }
 
   -- Look and feel
   use 'tpope/vim-vividchalk'
