@@ -3,7 +3,6 @@ vim.cmd [[packadd packer.nvim]]
 return require('packer').startup({function(use)
   -- Tools
   use {'wbthomason/packer.nvim', opt = true}
-  use 'mileszs/ack.vim'
   use 'tpope/vim-fugitive'
   use {
     'nvim-telescope/telescope.nvim',

@@ -16,11 +16,14 @@ fi
 # less
 export LESS='--hilite-search --hilite-unread --ignore-case --LONG-PROMPT --RAW-CONTROL-CHARS'
 
+# ripgrep
+export RIPGREP_CONFIG_PATH="$HOME/.ripgreprc"
+
 # sbt
 export SBT_OPTS="-Xmx2G -XX:+UseConcMarkSweepGC -XX:+CMSClassUnloadingEnabled -XX:MaxPermSize=2G -Xss2M"
 
 # go
-export GOPATH="/home/alau/workspace"
+export GOPATH="$HOME/workspace"
 
 # module
 export MODULEPATH="$HOME/modules:$MODULEPATH"

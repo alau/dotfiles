@@ -1,0 +1,16 @@
+--smart-case
+--glob=!.git/*
+--glob=!tmp/*
+--glob=!node_modules/*
+--glob=!venv/*
+--glob=!target/*
+--glob=!dist/*
+--glob=!bower_components/*
+--glob=!.tmp/*
+--glob=!log/*
+--glob=!logs/*
+--glob=!public/*
+--glob=!doc/output/*
+--glob=!.metaflow/*
+--glob=!.venv/*
+--glob=!.mypy_cache/*
