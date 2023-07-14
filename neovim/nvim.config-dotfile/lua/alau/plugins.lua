@@ -5,7 +5,10 @@ return require('packer').startup({function(use)
   use {'wbthomason/packer.nvim', opt = true}
   use 'mileszs/ack.vim'
   use 'tpope/vim-fugitive'
-  use 'ctrlpvim/ctrlp.vim'
+  use {
+    'nvim-telescope/telescope.nvim',
+    requires = { {'nvim-lua/plenary.nvim'} }
+  }
   use 'nvim-tree/nvim-tree.lua'
   use 'SirVer/ultisnips'
   use 'godlygeek/tabular'
