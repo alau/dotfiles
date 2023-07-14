@@ -53,6 +53,9 @@ set -s escape-time 0
 set-option -g history-limit 100000
 set-option -g focus-events on
 
+# Look and feel
+set -g status-position top
+
 # Local stuff
 source-file ~/.tmux.conf.local
 
