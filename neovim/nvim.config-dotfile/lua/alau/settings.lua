@@ -33,6 +33,12 @@ vim.opt.foldmethod = 'syntax'
 vim.g.javaScript_fold = 1
 vim.opt.foldlevelstart = 99
 
+-- Colors
+vim.opt.termguicolors = true
+vim.cmd [[colorscheme vividchalk]]
+vim.cmd [[highlight Comment guifg=lightblue]]
+vim.cmd [[highlight! link SignColumn LineNr]]
+
 -- Terminal
 vim.cmd [[autocmd TermOpen * startinsert]]
 vim.cmd [[autocmd TermOpen * setlocal nonumber]]
@@ -42,3 +48,4 @@ vim.cmd [[autocmd TermEnter * setlocal signcolumn=no]]
 -- For nvim-tree
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
+
