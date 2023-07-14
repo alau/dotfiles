@@ -27,6 +27,13 @@ return require('packer').startup({function(use)
   use 'matze/vim-move'
   use 'ConradIrwin/vim-bracketed-paste'
   use 'lambdalisue/suda.vim'
+  use {
+    'nvim-treesitter/nvim-treesitter',
+    run = function()
+      local ts_update = require('nvim-treesitter.install').update({ with_sync = true })
+      ts_update()
+    end,
+  }
 
   -- Completions
   use {'neoclide/coc.nvim', run = 'yarn install --frozen-lockfile'}
