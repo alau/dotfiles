@@ -13,7 +13,10 @@ local on_attach = function()
   vim.keymap.set('n', 'K', vim.lsp.buf.hover, {})
 end
 
+local capabilities = require('cmp_nvim_lsp').default_capabilities()
+
 require("lspconfig").lua_ls.setup({
+  capabilities = capabilities,
   on_attach = on_attach,
   settings = {
     Lua = {
@@ -24,5 +27,6 @@ require("lspconfig").lua_ls.setup({
   }
 })
 require("lspconfig").pyright.setup({
+  capabilities = capabilities,
   on_attach = on_attach,
 })
