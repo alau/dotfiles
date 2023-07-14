@@ -8,3 +8,6 @@ vim.cmd [[highlight CtrlPBufferVis guibg=Black guifg=White]]
 vim.cmd [[highlight CtrlPBufferHid guibg=Black guifg=White]]
 vim.cmd [[highlight CtrlPBufferCur guibg=Black guifg=White]]
 
+vim.g.ctrlp_map = '<leader>t'
+vim.keymap.set("", "<Leader>b", ":CtrlPBuffer<CR>")
+
