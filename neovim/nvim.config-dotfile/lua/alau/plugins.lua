@@ -9,7 +9,6 @@ return require('packer').startup({function(use)
     requires = { {'nvim-lua/plenary.nvim'} }
   }
   use 'nvim-tree/nvim-tree.lua'
-  use 'SirVer/ultisnips'
   use 'godlygeek/tabular'
   use 'mg979/vim-visual-multi'
   use 'Lokaltog/vim-easymotion'
