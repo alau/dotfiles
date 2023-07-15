@@ -2,6 +2,10 @@ vim.opt.updatetime = 300
 -- Always show the signcolumn to avoid shifting text when it appears
 vim.opt.signcolumn = "yes"
 
+vim.lsp.handlers["textDocument/hover"] = vim.lsp.with(vim.lsp.handlers.hover, {
+  border = "rounded",
+})
+
 require("mason").setup()
 require("mason-lspconfig").setup({
   ensure_installed = { "lua_ls", "pyright" }
