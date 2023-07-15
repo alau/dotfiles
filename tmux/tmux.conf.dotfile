@@ -55,6 +55,7 @@ set-option -g focus-events on
 
 # Look and feel
 set -g status-position top
+set-option -g status-right ""
 
 # Local stuff
 source-file ~/.tmux.conf.local
