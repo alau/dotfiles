@@ -45,7 +45,7 @@ return require('packer').startup({function(use)
   use 'L3MON4D3/LuaSnip'
 
   -- Look and feel
-  use 'tpope/vim-vividchalk'
+  use 'sainnhe/gruvbox-material'
   use 'bling/vim-airline'
   use 'bitc/vim-bad-whitespace'
   use 'airblade/vim-gitgutter'
