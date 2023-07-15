@@ -40,6 +40,9 @@ require("lspconfig").lua_ls.setup({
       diagnostics = {
         globals = { "vim", "exepath" },
       },
+      workspace = {
+        checkThirdParty = false,
+      },
     }
   }
 })
