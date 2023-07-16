@@ -13,3 +13,5 @@ import:
 colors:
   primary:
     background: '#000000'
+  normal:
+    green: '#a7dc91'

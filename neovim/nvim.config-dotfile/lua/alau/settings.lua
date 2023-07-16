@@ -36,7 +36,12 @@ vim.opt.foldlevelstart = 99
 -- Colors
 vim.opt.termguicolors = true
 vim.g.gruvbox_baby_background_color = "dark"
-vim.g.gruvbox_baby_color_overrides = {background = "#000000", comment = "lightblue"}
+vim.g.gruvbox_baby_color_overrides = {
+  background = "#000000",
+  comment = "lightblue",
+  soft_green = "#a7dc91",
+  blue_gray = "#6a9d9f",
+}
 vim.cmd [[highlight LineNr guifg=lightblue]]
 vim.cmd [[colorscheme gruvbox-baby]]
 
