@@ -33,7 +33,8 @@ return require('packer').startup({function(use)
       ts_update()
     end,
   }
-  use "nvim-treesitter/nvim-treesitter-textobjects"
+  use 'nvim-treesitter/nvim-treesitter-textobjects'
+  use 'mfussenegger/nvim-lint'
 
   -- Completions
   use {

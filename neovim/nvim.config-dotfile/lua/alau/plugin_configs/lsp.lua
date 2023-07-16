@@ -76,4 +76,7 @@ require("lspconfig").pyright.setup({
   end,
   capabilities = capabilities,
   on_attach = on_attach,
+  handlers = {
+    ['textDocument/publishDiagnostics'] = function() end
+  }
 })
