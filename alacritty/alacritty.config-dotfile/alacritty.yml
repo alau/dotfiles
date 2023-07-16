@@ -8,7 +8,7 @@ font:
     style: Medium
 
 import:
-   - ~/.config/alacritty/themes/themes/wombat.yaml
+   - ~/.config/alacritty/themes/themes/gruvbox_dark.yaml
 
 colors:
   primary:

@@ -47,7 +47,7 @@ return require('packer').startup({function(use)
   use 'hrsh7th/cmp-nvim-lsp-signature-help'
 
   -- Look and feel
-  use 'sainnhe/gruvbox-material'
+  use 'luisiacc/gruvbox-baby'
   use 'bling/vim-airline'
   use 'bitc/vim-bad-whitespace'
   use 'airblade/vim-gitgutter'

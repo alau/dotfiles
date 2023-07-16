@@ -35,14 +35,10 @@ vim.opt.foldlevelstart = 99
 
 -- Colors
 vim.opt.termguicolors = true
-vim.opt.background = 'dark'
-vim.g.gruvbox_material_background = 'hard'
-vim.g.gruvbox_material_foreground = 'original'
-vim.g.gruvbox_material_better_performance = 1
-vim.g.airline_theme = 'gruvbox_material'
-vim.cmd [[colorscheme gruvbox-material]]
-vim.cmd [[highlight Comment guifg=lightblue]]
+vim.g.gruvbox_baby_background_color = "dark"
+vim.g.gruvbox_baby_color_overrides = {background = "#000000", comment = "lightblue"}
 vim.cmd [[highlight LineNr guifg=lightblue]]
+vim.cmd [[colorscheme gruvbox-baby]]
 
 -- Terminal
 vim.cmd [[autocmd TermOpen * startinsert]]

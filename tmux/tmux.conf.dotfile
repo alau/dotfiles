@@ -8,6 +8,7 @@ set -g @plugin 'tmux-plugins/tmux-copycat'
 set -g @plugin 'tmux-plugins/tmux-sessionist'
 set -g @plugin 'tmux-plugins/tmux-open'
 set -g @plugin 'christoomey/vim-tmux-navigator'
+set -g @plugin 'egel/tmux-gruvbox'
 
 run-shell '~/.tmux/plugins/tpm/tpm'
 
@@ -56,6 +57,7 @@ set-option -g focus-events on
 # Look and feel
 set -g status-position top
 set-option -g status-right ""
+set -g @tmux-gruvbox 'dark'
 
 # Local stuff
 source-file ~/.tmux.conf.local
