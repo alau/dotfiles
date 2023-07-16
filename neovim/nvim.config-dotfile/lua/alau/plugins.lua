@@ -69,7 +69,7 @@ return require('packer').startup({function(use)
   use 'jvirtanen/vim-hcl'
   use 'hashivim/vim-terraform'
   use 'NoahTheDuke/vim-just'
-  use 'tbastos/vim-lua'
+  use 'euclidianAce/BetterLua.vim'
 end,
 config = {
   package_root = vim.fn.stdpath('config') .. '/pack',
