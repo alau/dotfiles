@@ -3,7 +3,7 @@ source ~/.zsh/colors.zsh
 source ~/.zsh/aliases.zsh
 source ~/.zsh/prompt.zsh
 source ~/.zsh/editor.zsh
-. ~/.zsh/z/z.sh
+source ~/.zsh/zoxide.zsh
 source ~/.zsh/zsh-nvm/zsh-nvm.plugin.zsh
 
 # Disable ^S/^Q flow control
