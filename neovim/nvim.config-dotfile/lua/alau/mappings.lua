@@ -1,13 +1,3 @@
--- Disable arrow keys
-vim.keymap.set("", "<Up>", "<nop>")
-vim.keymap.set("", "<Down>", "<nop>")
-vim.keymap.set("", "<Left>", "<nop>")
-vim.keymap.set("", "<Right>", "<nop>")
-vim.keymap.set("i", "<Up>", "<nop>")
-vim.keymap.set("i", "<Down>", "<nop>")
-vim.keymap.set("i", "<Left>", "<nop>")
-vim.keymap.set("i", "<Right>", "<nop>")
-
 -- Pane handling
 vim.keymap.set("n", "Q", ":close<CR>")
 
