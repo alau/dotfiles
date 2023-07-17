@@ -16,6 +16,7 @@ return require('packer').startup({function(use)
   use 'mhinz/vim-startify'
   use 'simrat39/symbols-outline.nvim'
   use 'akinsho/toggleterm.nvim'
+  use 'jvgrootveld/telescope-zoxide'
 
   -- Utility
   use 'tpope/vim-sensible'
