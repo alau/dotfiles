@@ -35,6 +35,7 @@ return require('packer').startup({function(use)
   }
   use 'nvim-treesitter/nvim-treesitter-textobjects'
   use 'mfussenegger/nvim-lint'
+  use 'nvim-treesitter/nvim-treesitter-context'
 
   -- Completions
   use {
