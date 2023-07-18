@@ -2,7 +2,11 @@ vim.cmd [[packadd packer.nvim]]
 
 return require('packer').startup({function(use)
   -- Tools
-  use {'wbthomason/packer.nvim', opt = true}
+  use {
+    'wbthomason/packer.nvim',
+    opt = true,
+    lock = true,
+  }
   use 'tpope/vim-fugitive'
   use {
     'nvim-telescope/telescope.nvim',
