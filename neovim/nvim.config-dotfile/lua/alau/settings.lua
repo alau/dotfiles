@@ -43,7 +43,7 @@ vim.g.gruvbox_baby_color_overrides = {
   blue_gray = "#6a9d9f",
 }
 vim.cmd [[highlight LineNr guifg=lightblue]]
-vim.cmd [[colorscheme gruvbox-baby]]
+vim.cmd [[silent! colorscheme gruvbox-baby]]
 
 -- Terminal
 vim.cmd [[autocmd TermOpen * startinsert]]
