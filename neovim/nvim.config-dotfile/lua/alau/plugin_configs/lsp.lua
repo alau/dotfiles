@@ -8,7 +8,7 @@ vim.lsp.handlers["textDocument/hover"] = vim.lsp.with(vim.lsp.handlers.hover, {
 
 require("mason").setup()
 require("mason-lspconfig").setup({
-  ensure_installed = { "lua_ls", "pyright" }
+  ensure_installed = { "lua_ls", "pyright", "tsserver" }
 })
 
 local on_attach = function(_, bufnr)
@@ -79,4 +79,12 @@ require("lspconfig").pyright.setup({
   handlers = {
     ['textDocument/publishDiagnostics'] = function() end
   }
+})
+
+
+-- typescript
+require("lspconfig").tsserver.setup({
+  capabilities = capabilities,
+  on_attach = on_attach,
+  single_file_suppert = true,
 })
