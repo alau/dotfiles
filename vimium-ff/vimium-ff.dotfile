@@ -2,5 +2,7 @@ map j scrollPageDown
 map k scrollPageUp
 
 unmap d
-unmap u
 map d removeTab
+unmap u
+map u restoreTab
+unmap /
