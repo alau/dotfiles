@@ -19,7 +19,7 @@ return require('packer').startup({function(use)
   use 'scrooloose/nerdcommenter'
   use 'mhinz/vim-startify'
   use 'simrat39/symbols-outline.nvim'
-  use 'akinsho/toggleterm.nvim'
+  use 'preservim/vimux'
   use 'jvgrootveld/telescope-zoxide'
 
   -- Utility
