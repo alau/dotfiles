@@ -1,5 +1,5 @@
 require('nvim-treesitter.configs').setup({
-  ensure_installed = { "python", "lua", "json", "sql" },
+  ensure_installed = { "python", "lua", "json", "sql", "javascript" },
 
   -- Install parsers synchronously (only applied to `ensure_installed`)
   sync_install = false,
