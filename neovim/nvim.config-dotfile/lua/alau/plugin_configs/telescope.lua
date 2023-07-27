@@ -1,5 +1,9 @@
 local t = require('telescope')
-t.setup({})
+t.setup({
+  defaults = {
+    path_display = {"smart"}
+  }
+})
 
 local builtin = require('telescope.builtin')
 vim.keymap.set('n', '<leader>t', builtin.git_files, {})
