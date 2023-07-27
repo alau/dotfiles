@@ -12,6 +12,8 @@ return require('packer').startup({function(use)
     'nvim-telescope/telescope.nvim',
     requires = { {'nvim-lua/plenary.nvim'} }
   }
+  use 'nvim-telescope/telescope-live-grep-args.nvim'
+  use 'jvgrootveld/telescope-zoxide'
   use 'nvim-tree/nvim-tree.lua'
   use 'godlygeek/tabular'
   use 'mg979/vim-visual-multi'
@@ -20,7 +22,6 @@ return require('packer').startup({function(use)
   use 'mhinz/vim-startify'
   use 'simrat39/symbols-outline.nvim'
   use 'preservim/vimux'
-  use 'jvgrootveld/telescope-zoxide'
 
   -- Utility
   use 'tpope/vim-sensible'
