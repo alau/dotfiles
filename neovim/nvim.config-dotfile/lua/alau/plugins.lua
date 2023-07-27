@@ -70,7 +70,6 @@ return require('packer').startup({function(use)
   use 'Keithbsmiley/tmux.vim'
   use 'hynek/vim-python-pep8-indent'
   use 'mustache/vim-mustache-handlebars'
-  use 'mxw/vim-jsx'
   use 'pangloss/vim-javascript'
   use 'wavded/vim-stylus'
   use 'udalov/kotlin-vim'
