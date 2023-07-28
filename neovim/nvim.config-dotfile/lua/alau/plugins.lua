@@ -43,6 +43,7 @@ return require('packer').startup({function(use)
   use 'mfussenegger/nvim-lint'
   use 'nvim-treesitter/nvim-treesitter-context'
   use 'vim-test/vim-test'
+  use 'Almo7aya/openingh.nvim'
 
   -- Completions
   use {
