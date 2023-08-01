@@ -23,6 +23,10 @@ vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 vim.keymap.set("n", "<C-d>", "<C-d>zz")
 vim.keymap.set("n", "<C-u>", "<C-u>zz")
 
+-- Searching
+vim.keymap.set("n", "n", "nzzzv")
+vim.keymap.set("n", "N", "Nzzzv")
+
 -- ctags
 vim.keymap.set("", "<Leader>rt", ":!ctags -R *<CR><CR>")
 vim.keymap.set("", "!", "<C-]>")
