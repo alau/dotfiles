@@ -15,6 +15,10 @@ vim.keymap.set("n", "]s", ":cnext<CR>")
 vim.keymap.set("n", "<C-s>", ":write<CR>")
 vim.keymap.set("i", "<C-s>", "<Esc>:write<CR>a")
 
+-- Move
+vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
+vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
+
 -- ctags
 vim.keymap.set("", "<Leader>rt", ":!ctags -R *<CR><CR>")
 vim.keymap.set("", "!", "<C-]>")

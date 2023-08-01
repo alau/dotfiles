@@ -29,7 +29,6 @@ return require('packer').startup({function(use)
   use 'chaoren/vim-wordmotion'
   use 'DataWraith/auto_mkdir'
   use 'christoomey/vim-tmux-navigator'
-  use 'matze/vim-move'
   use 'ConradIrwin/vim-bracketed-paste'
   use 'lambdalisue/suda.vim'
   use {
