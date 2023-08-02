@@ -55,6 +55,12 @@ return require('packer').startup({function(use)
   use 'L3MON4D3/LuaSnip'
   use 'hrsh7th/cmp-nvim-lsp-signature-help'
 
+  -- Debugging
+  use 'mfussenegger/nvim-dap'
+  use "rcarriga/nvim-dap-ui"
+  use 'jay-babu/mason-nvim-dap.nvim'
+  use 'mfussenegger/nvim-dap-python'
+
   -- Look and feel
   use 'luisiacc/gruvbox-baby'
   use 'bitc/vim-bad-whitespace'

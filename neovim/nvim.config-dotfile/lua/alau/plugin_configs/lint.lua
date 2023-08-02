@@ -2,10 +2,9 @@ require('lint').linters_by_ft = {
   python = { 'ruff', 'mypy', }
 }
 
-local util = require('lspconfig/util')
-local path = util.path
-local function get_ruff_path(workspace)
-  -- Use activated virtualenv.
+local function get_ruff_path(_)
+  local util = require('lspconfig/util')
+  local path = util.path
   if vim.env.VIRTUAL_ENV then
     return path.join(vim.env.VIRTUAL_ENV, 'bin', 'ruff')
   end
