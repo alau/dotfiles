@@ -27,10 +27,5 @@ vim.keymap.set("n", "<C-u>", "<C-u>zz")
 vim.keymap.set("n", "n", "nzzzv")
 vim.keymap.set("n", "N", "Nzzzv")
 
--- ctags
-vim.keymap.set("", "<Leader>rt", ":!ctags -R *<CR><CR>")
-vim.keymap.set("", "!", "<C-]>")
-vim.keymap.set("", "&", ":pop<CR>")
-
 -- Json formatting
 vim.keymap.set("", "<Leader>J", ":% !python -m json.tool<CR>:set ft=json<CR>")

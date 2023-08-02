@@ -6,7 +6,7 @@ Run `./install.sh`
 
 List of packages (Fedora 38):
 ```zsh
-dnf install vim htop keepassxc zsh numlockx awesome tmux ctags ncurses-term xclip xscreensaver beesu lxappearance wmname util-linux-user hub neovim redshift httpie lm_sensors yp-tools jq gron xbacklight gh autorandr xrandr environment-modules alacritty nodejs yarnpkg virtualenv ripgrep zoxide
+dnf install vim htop keepassxc zsh numlockx awesome tmux ncurses-term xclip xscreensaver beesu lxappearance wmname util-linux-user hub neovim redshift httpie lm_sensors yp-tools jq gron xbacklight gh autorandr xrandr environment-modules alacritty nodejs yarnpkg virtualenv ripgrep zoxide
 ```
 
 ## Dropbox
@@ -22,10 +22,6 @@ Install from [dropbox install page](https://www.dropbox.com/install-linux).
 * Install python3 client for neovim: `pip install neovim`
 * Enter vim and run `:PackUpdate` to install the plugins
 * Verify installation using `:CheckHealth`
-
-The following packages are required for ctags:
-* ctags (exuberant-ctags in debian)
-* ncurses-term
 
 The following package is required for clipboard integration:
 * xsel
