@@ -7,6 +7,7 @@ t.setup({
 
 local builtin = require('telescope.builtin')
 vim.keymap.set('n', '<leader>t', builtin.git_files, {})
+vim.keymap.set('n', '<leader>T', builtin.find_files, {})
 vim.keymap.set('n', '<leader>fg', require("telescope").extensions.live_grep_args.live_grep_args, {})
 vim.keymap.set('n', '<leader>b', builtin.buffers, {})
 vim.keymap.set('n', '<leader>fh', builtin.help_tags, {})
