@@ -1,9 +1,8 @@
-vim.g.EasyMotion_leader_key = '<Leader>'
-vim.g.EasyMotion_mapping_t = '<Leader><Leader>t'
-vim.g.EasyMotion_mapping_f = 'f'
-vim.g.EasyMotion_mapping_F = 'F'
+vim.g.EasyMotion_do_mapping = false
 vim.g.EasyMotion_keys = 'hutenosadimkwjvqzbxgpcrlf'
 
+vim.keymap.set("n", "f", "<Plug>(easymotion-f)")
+vim.keymap.set("n", "F", "<Plug>(easymotion-F)")
 vim.keymap.set("n", "L", "<Plug>(easymotion-j)")
 vim.keymap.set("n", "H", "<Plug>(easymotion-k)")
 
