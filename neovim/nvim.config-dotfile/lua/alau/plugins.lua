@@ -60,6 +60,7 @@ return require('packer').startup({function(use)
   use "rcarriga/nvim-dap-ui"
   use 'jay-babu/mason-nvim-dap.nvim'
   use 'mfussenegger/nvim-dap-python'
+  use 'theHamsta/nvim-dap-virtual-text'
 
   -- Look and feel
   use 'luisiacc/gruvbox-baby'
