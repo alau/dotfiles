@@ -16,4 +16,4 @@ require('lint').linters.ruff.env = {
   cmd = get_ruff_path(vim.fn.getcwd())
 }
 
-vim.cmd [[au BufWritePost * lua require('lint').try_lint()]]
+vim.cmd [[au BufWritePost * silent! lua require('lint').try_lint()]]
