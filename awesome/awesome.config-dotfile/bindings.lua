@@ -116,12 +116,12 @@ local globalkeys = awful.util.table.join(
   ),
 
   -- Function keys
-  awful.key({}, "#72",
+  awful.key({ "Control" }, "#72",
     function()
       os.execute("xbacklight -inc 5")
     end, {description = "+5", group = "hotkeys"}
   ),
-  awful.key({}, "#71",
+  awful.key({ "Control" }, "#71",
     function()
       os.execute("xbacklight -dec 5")
     end, {description = "-5%", group = "hotkeys"}
