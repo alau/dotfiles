@@ -20,8 +20,9 @@ local on_attach = function(_, bufnr)
   set('n', '<leader>ca', vim.lsp.buf.code_action, bufopts)
 
   set('n', 'gd', vim.lsp.buf.definition, bufopts)
-  set('n', 'gr', require('telescope.builtin').lsp_references, bufopts)
   set('n', 'K', vim.lsp.buf.hover, bufopts)
+  set('n', '<leader>fr', require('telescope.builtin').lsp_references, bufopts)
+  set('n', '<leader>fs', require('telescope.builtin').lsp_dynamic_workspace_symbols, bufopts)
 
   set("n", "[l", diagnostic.goto_prev)
   set("n", "]l", diagnostic.goto_next)
