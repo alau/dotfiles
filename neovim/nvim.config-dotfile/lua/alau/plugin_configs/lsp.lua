@@ -8,7 +8,14 @@ vim.lsp.handlers["textDocument/hover"] = vim.lsp.with(vim.lsp.handlers.hover, {
 
 require("mason").setup()
 require("mason-lspconfig").setup({
-  ensure_installed = { "lua_ls", "pyright", "tsserver", "sqlls", "rust_analyzer" }
+  ensure_installed = {
+    "lua_ls",
+    "pyright",
+    "tsserver",
+    "sqlls",
+    "rust_analyzer",
+    "terraformls"
+  }
 })
 
 local on_attach = function(_, bufnr)
@@ -100,6 +107,13 @@ require("lspconfig").sqlls.setup({
 
 -- rust
 require("lspconfig").rust_analyzer.setup({
+  capabilities = capabilities,
+  on_attach = on_attach,
+})
+
+
+-- terraform
+require("lspconfig").terraformls.setup({
   capabilities = capabilities,
   on_attach = on_attach,
 })
