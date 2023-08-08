@@ -39,10 +39,10 @@ return require('packer').startup({function(use)
     end,
   }
   use 'nvim-treesitter/nvim-treesitter-textobjects'
-  use 'mfussenegger/nvim-lint'
   use 'nvim-treesitter/nvim-treesitter-context'
   use 'vim-test/vim-test'
   use 'Almo7aya/openingh.nvim'
+  use 'dense-analysis/ale'
 
   -- Completions
   use {
