@@ -48,7 +48,6 @@ vim.cmd [[silent! colorscheme gruvbox-baby]]
 -- Terminal
 vim.cmd [[autocmd TermOpen * startinsert]]
 vim.cmd [[autocmd TermOpen * setlocal nonumber]]
-vim.cmd [[autocmd TermOpen * :HideBadWhitespace]]
 vim.cmd [[autocmd TermEnter * setlocal signcolumn=no]]
 
 -- For nvim-tree
