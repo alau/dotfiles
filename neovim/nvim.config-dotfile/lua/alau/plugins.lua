@@ -64,7 +64,6 @@ return require('packer').startup({function(use)
 
   -- Look and feel
   use 'luisiacc/gruvbox-baby'
-  use 'bitc/vim-bad-whitespace'
   use 'airblade/vim-gitgutter'
   use 'nvim-tree/nvim-web-devicons'
   use 'nvim-lualine/lualine.nvim'
