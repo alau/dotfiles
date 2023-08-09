@@ -40,7 +40,9 @@ return require('packer').startup({function(use)
   }
   use 'nvim-treesitter/nvim-treesitter-textobjects'
   use 'nvim-treesitter/nvim-treesitter-context'
-  use 'vim-test/vim-test'
+  use 'nvim-neotest/neotest'
+  use 'nvim-neotest/neotest-python'
+  use 'antoinemadec/FixCursorHold.nvim'
   use 'Almo7aya/openingh.nvim'
   use 'dense-analysis/ale'
 
