@@ -1,7 +1,20 @@
 require("neotest").setup({
   adapters = {
     require("neotest-python")
-  }
+  },
+  icons = {
+    expanded = "",
+    child_prefix = "",
+    child_indent = "",
+    final_child_prefix = "",
+    non_collapsible = "",
+    collapsed = "",
+
+    passed = "",
+    running = "",
+    failed = "",
+    unknown = ""
+  },
 })
 
 vim.keymap.set("n", "<Leader>rt", ':lua require("neotest").run.run()<CR>', { silent = true })
