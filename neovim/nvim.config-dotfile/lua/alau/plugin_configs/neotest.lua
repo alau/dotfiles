@@ -17,6 +17,8 @@ require("neotest").setup({
   },
 })
 
-vim.keymap.set("n", "<Leader>rt", ':lua require("neotest").run.run()<CR>', { silent = true })
-vim.keymap.set("n", "<Leader>rd", ':lua require("neotest").run.run({strategy = "dap"})<CR>', { silent = true })
-vim.keymap.set("n", "<Leader>rr", ':lua require("neotest").run.run_last()<CR>', { silent = true })
+vim.keymap.set("n", "<Leader>rt", ':lua require("neotest").run.run()<CR>')
+vim.keymap.set("n", "<Leader>rd", ':lua require("neotest").run.run({strategy = "dap"})<CR>')
+vim.keymap.set("n", "<Leader>rr", ':lua require("neotest").run.run_last()<CR>')
+vim.keymap.set("n", "<Leader>rf", ':lua require("neotest").run.run(vim.fn.expand("%"))<CR>')
+vim.keymap.set("n", "<Leader>rs", ':lua require("neotest").summary.toggle()<CR>')
