@@ -25,6 +25,7 @@ return require('packer').startup({function(use)
   use 'nvim-neotest/neotest'
   use 'nvim-neotest/neotest-python'
   use 'folke/trouble.nvim'
+  use 'folke/zen-mode.nvim'
 
   -- Utility
   use 'tpope/vim-sensible'
