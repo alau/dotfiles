@@ -24,7 +24,6 @@ return require('packer').startup({function(use)
   use 'preservim/vimux'
   use 'nvim-neotest/neotest'
   use 'nvim-neotest/neotest-python'
-  use 'folke/trouble.nvim'
   use 'folke/zen-mode.nvim'
   use 'ThePrimeagen/harpoon'
 
