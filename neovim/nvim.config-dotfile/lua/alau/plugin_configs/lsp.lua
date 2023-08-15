@@ -14,7 +14,9 @@ require("mason-lspconfig").setup({
     "tsserver",
     "sqlls",
     "rust_analyzer",
-    "terraformls"
+    "terraformls",
+    "yamlls",
+    "dockerls",
   }
 })
 
@@ -37,10 +39,11 @@ local on_attach = function(_, bufnr)
 end
 
 local capabilities = require('cmp_nvim_lsp').default_capabilities()
+local lspconfig = require('lspconfig')
 
 
 -- lua
-require("lspconfig").lua_ls.setup({
+lspconfig.lua_ls.setup({
   capabilities = capabilities,
   on_attach = on_attach,
   settings = {
@@ -78,7 +81,7 @@ local function get_python_path(workspace)
   return exepath('python3') or exepath('python') or 'python'
 end
 
-require("lspconfig").pyright.setup({
+lspconfig.pyright.setup({
   before_init = function(_, config)
     config.settings.python.pythonPath = get_python_path(config.root_dir)
   end,
@@ -91,29 +94,17 @@ require("lspconfig").pyright.setup({
 
 
 -- typescript
-require("lspconfig").tsserver.setup({
+lspconfig.tsserver.setup({
   capabilities = capabilities,
   on_attach = on_attach,
   single_file_suppert = true,
 })
 
 
--- sql
-require("lspconfig").sqlls.setup({
-  capabilities = capabilities,
-  on_attach = on_attach,
-})
-
-
--- rust
-require("lspconfig").rust_analyzer.setup({
-  capabilities = capabilities,
-  on_attach = on_attach,
-})
-
-
--- terraform
-require("lspconfig").terraformls.setup({
-  capabilities = capabilities,
-  on_attach = on_attach,
-})
+local remaining_servers = { 'sqlls', 'rust_analyzer', 'terraformls', 'yamlls', 'dockerls' }
+for _, server in ipairs(remaining_servers) do
+  lspconfig[server].setup({
+    capabilities = capabilities,
+    on_attach = on_attach,
+  })
+end
