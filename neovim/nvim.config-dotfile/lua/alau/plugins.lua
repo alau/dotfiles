@@ -89,6 +89,7 @@ return require('packer').startup({function(use)
   use 'NoahTheDuke/vim-just'
   use 'euclidianAce/BetterLua.vim'
   use 'kchmck/vim-coffee-script'
+  use 'towolf/vim-helm'
 end,
 config = {
   package_root = vim.fn.stdpath('config') .. '/pack',

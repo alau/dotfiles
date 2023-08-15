@@ -15,8 +15,8 @@ require("mason-lspconfig").setup({
     "sqlls",
     "rust_analyzer",
     "terraformls",
-    "yamlls",
     "dockerls",
+    "helm_ls",
   }
 })
 
@@ -101,7 +101,22 @@ lspconfig.tsserver.setup({
 })
 
 
-local remaining_servers = { 'sqlls', 'rust_analyzer', 'terraformls', 'yamlls', 'dockerls' }
+-- helm
+lspconfig.helm_ls.setup({
+  capabilities = capabilities,
+  on_attach = on_attach,
+  filetypes = {'helm', 'yaml'}
+})
+
+
+-- default config for other languages
+local remaining_servers = {
+  'sqlls',
+  'rust_analyzer',
+  'terraformls',
+  'dockerls',
+  'helm_ls'
+}
 for _, server in ipairs(remaining_servers) do
   lspconfig[server].setup({
     capabilities = capabilities,

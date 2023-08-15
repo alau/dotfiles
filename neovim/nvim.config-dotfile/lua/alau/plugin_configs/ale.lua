@@ -1,6 +1,9 @@
 vim.g.ale_use_neovim_diagnostics_api = 1
 
-vim.g.ale_linters = { python = { 'ruff', 'mypy' } }
+vim.g.ale_linters = {
+  python = { 'ruff', 'mypy' },
+  yaml = { 'yamllint' },
+}
 
 vim.g.ale_fixers = {
   python = { 'trim_whitespace', 'black', 'autoimport', 'isort' },
