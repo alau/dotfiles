@@ -13,7 +13,15 @@ dap.listeners.before.event_exited["dapui_config"] = function()
   dapui.close()
 end
 
-vim.keymap.set('n', '<F5>', dap.continue)
+local continue = function()
+  -- Automatically load launch config
+  if vim.fn.filereadable('.vscode/launch.json') then
+    require('dap.ext.vscode').load_launchjs()
+  end
+  dap.continue()
+end
+
+vim.keymap.set('n', '<F5>', continue)
 vim.keymap.set('n', '<F8>', dap.toggle_breakpoint)
 vim.keymap.set('n', '<F10>', dap.step_into)
 vim.keymap.set('n', '<F11>', dap.step_over)
