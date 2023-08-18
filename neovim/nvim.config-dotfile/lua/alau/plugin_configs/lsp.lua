@@ -18,6 +18,7 @@ require("mason-lspconfig").setup({
     "dockerls",
     "helm_ls",
     "jsonls",
+    "gopls",
   }
 })
 
@@ -118,6 +119,7 @@ local remaining_servers = {
   'dockerls',
   'helm_ls',
   'jsonls',
+  'gopls',
 }
 for _, server in ipairs(remaining_servers) do
   lspconfig[server].setup({
