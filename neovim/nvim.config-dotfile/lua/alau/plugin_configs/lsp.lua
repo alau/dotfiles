@@ -17,6 +17,7 @@ require("mason-lspconfig").setup({
     "terraformls",
     "dockerls",
     "helm_ls",
+    "jsonls",
   }
 })
 
@@ -115,7 +116,8 @@ local remaining_servers = {
   'rust_analyzer',
   'terraformls',
   'dockerls',
-  'helm_ls'
+  'helm_ls',
+  'jsonls',
 }
 for _, server in ipairs(remaining_servers) do
   lspconfig[server].setup({
