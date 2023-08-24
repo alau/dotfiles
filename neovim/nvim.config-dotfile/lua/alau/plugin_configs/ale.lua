@@ -5,7 +5,8 @@ vim.g.ale_linters = {
   yaml = { 'yamllint' },
 }
 vim.g.ale_python_mypy_auto_poetry = 1
-vim.g.ale_python_mypy_options = '--follow-imports=skip'
+vim.g.ale_python_mypy_auto_pipenv = 1
+vim.g.ale_python_mypy_options = '--follow-imports=silent'
 
 vim.g.ale_fixers = {
   python = { 'trim_whitespace', 'black', 'autoimport', 'isort' },
