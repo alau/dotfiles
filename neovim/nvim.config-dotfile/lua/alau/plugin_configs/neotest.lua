@@ -2,6 +2,9 @@ require("neotest").setup({
   adapters = {
     require("neotest-python")
   },
+  output = {
+    open_on_run = false
+  },
   icons = {
     expanded = "",
     child_prefix = "",
