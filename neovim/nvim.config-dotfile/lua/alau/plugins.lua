@@ -21,7 +21,6 @@ return require('packer').startup({function(use)
   use 'scrooloose/nerdcommenter'
   use 'mhinz/vim-startify'
   use 'simrat39/symbols-outline.nvim'
-  use 'preservim/vimux'
   use 'nvim-neotest/neotest'
   use 'nvim-neotest/neotest-python'
   use 'folke/zen-mode.nvim'
