@@ -1,12 +1,6 @@
 -- Pane handling
 vim.keymap.set("n", "Q", ":close<CR>")
 
--- Window navigation
-vim.keymap.set("n", "<C-h>", ":TmuxNavigateLeft<cr>", { silent = true })
-vim.keymap.set("n", "<C-j>", ":TmuxNavigateDown<cr>", { silent = true })
-vim.keymap.set("n", "<C-k>", ":TmuxNavigateUp<cr>", { silent = true })
-vim.keymap.set("n", "<C-l>", ":TmuxNavigateRight<cr>", { silent = true })
-
 -- Quickfix navigation
 vim.keymap.set("n", "[s", ":cprev<CR>")
 vim.keymap.set("n", "]s", ":cnext<CR>")
