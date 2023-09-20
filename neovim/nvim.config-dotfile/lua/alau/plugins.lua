@@ -26,6 +26,10 @@ return require('packer').startup({function(use)
   use 'folke/zen-mode.nvim'
   use 'ThePrimeagen/harpoon'
   use 'duane9/nvim-rg'
+  use {
+    'jackMort/ChatGPT.nvim',
+    requires = { "MunifTanjim/nui.nvim" }
+  }
 
   -- Utility
   use 'tpope/vim-sensible'
