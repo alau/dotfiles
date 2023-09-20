@@ -26,3 +26,5 @@ vim.keymap.set("n", "<Leader>rd", ':lua require("neotest").run.run({strategy = "
 vim.keymap.set("n", "<Leader>rr", ':lua require("neotest").run.run_last()<CR>')
 vim.keymap.set("n", "<Leader>rf", ':lua require("neotest").run.run(vim.fn.expand("%"))<CR>')
 vim.keymap.set("n", "<Leader>rs", ':lua require("neotest").summary.toggle()<CR>')
+vim.keymap.set("n", "<Leader>ro", ':lua require("neotest").output.open({ enter = true })<CR>')
+
