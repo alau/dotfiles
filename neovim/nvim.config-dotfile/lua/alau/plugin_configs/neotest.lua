@@ -1,6 +1,7 @@
 require("neotest").setup({
   adapters = {
-    require("neotest-python")
+    require("neotest-python"),
+    require("neotest-jest")
   },
   output = {
     open_on_run = false

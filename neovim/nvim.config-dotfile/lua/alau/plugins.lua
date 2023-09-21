@@ -23,6 +23,7 @@ return require('packer').startup({function(use)
   use 'simrat39/symbols-outline.nvim'
   use 'nvim-neotest/neotest'
   use 'nvim-neotest/neotest-python'
+  use 'nvim-neotest/neotest-jest'
   use 'folke/zen-mode.nvim'
   use 'ThePrimeagen/harpoon'
   use 'duane9/nvim-rg'
