@@ -63,6 +63,7 @@ return require('packer').startup({function(use)
   use 'hrsh7th/cmp-nvim-lsp'
   use 'L3MON4D3/LuaSnip'
   use 'hrsh7th/cmp-nvim-lsp-signature-help'
+  use 'saadparwaiz1/cmp_luasnip'
 
   -- Debugging
   use 'mfussenegger/nvim-dap'
