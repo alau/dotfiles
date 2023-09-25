@@ -1,2 +1,12 @@
 snippet cl "console.log"
-	console.log(${0})
+	console.log(${0}, ${0})
+
+snippet it "it" b
+	it("${1}", (${2}) => {
+		${VISUAL}${3}
+	})
+
+snippet des "describe" b
+	describe("${1}", (${2}) => {
+		${VISUAL}${3}
+	})
