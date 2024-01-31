@@ -4,9 +4,9 @@ My dotfiles
 
 Run `./install.sh`
 
-List of packages (Fedora 38):
+List of packages (Fedora 39):
 ```zsh
-dnf install vim htop keepassxc zsh numlockx awesome tmux ncurses-term xclip xscreensaver beesu lxappearance wmname util-linux-user hub neovim redshift httpie lm_sensors yp-tools jq gron xbacklight gh autorandr xrandr environment-modules alacritty nodejs yarnpkg virtualenv ripgrep zoxide
+dnf install vim htop keepassxc zsh numlockx awesome tmux ncurses-term xclip xscreensaver beesu lxappearance wmname util-linux-user hub neovim redshift httpie lm_sensors yp-tools jq gron xbacklight gh autorandr xrandr environment-modules alacritty nodejs yarnpkg virtualenv ripgrep zoxide python3-ipython python3-gpg
 ```
 
 ## Dropbox
