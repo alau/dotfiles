@@ -46,6 +46,11 @@ local globalkeys = awful.util.table.join(
       awful.client.swap.byidx(-1)
     end
   ),
+  awful.key({ modkey,           }, "o",
+    function()
+      awful.client.movetoscreen()
+    end
+  ),
   awful.key({ modkey,           }, "space",
     function()
       awful.layout.inc(settings.layouts, 1)
