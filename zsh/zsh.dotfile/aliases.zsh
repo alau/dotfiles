@@ -12,7 +12,7 @@ alias gc='git commit --verbose'
 alias gca='gc --all'
 alias gff='git pull --ff-only'
 alias gup='git pull --rebase'
-alias grm='git rebase origin/master'
+alias grm='git rebase origin/main'
 alias gm='git merge --strategy-option=patience --no-ff'
 alias gl="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 alias gla="gl --all"
@@ -20,7 +20,7 @@ alias gs="git show"
 alias gfix='gc --fixup'
 alias gsquash='git rebase -i --autosquash'
 
-alias master="gco master"
+alias main="gco main"
 alias git-prune-remote="git remote prune origin"
 alias gbd='git branch -d'
 
