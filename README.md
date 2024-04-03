@@ -6,7 +6,7 @@ Run `./install.sh`
 
 List of packages (Fedora 39):
 ```zsh
-dnf install vim htop keepassxc zsh numlockx awesome tmux ncurses-term xclip xscreensaver beesu lxappearance wmname util-linux-user hub neovim redshift httpie lm_sensors yp-tools jq gron xbacklight gh autorandr xrandr environment-modules alacritty nodejs yarnpkg virtualenv ripgrep zoxide python3-ipython python3-gpg gcc gcc-c++ golang zlib-devel bzip2 bzip2-devel readline-devel sqlite sqlite-devel openssl-devel xz xz-devel libffi-devel findutils
+dnf install vim htop keepassxc zsh numlockx awesome tmux ncurses-term xclip xscreensaver beesu lxappearance wmname util-linux-user hub neovim redshift httpie lm_sensors yp-tools jq gron xbacklight gh autorandr xrandr environment-modules alacritty nodejs yarnpkg virtualenv ripgrep zoxide python3-ipython python3-gpg gcc gcc-c++ golang zlib-devel bzip2 bzip2-devel readline-devel sqlite sqlite-devel openssl-devel xz xz-devel libffi-devel findutils chromium
 ```
 
 ## Dropbox
