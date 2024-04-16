@@ -8,6 +8,7 @@
   editor = nvim
 [merge]
   conflictstyle = diff3
+  tool = meld
 [url "git@github.com:"]
   insteadOf = https://github.com/
 [init]
