@@ -32,7 +32,7 @@ done
 
 # Symlink various utilities from Dropbox
 mkdir -p $HOME/bin
-for util in 'avro-tools' 'csv2sc' 'git-wtf' 'nvfancontrol'; do
+for util in 'avro-tools' 'csv2sc' 'lazygit' 'nvfancontrol'; do
   if ! [[ -L $HOME/bin/$util ]]; then
     ln -s -v -n $HOME/Dropbox/bin/$util $HOME/bin/$util
   fi
