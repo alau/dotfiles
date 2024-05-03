@@ -12,6 +12,7 @@ return require('packer').startup({function(use)
     'nvim-telescope/telescope.nvim',
     requires = { {'nvim-lua/plenary.nvim'} }
   }
+  use 'lewis6991/gitsigns.nvim'
   use 'nvim-telescope/telescope-live-grep-args.nvim'
   use 'jvgrootveld/telescope-zoxide'
   use 'nvim-tree/nvim-tree.lua'
@@ -76,7 +77,6 @@ return require('packer').startup({function(use)
 
   -- Look and feel
   use 'luisiacc/gruvbox-baby'
-  use 'airblade/vim-gitgutter'
   use 'nvim-tree/nvim-web-devicons'
   use 'nvim-lualine/lualine.nvim'
 
