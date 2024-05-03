@@ -22,6 +22,8 @@ alias gsquash='git rebase -i --autosquash'
 
 alias main="gco main"
 alias git-prune-remote="git remote prune origin"
+git-prune-local-branches() { git fetch -p ; git branch -r | awk '{print $1}' | egrep -v -f /dev/fd/0 <(git branch -vv | grep origin) | awk '{print $1}' | xargs git branch -d }
+alias git-prune="git-prune-local-branches"
 alias gbd='git branch -d'
 
 # Navigation
