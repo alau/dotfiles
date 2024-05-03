@@ -1,4 +1,5 @@
 --smart-case
+--hidden
 --glob=!.git/*
 --glob=!tmp/*
 --glob=!node_modules/*
