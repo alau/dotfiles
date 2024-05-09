@@ -32,26 +32,11 @@ done
 
 # Symlink various utilities from Dropbox
 mkdir -p $HOME/bin
-for util in 'avro-tools' 'csv2sc' 'lazygit' 'nvfancontrol'; do
+for util in 'avro-tools' 'csv2sc' 'nvfancontrol'; do
   if ! [[ -L $HOME/bin/$util ]]; then
     ln -s -v -n $HOME/Dropbox/bin/$util $HOME/bin/$util
   fi
 done
-
-# rbenv
-echo "2.3.1" > ~/.rbenv/version
-
-if [[ ! -d ~/.rbenv/plugins/ruby-build ]]; then
-  mkdir -p ~/.rbenv/plugins && \
-    cd ~/.rbenv/plugins && \
-    git clone git@github.com:sstephenson/ruby-build.git
-fi
-
-if [[ ! -d ~/.rbenv/plugins/bundler ]]; then
-  mkdir -p ~/.rbenv/plugins && \
-    cd ~/.rbenv/plugins && \
-    git clone git@github.com:carsomyr/rbenv-bundler.git bundler
-fi
 
 # tmux
 touch ~/.tmux.conf.local

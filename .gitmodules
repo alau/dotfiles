@@ -1,9 +1,6 @@
 [submodule "zsh/zprezto.dotfile"]
   path = zsh/zprezto.dotfile
   url = https://github.com/sorin-ionescu/prezto.git
-[submodule "rbenv/rbenv.dotfile"]
-	path = rbenv/rbenv.dotfile
-	url = git@github.com:sstephenson/rbenv.git
 [submodule "tmux/tmux.dotfile/plugins/tpm"]
 	path = tmux/tmux.dotfile/plugins/tpm
 	url = https://github.com/tmux-plugins/tpm.git
