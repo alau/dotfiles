@@ -14,13 +14,14 @@ return require('packer').startup({function(use)
   }
   use {
     'NeogitOrg/neogit',
-    requires= {
+    requires = {
       {
         "nvim-lua/plenary.nvim",
         "sindrets/diffview.nvim",
         "nvim-telescope/telescope.nvim",
       }
-    }
+    },
+    tag = "v0.0.1"
   }
   use 'lewis6991/gitsigns.nvim'
   use 'nvim-telescope/telescope-live-grep-args.nvim'
