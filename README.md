@@ -58,3 +58,4 @@ If you get a grey window when running a java program:
 ```
 dnf install libXNVCtrl
 ```
+
