@@ -43,6 +43,14 @@ return require('packer').startup({function(use)
     'jackMort/ChatGPT.nvim',
     requires = { "MunifTanjim/nui.nvim" }
   }
+  use {
+    'pwntester/octo.nvim',
+    requires = {
+      'nvim-lua/plenary.nvim',
+      'nvim-telescope/telescope.nvim',
+      'nvim-tree/nvim-web-devicons',
+    }
+  }
 
   -- Utility
   use 'tpope/vim-sensible'
