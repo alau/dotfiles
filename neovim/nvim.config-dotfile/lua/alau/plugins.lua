@@ -31,7 +31,10 @@ return require('packer').startup({function(use)
   use 'mg979/vim-visual-multi'
   use 'Lokaltog/vim-easymotion'
   use 'scrooloose/nerdcommenter'
-  use 'mhinz/vim-startify'
+  use {
+    'goolord/alpha-nvim',
+    requires = { 'nvim-tree/nvim-web-devicons' }
+  }
   use 'simrat39/symbols-outline.nvim'
   use 'nvim-neotest/neotest'
   use 'nvim-neotest/neotest-python'
