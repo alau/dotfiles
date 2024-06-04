@@ -46,6 +46,9 @@ keybindings:
     - key: O
       command: >
         tmux new-window -c {{.RepoPath}} 'nvim -c "e :Octo pr edit {{.PrNumber}}"'
+    - key: M
+      command: >
+        gh pr merge --repo {{.RepoName}} {{.PrNumber}} --delete-branch --squash
 repoPaths:
   alau/dotfiles: ~/dotfiles
   :owner/:repo: ~/workspace/:repo
