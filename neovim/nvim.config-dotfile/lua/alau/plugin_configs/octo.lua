@@ -5,4 +5,5 @@ require("octo").setup({
   }
 })
 
-vim.keymap.set("n", "<Leader>o", ":Octo<CR>")
+vim.keymap.set("n", "<Leader>os", ":Octo<CR>")
+vim.keymap.set("n", "<Leader>op", ":Octo pr create draft<CR>")
