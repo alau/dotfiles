@@ -19,6 +19,7 @@ alias gla="gl --all"
 alias gs="git show"
 alias gfix='gc --fixup'
 alias gsquash='git rebase -i --autosquash'
+alias prs='gh dash'
 
 alias main="gco main"
 alias git-prune-remote="git remote prune origin"
