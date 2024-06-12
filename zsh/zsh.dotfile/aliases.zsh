@@ -68,6 +68,7 @@ alias netstatc='netstat -ntulp'
 
 # Vim
 alias v="vim"
+function vq { nvim -q <($(fc -nl -1)) +cw }
 alias vim="nvim"
 
 # Docker
