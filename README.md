@@ -2,7 +2,11 @@ My dotfiles
 
 # Installation
 
-Run `./install.sh`
+Install [chezmoi](https://www.chezmoi.io/install/)
+
+```zsh
+chezmoi init --apply git@github.com:alau/dotfiles.git
+```
 
 List of packages (Fedora 39):
 ```zsh
