@@ -26,20 +26,6 @@ Install from [dropbox install page](https://www.dropbox.com/install-linux).
 The following package is required for clipboard integration:
 * xsel
 
-## Git
-
-Add the email info in `~/.zshrc.local`:
-
-```zsh
-GIT_AUTHOR_EMAIL="andreas@example.com"
-GIT_COMMITTER_EMAIL="$GIT_AUTHOR_EMAIL"
-git config --global user.email "$GIT_AUTHOR_EMAIL"
-```
-
-Run the following to have git ignore the config changes:
-
-    git update-index --assume-unchanged git/gitconfig.dotfile
-
 ## Vimium
 
 Copy the contents of `~/.vimium-ff` to the settings page of the plugin.
