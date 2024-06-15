@@ -38,8 +38,5 @@ for util in 'avro-tools' 'csv2sc' 'nvfancontrol'; do
   fi
 done
 
-# tmux
-touch ~/.tmux.conf.local
-
 # environment modules
 mkdir -p $HOME/modules
