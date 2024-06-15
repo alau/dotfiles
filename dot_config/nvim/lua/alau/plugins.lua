@@ -77,6 +77,7 @@ return require('packer').startup({function(use)
   use 'antoinemadec/FixCursorHold.nvim'
   use 'Almo7aya/openingh.nvim'
   use 'dense-analysis/ale'
+  use 'xvzc/chezmoi.nvim'
 
   -- Completions
   use {

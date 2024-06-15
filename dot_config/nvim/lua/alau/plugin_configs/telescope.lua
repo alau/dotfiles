@@ -20,3 +20,6 @@ t.load_extension('live_grep_args')
 local extensions = t.extensions
 t.load_extension('zoxide')
 vim.keymap.set('n', '<leader>z', extensions.zoxide.list, {})
+
+t.load_extension('chezmoi')
+vim.keymap.set('n', '<leader>cz', t.extensions.chezmoi.find_files, {})
