@@ -17,7 +17,7 @@
 	path = awesome/awesome.config-dotfile/vicious
 	url = https://github.com/vicious-widgets/vicious
 [submodule "alacritty/alacritty.config-dotfile/themes"]
-	path = alacritty/alacritty.config-dotfile/themes
+	path = dot_config/alacritty/themes
 	url = https://github.com/alacritty/alacritty-theme
 [submodule "neovim/nvim.config-dotfile/pack/packer/opt/packer.nvim"]
 	path = neovim/nvim.config-dotfile/pack/packer/opt/packer.nvim
