@@ -8,7 +8,7 @@
 	path = zsh/zsh.dotfile/zsh-nvm
 	url = git@github.com:lukechilds/zsh-nvm.git
 [submodule "python/pyenv.dotfile"]
-	path = python/pyenv.dotfile
+	path = dot_pyenv
 	url = git@github.com:pyenv/pyenv
 [submodule "zsh/zsh.dotfile/zsh-autoswitch-virtualenv"]
 	path = zsh/zsh.dotfile/zsh-autoswitch-virtualenv
