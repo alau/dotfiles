@@ -1,17 +1,17 @@
 [submodule "zsh/zprezto.dotfile"]
-  path = zsh/zprezto.dotfile
+	path = dot_zprezto
   url = https://github.com/sorin-ionescu/prezto.git
 [submodule "tmux/tmux.dotfile/plugins/tpm"]
 	path = dot_tmux/plugins/tpm
 	url = https://github.com/tmux-plugins/tpm.git
 [submodule "zsh/zsh.dotfile/zsh-nvm"]
-	path = zsh/zsh.dotfile/zsh-nvm
+	path = dot_zsh/zsh-nvm
 	url = git@github.com:lukechilds/zsh-nvm.git
 [submodule "python/pyenv.dotfile"]
 	path = dot_pyenv
 	url = git@github.com:pyenv/pyenv
 [submodule "zsh/zsh.dotfile/zsh-autoswitch-virtualenv"]
-	path = zsh/zsh.dotfile/zsh-autoswitch-virtualenv
+	path = dot_zsh/zsh-autoswitch-virtualenv
 	url = git@github.com:MichaelAquilina/zsh-autoswitch-virtualenv.git
 [submodule "awesome/awesome.config-dotfile/vicious"]
 	path = dot_config/awesome/vicious
