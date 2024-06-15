@@ -14,7 +14,7 @@
 	path = zsh/zsh.dotfile/zsh-autoswitch-virtualenv
 	url = git@github.com:MichaelAquilina/zsh-autoswitch-virtualenv.git
 [submodule "awesome/awesome.config-dotfile/vicious"]
-	path = awesome/awesome.config-dotfile/vicious
+	path = dot_config/awesome/vicious
 	url = https://github.com/vicious-widgets/vicious
 [submodule "alacritty/alacritty.config-dotfile/themes"]
 	path = dot_config/alacritty/themes
