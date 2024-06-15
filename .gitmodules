@@ -20,5 +20,5 @@
 	path = dot_config/alacritty/themes
 	url = https://github.com/alacritty/alacritty-theme
 [submodule "neovim/nvim.config-dotfile/pack/packer/opt/packer.nvim"]
-	path = neovim/nvim.config-dotfile/pack/packer/opt/packer.nvim
+	path = dot_config/nvim/pack/packer/opt/packer.nvim
 	url = https://github.com/wbthomason/packer.nvim
