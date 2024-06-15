@@ -2,7 +2,7 @@
   path = zsh/zprezto.dotfile
   url = https://github.com/sorin-ionescu/prezto.git
 [submodule "tmux/tmux.dotfile/plugins/tpm"]
-	path = tmux/tmux.dotfile/plugins/tpm
+	path = dot_tmux/plugins/tpm
 	url = https://github.com/tmux-plugins/tpm.git
 [submodule "zsh/zsh.dotfile/zsh-nvm"]
 	path = zsh/zsh.dotfile/zsh-nvm
