@@ -54,7 +54,7 @@ return require('packer').startup({function(use)
       'nvim-telescope/telescope.nvim',
       'nvim-tree/nvim-web-devicons',
     },
-    tag = "5646539" -- TODO: Remove when upgraded to neovim 0.10
+    commit = "5646539" -- TODO: Remove when upgraded to neovim 0.10
   }
 
   -- Utility
