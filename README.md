@@ -19,22 +19,12 @@ Install from [dropbox install page](https://www.dropbox.com/install-linux).
 ## Neovim
 
 * Install python3 client for neovim: `pip install neovim`
-* Enter vim and run `:PackUpdate` to install the plugins
+* Enter vim and run `:PackerSync` to install the plugins
 * Verify installation using `:CheckHealth`
-
-The following package is required for clipboard integration:
-* xsel
 
 ## Vimium
 
 Copy the contents of `~/.vimium-ff` to the settings page of the plugin.
-
-## Working with java programs
-
-If you get a grey window when running a java program:
-
-* Install wmname
-* Run `wmname LG3D`
 
 ## Sensors and fans
 
