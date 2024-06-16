@@ -1,50 +1,51 @@
 packages:
   dnf:
-    - vim
-    - htop
-    - keepassxc
-    - zsh
-    - numlockx
+    # Window management
     - awesome
-    - tmux
-    - ncurses-term
-    - xclip
-    - xscreensaver
-    - beesu
-    - lxappearance
-    - wmname
-    - util-linux-user
-    - neovim
-    - redshift
-    - httpie
-    - lm_sensors
-    - yp-tools
-    - jq
-    - gron
-    - xbacklight
-    - gh
-    - autorandr
     - xrandr
-    - environment-modules
+    - xscreensaver
+    # Terminal
     - alacritty
-    - nodejs
-    - yarnpkg
-    - virtualenv
+    - ncurses-term
+    - numlockx
+    - tmux
+    - xclip
+    - zsh
+    # Tools
+    - autorandr
+    - chromium
+    - gh
+    - gron
+    - htop
+    - httpie
+    - jq
+    - keepassxc
+    - neovim
     - ripgrep
+    - vim
     - zoxide
-    - python3-ipython
-    - python3-gpg
-    - gcc
-    - gcc-c++
-    - golang
-    - zlib-devel
+    # Misc
+    - findutils
+    - lm_sensors
+    - redshift
+    - xbacklight
+    # General build libs
     - bzip2
     - bzip2-devel
+    - gcc
+    - gcc-c++
+    - libffi-devel
+    - openssl-devel
     - readline-devel
     - sqlite
     - sqlite-devel
-    - openssl-devel
     - xz
     - xz-devel
-    - libffi-devel
-    - findutils chromium
+    - zlib-devel
+    # Languages
+    - golang
+    - nodejs
+    - python3-ipython
+    - python3-gpg
+    - virtualenv
+    - yarnpkg
