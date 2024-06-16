@@ -1,0 +1,51 @@
+packages:
+  dnf:
+    # Window management
+    - awesome
+    - xrandr
+    - xscreensaver
+    # Terminal
+    - alacritty
+    - ncurses-term
+    - numlockx
+    - tmux
+    - xclip
+    - zsh
+    # Tools
+    - autorandr
+    - chromium
+    - gh
+    - gron
+    - htop
+    - httpie
+    - jq
+    - keepassxc
+    - neovim
+    - ripgrep
+    - vim
+    - zoxide
+    # Misc
+    - findutils
+    - lm_sensors
+    - redshift
+    - xbacklight
+    # General build libs
+    - bzip2
+    - bzip2-devel
+    - gcc
+    - gcc-c++
+    - libffi-devel
+    - openssl-devel
+    - readline-devel
+    - sqlite
+    - sqlite-devel
+    - xz
+    - xz-devel
+    - zlib-devel
+    # Languages
+    - golang
+    - nodejs
+    - python3-ipython
+    - python3-gpg
+    - virtualenv
+    - yarnpkg
