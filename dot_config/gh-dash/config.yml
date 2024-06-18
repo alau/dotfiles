@@ -54,7 +54,7 @@ keybindings:
         gh pr merge --repo {{.RepoName}} {{.PrNumber}} --delete-branch --squash
     - key: t
       command: >
-        gh run view --repo {{.RepoName}}
+        gh run view --verbose --repo {{.RepoName}}
 repoPaths:
   alau/dotfiles: ~/dotfiles
   :owner/:repo: ~/workspace/:repo
