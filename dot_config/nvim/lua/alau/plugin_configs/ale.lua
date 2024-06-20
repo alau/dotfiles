@@ -8,6 +8,7 @@ vim.g.ale_linters = {
 vim.g.ale_python_mypy_auto_poetry = 1
 vim.g.ale_python_mypy_auto_pipenv = 1
 vim.g.ale_python_mypy_options = '--follow-imports=silent'
+vim.g.ale_yaml_yamllint_options = '-d "{extends: default, rules: {line-length: {max: 120}, truthy: disable, document-start: disable}}"'
 
 vim.g.ale_fixers = {
   python = { 'trim_whitespace', 'black', 'autoimport', 'isort' },
