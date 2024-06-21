@@ -21,8 +21,7 @@ return require('packer').startup({function(use)
         "sindrets/diffview.nvim",
         "nvim-telescope/telescope.nvim",
       }
-    },
-    tag = "v0.0.1" -- TODO: Remove when upgraded to neovim 0.10
+    }
   }
   use 'lewis6991/gitsigns.nvim'
   use 'nvim-telescope/telescope-live-grep-args.nvim'
@@ -53,8 +52,7 @@ return require('packer').startup({function(use)
       'nvim-lua/plenary.nvim',
       'nvim-telescope/telescope.nvim',
       'nvim-tree/nvim-web-devicons',
-    },
-    commit = "5646539" -- TODO: Remove when upgraded to neovim 0.10
+    }
   }
 
   -- Utility
