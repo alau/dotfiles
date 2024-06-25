@@ -1,4 +1,6 @@
 vim.g.ale_use_neovim_diagnostics_api = 1
+vim.g.ale_set_loclist=0
+vim.g.ale_set_quickfix=0
 
 vim.g.ale_linters = {
   python = { 'ruff', 'mypy' },
