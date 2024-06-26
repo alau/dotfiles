@@ -48,7 +48,7 @@ keybindings:
         tmux new-window -c {{.RepoPath}} 'nvim -c ":Octo pr edit {{.PrNumber}}"'
     - key: v
       command: >
-        tmux new-window -c {{.RepoPath}} 'nvim -c ":Octo pr review {{.PrNumber}}"'
+        tmux new-window -c {{.RepoPath}} 'nvim -c ":Octo pr edit {{.PrNumber}}" -c ":sleep 1" -c ":Octo review start"'
     - key: M
       command: >
         gh pr merge --repo {{.RepoName}} {{.PrNumber}} --delete-branch --squash
