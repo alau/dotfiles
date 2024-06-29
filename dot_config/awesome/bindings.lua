@@ -78,7 +78,7 @@ local globalkeys = awful.util.table.join(
   ),
   awful.key({ modkey, "Shift"   }, "h",
     function()
-      awful.util.spawn("systemctl hibernate")
+      awful.spawn.with_shell("swapon --show --noheadings | grep -v zram && systemctl hibernate || systemctl suspend")
     end
   ),
   awful.key({ modkey, "Shift"   }, "d",
