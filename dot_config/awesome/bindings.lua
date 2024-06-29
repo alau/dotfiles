@@ -95,19 +95,6 @@ local globalkeys = awful.util.table.join(
     end
   ),
 
-  -- Prompt for invoking Zeal
-  awful.key({ modkey            }, "z",
-    function()
-      awful.prompt.run(
-        { prompt = "Zeal: " },
-        widgets.mypromptbox[mouse.screen.index].widget,
-        function(query)
-          awful.util.spawn("/home/alau/Dropbox/bin/zeal --query " .. query)
-        end
-      )
-    end
-  ),
-
   awful.key({ modkey            }, "x",
     function ()
       awful.prompt.run(
