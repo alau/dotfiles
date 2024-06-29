@@ -31,9 +31,6 @@ source $HOME/.zsh/zsh-autoswitch-virtualenv/autoswitch_virtualenv.plugin.zsh
 
 source ~/.zsh/oc.completions
 
-source /etc/profile.d/modules.sh
-module restore > /dev/null
-
 # local stuff
 if [ -e ~/.zshrc.local ]; then
   source ~/.zshrc.local
