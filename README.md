@@ -12,11 +12,6 @@ chezmoi init --apply git@github.com:alau/dotfiles.git
 
 Install from [dropbox install page](https://www.dropbox.com/install-linux).
 
-## Neovim
-
-* Enter vim and run `:PackerSync` to install the plugins
-* Verify installation using `:CheckHealth`
-
 ## Vimium
 
 Copy the contents of `~/.vimium-ff` to the settings page of the plugin.
