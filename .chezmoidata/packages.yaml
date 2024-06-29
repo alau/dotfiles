@@ -49,3 +49,7 @@ packages:
     - python3-gpg
     - virtualenv
     - yarnpkg
+  pip:
+    - neovim
+    - ipython
+    - pdbpp
