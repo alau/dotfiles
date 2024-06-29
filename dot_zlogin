@@ -48,3 +48,5 @@ fi
 if [ -e ~/.zlogin.local ]; then
   source ~/.zlogin.local
 fi
+
+# vim: ft=zsh

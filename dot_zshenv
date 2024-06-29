@@ -63,3 +63,5 @@ manpath=(
   /usr/share/man
   $manpath
 )
+
+# vim: ft=zsh
