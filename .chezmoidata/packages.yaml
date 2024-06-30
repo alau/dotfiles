@@ -22,6 +22,7 @@ packages:
     - keepassxc
     - neovim
     - ripgrep
+    - shutter
     - vim
     - zoxide
     # Misc
