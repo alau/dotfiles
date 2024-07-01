@@ -3,8 +3,6 @@ prSections:
     filters: is:open author:@me
   - title: Needs My Review
     filters: is:open review-requested:@me
-  - title: Involved
-    filters: is:open involves:@me -author:@me
 issuesSections: []
 defaults:
   preview:
@@ -18,7 +16,7 @@ defaults:
       updatedAt:
         width: 7
       repo:
-        width: 15
+        width: 25
       author:
         width: 15
       assignees:
@@ -29,17 +27,7 @@ defaults:
         hidden: true
       lines:
         width: 16
-    issues:
-      updatedAt:
-        width: 7
-      repo:
-        width: 15
-      creator:
-        width: 10
-      assignees:
-        width: 20
-        hidden: true
-  refetchIntervalMinutes: 30
+  refetchIntervalMinutes: 10
 keybindings:
   issues: []
   prs:
@@ -56,7 +44,6 @@ keybindings:
       command: >
         gh run watch --repo {{.RepoName}}
 repoPaths:
-  alau/dotfiles: ~/dotfiles
   :owner/:repo: ~/workspace/:repo
 theme:
   ui:
