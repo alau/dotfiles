@@ -94,7 +94,7 @@ alias gulp='nocorrect gulp'
 alias eslint='nocorrect eslint'
 
 # Misc
-alias dotup='chezmoi update -v'
+alias dotup='chezmoi update --recurse-submodules=false'
 alias follow='less +F'
 alias top='htop'
 alias sum="awk '{ sum += \$1 } END { print sum }' "$@""
