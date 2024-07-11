@@ -1,6 +1,7 @@
 packages:
   dnf:
     # Window management
+    - autorandr
     - awesome
     - xrandr
     - xscreensaver
@@ -12,7 +13,6 @@ packages:
     - xclip
     - zsh
     # Tools
-    - autorandr
     - chromium
     - gh
     - gron
@@ -23,10 +23,12 @@ packages:
     - neovim
     - ripgrep
     - shutter
+    - system-config-printer
     - vim
     - zoxide
     # Misc
     - findutils
+    - liquidctl
     - lm_sensors
     - redshift
     - xbacklight
