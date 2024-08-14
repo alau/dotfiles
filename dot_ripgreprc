@@ -15,3 +15,4 @@
 --glob=!.metaflow/*
 --glob=!.venv/*
 --glob=!.mypy_cache/*
+--glob=!poetry.lock
