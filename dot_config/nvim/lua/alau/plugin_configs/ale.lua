@@ -6,6 +6,7 @@ vim.g.ale_linters = {
   python = { 'ruff', 'mypy' },
   yaml = { 'yamllint' },
   javascript = { 'eslint' },
+  go = { 'golangci-lint' },
 }
 vim.g.ale_python_mypy_auto_poetry = 1
 vim.g.ale_python_mypy_auto_pipenv = 1
@@ -15,6 +16,7 @@ vim.g.ale_yaml_yamllint_options = '-d "{extends: default, rules: {line-length: {
 vim.g.ale_fixers = {
   python = { 'trim_whitespace', 'black', 'autoimport', 'isort' },
   javascript = { 'trim_whitespace', 'prettier' },
+  go = { 'golines' },
   ['*'] = { 'trim_whitespace' }
 }
 vim.g.ale_fix_on_save = 1
