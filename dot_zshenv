@@ -23,7 +23,7 @@ export RIPGREP_CONFIG_PATH="$HOME/.ripgreprc"
 export SBT_OPTS="-Xmx2G -XX:+UseConcMarkSweepGC -XX:+CMSClassUnloadingEnabled -XX:MaxPermSize=2G -Xss2M"
 
 # go
-export GOPATH="$HOME/workspace"
+export GOPATH="$HOME/go"
 
 # module
 export MODULEPATH="$HOME/modules:$MODULEPATH"
@@ -55,6 +55,7 @@ path=(
   /usr/local/go/bin
   $HOME/.rbenv/shims
   $HOME/bin
+  $HOME/go/bin
   $path
 )
 
