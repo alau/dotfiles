@@ -74,7 +74,8 @@ return require('packer').startup({function(use)
   use 'nvim-treesitter/nvim-treesitter-context'
   use 'antoinemadec/FixCursorHold.nvim'
   use 'Almo7aya/openingh.nvim'
-  use 'dense-analysis/ale'
+  use 'stevearc/conform.nvim'
+  use 'mfussenegger/nvim-lint'
   use 'xvzc/chezmoi.nvim'
 
   -- Completions
