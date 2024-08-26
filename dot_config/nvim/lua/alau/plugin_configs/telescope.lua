@@ -23,3 +23,6 @@ vim.keymap.set('n', '<leader>z', extensions.zoxide.list, {})
 
 t.load_extension('chezmoi')
 vim.keymap.set('n', '<leader>cz', t.extensions.chezmoi.find_files, {})
+
+t.load_extension("notify")
+vim.keymap.set('n', '<leader>n', t.extensions.notify.notify, {})

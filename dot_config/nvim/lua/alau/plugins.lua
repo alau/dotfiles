@@ -102,6 +102,7 @@ return require('packer').startup({function(use)
   use 'luisiacc/gruvbox-baby'
   use 'nvim-tree/nvim-web-devicons'
   use 'nvim-lualine/lualine.nvim'
+  use 'rcarriga/nvim-notify'
 
   -- Language support
   use 'statianzo/vim-jade'
