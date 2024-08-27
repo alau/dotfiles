@@ -47,9 +47,10 @@ packages:
     - zlib-devel
     # Languages
     - golang
+    - luarocks
     - nodejs
-    - python3-ipython
     - python3-gpg
+    - python3-ipython
     - virtualenv
     - yarnpkg
   pip:
