@@ -1,8 +1,11 @@
-require('lint').linters_by_ft = {
-  python = { 'ruff', 'mypy' },
-  yaml = { 'yamllint' },
-  javascript = { 'eslint' },
-  go = { 'golangci-lint' },
+require("lint").linters_by_ft = {
+  go = { 'golangcilint' },
+  javascript = { 'eslint_d' },
+  lua = { "luacheck" },
+  markdown = { "markdownlint" },
+  python = { "ruff", "mypy" },
+  sql = { "sqlfluff" },
+  yaml = { "yamllint" },
 }
 
 table.insert(
