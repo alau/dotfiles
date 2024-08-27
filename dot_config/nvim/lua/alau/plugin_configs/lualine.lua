@@ -1,4 +1,2 @@
-require('lualine').setup({
-  options = { theme = 'gruvbox-baby' }
-})
+require('lualine').setup({options = {theme = 'gruvbox-baby'}})
 

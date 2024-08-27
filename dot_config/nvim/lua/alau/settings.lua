@@ -1,4 +1,4 @@
- -- Don't create backup/swap files
+-- Don't create backup/swap files
 vim.opt.backup = false
 vim.opt.writebackup = false
 vim.opt.swapfile = false
@@ -26,7 +26,7 @@ vim.g.mapleader = ","
 vim.g.maplocalleader = ","
 
 -- Use system clipboard by default
-vim.opt.clipboard = {'unnamedplus','unnamed'}
+vim.opt.clipboard = {'unnamedplus', 'unnamed'}
 
 -- Folding
 vim.opt.foldmethod = 'syntax'
@@ -37,10 +37,10 @@ vim.opt.foldlevelstart = 99
 vim.opt.termguicolors = true
 vim.g.gruvbox_baby_background_color = "dark"
 vim.g.gruvbox_baby_color_overrides = {
-  background = "#000000",
-  comment = "lightblue",
-  soft_green = "#a7dc91",
-  blue_gray = "#6a9d9f",
+    background = "#000000",
+    comment = "lightblue",
+    soft_green = "#a7dc91",
+    blue_gray = "#6a9d9f"
 }
 vim.cmd [[highlight LineNr guifg=lightblue]]
 vim.cmd [[silent! colorscheme gruvbox-baby]]
