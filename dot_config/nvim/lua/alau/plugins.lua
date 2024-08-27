@@ -74,16 +74,18 @@ return require('packer').startup({function(use)
   use 'nvim-treesitter/nvim-treesitter-context'
   use 'antoinemadec/FixCursorHold.nvim'
   use 'Almo7aya/openingh.nvim'
-  use 'stevearc/conform.nvim'
-  use 'mfussenegger/nvim-lint'
   use 'xvzc/chezmoi.nvim'
-
-  -- Completions
   use {
     "williamboman/mason.nvim",
     "williamboman/mason-lspconfig.nvim",
     "neovim/nvim-lspconfig",
+    "mfussenegger/nvim-lint",
+    "rshkarin/mason-nvim-lint",
+    "stevearc/conform.nvim",
+    "zapling/mason-conform.nvim",
   }
+
+  -- Completions
   use 'hrsh7th/nvim-cmp'
   use 'hrsh7th/cmp-nvim-lsp'
   use 'L3MON4D3/LuaSnip'

@@ -6,22 +6,6 @@ vim.lsp.handlers["textDocument/hover"] = vim.lsp.with(vim.lsp.handlers.hover, {
   border = "rounded",
 })
 
-require("mason").setup()
-require("mason-lspconfig").setup({
-  ensure_installed = {
-    "lua_ls",
-    "pyright",
-    "tsserver",
-    "sqlls",
-    "rust_analyzer",
-    "terraformls",
-    "dockerls",
-    "helm_ls",
-    "jsonls",
-    "gopls",
-  }
-})
-
 local on_attach = function(_, bufnr)
   local bufopts = { noremap = true, silent = true, buffer = bufnr }
   local set = vim.keymap.set
