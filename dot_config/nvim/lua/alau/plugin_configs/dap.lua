@@ -27,7 +27,8 @@ vim.keymap.set('v', '<F7>', dapui.eval)
 
 -- Language support
 require("mason").setup()
-require("mason-nvim-dap").setup({ensure_installed = {"python"}})
+require("mason-nvim-dap").setup({ensure_installed = {"python", "delve"}})
 
 require('dap-python').setup(vim.fn.stdpath('data') ..
                                 '/mason/packages/debugpy/venv/bin/python')
+require('dap-go').setup()

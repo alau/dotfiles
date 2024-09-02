@@ -1,5 +1,8 @@
 require("neotest").setup({
-    adapters = {require("neotest-python"), require("neotest-jest")},
+    adapters = {
+        require("neotest-python"), require("neotest-go"),
+        require("neotest-jest")
+    },
     output = {open_on_run = false},
     output_panel = {enabled = true},
     icons = {

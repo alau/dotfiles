@@ -31,6 +31,7 @@ return require('packer').startup({
         use 'simrat39/symbols-outline.nvim'
         use 'nvim-neotest/neotest'
         use 'nvim-neotest/neotest-python'
+        use 'nvim-neotest/neotest-go'
         use 'nvim-neotest/neotest-jest'
         use 'folke/zen-mode.nvim'
         use 'ThePrimeagen/harpoon'
@@ -87,6 +88,7 @@ return require('packer').startup({
         use 'rcarriga/nvim-dap-ui'
         use 'jay-babu/mason-nvim-dap.nvim'
         use 'mfussenegger/nvim-dap-python'
+        use 'leoluz/nvim-dap-go'
         use 'theHamsta/nvim-dap-virtual-text'
 
         -- Look and feel
