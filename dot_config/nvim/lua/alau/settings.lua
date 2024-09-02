@@ -49,3 +49,5 @@ vim.cmd [[silent! colorscheme gruvbox-baby]]
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
 
+-- Filetypes
+vim.filetype.add({pattern = {['.*/.github/workflows/.*'] = 'yaml.actions'}})

@@ -5,6 +5,7 @@ require("lint").linters_by_ft = {
     python = {"ruff", "mypy"},
     sql = {"sqlfluff"},
     yaml = {"yamllint"},
+    ["yaml.actions"] = {"actionlint", "yamllint"},
     dockerfile = {"hadolint"}
 }
 
