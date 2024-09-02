@@ -4,7 +4,8 @@ require("lint").linters_by_ft = {
     markdown = {"markdownlint"},
     python = {"ruff", "mypy"},
     sql = {"sqlfluff"},
-    yaml = {"yamllint"}
+    yaml = {"yamllint"},
+    dockerfile = {"hadolint"}
 }
 
 table.insert(require('lint').linters.mypy.args, 0, '--follow-imports=silent')
