@@ -6,7 +6,8 @@ require("lint").linters_by_ft = {
     sql = {"sqlfluff"},
     yaml = {"yamllint"},
     ["yaml.actions"] = {"actionlint", "yamllint"},
-    dockerfile = {"hadolint"}
+    dockerfile = {"hadolint"},
+    proto = {"buf_lint"}
 }
 
 table.insert(require('lint').linters.mypy.args, 1, '--follow-imports=silent')
