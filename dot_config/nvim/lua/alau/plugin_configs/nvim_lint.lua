@@ -1,7 +1,6 @@
 require("lint").linters_by_ft = {
     go = {'golangcilint'},
     javascript = {'eslint_d'},
-    lua = {"luacheck"},
     markdown = {"markdownlint"},
     python = {"ruff", "mypy"},
     sql = {"sqlfluff"},
