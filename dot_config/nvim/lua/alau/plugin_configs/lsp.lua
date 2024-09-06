@@ -71,7 +71,7 @@ lspconfig.pyright.setup({
 })
 
 -- typescript
-lspconfig.tsserver.setup({
+lspconfig.ts_ls.setup({
     capabilities = capabilities,
     on_attach = on_attach,
     single_file_suppert = true
