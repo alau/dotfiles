@@ -59,6 +59,7 @@ theme:
       faint: "#bac2de"
       warning: "#f38ba8"
       success: "#a6e3a1"
+      error: "#d14545"
     background:
       selected: "#313244"
     border:
