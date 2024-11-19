@@ -73,6 +73,12 @@ return require('packer').startup({
             "rshkarin/mason-nvim-lint", "stevearc/conform.nvim",
             "zapling/mason-conform.nvim"
         }
+        use {
+            "ThePrimeagen/refactoring.nvim",
+            requires = {
+                {"nvim-lua/plenary.nvim"}, {"nvim-treesitter/nvim-treesitter"}
+            }
+        }
 
         -- Completions
         use 'hrsh7th/nvim-cmp'

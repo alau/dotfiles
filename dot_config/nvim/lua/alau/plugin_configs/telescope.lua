@@ -23,3 +23,6 @@ vim.keymap.set('n', '<leader>cz', t.extensions.chezmoi.find_files, {})
 
 t.load_extension("notify")
 vim.keymap.set('n', '<leader>n', t.extensions.notify.notify, {})
+
+t.load_extension("refactoring")
+vim.keymap.set({"n", "x"}, "<leader>ee", t.extensions.refactoring.refactors, {})
