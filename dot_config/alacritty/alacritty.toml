@@ -1,3 +1,4 @@
+[general]
 import = ["/home/alau/.config/alacritty/themes/themes/gruvbox_dark.toml"]
 
 [colors.normal]
