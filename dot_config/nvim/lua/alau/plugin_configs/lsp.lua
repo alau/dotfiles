@@ -86,8 +86,7 @@ lspconfig.helm_ls.setup({
 
 -- default config for other languages
 local remaining_servers = {
-    'sqlls', 'rust_analyzer', 'terraformls', 'dockerls', 'helm_ls', 'jsonls',
-    'gopls'
+    'sqlls', 'rust_analyzer', 'terraformls', 'dockerls', 'jsonls', 'gopls'
 }
 for _, server in ipairs(remaining_servers) do
     lspconfig[server]
