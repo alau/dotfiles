@@ -44,6 +44,7 @@ return require('packer').startup({
                 'nvim-tree/nvim-web-devicons'
             }
         }
+        use 'gbprod/substitute.nvim'
 
         -- Utility
         use 'tpope/vim-sensible'
