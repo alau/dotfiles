@@ -2,6 +2,7 @@ require('flash').setup({
   labels = 'hutenosadimkwjvqzbxgpcrlf',
   modes = {
     char = {
+      keys = { "f", "F" },
       jump_labels = true
     },
     search = {
