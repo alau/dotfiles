@@ -25,7 +25,7 @@ return require('packer').startup({
         use 'nvim-tree/nvim-tree.lua'
         use 'godlygeek/tabular'
         use 'mg979/vim-visual-multi'
-        use 'Lokaltog/vim-easymotion'
+        use 'folke/flash.nvim'
         use 'scrooloose/nerdcommenter'
         use {'goolord/alpha-nvim', requires = {'nvim-tree/nvim-web-devicons'}}
         use 'simrat39/symbols-outline.nvim'
