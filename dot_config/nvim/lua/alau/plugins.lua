@@ -79,6 +79,7 @@ return require('packer').startup({
                 {"nvim-lua/plenary.nvim"}, {"nvim-treesitter/nvim-treesitter"}
             }
         }
+        use { 'kosayoda/nvim-lightbulb' }
 
         -- Completions
         use 'hrsh7th/nvim-cmp'
