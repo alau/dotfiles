@@ -97,11 +97,7 @@ local mylayoutbox = {}
 local mytaglist = {}
 mytaglist.buttons = awful.util.table.join(
   awful.button({ }, 1, awful.tag.viewonly),
-  awful.button({ modkey }, 1, awful.client.movetotag),
-  awful.button({ }, 3, awful.tag.viewtoggle),
-  awful.button({ modkey }, 3, awful.client.toggletag),
-  awful.button({ }, 4, awful.tag.viewnext),
-  awful.button({ }, 5, awful.tag.viewprev)
+  awful.button({ }, 3, awful.tag.viewtoggle)
 )
 
 local mytasklist = {}
@@ -118,7 +114,7 @@ for s = 1, screen.count() do
     awful.button({ }, 5, function () awful.layout.inc(settings.layouts, -1) end)
   ))
   -- Create a taglist widget
-  mytaglist[s] = awful.widget.taglist(s, awful.widget.taglist.filter.all, mytaglist.buttons)
+  mytaglist[s] = awful.widget.taglist({screen = s, filter = awful.widget.taglist.filter.all, buttons = mytaglist.buttons})
 
   -- Create a tasklist widget
   mytasklist[s] = awful.widget.tasklist(s, awful.widget.tasklist.filter.currenttags, mytasklist.buttons)
