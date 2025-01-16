@@ -80,8 +80,8 @@ return require('packer').startup({
                 {"nvim-lua/plenary.nvim"}, {"nvim-treesitter/nvim-treesitter"}
             }
         }
-        use { 'kosayoda/nvim-lightbulb' }
-        use { 'folke/snacks.nvim' }
+        use {'kosayoda/nvim-lightbulb'}
+        use {'folke/snacks.nvim'}
 
         -- Completions
         use 'hrsh7th/nvim-cmp'
@@ -89,7 +89,9 @@ return require('packer').startup({
         use 'L3MON4D3/LuaSnip'
         use 'hrsh7th/cmp-nvim-lsp-signature-help'
         use 'saadparwaiz1/cmp_luasnip'
-        use "rafamadriz/friendly-snippets"
+        use 'rafamadriz/friendly-snippets'
+        use 'zbirenbaum/copilot.lua'
+        use 'zbirenbaum/copilot-cmp'
 
         -- Debugging
         use 'mfussenegger/nvim-dap'
