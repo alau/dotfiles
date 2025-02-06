@@ -9,26 +9,15 @@ issuesSections: []
 defaults:
   preview:
     open: true
-    width: 50
+    width: 80
   prsLimit: 10
   issuesLimit: 1
   view: prs
   layout:
     prs:
-      updatedAt:
-        width: 7
       repo:
+        grow: true,
         width: 25
-      author:
-        width: 15
-      assignees:
-        width: 20
-        hidden: true
-      base:
-        width: 15
-        hidden: true
-      lines:
-        width: 16
   refetchIntervalMinutes: 10
 keybindings:
   issues: []
@@ -49,6 +38,7 @@ repoPaths:
   :owner/:repo: ~/workspace/:repo
 theme:
   ui:
+    sectionsShowCount: true
     table:
       showSeparator: true
   colors:
