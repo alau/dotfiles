@@ -44,6 +44,7 @@ return require('packer').startup({
                 'nvim-tree/nvim-web-devicons'
             }
         }
+        use 'CopilotC-Nvim/CopilotChat.nvim'
         use 'gbprod/substitute.nvim'
 
         -- Utility
