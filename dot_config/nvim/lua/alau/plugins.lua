@@ -91,8 +91,6 @@ return require('packer').startup({
         use 'hrsh7th/cmp-nvim-lsp-signature-help'
         use 'saadparwaiz1/cmp_luasnip'
         use 'rafamadriz/friendly-snippets'
-        use 'zbirenbaum/copilot.lua'
-        use 'zbirenbaum/copilot-cmp'
 
         -- Debugging
         use 'mfussenegger/nvim-dap'
