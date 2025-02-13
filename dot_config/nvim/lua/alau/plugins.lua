@@ -101,6 +101,10 @@ return require('packer').startup({
         use 'leoluz/nvim-dap-go'
         use 'theHamsta/nvim-dap-virtual-text'
 
+        -- Notebooks
+        use {'benlubas/molten-nvim', run = ':UpdateRemotePlugins'}
+        use '3rd/image.nvim'
+
         -- Look and feel
         use 'luisiacc/gruvbox-baby'
         use 'nvim-tree/nvim-web-devicons'

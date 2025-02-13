@@ -51,3 +51,6 @@ vim.g.loaded_netrwPlugin = 1
 
 -- Filetypes
 vim.filetype.add({pattern = {['.*/.github/workflows/.*'] = 'yaml.actions'}})
+
+-- Virtual env for molten-nvim
+vim.g.python3_host_prog = vim.fn.expand("~/.virtualenvs/neovim/bin/python3")
