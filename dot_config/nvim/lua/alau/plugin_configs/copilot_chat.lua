@@ -1,6 +1,8 @@
 local chat = require('CopilotChat')
 local select = require('CopilotChat.select')
 
+vim.g.copilot_enabled = false
+
 chat.setup({
     model = 'claude-3.5-sonnet',
     mappings = {reset = {normal = '<C-r>', insert = '<C-r>'}}
