@@ -5,7 +5,8 @@ vim.g.copilot_enabled = false
 
 chat.setup({
     model = 'claude-3.5-sonnet',
-    mappings = {reset = {normal = '<C-r>', insert = '<C-r>'}}
+    mappings = {reset = {normal = '<C-r>', insert = '<C-r>'}},
+    chat_autocomplete = false
 })
 
 vim.keymap.set({'n'}, '<leader>co',
