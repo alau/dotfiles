@@ -9,12 +9,18 @@ c.setup({
     end,
     formatters_by_ft = {
         ["*"] = {"trim_whitespace"},
-        python = {"ruff_fix", "black", "isort"},
+        python = {"ruff_fix", "black", "autoimport", "isort"},
         go = {"golines"},
         javascript = {"prettier"},
         lua = {"lua-format"}
     }
 })
+
+c.formatters.autoimport = {
+    command = "autoimport",
+    args = {"$FILENAME"},
+    stdin = false
+}
 
 c.formatters.golines = {
     prepend_args = {"--chain-split-dots", "--ignore-generated", "-m", "120"}
