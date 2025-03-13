@@ -4,7 +4,7 @@ local select = require('CopilotChat.select')
 vim.g.copilot_enabled = false
 
 chat.setup({
-    model = 'claude-3.5-sonnet',
+    model = 'claude-3.7-sonnet',
     mappings = {reset = {normal = '<C-r>', insert = '<C-r>'}},
     chat_autocomplete = false
 })
