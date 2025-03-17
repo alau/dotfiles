@@ -47,9 +47,7 @@ return require('packer').startup({
         use {
             'github/copilot.vim',
             'CopilotC-Nvim/CopilotChat.nvim',
-            requires = {
-                {'nvim-lua/plenary.nvim', }
-            }
+            requires = {{'nvim-lua/plenary.nvim'}}
         }
         use 'gbprod/substitute.nvim'
 
@@ -110,6 +108,8 @@ return require('packer').startup({
         -- Notebooks
         use {'benlubas/molten-nvim', run = ':UpdateRemotePlugins'}
         use '3rd/image.nvim'
+        use {'quarto-dev/quarto-nvim', requires = {'jmbuhr/otter.nvim'}}
+        use 'GCBallesteros/jupytext.nvim'
 
         -- Look and feel
         use 'luisiacc/gruvbox-baby'

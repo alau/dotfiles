@@ -4,7 +4,7 @@ vim.opt.foldexpr = 'nvim_treesitter#foldexpr()'
 require('nvim-treesitter.configs').setup({
     ensure_installed = {
         "python", "lua", "json", "sql", "javascript", "rust", "yaml",
-        "dockerfile", "go", "vimdoc", "diff"
+        "dockerfile", "go", "vimdoc", "diff", "markdown"
     },
 
     -- Install parsers synchronously (only applied to `ensure_installed`)
@@ -23,7 +23,9 @@ require('nvim-treesitter.configs').setup({
                 ["af"] = "@function.outer",
                 ["if"] = "@function.inner",
                 ["ac"] = "@class.outer",
-                ["ic"] = "@class.inner"
+                ["ic"] = "@class.inner",
+                ["ib"] = "@code_cell.inner",
+                ["ab"] = "@code_cell.outer"
             }
         },
         move = {
@@ -31,19 +33,23 @@ require('nvim-treesitter.configs').setup({
             set_jumps = true,
             goto_next_start = {
                 [']m'] = '@function.outer',
-                [']]'] = '@class.outer'
+                [']]'] = '@class.outer',
+                ["]b"] = "@code_cell.inner"
             },
             goto_next_end = {
                 [']M'] = '@function.outer',
-                [']['] = '@class.outer'
+                [']['] = '@class.outer',
+                ["]B"] = "@code_cell.inner"
             },
             goto_previous_start = {
                 ['[m'] = '@function.outer',
-                ['[['] = '@class.outer'
+                ['[['] = '@class.outer',
+                ["[b"] = "@code_cell.inner"
             },
             goto_previous_end = {
                 ['[M'] = '@function.outer',
-                ['[]'] = '@class.outer'
+                ['[]'] = '@class.outer',
+                ["[B"] = "@code_cell.inner"
             }
         }
     }
