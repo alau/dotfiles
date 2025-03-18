@@ -2,9 +2,7 @@ local c = require("conform")
 c.setup({
     format_on_save = function(bufnr)
         -- Disable with a global or buffer-local variable
-        if vim.g.disable_autoformat or vim.b[bufnr].disable_autoformat then
-            return
-        end
+        if vim.g.disable_autoformat or vim.b[bufnr].disable_autoformat then return end
         return {timeout_ms = 1000, lsp_format = "fallback"}
     end,
     formatters_by_ft = {
@@ -16,15 +14,11 @@ c.setup({
     }
 })
 
-c.formatters.autoimport = {
-    command = "autoimport",
-    args = {"$FILENAME"},
-    stdin = false
-}
+c.formatters.autoimport = {command = "autoimport", args = {"$FILENAME"}, stdin = false}
 
-c.formatters.golines = {
-    prepend_args = {"--chain-split-dots", "--ignore-generated", "-m", "120"}
-}
+c.formatters.golines = {prepend_args = {"--chain-split-dots", "--ignore-generated", "-m", "120"}}
+
+c.formatters["lua-format"] = {args = {"--column-limit", "120"}}
 
 vim.api.nvim_create_user_command("FormatDisable", function(args)
     if args.bang then

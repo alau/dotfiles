@@ -9,6 +9,5 @@ local s = luasnip.snippet
 local t = luasnip.text_node
 luasnip.add_snippets("markdown", {
     -- code cell
-    s({trig = "^%s*`", trigEngine = "pattern"},
-      {t({"```python", ""}), i(1), t({"", "```"})})
+    s({trig = "^%s*`", trigEngine = "pattern"}, {t({"```python", ""}), i(1), t({"", "```"})})
 })

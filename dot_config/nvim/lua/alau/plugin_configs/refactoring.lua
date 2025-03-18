@@ -1,7 +1,4 @@
-require('refactoring').setup({
-    prompt_func_return_type = {go = true},
-    prompt_func_param_type = {go = true}
-})
+require('refactoring').setup({prompt_func_return_type = {go = true}, prompt_func_param_type = {go = true}})
 
 vim.keymap.set("x", "<leader>ec", ":Refactor extract ")
 vim.keymap.set("x", "<leader>ef", ":Refactor extract_to_file ")

@@ -5,13 +5,10 @@ require("diffview").setup({
             if ctx.layout_name:match("^diff2") then
                 if ctx.symbol == "a" then
                     vim.opt_local.winhl = table.concat({
-                        "DiffAdd:DiffviewDiffAddAsDelete",
-                        "DiffDelete:DiffviewDiffDelete"
+                        "DiffAdd:DiffviewDiffAddAsDelete", "DiffDelete:DiffviewDiffDelete"
                     }, ",")
                 elseif ctx.symbol == "b" then
-                    vim.opt_local.winhl = table.concat({
-                        "DiffDelete:DiffviewDiffDelete"
-                    }, ",")
+                    vim.opt_local.winhl = table.concat({"DiffDelete:DiffviewDiffDelete"}, ",")
                 end
             end
         end

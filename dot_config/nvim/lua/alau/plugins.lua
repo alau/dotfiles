@@ -5,19 +5,11 @@ return require('packer').startup({
         -- Tools
         use {'wbthomason/packer.nvim', opt = true, lock = true}
         use 'tpope/vim-fugitive'
-        use {
-            'nvim-telescope/telescope.nvim',
-            requires = {{'nvim-lua/plenary.nvim'}}
-        }
+        use {'nvim-telescope/telescope.nvim', requires = {{'nvim-lua/plenary.nvim'}}}
         use "sindrets/diffview.nvim"
         use {
             'NeogitOrg/neogit',
-            requires = {
-                {
-                    "nvim-lua/plenary.nvim", "sindrets/diffview.nvim",
-                    "nvim-telescope/telescope.nvim"
-                }
-            }
+            requires = {{"nvim-lua/plenary.nvim", "sindrets/diffview.nvim", "nvim-telescope/telescope.nvim"}}
         }
         use 'lewis6991/gitsigns.nvim'
         use 'nvim-telescope/telescope-live-grep-args.nvim'
@@ -39,16 +31,9 @@ return require('packer').startup({
         use {'jackMort/ChatGPT.nvim', requires = {"MunifTanjim/nui.nvim"}}
         use {
             'pwntester/octo.nvim',
-            requires = {
-                'nvim-lua/plenary.nvim', 'nvim-telescope/telescope.nvim',
-                'nvim-tree/nvim-web-devicons'
-            }
+            requires = {'nvim-lua/plenary.nvim', 'nvim-telescope/telescope.nvim', 'nvim-tree/nvim-web-devicons'}
         }
-        use {
-            'github/copilot.vim',
-            'CopilotC-Nvim/CopilotChat.nvim',
-            requires = {{'nvim-lua/plenary.nvim'}}
-        }
+        use {'github/copilot.vim', 'CopilotC-Nvim/CopilotChat.nvim', requires = {{'nvim-lua/plenary.nvim'}}}
         use 'gbprod/substitute.nvim'
 
         -- Utility
@@ -62,9 +47,7 @@ return require('packer').startup({
         use {
             'nvim-treesitter/nvim-treesitter',
             run = function()
-                local ts_update = require('nvim-treesitter.install').update({
-                    with_sync = true
-                })
+                local ts_update = require('nvim-treesitter.install').update({with_sync = true})
                 ts_update()
             end
         }
@@ -74,16 +57,12 @@ return require('packer').startup({
         use 'Almo7aya/openingh.nvim'
         use 'xvzc/chezmoi.nvim'
         use {
-            "williamboman/mason.nvim", "williamboman/mason-lspconfig.nvim",
-            "neovim/nvim-lspconfig", "mfussenegger/nvim-lint",
-            "rshkarin/mason-nvim-lint", "stevearc/conform.nvim",
-            "zapling/mason-conform.nvim"
+            "williamboman/mason.nvim", "williamboman/mason-lspconfig.nvim", "neovim/nvim-lspconfig",
+            "mfussenegger/nvim-lint", "rshkarin/mason-nvim-lint", "stevearc/conform.nvim", "zapling/mason-conform.nvim"
         }
         use {
             "ThePrimeagen/refactoring.nvim",
-            requires = {
-                {"nvim-lua/plenary.nvim"}, {"nvim-treesitter/nvim-treesitter"}
-            }
+            requires = {{"nvim-lua/plenary.nvim"}, {"nvim-treesitter/nvim-treesitter"}}
         }
         use {'kosayoda/nvim-lightbulb'}
         use {'folke/snacks.nvim'}
@@ -137,8 +116,5 @@ return require('packer').startup({
         use 'kchmck/vim-coffee-script'
         use 'towolf/vim-helm'
     end,
-    config = {
-        package_root = vim.fn.stdpath('config') .. '/pack',
-        display = {open_fn = require('packer.util').float}
-    }
+    config = {package_root = vim.fn.stdpath('config') .. '/pack', display = {open_fn = require('packer.util').float}}
 })

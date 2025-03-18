@@ -3,17 +3,13 @@ local dapui = require('dapui')
 require("nvim-dap-virtual-text").setup()
 
 dapui.setup()
-dap.listeners.after.event_initialized["dapui_config"] =
-    function() dapui.open() end
-dap.listeners.before.event_terminated["dapui_config"] =
-    function() dapui.close() end
+dap.listeners.after.event_initialized["dapui_config"] = function() dapui.open() end
+dap.listeners.before.event_terminated["dapui_config"] = function() dapui.close() end
 dap.listeners.before.event_exited["dapui_config"] = function() dapui.close() end
 
 local continue = function()
     -- Automatically load launch config
-    if vim.fn.filereadable('.vscode/launch.json') then
-        require('dap.ext.vscode').load_launchjs()
-    end
+    if vim.fn.filereadable('.vscode/launch.json') then require('dap.ext.vscode').load_launchjs() end
     dap.continue()
 end
 
@@ -29,6 +25,5 @@ vim.keymap.set('v', '<F7>', dapui.eval)
 require("mason").setup()
 require("mason-nvim-dap").setup({ensure_installed = {"python", "delve"}})
 
-require('dap-python').setup(vim.fn.stdpath('data') ..
-                                '/mason/packages/debugpy/venv/bin/python')
+require('dap-python').setup(vim.fn.stdpath('data') .. '/mason/packages/debugpy/venv/bin/python')
 require('dap-go').setup()

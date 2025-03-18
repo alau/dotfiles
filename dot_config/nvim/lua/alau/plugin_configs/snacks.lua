@@ -1,4 +1,1 @@
-require('snacks').setup({
-    bigfile = { enabled = true },
-    quickfile = { enabled = true },
-})
+require('snacks').setup({bigfile = {enabled = true}, quickfile = {enabled = true}})

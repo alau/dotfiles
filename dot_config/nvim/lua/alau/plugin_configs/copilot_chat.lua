@@ -9,10 +9,8 @@ chat.setup({
     chat_autocomplete = false
 })
 
-vim.keymap.set({'n'}, '<leader>co',
-               function() chat.open({selection = select.buffer}) end)
-vim.keymap.set({'v'}, '<leader>co',
-               function() chat.open({selection = select.visual}) end)
+vim.keymap.set({'n'}, '<leader>co', function() chat.open({selection = select.buffer}) end)
+vim.keymap.set({'v'}, '<leader>co', function() chat.open({selection = select.visual}) end)
 vim.keymap.set({'n'}, '<leader>cc', function()
     chat.open({selection = select.buffer})
     chat.reset()

@@ -28,12 +28,8 @@ require('gitsigns').setup({
         -- Actions
         map('n', '<leader>hs', gitsigns.stage_hunk)
         map('n', '<leader>hr', gitsigns.reset_hunk)
-        map('v', '<leader>hs', function()
-            gitsigns.stage_hunk {vim.fn.line('.'), vim.fn.line('v')}
-        end)
-        map('v', '<leader>hr', function()
-            gitsigns.reset_hunk {vim.fn.line('.'), vim.fn.line('v')}
-        end)
+        map('v', '<leader>hs', function() gitsigns.stage_hunk {vim.fn.line('.'), vim.fn.line('v')} end)
+        map('v', '<leader>hr', function() gitsigns.reset_hunk {vim.fn.line('.'), vim.fn.line('v')} end)
         map('n', '<leader>hu', gitsigns.undo_stage_hunk)
         map('n', '<leader>hp', gitsigns.preview_hunk)
 
