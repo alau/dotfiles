@@ -67,7 +67,18 @@ lspconfig.pyright.setup({
     end,
     capabilities = capabilities,
     on_attach = on_attach,
-    handlers = {['textDocument/publishDiagnostics'] = function() end}
+    handlers = {
+        -- Let reportUndefinedVariable through for stevanmilic/nvim-lspimport
+        ["textDocument/publishDiagnostics"] = vim.lsp.with(
+            function(err, result, ctx, config)
+                result.diagnostics = vim.tbl_filter(
+                                         function(diagnostic)
+                        return diagnostic.code == "reportUndefinedVariable"
+                    end, result.diagnostics)
+                vim.lsp.diagnostic
+                    .on_publish_diagnostics(err, result, ctx, config)
+            end, {})
+    }
 })
 
 -- typescript

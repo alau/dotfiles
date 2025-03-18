@@ -87,6 +87,7 @@ return require('packer').startup({
         }
         use {'kosayoda/nvim-lightbulb'}
         use {'folke/snacks.nvim'}
+        use {'stevanmilic/nvim-lspimport'}
 
         -- Completions
         use 'hrsh7th/nvim-cmp'
