@@ -33,8 +33,10 @@ require("quarto").setup({
 })
 
 local runner = require("quarto.runner")
+vim.keymap.set("n", "<localleader>s", runner.run_cell, {desc = "run cell", silent = true})
 vim.keymap.set("n", "<localleader>mr", runner.run_cell, {desc = "run cell", silent = true})
 vim.keymap.set("n", "<localleader>ma", runner.run_above, {desc = "run cell and above", silent = true})
+vim.keymap.set("n", "<localleader>mb", runner.run_below, {desc = "run cell and below", silent = true})
 vim.keymap.set("n", "<localleader>mA", runner.run_all, {desc = "run all cells", silent = true})
 vim.keymap.set("n", "<localleader>ml", runner.run_line, {desc = "run line", silent = true})
 vim.keymap.set("v", "<localleader>m", runner.run_range, {desc = "run visual range", silent = true})
