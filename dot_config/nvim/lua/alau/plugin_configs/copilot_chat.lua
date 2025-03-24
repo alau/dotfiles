@@ -3,11 +3,8 @@ local select = require('CopilotChat.select')
 
 vim.g.copilot_enabled = false
 
-chat.setup({
-    model = 'claude-3.7-sonnet',
-    mappings = {reset = {normal = '<C-r>', insert = '<C-r>'}},
-    chat_autocomplete = false
-})
+vim.opt.completeopt = vim.opt.completeopt + {'noinsert', 'noselect', 'popup'}
+chat.setup({model = 'claude-3.7-sonnet', mappings = {reset = {normal = '<C-r>', insert = '<C-r>'}}})
 
 vim.keymap.set({'n'}, '<leader>co', function() chat.open({selection = select.buffer}) end)
 vim.keymap.set({'v'}, '<leader>co', function() chat.open({selection = select.visual}) end)
