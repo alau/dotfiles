@@ -5,6 +5,8 @@ vim.g.molten_virt_text_output = true
 vim.g.molten_wrap_output = true
 vim.g.molten_virt_lines_off_by_1 = true
 
+vim.api.nvim_set_hl(0, "MoltenCell", {bg = '#000000'})
+
 vim.keymap.set("n", "<localleader>me", ":MoltenEvaluateOperator<CR>", {desc = "evaluate operator", silent = true})
 vim.keymap.set("n", "<localleader>mo", ":noautocmd MoltenEnterOutput<CR>:noautocmd MoltenEnterOutput<CR>",
                {desc = "open output window", silent = true})
