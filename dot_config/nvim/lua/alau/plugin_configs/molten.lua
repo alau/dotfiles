@@ -43,6 +43,27 @@ vim.keymap.set("v", "<localleader>m", runner.run_range, {desc = "run visual rang
 
 require("jupytext").setup({style = "markdown", output_extension = "md", force_ft = "markdown.notebook"})
 
+vim.api.nvim_create_autocmd("BufWritePost", {
+    pattern = "*.ipynb",
+    callback = function()
+        local notebook_path = vim.fn.expand("%:p")
+        local notebook_dir = vim.fn.fnamemodify(notebook_path, ":h")
+        local output_dir = notebook_dir .. "/raw"
+
+        if vim.fn.isdirectory(output_dir) ~= 1 then
+            vim.notify("Directory '" .. output_dir .. "' does not exist. Skipping jupytext conversion.",
+                       vim.log.levels.WARN)
+            return
+        end
+
+        local basename = vim.fn.fnamemodify(notebook_path, ":t:r")
+        local py_path = output_dir .. "/" .. basename .. ".py"
+
+        local cmd = string.format("jupytext --to py:percent '%s' --output '%s'", notebook_path, py_path)
+        vim.fn.jobstart(cmd)
+    end
+})
+
 local default_notebook = [[
   {
     "cells": [
