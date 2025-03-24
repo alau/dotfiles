@@ -3,6 +3,7 @@ l.linters_by_ft = {
     go = {'golangcilint'},
     javascript = {'eslint_d'},
     markdown = {"markdownlint"},
+    ["markdown.notebook"] = {},
     python = {"ruff", "mypy"},
     sql = {"sqlfluff"},
     yaml = {"yamllint"},
