@@ -76,8 +76,7 @@ local default_notebook = [[
   }
 ]]
 
-local function new_notebook(filename)
-    local path = filename .. ".ipynb"
+local function new_notebook(path)
     local file = io.open(path, "w")
     if file then
         file:write(default_notebook)
