@@ -43,11 +43,23 @@ vim.keymap.set("n", "<localleader>mA", runner.run_all, {desc = "run all cells", 
 vim.keymap.set("n", "<localleader>ml", runner.run_line, {desc = "run line", silent = true})
 vim.keymap.set("v", "<localleader>m", runner.run_range, {desc = "run visual range", silent = true})
 
-require("jupytext").setup({style = "markdown", output_extension = "md", force_ft = "markdown.notebook"})
+require("jupytext").setup({
+    style = "markdown",
+    output_extension = "md",
+    force_ft = "markdown.notebook",
+    custom_language_formatting = {python = {extension = "md", style = "markdown", force_ft = "markdown.notebook"}}
+})
 
 vim.api.nvim_create_autocmd("BufWritePost", {
     pattern = "*.ipynb",
-    callback = function()
+    callback = function(args)
+        local bufnr = args.buf
+        local ft = vim.bo[bufnr].filetype
+
+        if ft == "markdown.notebook" then
+            require('conform').format({formatters = {'injected'}, bufnr = bufnr, timeout_ms = 1000})
+        end
+
         local notebook_path = vim.fn.expand("%:p")
         local notebook_dir = vim.fn.fnamemodify(notebook_path, ":h")
         local output_dir = notebook_dir .. "/raw"

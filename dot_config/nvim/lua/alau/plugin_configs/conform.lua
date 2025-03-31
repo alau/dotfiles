@@ -10,7 +10,8 @@ c.setup({
         python = {"ruff_fix", "black", "autoimport", "isort"},
         go = {"golines"},
         javascript = {"prettier"},
-        lua = {"lua-format"}
+        lua = {"lua-format"},
+        ["markdown.notebook"] = {'injected'}
     }
 })
 
@@ -19,6 +20,15 @@ c.formatters.autoimport = {command = "autoimport", args = {"$FILENAME"}, stdin =
 c.formatters.golines = {prepend_args = {"--chain-split-dots", "--ignore-generated", "-m", "120"}}
 
 c.formatters["lua-format"] = {args = {"--column-limit", "120"}}
+
+c.formatters.injected = {
+    options = {
+        ignore_errors = false,
+        lang_to_ft = {python = "python"},
+        lang_to_ext = {markdown = 'md', python = 'py'},
+        lang_to_formatters = {}
+    }
+}
 
 vim.api.nvim_create_user_command("FormatDisable", function(args)
     if args.bang then
