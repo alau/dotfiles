@@ -20,7 +20,7 @@ return require('packer').startup({
         use 'folke/flash.nvim'
         use 'scrooloose/nerdcommenter'
         use {'goolord/alpha-nvim', requires = {'nvim-tree/nvim-web-devicons'}}
-        use 'simrat39/symbols-outline.nvim'
+        use 'stevearc/aerial.nvim'
         use 'nvim-neotest/neotest'
         use 'nvim-neotest/neotest-python'
         use 'nvim-neotest/neotest-go'
