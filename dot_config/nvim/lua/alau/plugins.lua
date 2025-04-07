@@ -23,7 +23,7 @@ return require('packer').startup({
         use 'stevearc/aerial.nvim'
         use 'nvim-neotest/neotest'
         use 'nvim-neotest/neotest-python'
-        use 'nvim-neotest/neotest-go'
+        use 'fredrikaverpil/neotest-golang'
         use 'nvim-neotest/neotest-jest'
         use 'folke/zen-mode.nvim'
         use 'ThePrimeagen/harpoon'
