@@ -13,6 +13,7 @@ return require('packer').startup({
         }
         use 'lewis6991/gitsigns.nvim'
         use 'nvim-telescope/telescope-live-grep-args.nvim'
+        use 'nvim-telescope/telescope-dap.nvim'
         use 'jvgrootveld/telescope-zoxide'
         use 'nvim-tree/nvim-tree.lua'
         use 'godlygeek/tabular'

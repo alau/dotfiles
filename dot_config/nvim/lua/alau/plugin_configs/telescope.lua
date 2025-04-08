@@ -25,3 +25,6 @@ vim.keymap.set('n', '<leader>n', t.extensions.notify.notify, {})
 
 t.load_extension("refactoring")
 vim.keymap.set({"n", "x"}, "<leader>ee", t.extensions.refactoring.refactors, {})
+
+t.load_extension("dap")
+vim.keymap.set({"n"}, "<leader>rb", t.extensions.dap.list_breakpoints, {})
