@@ -6,6 +6,7 @@ prSections:
   - title: Involved
     filters: is:open involves:@me -author:@me
 issuesSections: []
+smartFilteringAtLaunch: false
 defaults:
   preview:
     open: true
