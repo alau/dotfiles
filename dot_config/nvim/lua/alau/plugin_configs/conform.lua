@@ -8,6 +8,7 @@ c.setup({
     formatters_by_ft = {
         ["*"] = {"trim_whitespace"},
         python = {"ruff_fix", "black", "autoimport", "isort"},
+        ["python.notebook"] = {"black", "isort"},
         go = {"golines"},
         javascript = {"prettier"},
         lua = {"lua-format"},
@@ -24,7 +25,7 @@ c.formatters["lua-format"] = {args = {"--column-limit", "120"}}
 c.formatters.injected = {
     options = {
         ignore_errors = false,
-        lang_to_ft = {python = "python"},
+        lang_to_ft = {python = "python.notebook"},
         lang_to_ext = {markdown = 'md', python = 'py'},
         lang_to_formatters = {}
     }
