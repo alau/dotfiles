@@ -1,4 +1,4 @@
 local neogit = require('neogit')
-neogit.setup({})
+neogit.setup({mappings = {status = {["Q"] = false}}})
 
 vim.keymap.set("n", "<C-g>", neogit.open, {})
