@@ -12,6 +12,7 @@ vim.keymap.set("n", "<localleader>mo", ":noautocmd MoltenEnterOutput<CR>:noautoc
                {desc = "open output window", silent = true})
 vim.keymap.set("n", "<localleader>mh", ":MoltenHideOutput<CR>", {desc = "close output window", silent = true})
 vim.keymap.set("n", "<localleader>mc", ":MoltenInterrupt<CR>", {desc = "interrupt execution", silent = true})
+vim.keymap.set("n", "<localleader>mC", ":MoltenRestart<CR>", {desc = "restart kernel", silent = true})
 vim.keymap.set("n", "<localleader>md", ":MoltenDelete<CR>", {desc = "clear cell output", silent = true})
 vim.keymap.set("n", "<localleader>mD", ":MoltenDelete!<CR>", {desc = "clear all cell output", silent = true})
 vim.keymap.set("n", "<localleader>mi", function()
