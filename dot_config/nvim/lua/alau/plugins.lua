@@ -57,9 +57,11 @@ return require('packer').startup({
         use 'antoinemadec/FixCursorHold.nvim'
         use 'Almo7aya/openingh.nvim'
         use 'xvzc/chezmoi.nvim'
+        use {"mason-org/mason.nvim", tag = 'v1.x'}
+        use {"mason-org/mason-lspconfig.nvim", tag = 'v1.x'}
         use {
-            "williamboman/mason.nvim", "williamboman/mason-lspconfig.nvim", "neovim/nvim-lspconfig",
-            "mfussenegger/nvim-lint", "rshkarin/mason-nvim-lint", "stevearc/conform.nvim", "zapling/mason-conform.nvim"
+            "neovim/nvim-lspconfig", "mfussenegger/nvim-lint", "rshkarin/mason-nvim-lint", "stevearc/conform.nvim",
+            "zapling/mason-conform.nvim"
         }
         use {
             "ThePrimeagen/refactoring.nvim",
