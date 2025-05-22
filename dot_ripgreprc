@@ -16,3 +16,4 @@
 --glob=!.venv/*
 --glob=!.mypy_cache/*
 --glob=!poetry.lock
+--glob=!uv.lock
