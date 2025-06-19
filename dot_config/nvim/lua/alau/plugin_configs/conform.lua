@@ -12,6 +12,7 @@ c.setup({
         go = {"golines"},
         javascript = {"prettier"},
         lua = {"lua-format"},
+        terraform = {"terraform_fmt"},
         ["markdown.notebook"] = {'injected'}
     }
 })
