@@ -25,6 +25,7 @@ vim.keymap.set("n", "<localleader>mi", function()
     end
 end, {desc = "Initialize Molten for python3", silent = true})
 
+require('otter').setup({})
 require("quarto").setup({
     lspFeatures = {
         languages = {"python"},
