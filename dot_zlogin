@@ -34,7 +34,7 @@ if [ ! $SSH_CLIENT ]; then
   if (( $+commands[redshift] )); then
     ps cax | grep redshift
     if [ $? -ne 0 ]; then
-      redshift -l 59.33:18.07 -t 5500K:3800K &
+      redshift -l 60.27:22.16 -t 5500K:3800K &
     fi
   fi
 
