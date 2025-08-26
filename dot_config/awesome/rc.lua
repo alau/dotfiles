@@ -43,6 +43,7 @@ settings.terminal = 'alacritty --command "tmux"'
 settings.layouts = {awful.layout.suit.tile.right, awful.layout.suit.tile.bottom, awful.layout.suit.max}
 
 -- Load the parts
+load_part("screens")
 load_part("appearance")
 load_part("tags")
 load_part("widgets")
@@ -50,3 +51,4 @@ load_part("bindings")
 load_part("rules")
 load_part("signals")
 load_part("autostart")
+
