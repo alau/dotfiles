@@ -30,10 +30,10 @@ require('nvim-treesitter.configs').setup({
         move = {
             enable = true,
             set_jumps = true,
-            goto_next_start = {[']m'] = '@function.outer', [']]'] = '@class.outer', ["]b"] = "@code_cell.inner"},
-            goto_next_end = {[']M'] = '@function.outer', [']['] = '@class.outer', ["]B"] = "@code_cell.inner"},
-            goto_previous_start = {['[m'] = '@function.outer', ['[['] = '@class.outer', ["[b"] = "@code_cell.inner"},
-            goto_previous_end = {['[M'] = '@function.outer', ['[]'] = '@class.outer', ["[B"] = "@code_cell.inner"}
+            goto_next_start = {[']f'] = '@function.outer', [']]'] = '@class.outer', ["]b"] = "@code_cell.inner"},
+            goto_next_end = {[']F'] = '@function.outer', [']['] = '@class.outer', ["]B"] = "@code_cell.inner"},
+            goto_previous_start = {['[f'] = '@function.outer', ['[['] = '@class.outer', ["[b"] = "@code_cell.inner"},
+            goto_previous_end = {['[F'] = '@function.outer', ['[]'] = '@class.outer', ["[B"] = "@code_cell.inner"}
         }
     }
 })
