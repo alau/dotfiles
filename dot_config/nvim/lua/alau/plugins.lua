@@ -69,7 +69,7 @@ return require('packer').startup({
         }
         use {'kosayoda/nvim-lightbulb'}
         use {'folke/snacks.nvim'}
-        use {'stevanmilic/nvim-lspimport'}
+        use {'UN-9BOT/nvim-lspimport', branch = 'nvim11'}
 
         -- Completions
         use 'hrsh7th/nvim-cmp'
