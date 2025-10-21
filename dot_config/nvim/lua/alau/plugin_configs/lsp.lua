@@ -16,6 +16,7 @@ local on_attach = function(_, bufnr)
     set('n', 'K', vim.lsp.buf.hover, bufopts)
     set('n', 'gr', require('telescope.builtin').lsp_references, bufopts)
     set('n', 'gs', require('telescope.builtin').lsp_dynamic_workspace_symbols, bufopts)
+    set('n', 'gi', require('telescope.builtin').lsp_implementations, bufopts)
 
     set("n", "[l", diagnostic.goto_prev)
     set("n", "]l", diagnostic.goto_next)
