@@ -17,10 +17,5 @@ rules.rules = {
     {rule = {instance = "plugin-container"}, properties = {floating = true, focus = true}}
 }
 
--- Close annoying SAML response opened in browser
-client.connect_signal("property::name", function(c)
-    if c.class == "org.mozilla.firefox" and string.match(c.name, "SAML Response for") then c:kill() end
-end)
-
 local local_additions = os.getenv("HOME") .. "/.awesome-additional-rules.local.lua"
 if awful.util.file_readable(local_additions) then dofile(local_additions) end
