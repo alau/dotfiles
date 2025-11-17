@@ -1,8 +1,9 @@
 require("mason").setup()
-require("mason-lspconfig").setup({
-    ensure_installed = {
-        "lua_ls", "pyright", "ts_ls", "sqlls", "rust_analyzer", "terraformls", "dockerls", "helm_ls", "jsonls", "gopls"
-    }
-})
 require("mason-nvim-lint").setup()
 require("mason-conform").setup()
+require('mason-tool-installer').setup {
+    ensure_installed = {
+        "gopls", "json-lsp", "dockerfile-language-server", "terraform-ls", "rust-analyzer", "sqlls", "helm-ls",
+        "pyright", "lua-language-server", "typescript-language-server"
+    }
+}

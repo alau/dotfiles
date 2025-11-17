@@ -58,11 +58,12 @@ return require('packer').startup({
         use 'Almo7aya/openingh.nvim'
         use 'xvzc/chezmoi.nvim'
         use {"mason-org/mason.nvim", tag = 'v1.x'}
-        use {"mason-org/mason-lspconfig.nvim", tag = 'v1.x'}
+        use {"WhoIsSethDaniel/mason-tool-installer.nvim"}
+        use {"mason-org/mason-lspconfig.nvim", tag = 'v1.x'} -- TODO: Remove
         use {
             "neovim/nvim-lspconfig", "mfussenegger/nvim-lint", "rshkarin/mason-nvim-lint", "stevearc/conform.nvim",
             "zapling/mason-conform.nvim"
-        }
+        } -- TODO: Remove
         use {
             "ThePrimeagen/refactoring.nvim",
             requires = {{"nvim-lua/plenary.nvim"}, {"nvim-treesitter/nvim-treesitter"}}
