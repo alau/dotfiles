@@ -19,7 +19,7 @@ if vim.env.VIRTUAL_ENV then
     l.linters.mypy.cmd = path.join(vim.env.VIRTUAL_ENV, 'bin', 'mypy')
     l.linters.mypy.args = {
         '--follow-imports=silent', '--show-column-numbers', '--show-error-end', '--hide-error-context',
-        '--no-color-output', '--no-error-summary', '--no-pretty', '--python-executable',
+        '--no-color-output', '--no-error-summary', '--no-pretty', '--explicit-package-bases', '--python-executable',
         path.join(vim.env.VIRTUAL_ENV, 'bin', 'python')
     }
 end
