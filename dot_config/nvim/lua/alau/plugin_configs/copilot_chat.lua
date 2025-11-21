@@ -4,7 +4,12 @@ local select = require('CopilotChat.select')
 vim.g.copilot_enabled = false
 
 vim.opt.completeopt = vim.opt.completeopt + {'noinsert', 'noselect', 'popup'}
-chat.setup({model = 'gpt-5-codex', mappings = {reset = {normal = '<C-r>', insert = '<C-r>'}}, window = {width = 80}})
+chat.setup({
+    model = 'gpt-5-codex',
+    sticky = {"#buffer:visible", "#gitdiff:staged"},
+    mappings = {reset = {normal = '<C-r>', insert = '<C-r>'}},
+    window = {width = 80}
+})
 
 vim.keymap.set({'n'}, '<leader>co', function() chat.open({selection = select.buffer}) end)
 vim.keymap.set({'v'}, '<leader>co', function() chat.open({selection = select.visual}) end)
