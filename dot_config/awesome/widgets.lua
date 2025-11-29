@@ -82,6 +82,15 @@ vicious.register(cputempwidget, cputemp)
 -- Systray
 local mysystray = wibox.widget.systray()
 
+-- A button for opening a terminal
+local termbutton = wibox.widget {
+    widget = wibox.widget.textbox,
+    text = " ", -- change to any icon/text you like
+    align = "center",
+    valign = "center"
+}
+termbutton:buttons(awful.util.table.join(awful.button({}, 1, function() awful.spawn(settings.terminal) end)))
+
 -- Create a wibox for each screen and add it
 local mywibox = {}
 local mypromptbox = {}
@@ -119,6 +128,7 @@ for s = 1, screen.count() do
     mywibox[s] = awful.wibar({position = "top", screen = s})
 
     local left_layout = wibox.layout.fixed.horizontal()
+    left_layout:add(termbutton)
     left_layout:add(mytaglist[s])
     left_layout:add(mypromptbox[s])
 
