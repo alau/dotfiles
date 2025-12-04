@@ -1,4 +1,5 @@
 local l = require('lint')
+
 l.linters_by_ft = {
     go = {'golangcilint'},
     javascript = {'eslint_d'},
@@ -14,13 +15,12 @@ l.linters_by_ft = {
 }
 
 if vim.env.VIRTUAL_ENV then
-    local util = require('lspconfig/util')
-    local path = util.path
-    l.linters.mypy.cmd = path.join(vim.env.VIRTUAL_ENV, 'bin', 'mypy')
+    local fs = vim.fs
+    l.linters.mypy.cmd = fs.joinpath(vim.env.VIRTUAL_ENV, 'bin', 'mypy')
     l.linters.mypy.args = {
         '--follow-imports=silent', '--show-column-numbers', '--show-error-end', '--hide-error-context',
         '--no-color-output', '--no-error-summary', '--no-pretty', '--explicit-package-bases', '--python-executable',
-        path.join(vim.env.VIRTUAL_ENV, 'bin', 'python')
+        fs.joinpath(vim.env.VIRTUAL_ENV, 'bin', 'python')
     }
 end
 

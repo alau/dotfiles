@@ -34,7 +34,7 @@ return require('packer').startup({
             'pwntester/octo.nvim',
             requires = {'nvim-lua/plenary.nvim', 'nvim-telescope/telescope.nvim', 'nvim-tree/nvim-web-devicons'}
         }
-        use {'github/copilot.vim', 'CopilotC-Nvim/CopilotChat.nvim', requires = {{'nvim-lua/plenary.nvim'}}}
+        use {'CopilotC-Nvim/CopilotChat.nvim', requires = {{'nvim-lua/plenary.nvim'}}}
         use 'gbprod/substitute.nvim'
 
         -- Utility
@@ -58,10 +58,9 @@ return require('packer').startup({
         use 'Almo7aya/openingh.nvim'
         use 'xvzc/chezmoi.nvim'
         use {"mason-org/mason.nvim", tag = 'v1.x'}
-        use {"mason-org/mason-lspconfig.nvim", tag = 'v1.x'}
+        use {"WhoIsSethDaniel/mason-tool-installer.nvim"}
         use {
-            "neovim/nvim-lspconfig", "mfussenegger/nvim-lint", "rshkarin/mason-nvim-lint", "stevearc/conform.nvim",
-            "zapling/mason-conform.nvim"
+            "mfussenegger/nvim-lint", "rshkarin/mason-nvim-lint", "stevearc/conform.nvim", "zapling/mason-conform.nvim"
         }
         use {
             "ThePrimeagen/refactoring.nvim",
