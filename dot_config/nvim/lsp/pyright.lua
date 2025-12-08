@@ -18,7 +18,6 @@ return {
         config.settings = config.settings or {}
         config.settings.python = config.settings.python or {}
         config.settings.python.pythonPath = get_python_path()
-        vim.notify(string.format("Pyright using python: %s", config.settings.python.pythonPath), vim.log.levels.INFO)
     end,
     handlers = {
         ["textDocument/publishDiagnostics"] = vim.lsp.with(function(err, result, ctx, config)
