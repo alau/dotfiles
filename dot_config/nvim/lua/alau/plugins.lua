@@ -66,6 +66,7 @@ return require('packer').startup({
         use {'folke/snacks.nvim'}
         use {'UN-9BOT/nvim-lspimport', branch = 'nvim11'}
         use {'knubie/vim-kitty-navigator'}
+        use {'mikesmithgh/kitty-scrollback.nvim'}
 
         -- Completions
         use 'hrsh7th/nvim-cmp'
