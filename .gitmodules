@@ -1,9 +1,6 @@
 [submodule "zsh/zprezto.dotfile"]
 	path = external_dot_zprezto
   url = https://github.com/sorin-ionescu/prezto.git
-[submodule "tmux/tmux.dotfile/plugins/tpm"]
-	path = dot_tmux/plugins/external_tpm
-	url = https://github.com/tmux-plugins/tpm.git
 [submodule "zsh/zsh.dotfile/zsh-nvm"]
 	path = dot_zsh/external_zsh-nvm
 	url = git@github.com:lukechilds/zsh-nvm.git
@@ -16,9 +13,9 @@
 [submodule "awesome/awesome.config-dotfile/vicious"]
 	path = dot_config/awesome/external_vicious
 	url = https://github.com/vicious-widgets/vicious
-[submodule "alacritty/alacritty.config-dotfile/themes"]
-	path = dot_config/alacritty/external_themes
-	url = https://github.com/alacritty/alacritty-theme
 [submodule "neovim/nvim.config-dotfile/pack/packer/opt/packer.nvim"]
 	path = dot_config/nvim/pack/packer/opt/external_packer.nvim
 	url = https://github.com/wbthomason/packer.nvim
+[submodule "dot_config/kitty/external_themes"]
+	path = dot_config/kitty/external_themes
+	url = https://github.com/dexpota/kitty-themes.git

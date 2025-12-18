@@ -6,11 +6,7 @@ return require('packer').startup({
         use {'wbthomason/packer.nvim', opt = true, lock = true}
         use 'tpope/vim-fugitive'
         use {'nvim-telescope/telescope.nvim', requires = {{'nvim-lua/plenary.nvim'}}}
-        use "sindrets/diffview.nvim"
-        use {
-            'NeogitOrg/neogit',
-            requires = {{"nvim-lua/plenary.nvim", "sindrets/diffview.nvim", "nvim-telescope/telescope.nvim"}}
-        }
+        use {'NeogitOrg/neogit', requires = {{"nvim-lua/plenary.nvim", "nvim-telescope/telescope.nvim"}}}
         use 'lewis6991/gitsigns.nvim'
         use 'nvim-telescope/telescope-live-grep-args.nvim'
         use 'nvim-telescope/telescope-dap.nvim'
@@ -69,6 +65,7 @@ return require('packer').startup({
         use {'kosayoda/nvim-lightbulb'}
         use {'folke/snacks.nvim'}
         use {'UN-9BOT/nvim-lspimport', branch = 'nvim11'}
+        use {'knubie/vim-kitty-navigator'}
 
         -- Completions
         use 'hrsh7th/nvim-cmp'
@@ -94,7 +91,7 @@ return require('packer').startup({
         use 'GCBallesteros/jupytext.nvim'
 
         -- Look and feel
-        use 'luisiacc/gruvbox-baby'
+        use 'oxfist/night-owl.nvim'
         use 'nvim-tree/nvim-web-devicons'
         use 'nvim-lualine/lualine.nvim'
         use 'rcarriga/nvim-notify'
@@ -117,6 +114,7 @@ return require('packer').startup({
         use 'euclidianAce/BetterLua.vim'
         use 'kchmck/vim-coffee-script'
         use 'towolf/vim-helm'
+        use 'fladson/vim-kitty'
     end,
     config = {package_root = vim.fn.stdpath('config') .. '/pack', display = {open_fn = require('packer.util').float}}
 })
