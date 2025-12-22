@@ -8,7 +8,8 @@ chat.setup({
     model = 'claude-opus-4.5',
     sticky = {"#buffer:visible", "#gitdiff:staged"},
     mappings = {reset = {normal = '<C-r>', insert = '<C-r>'}},
-    window = {width = 80}
+    window = {width = 80},
+    prompts = {Log = {prompt = 'Ask for code and clarifications as needed. I will provide output from a log.'}}
 })
 
 vim.keymap.set({'n'}, '<leader>co', function() chat.open({selection = select.buffer}) end)
