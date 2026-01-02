@@ -12,7 +12,16 @@ return {
     root_markers = {"pyproject.toml", "setup.py", "setup.cfg", "requirements.txt", "poetry.lock", "uv.lock", ".git"},
     single_file_support = true,
     settings = {
-        python = {analysis = {autoSearchPaths = true, useLibraryCodeForTypes = true, diagnosticMode = 'openFilesOnly'}}
+        python = {
+            analysis = {
+                autoSearchPaths = true,
+                useLibraryCodeForTypes = true,
+                diagnosticMode = 'openFilesOnly',
+                typeCheckingMode = 'standard',
+                diagnosticSeverityOverrides = {reportArgumentType = "none", reportAssignmentType = "none"}
+            }
+        },
+        pyright = {pythonVersion = '3.13'}
     },
     before_init = function(_, config)
         config.settings = config.settings or {}
