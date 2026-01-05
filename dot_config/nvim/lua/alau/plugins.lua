@@ -114,7 +114,7 @@ return require('packer').startup({
         use 'NoahTheDuke/vim-just'
         use 'euclidianAce/BetterLua.vim'
         use 'kchmck/vim-coffee-script'
-        use 'towolf/vim-helm'
+        use 'qvalentin/helm-ls.nvim'
         use 'fladson/vim-kitty'
     end,
     config = {package_root = vim.fn.stdpath('config') .. '/pack', display = {open_fn = require('packer.util').float}}
