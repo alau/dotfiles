@@ -86,8 +86,9 @@ alias nr='npm run'
 alias nu='nvm use'
 alias mwa='mocha --watch'
 
-# poetry
+# poetry/uv
 alias pr='poetry run'
+alias ur='uv run'
 
 # Disabled corrections
 alias gulp='nocorrect gulp'
