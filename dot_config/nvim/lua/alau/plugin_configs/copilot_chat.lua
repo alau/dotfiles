@@ -6,7 +6,7 @@ vim.g.copilot_enabled = false
 vim.opt.completeopt = vim.opt.completeopt + {'noinsert', 'noselect', 'popup'}
 chat.setup({
     model = 'claude-opus-4.5',
-    sticky = {"#buffer:visible", "#gitdiff:staged"},
+    sticky = {"#buffer:visible"},
     mappings = {reset = {normal = '<C-r>', insert = '<C-r>'}},
     window = {width = 80},
     prompts = {Log = {prompt = 'Ask for code and clarifications as needed. I will provide output from a log.'}}
