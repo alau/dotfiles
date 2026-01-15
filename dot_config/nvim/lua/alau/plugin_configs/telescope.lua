@@ -3,7 +3,7 @@ t.setup({defaults = {path_display = {"smart"}}})
 
 local builtin = require('telescope.builtin')
 vim.keymap.set('n', '<leader>t', builtin.git_files, {})
-vim.keymap.set('n', '<leader>T', builtin.find_files, {})
+vim.keymap.set('n', '<leader>T', function() builtin.find_files({no_ignore = true}) end, {})
 vim.keymap.set('n', '<leader>fg', require("telescope").extensions.live_grep_args.live_grep_args, {})
 vim.keymap.set('n', '<leader>b', builtin.buffers, {})
 vim.keymap.set('n', '<leader>fs', builtin.git_status, {})
