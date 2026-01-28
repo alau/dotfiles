@@ -30,5 +30,6 @@ vim.api.nvim_create_autocmd("LspAttach", {
 })
 
 vim.lsp.enable({
-    "gopls", "jsonls", "dockerls", "terraformls", "rust_analyzer", "sqlls", "helm_ls", "pyright", "lua_ls", "ts_ls"
+    "gopls", "jsonls", "dockerls", "terraformls", "rust_analyzer", "sqlls", "helm_ls", "yamlls", "pyright", "lua_ls",
+    "ts_ls"
 })

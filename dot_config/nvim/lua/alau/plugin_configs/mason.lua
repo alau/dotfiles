@@ -4,6 +4,6 @@ require("mason-conform").setup()
 require('mason-tool-installer').setup {
     ensure_installed = {
         "gopls", "json-lsp", "dockerfile-language-server", "terraform-ls", "rust-analyzer", "sqlls", "helm-ls",
-        "pyright", "lua-language-server", "typescript-language-server"
+        "yaml-language-server", "pyright", "lua-language-server", "typescript-language-server"
     }
 }

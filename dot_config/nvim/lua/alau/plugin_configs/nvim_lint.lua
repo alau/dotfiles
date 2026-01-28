@@ -8,6 +8,7 @@ l.linters_by_ft = {
     python = {"ruff", "mypy"},
     sql = {"sqlfluff"},
     yaml = {"yamllint"},
+    helm = {"yamllint"},
     ["yaml.actions"] = {"actionlint", "yamllint"},
     dockerfile = {"hadolint"},
     proto = {"buf_lint"},
