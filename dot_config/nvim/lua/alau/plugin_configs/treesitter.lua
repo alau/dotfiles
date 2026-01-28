@@ -3,8 +3,7 @@ vim.opt.foldexpr = 'nvim_treesitter#foldexpr()'
 
 require('nvim-treesitter.configs').setup({
     ensure_installed = {
-        "python", "lua", "json", "sql", "javascript", "rust", "yaml", "dockerfile", "go", "vimdoc", "diff", "markdown",
-        "helm"
+        "python", "lua", "json", "sql", "javascript", "yaml", "dockerfile", "go", "vimdoc", "diff", "markdown", "helm"
     },
 
     -- Install parsers synchronously (only applied to `ensure_installed`)
