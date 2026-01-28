@@ -17,7 +17,14 @@ c.setup({
     }
 })
 
-c.formatters.autoimport = {command = "autoimport", args = {"$FILENAME"}, stdin = false}
+c.formatters.autoimport = {
+    command = (os.getenv("VIRTUAL_ENV") and (os.getenv("VIRTUAL_ENV") .. "/bin/autoimport") or "autoimport"),
+    args = {"$FILENAME"},
+    stdin = false
+}
+c.formatters.black = {command = (os.getenv("VIRTUAL_ENV") and (os.getenv("VIRTUAL_ENV") .. "/bin/black") or "black")}
+c.formatters.isort = {command = (os.getenv("VIRTUAL_ENV") and (os.getenv("VIRTUAL_ENV") .. "/bin/isort") or "isort")}
+c.formatters.ruff_fix = {command = (os.getenv("VIRTUAL_ENV") and (os.getenv("VIRTUAL_ENV") .. "/bin/ruff") or "ruff")}
 
 c.formatters.golines = {prepend_args = {"--chain-split-dots", "--ignore-generated", "-m", "120"}}
 
