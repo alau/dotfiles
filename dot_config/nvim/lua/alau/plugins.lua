@@ -46,9 +46,10 @@ return require('packer').startup({
             run = function()
                 local ts_update = require('nvim-treesitter.install').update({with_sync = true})
                 ts_update()
-            end
+            end,
+            branch = 'main'
         }
-        use 'nvim-treesitter/nvim-treesitter-textobjects'
+        use {'nvim-treesitter/nvim-treesitter-textobjects', branch = 'main'}
         use 'nvim-treesitter/nvim-treesitter-context'
         use 'antoinemadec/FixCursorHold.nvim'
         use 'Almo7aya/openingh.nvim'
