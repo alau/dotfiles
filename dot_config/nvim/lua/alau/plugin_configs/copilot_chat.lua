@@ -5,7 +5,7 @@ vim.g.copilot_enabled = false
 
 vim.opt.completeopt = vim.opt.completeopt + {'noinsert', 'noselect', 'popup'}
 chat.setup({
-    model = 'gemini-3-pro-preview',
+    model = 'claude-opus-4.6',
     sticky = {"#buffer:visible"},
     mappings = {reset = {normal = '<C-r>', insert = '<C-r>'}},
     window = {width = 80},
