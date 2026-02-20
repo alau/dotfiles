@@ -1,0 +1,5 @@
+{
+  "name": "my-lsp-servers",
+  "description": "LSP servers for Lua, Python, and Go",
+  "version": "1.0.0"
+}

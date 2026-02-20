@@ -1,0 +1,23 @@
+{
+  "lua": {
+    "command": "lua-language-server",
+    "args": [],
+    "extensionToLanguage": {
+      ".lua": "lua"
+    }
+  },
+  "python": {
+    "command": "pyright",
+    "args": ["--outputjson"],
+    "extensionToLanguage": {
+      ".py": "python"
+    }
+  },
+  "go": {
+    "command": "gopls",
+    "args": ["serve"],
+    "extensionToLanguage": {
+      ".go": "go"
+    }
+  }
+}
