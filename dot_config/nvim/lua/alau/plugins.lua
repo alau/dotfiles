@@ -31,6 +31,7 @@ return require('packer').startup({
             requires = {'nvim-lua/plenary.nvim', 'nvim-telescope/telescope.nvim', 'nvim-tree/nvim-web-devicons'}
         }
         use {'CopilotC-Nvim/CopilotChat.nvim', requires = {{'nvim-lua/plenary.nvim'}}}
+        use 'coder/claudecode.nvim'
         use 'gbprod/substitute.nvim'
 
         -- Utility

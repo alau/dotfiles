@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-settings.json",
+  "model": "claude-opus-4-6",
+  "permissions": {
+    "allow": [
+      "Bash(make *)",
+      "Bash(go test *)",
+      "Bash(go build *)",
+      "Bash(go vet *)",
+      "Bash(go run *)",
+      "Bash(git status*)",
+      "Bash(git log*)",
+      "Bash(git diff*)",
+      "Bash(git branch*)",
+      "Bash(git show*)",
+      "Bash(ls *)",
+      "Bash(which *)",
+    ],
+    "deny": [
+      "Read(./.env)",
+    ]
+  },
+  "respectGitignore": true
+}
