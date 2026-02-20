@@ -16,6 +16,8 @@ vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 -- Navigation
 vim.keymap.set("n", "<PageUp>", "<C-u>zz")
 vim.keymap.set("n", "<PageDown>", "<C-d>zz")
+vim.keymap.set("t", "<PageUp>", "<C-\\><C-n><C-u>zz")
+vim.keymap.set("t", "<PageDown>", "<C-\\><C-n><C-d>zz")
 vim.keymap.set("n", "<C-u>", "<PageUp>zz")
 vim.keymap.set("n", "<C-d>", "<PageDown>zz")
 
