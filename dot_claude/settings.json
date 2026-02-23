@@ -15,10 +15,10 @@
       "Bash(git branch*)",
       "Bash(git show*)",
       "Bash(ls *)",
-      "Bash(which *)",
+      "Bash(which *)"
     ],
     "deny": [
-      "Read(./.env)",
+      "Read(./.env)"
     ]
   },
   "respectGitignore": true
