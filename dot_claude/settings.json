@@ -21,5 +21,9 @@
       "Read(./.env)"
     ]
   },
-  "respectGitignore": true
+  "respectGitignore": true,
+  "lspDiagnostics": {
+    "enabled": true,
+    "languages": ["python", "go", "lua"]
+  }
 }
