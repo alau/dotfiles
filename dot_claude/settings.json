@@ -24,6 +24,15 @@
   "respectGitignore": true,
   "lspDiagnostics": {
     "enabled": true,
-    "languages": ["python", "go", "lua"]
+    "languages": [
+      "python",
+      "go",
+      "lua"
+    ]
+  },
+  "enabledPlugins": {
+    "gopls-lsp@claude-plugins-official": true,
+    "pylsp-lsp@claude-plugins-official": true,
+    "lua-language-server-lsp@claude-plugins-official": true
   }
 }
