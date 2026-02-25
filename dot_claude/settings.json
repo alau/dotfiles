@@ -45,6 +45,7 @@
       "Read(./.env)"
     ]
   },
+  "vimMode": true,
   "respectGitignore": true,
   "lspDiagnostics": {
     "enabled": true,
