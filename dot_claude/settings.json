@@ -3,6 +3,7 @@
   "model": "claude-opus-4-6",
   "effortLevel": "medium",
   "permissions": {
+    "defaultMode": "plan",
     "allow": [
       "Bash(make *)",
       "Bash(go test *)",
