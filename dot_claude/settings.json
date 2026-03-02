@@ -1,9 +1,7 @@
 {
   "$schema": "https://json.schemastore.org/claude-code-settings.json",
-  "model": "claude-opus-4-6",
-  "effortLevel": "medium",
+  "respectGitignore": true,
   "permissions": {
-    "defaultMode": "plan",
     "allow": [
       "Bash(make *)",
       "Bash(go test *)",
@@ -43,10 +41,17 @@
     ],
     "deny": [
       "Read(./.env)"
-    ]
+    ],
+    "defaultMode": "plan"
   },
+  "model": "opusplan",
+  "enabledPlugins": {
+    "gopls-lsp@claude-plugins-official": true,
+    "pyright-lsp@claude-plugins-official": true,
+    "lua-lsp@claude-plugins-official": true
+  },
+  "effortLevel": "medium",
   "vimMode": true,
-  "respectGitignore": true,
   "lspDiagnostics": {
     "enabled": true,
     "languages": [
@@ -54,10 +59,5 @@
       "go",
       "lua"
     ]
-  },
-  "enabledPlugins": {
-    "gopls-lsp@claude-plugins-official": true,
-    "pylsp-lsp@claude-plugins-official": true,
-    "lua-language-server-lsp@claude-plugins-official": true
   }
 }
