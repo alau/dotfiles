@@ -4,7 +4,7 @@ vim.opt.foldexpr = 'nvim_treesitter#foldexpr()'
 require('nvim-treesitter').setup({install_dir = vim.fn.stdpath('data') .. '/site'})
 
 require('nvim-treesitter').install({
-    "python", "lua", "json", "sql", "javascript", "yaml", "dockerfile", "go", "vimdoc", "diff", "markdown", "helm"
+    "python", "lua", "json", "sql", "javascript", "yaml", "dockerfile", "go", "vimdoc", "diff", "markdown", "markdown_inline", "helm"
 })
 
 require("nvim-treesitter-textobjects").setup({select = {lookahead = true}, move = {set_jumps = true}})
@@ -42,7 +42,7 @@ vim.keymap.set({"n", "x", "o"}, "[B", function() ts_move.goto_previous_end("@cod
 
 vim.api.nvim_create_autocmd('FileType', {
     pattern = {
-        "python", "lua", "json", "sql", "javascript", "yaml", "dockerfile", "go", "vimdoc", "diff", "markdown", "helm"
+        "python", "lua", "json", "sql", "javascript", "yaml", "dockerfile", "go", "vimdoc", "diff", "markdown", "markdown.notebook", "helm"
     },
     callback = function()
         vim.treesitter.start()
