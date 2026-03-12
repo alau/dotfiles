@@ -8,7 +8,7 @@ Write a failing test for the behavior: $ARGUMENTS
 Steps:
 1. Identify where the high-level behavior tests are located
 2. Write the test describing the behavior — do not implement the production code yet
-3. Run the test to confirm it fails (red)
+3. Run all tests and confirm that the right ones fail (red)
 4. Report the failing test output to confirm we're in the red state
 
 Rules:
