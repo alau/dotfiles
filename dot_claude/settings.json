@@ -59,5 +59,11 @@
       "go",
       "lua"
     ]
-  }
+  },
+  "hooks": { "PreToolUse": [{
+    "matcher": "Bash",
+    "hooks": [{ "type": "command",
+      "command": "/home/alau/.claude/hooks/rtk-rewrite.sh"
+    }]
+  }]}
 }
