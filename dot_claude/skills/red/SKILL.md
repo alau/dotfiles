@@ -12,6 +12,7 @@ Steps:
 4. Report the failing test output to confirm we're in the red state
 
 Rules:
-- Test must fail for the right reason (not a compile error from missing types — stub those minimally if needed)
+- All tests must be run during the verification
+- Only the expected tests must fail, and for the right reason (not a compile error from missing types — stub those minimally if needed)
 - No production logic yet
 - Describe behavior, not implementation
