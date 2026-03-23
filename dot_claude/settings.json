@@ -40,7 +40,10 @@
       "mcp__github__list_tags",
       "mcp__github__list_releases",
       "mcp__github__issue_read",
-      "mcp__github__pull_request_read"
+      "mcp__github__pull_request_read",
+      "mcp__clickup__clickup_get_task",
+      "mcp__clickup__clickup_filter_tasks",
+      "mcp__clickup__clickup_get_custom_fields"
     ],
     "deny": [
       "Read(./.env)"
