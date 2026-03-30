@@ -6,6 +6,11 @@ source ~/.zsh/editor.zsh
 source ~/.zsh/zoxide.zsh
 source ~/.zsh/zsh-nvm/zsh-nvm.plugin.zsh
 
+# Reset kitty keyboard protocol to prevent stuck terminal after programs
+# (e.g. Claude Code) exit without cleaning up
+_reset_keyboard_protocol() { printf '\e[<u\e[<u\e[<u\e[<u\e[<u' > /dev/tty 2>/dev/null; }
+add-zsh-hook precmd _reset_keyboard_protocol
+
 # Disable ^S/^Q flow control
 stty stop undef
 stty start undef
