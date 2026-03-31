@@ -90,6 +90,20 @@ alias mwa='mocha --watch'
 alias pr='poetry run'
 alias ur='uv run'
 
+# Worktrees for parallel Claude sessions
+cw() {
+  local branch="${1:?Usage: cw <branch-name>}"
+  local base="${2:-HEAD}"
+  local wt_dir="${PWD:h}/worktrees/${PWD:t}--${branch}"
+  git worktree add "$wt_dir" -b "$branch" "$base" && cd "$wt_dir" && claude
+}
+alias cwl='git worktree list'
+cwr() {
+  local branch="${1:?Usage: cwr <branch-name>}"
+  local wt_dir="${PWD:h}/worktrees/${PWD:t}--${branch}"
+  git worktree remove "$wt_dir"
+}
+
 # Disabled corrections
 alias gulp='nocorrect gulp'
 alias eslint='nocorrect eslint'
