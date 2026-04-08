@@ -71,5 +71,8 @@
     "hooks": [{ "type": "command",
       "command": "/home/alau/.claude/hooks/rtk-rewrite.sh"
     }]
-  }]}
+  }]},
+  "env": {
+    "CLAUDE_CODE_DISABLE_1M_CONTEXT": "1"
+  }
 }
