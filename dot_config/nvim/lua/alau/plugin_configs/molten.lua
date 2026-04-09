@@ -18,7 +18,7 @@ vim.keymap.set("n", "<localleader>mD", ":MoltenDelete!<CR>", {desc = "clear all 
 vim.keymap.set("n", "<localleader>mi", function()
     local venv = os.getenv("VIRTUAL_ENV")
     if venv ~= nil then
-        venv = string.match(venv, "/.+/(.+)/.venv")
+        venv = string.match(venv, "/.+/(.+)/notebooks/.venv") or string.match(venv, "/.+/(.+)/.venv")
         vim.cmd(("MoltenInit %s"):format(venv))
     else
         vim.cmd("MoltenInit python3")
