@@ -56,7 +56,7 @@
     "pyright-lsp@claude-plugins-official": true,
     "lua-lsp@claude-plugins-official": true
   },
-  "effortLevel": "medium",
+  "effortLevel": "max",
   "vimMode": true,
   "lspDiagnostics": {
     "enabled": true,
