@@ -26,6 +26,6 @@ Review PR comments produced by copilot and alau and triage them according to:
 
 2. **Summarize** the overall state of the PR review
 
-3. **Plan**: Plan how to resolve the comments. Include in the plan that fixes should be pushed to the PR, the PR description should be updated, and comments should be responded to and resolved. The comment shoud begin with "[claude code]" to indicate the origin of the comment.
+3. **Plan**: Plan how to resolve the comments. Include in the plan that fixes should be pushed to the PR, the PR description should be updated, and comments should be responded to. The comment should begin with "[claude code]" to indicate the origin of the comment.
 
 Present the triage as a structured list grouped by category.
