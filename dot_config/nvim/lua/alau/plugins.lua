@@ -53,7 +53,6 @@ return require('packer').startup({
         use {'nvim-treesitter/nvim-treesitter-textobjects', branch = 'main'}
         use 'nvim-treesitter/nvim-treesitter-context'
         use 'antoinemadec/FixCursorHold.nvim'
-        use 'Almo7aya/openingh.nvim'
         use 'xvzc/chezmoi.nvim'
         use {"mason-org/mason.nvim", tag = 'v1.x'}
         use {"WhoIsSethDaniel/mason-tool-installer.nvim"}
