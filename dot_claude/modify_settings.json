@@ -80,7 +80,8 @@ read -r -d '' BASE << 'BASEJSON' || true
   },
   "env": {
     "CLAUDE_CODE_DISABLE_1M_CONTEXT": "1"
-  }
+  },
+  "awaySummaryEnabled": false
 }
 BASEJSON
 
