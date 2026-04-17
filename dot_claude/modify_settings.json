@@ -1,3 +1,7 @@
+#!/bin/bash
+set -euo pipefail
+
+read -r -d '' BASE << 'BASEJSON' || true
 {
   "$schema": "https://json.schemastore.org/claude-code-settings.json",
   "sandbox": {
@@ -66,13 +70,24 @@
       "lua"
     ]
   },
-  "hooks": { "PreToolUse": [{
-    "matcher": "Bash",
-    "hooks": [{ "type": "command",
-      "command": "/home/alau/.claude/hooks/rtk-rewrite.sh"
+  "hooks": {
+    "PreToolUse": [{
+      "matcher": "Bash",
+      "hooks": [{ "type": "command",
+        "command": "/home/alau/.claude/hooks/rtk-rewrite.sh"
+      }]
     }]
-  }]},
+  },
   "env": {
     "CLAUDE_CODE_DISABLE_1M_CONTEXT": "1"
   }
 }
+BASEJSON
+
+LOCAL="$HOME/.claude/settings.local.json"
+
+if [ -f "$LOCAL" ]; then
+  printf '%s' "$BASE" | jq --slurpfile local "$LOCAL" '. * $local[0]'
+else
+  printf '%s' "$BASE"
+fi
