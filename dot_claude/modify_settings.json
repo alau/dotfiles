@@ -82,7 +82,11 @@ read -r -d '' BASE << 'BASEJSON' || true
     "CLAUDE_CODE_DISABLE_1M_CONTEXT": "1"
   },
   "awaySummaryEnabled": false,
-  "disableAutoMode": "disable"
+  "disableAutoMode": "disable",
+  "statusLine": {
+    "type": "command",
+    "command": "claude-powerline"
+  }
 }
 BASEJSON
 

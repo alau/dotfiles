@@ -1,0 +1,93 @@
+{
+  "theme": "tokyo-night",
+  "display": {
+    "style": "powerline",
+    "charset": "unicode",
+    "colorCompatibility": "auto",
+    "autoWrap": true,
+    "padding": 1,
+    "lines": [
+      {
+        "segments": {
+          "directory": {
+            "enabled": false,
+            "style": "fish"
+          },
+          "git": {
+            "enabled": false,
+            "showAheadBehind": true
+          },
+          "model": {
+            "enabled": true
+          },
+          "session": {
+            "enabled": false,
+            "type": "tokens"
+          },
+          "context": {
+            "enabled": true,
+            "displayStyle": "blocks",
+            "showPercentageOnly": false,
+            "percentageMode": "used",
+            "autocompactBuffer": 33000
+          },
+          "today": {
+            "enabled": false,
+            "type": "cost"
+          },
+          "block": {
+            "enabled": true,
+            "type": "tokens",
+            "burnType": "cost",
+            "displayStyle": "text"
+          },
+          "weekly": {
+            "enabled": false,
+            "displayStyle": "text"
+          },
+          "version": {
+            "enabled": false
+          },
+          "tmux": {
+            "enabled": false
+          },
+          "sessionId": {
+            "enabled": false,
+            "showIdLabel": true
+          },
+          "metrics": {
+            "enabled": false,
+            "showResponseTime": true,
+            "showLastResponseTime": true,
+            "showDuration": true,
+            "showMessageCount": true,
+            "showLinesAdded": true,
+            "showLinesRemoved": true
+          },
+          "env": {
+            "enabled": false,
+            "variable": ""
+          }
+        }
+      }
+    ]
+  },
+  "budget": {
+    "session": {
+      "warningThreshold": 80
+    },
+    "today": {
+      "warningThreshold": 80,
+      "amount": 50
+    },
+    "block": {
+      "warningThreshold": 80,
+      "amount": 15
+    }
+  },
+  "modelContextLimits": {
+    "default": 200000,
+    "sonnet": 200000,
+    "opus": 200000
+  }
+}
