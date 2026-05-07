@@ -109,6 +109,7 @@ _local_claude() {
 }
 alias qw="_local_claude --bare --strict-mcp-config --mcp-config '{\"mcpServers\": {}}'"
 alias qwm='_local_claude --bare'
+alias qwf='_local_claude'
 
 # Disabled corrections
 alias gulp='nocorrect gulp'
