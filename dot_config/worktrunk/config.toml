@@ -1,4 +1,4 @@
-# Setup hooks for new worktrees created by `wt`.
+worktree-path = "{{ repo_path }}/../{{ branch | sanitize }}"
 
 # Blocking: copy .env and other gitignored files from the source worktree first,
 # so the dep installers below see any env vars they need.

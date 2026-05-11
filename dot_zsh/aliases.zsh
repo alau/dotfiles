@@ -91,6 +91,7 @@ alias pr='poetry run'
 alias ur='uv run'
 
 # Worktrees
+wtclone() { local repo="$1"; local name="${repo##*/}"; gh repo clone "$repo" "$name/.git" -- --bare && cd "$name" && wt switch main }
 alias wtc='wt switch --create --execute=claude'
 alias wtlf='wt list --full --branches'
 alias wts='wt switch'
