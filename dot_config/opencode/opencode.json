@@ -1,0 +1,36 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "permission": {
+    "*": "ask",
+    "read": {
+      "*": "allow",
+      "*.env": "deny",
+      "*.env.*": "deny",
+      "*.env.example": "allow"
+    }
+  },
+  "formatter": true,
+  "lsp": true,
+  "autoupdate": "notify",
+  "watcher": {
+    "ignore": ["node_modules/**", ".git/**", "dist/**", "build/**"]
+  },
+  "provider": {
+    "llama.cpp": {
+      "npm": "@ai-sdk/openai-compatible",
+      "name": "llama-server (local)",
+      "options": {
+        "baseURL": "http://127.0.0.1:8080/v1"
+      },
+      "models": {
+        "local": {
+          "name": "local",
+          "limit": {
+            "context": 65536,
+            "output": 65536
+          }
+        }
+      }
+    }
+  }
+}
