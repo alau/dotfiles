@@ -4,6 +4,7 @@ source ~/.zsh/aliases.zsh
 source ~/.zsh/prompt.zsh
 source ~/.zsh/editor.zsh
 source ~/.zsh/zoxide.zsh
+source ~/.zsh/wt.zsh
 source ~/.zsh/zsh-nvm/zsh-nvm.plugin.zsh
 
 # Reset kitty keyboard protocol to prevent stuck terminal after programs

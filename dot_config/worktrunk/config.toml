@@ -1,0 +1,10 @@
+# Setup hooks for new worktrees created by `wt`.
+
+# Blocking: copy .env and other gitignored files from the source worktree first,
+# so the dep installers below see any env vars they need.
+pre-start = "wt step copy-ignored"
+
+# Background: dep installs run concurrently after the worktree is ready.
+[post-start]
+uv = "command -v uv >/dev/null && [ -f pyproject.toml ] && uv sync || true"
+go = "command -v go >/dev/null && [ -f go.mod ] && go mod download || true"
