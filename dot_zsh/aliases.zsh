@@ -90,19 +90,12 @@ alias mwa='mocha --watch'
 alias pr='poetry run'
 alias ur='uv run'
 
-# Worktrees for parallel Claude sessions
-cw() {
-  local branch="${1:?Usage: cw <branch-name>}"
-  local base="${2:-HEAD}"
-  local wt_dir="${PWD:h}/worktrees/${PWD:t}--${branch}"
-  git worktree add "$wt_dir" -b "$branch" "$base" && cd "$wt_dir" && claude
-}
-alias cwl='git worktree list'
-cwr() {
-  local branch="${1:?Usage: cwr <branch-name>}"
-  local wt_dir="${PWD:h}/worktrees/${PWD:t}--${branch}"
-  git worktree remove "$wt_dir"
-}
+# Worktrees
+alias wtc='wt switch --create --execute=claude'
+alias wtlf='wt list --full --branches'
+alias wts='wt switch'
+
+# Claude
 alias cc='claude'
 _local_claude() {
   ANTHROPIC_BASE_URL=http://127.0.0.1:8080 ANTHROPIC_MODEL=qwen ANTHROPIC_AUTH_TOKEN= ANTHROPIC_API_KEY= CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC=1 claude "$@"
