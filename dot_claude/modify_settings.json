@@ -47,7 +47,10 @@ read -r -d '' BASE << 'BASEJSON' || true
       "mcp__github__pull_request_read",
       "mcp__clickup__clickup_get_task",
       "mcp__clickup__clickup_filter_tasks",
-      "mcp__clickup__clickup_get_custom_fields"
+      "mcp__clickup__clickup_get_custom_fields",
+      "mcp__clickup__clickup_list_document_pages",
+      "mcp__clickup__clickup_get_document_pages",
+      "mcp__clickup__clickup_get_task_comments"
     ],
     "deny": [
       "Read(./.env)"
