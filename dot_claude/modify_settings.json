@@ -54,7 +54,7 @@ read -r -d '' BASE << 'BASEJSON' || true
     ],
     "defaultMode": "plan"
   },
-  "model": "opusplan",
+  "model": "sonnet",
   "enabledPlugins": {
     "gopls-lsp@claude-plugins-official": true,
     "pyright-lsp@claude-plugins-official": true,
