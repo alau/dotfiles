@@ -23,8 +23,5 @@ vim.keymap.set('n', '<leader>cz', t.extensions.chezmoi.find_files, {})
 t.load_extension("notify")
 vim.keymap.set('n', '<leader>fn', t.extensions.notify.notify, {})
 
-t.load_extension("refactoring")
-vim.keymap.set({"n", "x"}, "<leader>ee", t.extensions.refactoring.refactors, {})
-
 t.load_extension("dap")
 vim.keymap.set({"n"}, "<leader>rb", t.extensions.dap.list_breakpoints, {})

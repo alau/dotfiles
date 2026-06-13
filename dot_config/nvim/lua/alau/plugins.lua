@@ -61,7 +61,7 @@ return require('packer').startup({
         }
         use {
             "ThePrimeagen/refactoring.nvim",
-            requires = {{"nvim-lua/plenary.nvim"}, {"nvim-treesitter/nvim-treesitter"}}
+            requires = {{"nvim-lua/plenary.nvim"}, {"nvim-treesitter/nvim-treesitter"}, {"lewis6991/async.nvim"}}
         }
         use {'kosayoda/nvim-lightbulb'}
         use {'folke/snacks.nvim'}
