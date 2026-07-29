@@ -15,15 +15,31 @@ vim.keymap.set("n", "<localleader>mc", ":MoltenInterrupt<CR>", {desc = "interrup
 vim.keymap.set("n", "<localleader>mC", ":MoltenRestart<CR>", {desc = "restart kernel", silent = true})
 vim.keymap.set("n", "<localleader>md", ":MoltenDelete<CR>", {desc = "clear cell output", silent = true})
 vim.keymap.set("n", "<localleader>mD", ":MoltenDelete!<CR>", {desc = "clear all cell output", silent = true})
-vim.keymap.set("n", "<localleader>mi", function()
+
+local function kernel_name()
     local venv = os.getenv("VIRTUAL_ENV")
-    if venv ~= nil then
-        venv = string.match(venv, "/.+/(.+)/notebooks/.venv") or string.match(venv, "/.+/(.+)/.venv")
-        vim.cmd(("MoltenInit %s"):format(venv))
-    else
-        vim.cmd("MoltenInit python3")
+    if venv == nil then
+        return "python3"
     end
-end, {desc = "Initialize Molten for python3", silent = true})
+    return string.match(venv, "/.+/(.+)/notebooks/.venv") or string.match(venv, "/.+/(.+)/.venv") or "python3"
+end
+
+-- Initialize a kernel for the current buffer, unless one is already attached.
+-- Molten's own :MoltenInit has no such guard, so a repeated call silently
+-- spawns an extra kernel (named e.g. python3_1) attached to the same buffer.
+local function init_kernel(opts)
+    local ok, kernels = pcall(vim.fn.MoltenRunningKernels, true)
+    if ok and #kernels > 0 then
+        if not (opts and opts.silent) then
+            vim.notify("Molten kernel already running in this buffer", vim.log.levels.INFO)
+        end
+        return
+    end
+    vim.cmd(("MoltenInit %s"):format(kernel_name()))
+end
+
+vim.keymap.set("n", "<localleader>mi", function() init_kernel() end,
+               {desc = "Initialize Molten for python3", silent = true})
 
 require('otter').setup({})
 require("quarto").setup({
@@ -50,6 +66,22 @@ require("jupytext").setup({
     output_extension = "md",
     force_ft = "markdown.notebook",
     custom_language_formatting = {python = {extension = "md", style = "markdown", force_ft = "markdown.notebook"}}
+})
+
+-- Automatically initialize a kernel when a notebook is opened. jupytext sets
+-- the filetype to markdown.notebook from inside its BufReadCmd handler
+-- (force_ft above), so FileType fires once the buffer has been converted.
+vim.api.nvim_create_autocmd("FileType", {
+    pattern = "markdown.notebook",
+    callback = function(args)
+        local buf = args.buf
+        vim.schedule(function()
+            if not vim.api.nvim_buf_is_valid(buf) then
+                return
+            end
+            vim.api.nvim_buf_call(buf, function() init_kernel({silent = true}) end)
+        end)
+    end
 })
 
 vim.api.nvim_create_autocmd("BufWritePost", {
