@@ -6,8 +6,8 @@ pre-start = "wt step copy-ignored"
 
 # Background: dep installs run concurrently after the worktree is ready.
 [post-start]
-uv = "command -v uv >/dev/null && [ -f pyproject.toml ] && uv sync --all-extras || true"
+uv = 'command -v uv >/dev/null && git ls-files -z -- "pyproject.toml" "**/pyproject.toml" | while IFS= read -r -d "" f; do (cd "$(dirname "$f")" && uv sync --all-extras); done || true'
 go = "command -v go >/dev/null && [ -f go.mod ] && go mod download || true"
 
 [step.copy-ignored]
-exclude = [".venv/"]
+exclude = [".venv/", "**/.venv/**"]
