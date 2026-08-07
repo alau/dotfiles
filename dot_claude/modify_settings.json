@@ -5,8 +5,62 @@ read -r -d '' BASE << 'BASEJSON' || true
 {
   "$schema": "https://json.schemastore.org/claude-code-settings.json",
   "sandbox": {
-    "enable": true
+    "enabled": true,
+    "allowUnsandboxedCommands": false,
+    "excludedCommands": [
+      "*docker *",
+      "*uv run pytest*",
+      "*just test*"
+    ],
+    "network": {
+      "allowedDomains": [
+        "github.com",
+        "api.github.com"
+      ]
+    },
+    "filesystem": {
+      "denyRead": ["~/", "/root", "/srv", "/mnt", "/media"],
+      "allowRead": [
+        "~/repos",
+        "~/.local/share/chezmoi",
+        "~/.agents",
+        "~/.claude",
+        "~/.gitconfig",
+        "~/.local/bin",
+        "~/.cargo",
+        "~/.pyenv",
+        "~/.nvm",
+        "~/go",
+        "~/.cache/go-build",
+        "~/.cache/uv",
+        "~/.cache/pip",
+        "~/.ripgreprc"
+      ],
+      "allowWrite": [
+        "~/repos",
+        "~/.cache/go-build",
+        "~/go/pkg/mod",
+        "~/.cache/uv"
+      ]
+    },
+    "credentials": {
+      "files": [
+        { "path": "~/.ssh", "mode": "deny" },
+        { "path": "~/.aws", "mode": "deny" },
+        { "path": "~/.config/gh", "mode": "deny" },
+        { "path": "~/.config/gcloud", "mode": "deny" },
+        { "path": "~/.kube", "mode": "deny" },
+        { "path": "~/.docker/config.json", "mode": "deny" },
+        { "path": "~/.npmrc", "mode": "deny" },
+        { "path": "~/.claude/.credentials.json", "mode": "deny" },
+        { "path": "~/.zshrc.local", "mode": "deny" },
+        { "path": "~/.zshenv.local", "mode": "deny" },
+        { "path": "~/.zlogin.local", "mode": "deny" },
+        { "path": "~/.tmux.conf.local", "mode": "deny" }
+      ]
+    }
   },
+  "tui": "fullscreen",
   "respectGitignore": true,
   "permissions": {
     "allow": [
@@ -53,7 +107,15 @@ read -r -d '' BASE << 'BASEJSON' || true
       "mcp__clickup__clickup_get_task_comments"
     ],
     "deny": [
-      "Read(./.env)"
+      "Read(./.env)",
+      "Read(**/.env)",
+      "Read(**/.env.*)",
+      "Read(~/.ssh/**)",
+      "Read(~/.aws/**)",
+      "Read(~/.zshrc.local)",
+      "Read(~/.zshenv.local)",
+      "Read(~/.zlogin.local)",
+      "Read(~/.tmux.conf.local)"
     ],
     "defaultMode": "plan"
   },

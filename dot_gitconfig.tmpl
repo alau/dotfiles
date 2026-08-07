@@ -11,8 +11,10 @@
 [merge]
   conflictstyle = zdiff3
   tool = meld
-[url "git@github.com:"]
-  insteadOf = https://github.com/
+[url "https://github.com/"]
+  insteadOf = git@github.com:
+[credential "https://github.com"]
+  helper = !gh auth git-credential
 [init]
   defaultBranch = main
 [apply]
