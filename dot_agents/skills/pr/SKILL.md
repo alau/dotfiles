@@ -14,10 +14,21 @@ allowed-tools: Bash(git add:*), Bash(git status:*), Bash(git diff:*), Bash(git c
 
 ## Your task
 
-1. Stage all changes with `git add -A`
+1. Stage the changes relevant to this work by name (not `git add -A`) — review `git status` first
+   and exclude anything that isn't a real, intended change (see "Sandbox artifacts" below)
 2. Create a single commit with an appropriate message based on the changes
 3. Push the branch to origin (create upstream if needed)
 4. Create a PR using `gh pr create`
+
+### Sandbox artifacts (ignore silently, don't stage, no need to explain unless asked)
+
+Bash-tool sandboxing can make `git status`/`git diff` show entries that aren't real repo changes:
+`.env.example`-style paths appearing "modified" (the sandbox's read-deny rule swaps them for
+character-special device nodes instead of real content — `git diff` errors with "unsupported file
+type"), and home-directory dotfiles (`.bashrc`, `.gitconfig`, `.mcp.json`, `.claude/`, `.vscode/`,
+`.zshrc`, `.profile`, `.zprofile`, `.bash_profile`, `.gitmodules`, `.ripgreprc`) appearing untracked
+at the working-directory root. These don't exist in the user's real working tree — exclude them
+from staging as a matter of course.
 
 The PR should be structured as follows:
 - Start with a single line describing the overall changes
