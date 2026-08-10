@@ -92,11 +92,13 @@ alias ur='uv run'
 
 # Worktrees
 wtclone() {
-  local repo="$1" name="${repo##*/}"
+  local repo="$1"
+  local name="${repo##*/}"
   gh repo clone "$repo" "$name/.git" -- --bare --single-branch &&
     git -C "$name/.git" config --replace-all remote.origin.fetch '+refs/heads/*:refs/remotes/origin/*' &&
     git -C "$name/.git" config remote.origin.prune true &&
     git -C "$name/.git" fetch origin &&
+    git -C "$name/.git" branch main --set-upstream-to=origin/main &&
     cd "$name" && wt switch main
 }
 alias wtc='wt switch --create --execute=claude'
