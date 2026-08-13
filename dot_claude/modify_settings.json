@@ -124,7 +124,8 @@ read -r -d '' BASE << 'BASEJSON' || true
   "enabledPlugins": {
     "gopls-lsp@claude-plugins-official": true,
     "pyright-lsp@claude-plugins-official": true,
-    "lua-lsp@claude-plugins-official": true
+    "lua-lsp@claude-plugins-official": true,
+    "mattpocock-skills@claude-plugins-official": true
   },
   "effortLevel": "max",
   "vimMode": true,
