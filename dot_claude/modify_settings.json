@@ -15,7 +15,9 @@ read -r -d '' BASE << 'BASEJSON' || true
     "network": {
       "allowedDomains": [
         "github.com",
-        "api.github.com"
+        "api.github.com",
+        "pypi.org",
+        "files.pythonhosted.org"
       ]
     },
     "filesystem": {
