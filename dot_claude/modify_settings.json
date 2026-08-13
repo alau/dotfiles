@@ -10,7 +10,10 @@ read -r -d '' BASE << 'BASEJSON' || true
     "excludedCommands": [
       "*docker *",
       "*uv run pytest*",
-      "*just test*"
+      "*just test*",
+      "*go test*",
+      "*make test*",
+      "*make check*"
     ],
     "network": {
       "allowedDomains": [
