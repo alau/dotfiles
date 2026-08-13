@@ -82,6 +82,7 @@ read -r -d '' BASE << 'BASEJSON' || true
       "Bash(wc *)",
       "Bash(file *)",
       "Bash(type *)",
+      "Read(~/.claude/plugins/**)",
       "WebSearch",
       "WebFetch",
       "mcp__github__get_me",
