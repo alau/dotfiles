@@ -108,7 +108,7 @@ alias wtsr='wt switch --branches --remotes'
 # Claude
 alias cc='claude'
 _local_claude() {
-  ANTHROPIC_BASE_URL=http://127.0.0.1:8080 ANTHROPIC_MODEL=qwen ANTHROPIC_AUTH_TOKEN= ANTHROPIC_API_KEY= CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC=1 claude "$@"
+  ANTHROPIC_BASE_URL=http://127.0.0.1:8080 ANTHROPIC_MODEL=qwen ANTHROPIC_AUTH_TOKEN="llama" ANTHROPIC_API_KEY= CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC=1 claude "$@"
 }
 alias qw="_local_claude --bare --strict-mcp-config --mcp-config '{\"mcpServers\": {}}'"
 alias qwm='_local_claude --bare'
