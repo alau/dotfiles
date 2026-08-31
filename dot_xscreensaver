@@ -6,7 +6,7 @@ passwdTimeout:	0:00:15
 fade:		True
 unfade:		False
 fadeSeconds:	0:00:03
-dpmsEnabled:	True
+dpmsEnabled:	False
 dpmsQuickOff:	False
 dpmsStandby:	0:30:00
 dpmsSuspend:	0:30:00
