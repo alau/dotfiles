@@ -82,9 +82,10 @@ function anaconda-deactivate { path=("${(@)path:#$HOME/anaconda*/bin}") }
 function anaconda-activate { path=("/home/alau/anaconda2/bin" "/home/alau/anaconda3/bin" $path) }
 
 # node
-alias nr='npm run'
 alias nu='nvm use'
 alias mwa='mocha --watch'
+alias npm='echo use pnpm'
+alias npx='echo use pnpm dlx'
 
 # poetry/uv
 alias pr='poetry run'
