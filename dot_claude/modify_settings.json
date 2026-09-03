@@ -121,7 +121,21 @@ read -r -d '' BASE << 'BASEJSON' || true
       "Read(~/.zshrc.local)",
       "Read(~/.zshenv.local)",
       "Read(~/.zlogin.local)",
-      "Read(~/.tmux.conf.local)"
+      "Read(~/.tmux.conf.local)",
+      "NotebookEdit",
+      "DesignSync",
+      "CronCreate",
+      "CronDelete",
+      "CronList",
+      "EnterPlanMode",
+      "ExitPlanMode",
+      "PushNotification",
+      "RemoteTrigger",
+      "ReportFindings",
+      "ScheduleWakeup",
+      "AskUserQuestion",
+      "SendFeedback",
+      "ShareOnboardingGuide"
     ],
     "defaultMode": "plan"
   },
@@ -159,7 +173,11 @@ read -r -d '' BASE << 'BASEJSON' || true
   "statusLine": {
     "type": "command",
     "command": "claude-powerline"
-  }
+  },
+  "disableClaudeAiConnectors": true,
+  "disableWorkflows": true,
+  "disableBundledSkills": true,
+  "disableArtifact": true
 }
 BASEJSON
 
