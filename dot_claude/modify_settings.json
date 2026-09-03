@@ -137,9 +137,9 @@ read -r -d '' BASE << 'BASEJSON' || true
       "SendFeedback",
       "ShareOnboardingGuide"
     ],
-    "defaultMode": "plan"
+    "defaultMode": "manual"
   },
-  "model": "opusplan",
+  "model": "opus",
   "enabledPlugins": {
     "gopls-lsp@claude-plugins-official": true,
     "pyright-lsp@claude-plugins-official": true,
