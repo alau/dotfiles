@@ -20,6 +20,11 @@
           "model": {
             "enabled": true
           },
+          "thinking": {
+            "enabled": true,
+            "showEnabled": false,
+            "showEffort": true
+          },
           "session": {
             "enabled": false,
             "type": "tokens"
