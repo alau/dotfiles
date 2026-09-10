@@ -14,7 +14,7 @@ allowed-tools: Bash(gh pr view:*), Bash(gh pr diff:*), Bash(gh api:*), mcp__gith
 
 Use the `mcp__github__pull_request_read` tool to fetch full PR details including inline review comments before triaging.
 
-Review PR comments produced by copilot and alau and triage them according to:
+Review PR comments produced by copilot (skipping supressed comments) and alau and triage them according to:
 
 1. **Categorize** each comment as one of:
    - **Must fix**: Blocking issues, bugs, security concerns
