@@ -88,6 +88,7 @@ read -r -d '' BASE << 'BASEJSON' || true
       "Bash(file *)",
       "Bash(type *)",
       "Read(~/.claude/plugins/**)",
+      "Read(**/.env.example)",
       "WebSearch",
       "WebFetch",
       "mcp__github__get_me",
@@ -115,7 +116,6 @@ read -r -d '' BASE << 'BASEJSON' || true
     "deny": [
       "Read(./.env)",
       "Read(**/.env)",
-      "Read(**/.env.*)",
       "Read(~/.ssh/**)",
       "Read(~/.aws/**)",
       "Read(~/.zshrc.local)",
