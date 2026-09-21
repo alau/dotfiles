@@ -102,12 +102,11 @@ wtclone() {
     git -C "$name/.git" branch main --set-upstream-to=origin/main &&
     cd "$name" && wt switch main
 }
-alias wtc='wt switch --create --execute=claude'
 alias wts='wt switch'
 alias wtsr='wt switch --branches --remotes'
 
 # Claude
-alias cc='claude'
+# wtc and ccs live in ~/.zsh/sandbox.zsh — they run claude inside a sandbox VM.
 _local_claude() {
   ANTHROPIC_BASE_URL=http://127.0.0.1:8080 ANTHROPIC_MODEL=qwen ANTHROPIC_AUTH_TOKEN="llama" ANTHROPIC_API_KEY="foo" CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC=1 CLAUDE_CODE_MAX_OUTPUT_TOKENS=64000 CLAUDE_CODEclaude "$@"
 }
