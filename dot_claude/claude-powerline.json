@@ -10,8 +10,8 @@
       {
         "segments": {
           "directory": {
-            "enabled": false,
-            "style": "fish"
+            "enabled": true,
+            "style": "full"
           },
           "git": {
             "enabled": false,
@@ -89,10 +89,5 @@
       "warningThreshold": 80,
       "amount": 15
     }
-  },
-  "modelContextLimits": {
-    "default": 200000,
-    "sonnet": 200000,
-    "opus": 200000
   }
 }
