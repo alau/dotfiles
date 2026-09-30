@@ -176,7 +176,8 @@ read -r -d '' BASE << 'BASEJSON' || true
   "disableClaudeAiConnectors": true,
   "disableWorkflows": true,
   "disableBundledSkills": true,
-  "disableArtifact": true
+  "disableArtifact": true,
+  "autoMemoryEnabled": false
 }
 BASEJSON
 
