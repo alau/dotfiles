@@ -177,7 +177,8 @@ read -r -d '' BASE << 'BASEJSON' || true
   "disableWorkflows": true,
   "disableBundledSkills": true,
   "disableArtifact": true,
-  "autoMemoryEnabled": false
+  "autoMemoryEnabled": false,
+  "promptSuggestionEnabled": false
 }
 BASEJSON
 
