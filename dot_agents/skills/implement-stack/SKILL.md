@@ -1,5 +1,5 @@
 ---
-name: implement-stacked
+name: implement-stack
 description: "Implement a ClickUp epic's tickets as stacked PRs, one per ticket."
 argument-hint: "<epic-ClickUp-url>"
 disable-model-invocation: true
@@ -37,7 +37,7 @@ Branches are named `CU-<ticket-id>-<slug>`, with worktrees at `/home/alau/repos/
 
 2. **Triage.** Show the user a table of every ticket: build or skip, the reason for a skip, and the target repo. Skip human-driven work, `Placeholder:` and `(nice-to-have)` tickets, and tickets that already have an open PR. Infer the repo from the title, the body, or the files the ticket names. A skipped ticket's dependents can't be built, except when the skipped ticket has an open PR: that PR's branch becomes the top of its repo's stack, and the ticket counts as joined. The step is done when the user confirms the table.
 
-3. (optional) Use an **exploration subagent** to conduct any exploration required by the tickets: relevant codebase files or external documentation. It saves its markdown notes in `/tmp/implement-stacked/<epic-id>/`, where every later subagent can read them.
+3. (optional) Use an **exploration subagent** to conduct any exploration required by the tickets: relevant codebase files or external documentation. It saves its markdown notes in `/tmp/implement-stack/<epic-id>/`, where every later subagent can read them.
 
 4. For each frontier ticket:
    - run `git fetch` in `/home/alau/repos/<repo>/main`, cloning the repo to that path first if it is missing;
